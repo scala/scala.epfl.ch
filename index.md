@@ -1,0 +1,4 @@
+---
+---
+
+Hi there! This is the Scala Center website!
