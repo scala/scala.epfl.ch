@@ -1,6 +1,6 @@
 ---
 ---
 
-Hi there! This is the Scala Center website!
+Hi there! This is the Scala Center website! :)
 
-2015
+Copyright EPFL 2015
