@@ -71,3 +71,48 @@ $on-laptop:        800px;
   font-size: 42px;
   padding-top: 140px;
 }
+
+
+.circular {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 14px;
+  width: 125px;
+  height: 125px;
+  border-radius: 75px;
+  -webkit-border-radius: 75px;
+  -moz-border-radius: 75px;
+  }
+
+.circular.heather {
+  background-image: url('{{ site.baseurl }}/resources/img/heather.png');
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .circular.heather {
+    background-image: url('{{ site.baseurl }}/resources/img/heather@2x.png');
+    background-size: 125px 125px;
+  }
+}
+
+.circular.jon {
+  background-image: url('{{ site.baseurl }}/resources/img/jon.png');
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .circular.jon {
+    background-image: url('{{ site.baseurl }}/resources/img/jon@2x.png');
+    background-size: 125px 125px;
+  }
+}
+
+.circular.martin {
+  background-image: url('{{ site.baseurl }}/resources/img/martin.png');
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .circular.martin {
+    background-image: url('{{ site.baseurl }}/resources/img/martin@2x.png');
+    background-size: 125px 125px;
+  }
+}
