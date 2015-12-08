@@ -1,0 +1,16 @@
+# Site settings
+title: Scala Center
+email: heather.miller@epfl.ch
+description: > # this means to ignore newlines until "baseurl:"
+  The Scala Center at EPFL. Not-for-profit, "for the good of all"
+  steward of Scala.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://scala.epfl.ch" # the base hostname & protocol for your site
+twitter_username: scala_lang
+github_username:  scala
+
+# Build settings
+markdown: kramdown
+exclude: ["node_modules", "gulpfile.js", "package.json"]
+sass:
+  sass_dir: resources/css/sass

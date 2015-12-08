@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="splash">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <img src="{{ site.baseurl }}/resources/img/scala-center-logo.png">
+            <div class="scalacenter-logo"></div>
+            For open source. For education.
+            {{ content }}
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
