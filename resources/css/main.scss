@@ -3,7 +3,11 @@
 ---
 @charset "utf-8";
 
-
+// Colors
+$orange:           #f26527;
+$red-orange:       #da4323;
+$white:            #ffffff;
+$blue-grey:        #668086;
 
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -16,7 +20,7 @@ $spacing-unit:     30px;
 
 $text-color:       #fff;
 $background-color: #002b37;
-$link-color:      #2a7ae2;
+$link-color:      $orange;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -27,7 +31,6 @@ $content-width:    800px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
-
 
 
 // Use media queries like this:
@@ -56,20 +59,49 @@ $on-laptop:        800px;
 // ;
 
 
+a:link, a:visited {
+  text-decoration: none;
+  color: $orange;
+  font-weight: 700;
+  border-bottom: 2px solid rgba(34, 73, 81, 0.8);
+  -webkit-transition: color .1s ease-in;
+  -moz-transition: color .1s ease-in;
+  -ms-transition: color .1s ease-in;
+  -o-transition: color .1s ease-in;
+  transition: color .1s ease-in;
+}
+
+a:hover {
+  text-decoration: none;
+  color: $red-orange;
+  -webkit-transition: color .2s ease-in;
+  -moz-transition: color .2s ease-in;
+  -ms-transition: color .2s ease-in;
+  -o-transition: color .2s ease-in;
+  transition: color .2s ease-in;
+}
+
+.no-border {
+  border-bottom: none;
+}
+
+.orange {
+  color: $orange;
+}
+
+.w500 {
+  font-weight: 500;
+}
+
 .splash {
   // @include center;
   text-align: center;
-  background: url({{ site.baseurl }}/resources/img/lakegeneva-gradientmapped.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  min-height: 640px;
-  font-family: "ff-enzo-web",sans-serif;
+  min-height: 540px;
+  font-family: "ff-enzo-web", sans-serif;
   font-style: normal;
   font-weight: 100;
   font-size: 42px;
-  padding-top: 140px;
+  padding-top: 300px;
 }
 
 
@@ -115,4 +147,407 @@ $on-laptop:        800px;
     background-image: url('{{ site.baseurl }}/resources/img/martin@2x.png');
     background-size: 125px 125px;
   }
+}
+
+@font-face {
+    font-family: 'EntypoRegular';
+    src: url('{{ site.baseurl }}/resources/glyphs/entypo.eot');
+    src: url('{{ site.baseurl }}/resources/glyphs/entypo.eot?#iefix') format('embedded-opentype'),
+         url('{{ site.baseurl }}/resources/glyphs/entypo.woff') format('woff'),
+         url('{{ site.baseurl }}/resources/glyphs/entypo.ttf') format('truetype'),
+         url('{{ site.baseurl }}/resources/glyphs/entypo.svg#EntypoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.entypo {
+  font-family: 'EntypoRegular';
+  font-size: 2em;
+  font-weight: normal;
+  line-height: 0;
+}
+
+.entypo.heart:before{ content:'\2665'; color: $orange; font-style: normal;}
+.entypo.check:before{ content:'\2713'; color: $orange; font-style: normal;}
+.entypo.dash:before{ content:'\2796'; color: $orange; font-style: normal;}
+
+.blurb {
+  text-align: center;
+  font-family: "ff-enzo-web", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 38px;
+  line-height: 1.2em;
+  margin-top: 40px;
+}
+
+.heavy {
+  font-weight: 800;
+}
+
+.focused-on {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.focused-on-elem {
+  text-align: left;
+  font-size: 28px;
+}
+
+.num {
+  font-family: "ff-market-web";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  color: #f26527;
+}
+
+
+@font-face {
+    font-family: 'cubanoregular';
+    src: url('{{ site.baseurl }}/resources/glyphs/cubano-regular-webfont.eot');
+    src: url('{{ site.baseurl }}/resources/glyphs/cubano-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('{{ site.baseurl }}/resources/glyphs/cubano-regular-webfont.woff2') format('woff2'),
+         url('{{ site.baseurl }}/resources/glyphs/cubano-regular-webfont.woff') format('woff'),
+         url('{{ site.baseurl }}/resources/glyphs/cubano-regular-webfont.ttf') format('truetype'),
+         url('{{ site.baseurl }}/resources/glyphs/cubano-regular-webfont.svg#cubanoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'blanchcaps';
+    src: url('{{ site.baseurl }}/resources/glyphs/blanch_caps-webfont.eot');
+    src: url('{{ site.baseurl }}/resources/glyphs/blanch_caps-webfont.eot?#iefix') format('embedded-opentype'),
+         url('{{ site.baseurl }}/resources/glyphs/blanch_caps-webfont.woff2') format('woff2'),
+         url('{{ site.baseurl }}/resources/glyphs/blanch_caps-webfont.woff') format('woff'),
+         url('{{ site.baseurl }}/resources/glyphs/blanch_caps-webfont.ttf') format('truetype'),
+         url('{{ site.baseurl }}/resources/glyphs/blanch_caps-webfont.svg#blanchcaps') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.centered {
+  text-align: center;
+}
+
+.vertical-spacer-bottom {
+  padding-bottom: 60px;
+}
+
+.vertical-spacer-top {
+  padding-top: 60px;
+}
+
+.light-blue-stripe {
+  position: relative;
+  background-color: rgba(34, 73, 81, 1);
+  min-height: 140px;
+}
+
+
+.mission .title {
+  display: inline-block;
+  width: 290px;
+  text-align: center;
+  font-family: 'blanchcaps';
+  font-size: 60px;
+  letter-spacing: 0.16em;
+  line-height: 1em;
+  border-bottom: solid 3px #fff;
+  border-top: solid 1px #fff;
+  margin-bottom: 18px;
+}
+
+.mission ul {
+  text-align: left;
+  list-style-type: none;
+  font-family: "ff-enzo-web", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 24px;
+}
+
+.mission ul > li {
+  border-left: solid 3px #fff;
+  margin: 20px 0;
+  padding-left: 18px;
+}
+
+.open-source .title {
+  display: inline-block;
+  width: 300px;
+  text-align: center;
+  font-family: 'blanchcaps';
+  font-size: 60px;
+  letter-spacing: 0.16em;
+  line-height: 1em;
+  border-bottom: solid 3px #fff;
+  border-top: solid 1px #fff;
+  margin-bottom: 32px;
+}
+
+.education .title {
+  display: inline-block;
+  width: 240px;
+  text-align: center;
+  font-family: 'blanchcaps';
+  font-size: 60px;
+  letter-spacing: 0.16em;
+  line-height: 1em;
+  border-bottom: solid 3px #fff;
+  border-top: solid 1px #fff;
+  margin-bottom: 32px;
+}
+
+.moocs-coursera {
+  font-family: "cubanoregular";
+  font-size: 28px;
+  color: $white;
+}
+
+.moocs-benefits,
+.new-moocs,
+.course-list {
+  width: 420px;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
+  text-indent: -1em;
+  margin: 0 auto;
+  text-align: left;
+  font-family: "ff-enzo-web", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.moocs-benefits {
+  color: lighten($blue-grey, 12%);
+}
+
+.moocs-benefits > li,
+.new-moocs > li,
+.course-list > li {
+  margin: 8px 0;
+  line-height: 1.2em;
+}
+
+.course-list > li {
+  font-size: 26px;
+  margin: 12px 0;
+}
+
+.course-list {
+  width: 480px;
+}
+
+.new-moocs {
+  width: 300px;
+}
+
+.coming-soon {
+  font-family: "cubanoregular";
+  font-size: 40px;
+  color: $orange;
+  margin-top: 46px;
+}
+
+.mini-degree {
+  font-family: "ff-enzo-web", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 40px;
+  // text-align: left;
+  line-height: 1.2em;
+  margin-bottom: 44px;
+}
+
+.what-is-mini-degree {
+  width: 420px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.composed-of {
+  font-family: "ff-enzo-web", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: -1px;
+  font-size: 24px;
+  text-align: left;
+}
+
+.handwriting {
+  font-family: "ff-market-web";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  color: #f26527;
+}
+
+.grey-italic {
+  color: lighten($blue-grey, 5%);
+  // color: rgba(155, 155, 155, 0.7);
+  // color: lighten($grey-color, 10%);
+  font-style: italic;
+}
+
+.the-courses {
+  font-family: "cubanoregular";
+  font-size: 28px;
+  color: $white;
+  margin-top: 46px;
+}
+
+.taught-by {
+  // font-family: 'blanchcaps';
+  // font-size: 32px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.instructor {
+  // font-family: "cubanoregular";
+  // font-family: "ff-enzo-web", sans-serif;
+  // font-style: normal;
+  // font-weight: 900;
+  font-size: 20px;
+}
+
+.s30 {
+  font-size: 30px;
+}
+
+.mc_embed_signup {
+  font-family: "ronnia",sans-serif;
+  font-style: italic;
+  font-weight: 200;
+}
+
+.mc-field-group, .clear {
+  display: inline-block;
+  text-align: left;
+}
+
+.mc-field-group {
+  font-family: "ronnia",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.mc-field-group > .txt-label {
+  color: #073642;
+}
+
+.mc-field-group > ul {
+  list-style-type: none;
+  margin-bottom: 0px;
+  padding: 0;
+  /*height: 28px;*/
+}
+
+.mc-field-group > ul > li {
+  font-family: "ronnia",sans-serif;
+  font-style: italic;
+  display: inline;
+  margin-left: 12px;
+}
+
+.mc-field-group > ul > li > label {
+  font-weight: 400;
+  color: #073642;
+}
+
+.mc-field-group > ul > li:first-child {
+  margin-left: 6px;
+}
+.txt-label {
+  color: #fff;
+  font-weight: 700;
+}
+
+.brought-to-you {
+  display: inline-block;
+  width: 450px;
+  text-align: center;
+  font-family: 'blanchcaps';
+  font-size: 60px;
+  letter-spacing: 0.16em;
+  line-height: 1em;
+  border-bottom: solid 3px #fff;
+  border-top: solid 1px #fff;
+  margin-bottom: 32px;
+}
+
+.founding-members {
+  font-family: "ff-enzo-web", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+}
+
+.founding-blurb {
+  text-align: justify;
+  font-family: "ff-enzo-web", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  color: lighten($blue-grey, 12%);
+}
+
+.sign-up,
+.join-effort {
+  text-align: center;
+  font-family: "ff-enzo-web", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 14px;
+  letter-spacing: -1px;
+  color: $white;
+}
+
+.why-sign-up {
+  color: lighten($blue-grey, 15%);
+  font-weight: 300;
+  font-size: 22px;
+  text-align: justify;
+  font-family: "ff-enzo-web", sans-serif;
+  font-style: normal;
+  margin-bottom: 30px;
+}
+
+.who-are-we {
+  font-family: "ff-enzo-web", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 32px;
+  line-height: 1em;
+}
+
+.who-are-we .title {
+  display: inline-block;
+  width: 310px;
+  text-align: center;
+  font-family: 'blanchcaps';
+  font-size: 60px;
+  letter-spacing: 0.16em;
+  line-height: 1em;
+  border-bottom: solid 3px #fff;
+  border-top: solid 1px #fff;
+  margin-bottom: 32px;
+}
+
+.us > .name {
+  font-weight: 400;
+}
+
+.us > .about {
+  font-size: 22px;
+  line-height: 1em;
 }
