@@ -251,7 +251,7 @@ a:hover {
 
 .mission .title {
   display: inline-block;
-  width: 290px;
+  max-width: 290px;
   text-align: center;
   font-family: 'blanchcaps';
   font-size: 60px;
@@ -279,7 +279,7 @@ a:hover {
 
 .open-source .title {
   display: inline-block;
-  width: 300px;
+  max-width: 300px;
   text-align: center;
   font-family: 'blanchcaps';
   font-size: 60px;
@@ -292,7 +292,7 @@ a:hover {
 
 .education .title {
   display: inline-block;
-  width: 240px;
+  max-width: 240px;
   text-align: center;
   font-family: 'blanchcaps';
   font-size: 60px;
@@ -312,7 +312,7 @@ a:hover {
 .moocs-benefits,
 .new-moocs,
 .course-list {
-  width: 420px;
+  max-width: 420px;
   list-style: none;
   margin-left: 0;
   padding-left: 1em;
@@ -342,11 +342,11 @@ a:hover {
 }
 
 .course-list {
-  width: 480px;
+  max-width: 480px;
 }
 
 .new-moocs {
-  width: 300px;
+  max-width: 300px;
 }
 
 .coming-soon {
@@ -367,7 +367,7 @@ a:hover {
 }
 
 .what-is-mini-degree {
-  width: 420px;
+  max-width: 420px;
   text-align: center;
   margin: 0 auto;
 }
@@ -470,9 +470,199 @@ a:hover {
   font-weight: 700;
 }
 
+#center-me {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+input {
+  font-family: "ff-enzo-web",sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 3px;
+  line-height: 22px;
+  padding: 6px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 3px solid rgba(0,0,0,0);
+  color: #002b37;
+}
+
+input:focus {
+  box-shadow: 0;
+  border: 3px solid $orange;
+  color: #002b37;
+  outline: none;
+}
+
+#mc-embedded-subscribe {
+  background-color: $orange;
+  color: #fff;
+  font-family: "ff-enzo-web",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  -webkit-transition: color .1s ease-in;
+  -moz-transition: color .1s ease-in;
+  -ms-transition: color .1s ease-in;
+  -o-transition: color .1s ease-in;
+  transition: color .1s ease-in;
+  -webkit-transition: background-color .1s ease-in;
+  -moz-transition: background-color .1s ease-in;
+  -ms-transition: background-color .1s ease-in;
+  -o-transition: background-color .1s ease-in;
+  transition: background-color .1s ease-in;
+}
+
+#mc-embedded-subscribe:hover {
+  background-color: $red-orange;
+  color: #fff;
+  /*border: 3px solid #fff;*/
+  -webkit-transition: color .2s ease-in;
+  -moz-transition: color .2s ease-in;
+  -ms-transition: color .2s ease-in;
+  -o-transition: color .2s ease-in;
+  transition: color .2s ease-in;
+  -webkit-transition: background-color .2s ease-in;
+  -moz-transition: background-color .2s ease-in;
+  -ms-transition: background-color .2s ease-in;
+  -o-transition: background-color .2s ease-in;
+  transition: background-color .2s ease-in;
+}
+
+a.btn.btn-outline-inverse.btn-lg:link,
+a.btn.btn-outline-inverse.btn-lg:visited {
+  color: #ffffff;
+}
+
+a.btn.btn-outline-inverse.btn-lg:hover {
+  color: #302e44;
+}
+
+
+a.btn-outline-inverse {
+  border-bottom: solid 3px #fff;
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn-outline-inverse {
+  font-family: "ff-enzo-web",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+  border-width: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  -webkit-transition: color .1s ease-in;
+  -moz-transition: color .1s ease-in;
+  -ms-transition: color .1s ease-in;
+  -o-transition: color .1s ease-in;
+  transition: color .1s ease-in;
+  -webkit-transition: background-color .1s ease-in;
+  -moz-transition: background-color .1s ease-in;
+  -ms-transition: background-color .1s ease-in;
+  -o-transition: background-color .1s ease-in;
+  transition: background-color .1s ease-in;
+}
+
+.btn-outline-inverse:hover {
+  background-color: #fff;
+  color: #073642;
+  -webkit-transition: color .2s ease-in;
+  -moz-transition: color .2s ease-in;
+  -ms-transition: color .2s ease-in;
+  -o-transition: color .2s ease-in;
+  transition: color .2s ease-in;
+  -webkit-transition: background-color .2s ease-in;
+  -moz-transition: background-color .2s ease-in;
+  -ms-transition: background-color .2s ease-in;
+  -o-transition: background-color .2s ease-in;
+  transition: background-color .2s ease-in;
+}
+
+a.btn-outline {
+  border-bottom: solid 3px $orange;
+  color: $white;
+  font-weight: 600;
+}
+
+.btn-outline {
+  font-family: "ff-enzo-web",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: $white;
+  background-color: $orange;
+  border-color: $orange;
+  border-width: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  -webkit-transition: color .1s ease-in;
+  -moz-transition: color .1s ease-in;
+  -ms-transition: color .1s ease-in;
+  -o-transition: color .1s ease-in;
+  transition: color .1s ease-in;
+  -webkit-transition: background-color .1s ease-in;
+  -moz-transition: background-color .1s ease-in;
+  -ms-transition: background-color .1s ease-in;
+  -o-transition: background-color .1s ease-in;
+  transition: background-color .1s ease-in;
+}
+
+.btn-outline:hover {
+  background-color: $red-orange;
+  color: #fff;
+  border-color: $red-orange;
+  -webkit-transition: color .2s ease-in;
+  -moz-transition: color .2s ease-in;
+  -ms-transition: color .2s ease-in;
+  -o-transition: color .2s ease-in;
+  transition: color .2s ease-in;
+  -webkit-transition: background-color .2s ease-in;
+  -moz-transition: background-color .2s ease-in;
+  -ms-transition: background-color .2s ease-in;
+  -o-transition: background-color .2s ease-in;
+  transition: background-color .2s ease-in;
+}
+
+.learn-more-btn {
+  padding: 0 18px;
+  background: #859900; /*brighter color: 97BE49*/
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  font: 700 14px/28px 'ff-enzo-web', sans-serif;
+  display: inline-block;
+  color: #fff !important;
+  cursor: pointer;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  text-shadow: none;
+  border-bottom: none !important;
+}
+
+.learn-more-btn:hover {
+  background:#DC322F;
+  -moz-transition:all 0.3s ease-in-out;
+  -webkit-transition:all 0.3s ease-in-out;
+  box-shadow:none;
+  -webkit-box-shadow:none;
+  -moz-box-shadow:none;
+  text-shadow:none;
+  color:#FFF;
+}
+
 .brought-to-you {
   display: inline-block;
-  width: 450px;
+  max-width: 450px;
   text-align: center;
   font-family: 'blanchcaps';
   font-size: 60px;
@@ -551,4 +741,5 @@ a:hover {
   font-size: 22px;
   line-height: 1em;
   color: lighten($blue-grey, 10%);
+  font-weight: 500;
 }
