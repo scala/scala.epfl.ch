@@ -170,6 +170,8 @@ a:hover {
 .entypo.heart:before{ content:'\2665'; color: $orange; font-style: normal;}
 .entypo.check:before{ content:'\2713'; color: $orange; font-style: normal;}
 .entypo.dash:before{ content:'\2796'; color: $orange; font-style: normal;}
+.entypo.location:before{ content:'\E724'; color: $orange; font-style: normal;}
+
 
 .blurb {
   text-align: center;
@@ -742,4 +744,90 @@ a.btn-outline {
   line-height: 1em;
   color: lighten($blue-grey, 10%);
   font-weight: 500;
+}
+
+
+.footer {
+  font-family: "ff-enzo-web",sans-serif;
+  position: relative;
+  z-index: 10;
+  color: #fff;
+  padding-top: 50px;
+}
+
+.copyright {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.2em;
+  /*font-family: "museo-slab", serif;*/
+  position: relative;
+  float: left;
+}
+
+.footer > p {
+  vertical-align: bottom;
+}
+
+.footer ul {
+  -moz-box-sizing: content-box;
+  float: left;
+  list-style: none outside none;
+  margin: 0;
+  padding: 10px 0 20px 0;
+  width: 188px;
+}
+
+.footer a:hover {
+  color: #orange;
+  text-decoration: none;
+}
+
+.footer li {
+  /*font-family: "museo-slab", serif;*/
+  text-align: left;
+}
+
+.footer ul:last-child {
+    padding-right: 0;
+}
+
+.footer ul li a,
+.footer ul li {
+    /*color: rgba(255, 255, 255, 0.7);*/
+    /*color: #839496;*/
+    font-weight: 600;
+    /*font-style: italic;*/
+    color: #95A5A6;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: none;
+    color: $orange;
+}
+
+.footer ul li h5 {
+    font-family: "cubanoregular", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.footer ul li h5 a {
+    font-size: 16px;
+    font-weight: 600;
+    opacity: 1;
+    border: none;
+}
+
+.scala-logo-footer {
+  position: relative;
+  float: right;
+  margin-top: 70px;
+  margin-right: 20px;
 }
