@@ -8,6 +8,7 @@ $orange:           #f26527;
 $red-orange:       #da4323;
 $white:            #ffffff;
 $blue-grey:        #668086;
+$middle-blue:      #224951;
 
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -31,6 +32,9 @@ $content-width:    800px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
+
+//
+$top-bar-height:   80px;
 
 
 // Use media queries like this:
@@ -81,12 +85,12 @@ a:hover {
   transition: color .2s ease-in;
 }
 
-.blue-stripe {
+.blue-stripe-top {
   position: relative;
   z-index: 100;
   background-color: #002b37;
   // margin-top: -40px;
-  min-height: 80px;
+  max-height: $top-bar-height;
 }
 
 .white-wrapper {
@@ -852,7 +856,8 @@ a.btn-outline {
 
 .page-container {
   position: relative;
-  background: #F2F5F8;
+  // background: #F2F5F8;
+  background: lighten($middle-blue, 70%);
 }
 
 .clearall {
@@ -894,7 +899,8 @@ a.btn-outline {
   float: left;
   position: relative;
   margin-left: 0px !important;
-  background: #F2F5F8;
+  background: lighten($middle-blue, 70%);
+  // background: #F2F5F8;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -940,4 +946,19 @@ a.btn-outline {
   content: "";
   clear: both;
   height: 0;
+}
+
+.scalacenter-logo {
+  padding-top: 10px;
+  height: $top-bar-height;
+}
+
+.tagline {
+  padding-top: 24px;
+  text-align: justify;
+  font-family: "ff-enzo-web", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  color: lighten($blue-grey, 12%);
 }
