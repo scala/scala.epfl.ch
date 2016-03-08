@@ -34,7 +34,7 @@ $on-palm:          600px;
 $on-laptop:        800px;
 
 //
-$top-bar-height:   80px;
+$top-bar-height:   106px;
 
 
 // Use media queries like this:
@@ -54,8 +54,7 @@ $top-bar-height:   80px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "frontpage"
+        "base"
 ;
 // @import
 //         "base",
@@ -949,16 +948,56 @@ a.btn-outline {
 }
 
 .scalacenter-logo {
-  padding-top: 10px;
+  padding-top: 16px;
   height: $top-bar-height;
+  padding-right: 20px;
 }
 
 .tagline {
-  padding-top: 24px;
+  margin-left: 18px;
+  padding-top: 34px;
   text-align: justify;
   font-family: "ff-enzo-web", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 22px;
   color: lighten($blue-grey, 12%);
+}
+
+.nav {
+  z-index: 40;
+  position: relative;
+  float: right;
+  list-style-type:none;
+  margin-top: 54px;
+  padding:0;
+}
+
+.nav > li > a {
+  display: block;
+}
+
+.nav > li > a:link,
+.nav > li > a:visited {
+  position: relative;
+  display:inline-block;
+}
+
+ul.nav > li > a {
+  text-shadow: none;
+}
+
+ul.nav > li#source-code > .toptip,
+ul.nav > li#scala-lang-twitter > .toptip {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+ul.nav > li#source-code > .toptip:after,
+ul.nav > li#scala-lang-twitter > .toptip:after {
+  border-top: 6px solid rgba(0, 0, 0, 0.3);
+}
+
+.navbar-default {
+  background-color: #002b37;
+  border: none;
 }
