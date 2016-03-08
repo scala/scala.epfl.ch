@@ -6,7 +6,7 @@
   <body>
 
   <div class="blue-stripe">
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-static-top">
       <div class="container">
         <div class="navbar-header">
           <div class="navbar-brand scalacenter-logo" style="float: left;"><a href="{{ site.baseurl }}/" style="border: none;"><img src="{{ site.baseurl }}/resources/img/scala-center-logo-top.png"></a></div>
@@ -17,22 +17,13 @@
   </div>
 
     <div class="page-container">
-      <div class="container" style="min-height: 540px;">
+      <div class="container" style="margin-top: -48px; min-height: 540px;">
         <div class="row">
-          <div class="col-md-8">
-              <div class="main-page-column">
-                <div class="content">
+          <div class="col-md-8 main-content">
                   {{ content }}
-                </div>
-              </div>
           </div>
-          <div class="col-md-4">
-              <div class="sidebar">
-                <div class="sidebar-inner">
+          <div class="col-md-4 sidebar">
                   {{ content }}
-                </div>
-              </div>
-              <div style="clear:both"></div>
           </div>
         </div>
       </div>

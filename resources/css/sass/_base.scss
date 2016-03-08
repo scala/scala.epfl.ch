@@ -16,7 +16,14 @@ dl, dd, ol, ul, figure {
 body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
-    background-color: $background-color;
+    // background-color: $background-color;
+    background: linear-gradient(
+      to right,
+      #fff 0%,
+      #fff 50%,
+      #e4f1f4 50%,
+      #e4f1f4 100%
+    );
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
     -moz-font-feature-settings: "kern" 1;
