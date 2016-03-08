@@ -81,6 +81,24 @@ a:hover {
   transition: color .2s ease-in;
 }
 
+.blue-stripe {
+  position: relative;
+  z-index: 100;
+  background-color: #002b37;
+  // margin-top: -40px;
+  min-height: 80px;
+}
+
+.white-wrapper {
+  position: relative;
+  z-index: 100;
+  background-color: #fff;
+}
+
+.main {
+  background-color: #fff;
+}
+
 .no-border {
   border-bottom: none;
 }
@@ -830,4 +848,96 @@ a.btn-outline {
   float: right;
   margin-top: 70px;
   margin-right: 20px;
+}
+
+.page-container {
+  position: relative;
+  background: #F2F5F8;
+}
+
+.clearall {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+.main-page-column {
+  position: relative;
+  height: 100%;
+  float: left;
+  display: block;
+  max-width: 610px;
+  background: white;
+  padding-top: 24px;
+  padding-left: 9999em;
+  margin-left: -9999em;
+  padding-top: 28px;
+  padding-right: 780px;
+  line-height: 20px;
+  z-index: 100;
+  margin-right: 0px;
+  min-height: 540px;
+  padding-bottom: 50px;
+  line-height: 1.5em;
+}
+
+.sidebar {
+  width: 300px;
+  min-height: 100%;
+  min-height: 540px;
+  height: 100%;
+  display: inline;
+  float: left;
+  position: relative;
+  margin-left: 0px !important;
+  background: #F2F5F8;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  // padding: 24px 9999em 72px 20px;
+  padding-bottom: 50px;
+  position: relative;
+  // margin-right: -9999em;
+  top: auto;
+  bottom: auto;
+  /*padding-bottom:100%;*/
+  /*margin-bottom:-100%;*/
+}
+
+.sidebar-inner {
+  width: 320px;
+  padding: 30px;
+  padding-top: 18px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .sidebar {
+        margin-left: 0px !important;
+    }
+    html.safari .sidebar,
+    html.chrome25 .sidebar {
+        margin-left: 640px !important;
+    }
+
+    .section .search .sidebar,
+    .section-users .sidebar {
+        margin-left: 0 !important;
+    }
+}
+
+.clearfix {
+  display: block;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: "";
+  clear: both;
+  height: 0;
 }

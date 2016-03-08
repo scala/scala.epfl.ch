@@ -5,15 +5,38 @@
 
   <body>
 
-    {% include header.html %}
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          {{ content }}
+    <div class="blue-stripe">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <img src="{{ site.baseurl }}/resources/img/scala-center-logo-top.png">
+            <div class="scalacenter-logo"></div>
+            For open source. For education.
+          </div>
         </div>
       </div>
     </div>
+
+    <div class="page-container">
+      <div class="container" style="min-height: 540px;">
+        <div class="row">
+          <div class="col-md-8">
+              <div class="main-page-column">
+                {{ content }}
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="sidebar">
+                <div class="sidebar-inner">
+                  <div class="contents">Contents</div>
+                </div>
+              </div>
+              <div style="clear:both"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     {% include footer.html %}
 

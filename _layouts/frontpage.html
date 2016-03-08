@@ -14,7 +14,6 @@
             <img src="{{ site.baseurl }}/resources/img/scala-center-logo.png">
             <div class="scalacenter-logo"></div>
             For open source. For education.
-            {{ content }}
           </div>
         </div>
       </div>
@@ -245,6 +244,13 @@
 
     {% include footer.html %}
 
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        // background image on frontpage
+        $(".splash").backstretch("{{ site.baseurl }}/resources/img/lakegeneva-gradientmapped.jpg");
+      });
+    </script>
   </body>
 
 </html>
