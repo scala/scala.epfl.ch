@@ -19,7 +19,7 @@ other activities.
 
 The Scala Center brings together a coalition of individuals and organizations
 working together to contribute to Scala.  All of our members, individual and
-corporate, are actively involved in the Scala project. 
+corporate, are actively involved in the Scala project.
 
 
 ### How can I support the Scala Center?
@@ -33,7 +33,8 @@ or by contributing code back to Scala. Anything helps.
 Again, [Get involved](http://scala-lang.org/contribute/)! Allow your developers to
 spend some time giving back to Scala and its ecosystem.
 
-You may also be interested in becoming a corporate sponsor/member.
+You may also be interested in
+[becoming a corporate sponsor/member]({{site.baseurl }}/corporate-membership.html).
 
 ### Does the Scala Center control the development of Scala?
 
