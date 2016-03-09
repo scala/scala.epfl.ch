@@ -339,6 +339,7 @@ a:hover {
 
 .moocs-benefits,
 .new-moocs,
+.open-source-goals,
 .course-list {
   max-width: 420px;
   list-style: none;
@@ -361,6 +362,11 @@ a:hover {
 .new-moocs > li,
 .course-list > li {
   margin: 8px 0;
+  line-height: 1.2em;
+}
+
+.open-source-goals > li {
+  margin: 10px 0;
   line-height: 1.2em;
 }
 
@@ -1178,4 +1184,11 @@ code {
   padding-bottom: 24px;
   letter-spacing: -1px;
   color: $white;
+}
+
+.improve {
+  font-family: "ff-enzo-web", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
 }
