@@ -1130,7 +1130,7 @@ ul.nav > li#scala-lang-twitter > .toptip:after {
 .main-content > ul > li {
   list-style: disc;
   line-height: 1.3em;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 /*.main-content a:link,
@@ -1166,4 +1166,16 @@ code {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
+}
+
+.sect-header {
+  text-align: center;
+  font-family: "ff-enzo-web", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 58px;
+  margin-top: 20px;
+  padding-bottom: 24px;
+  letter-spacing: -1px;
+  color: $white;
 }
