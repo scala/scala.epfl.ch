@@ -7,7 +7,7 @@ layout: page
 
 ### What is the Scala Center?
 
-The Scala Center will act as an open source foundation for Scala. It is a unit
+The Scala Center acts as an open source foundation for Scala. It is a unit
 within [EPFL](http://epfl.ch), a world-class research university in Lausanne,
 Switzerland.
 

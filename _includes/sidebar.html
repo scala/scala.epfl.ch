@@ -2,14 +2,18 @@
 
 1CHF &cong; $1USD
 <select id="donate-amount">
-  <option value="100chf">100CHF</option>
-  <option value="250chf">250CHF</option>
-  <option value="500chf">500CHF</option>
-  <option value="1000chf">1000CHF</option>
-  <option value="1500chf">1500CHF</option>
+  <option value="100">100CHF</option>
+  <option value="250">250CHF</option>
+  <option value="500">500CHF</option>
+  <option value="1000">1000CHF</option>
+  <option value="1500">1500CHF</option>
   <option value="other">Other amount</option>
 </select>
-<div id="showthis" >You selected other!</div>
+<div id="showthis" >
+  <form>
+    <input type="text" id="other-amount">
+  </form>
+</div>
 
 <button id="donate-button">Donate</button>
 
@@ -30,14 +34,17 @@
     }
   });
 
-  $('#customButton').on('click', function(e) {
+  $('#donate-button').on('click', function(e) {
+    var amnt = ($('#donate-amount').val() == 'other') ? $('#other-amount').val() : $('#donate-amount').val();
+    alert(amnt);
+
     // Open Checkout with further options
     handler.open({
       name: 'The Scala Center',
       description: '2 widgets',
       zipCode: true,
       currency: "chf",
-      amount: 2000
+      amount: amnt * 100 // because amount is expected to be in cents
     });
     e.preventDefault();
   });
