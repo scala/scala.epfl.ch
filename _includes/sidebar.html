@@ -17,7 +17,7 @@
 
 <button id="donate-button">Donate</button>
 
-<script>
+<script type="text/javascript">
   $('#showthis').hide();
   $('#donate-amount').change(function(){
       var show = $(this).val() == 'other';
@@ -31,12 +31,46 @@
     token: function(token) {
       // Use the token to create the charge with a server-side script.
       // You can access the token ID with `token.id`
+      // Access-Control-Allow-Origin: http://localhost:5000
+
+      alert($(this).amount);
+
+      var data = new Object();
+      data.token = token.id;
+      data.amount = $(this).amount;
+      data.misc = "misc field";
+      var json = JSON.stringify(data);
+
+      // $.ajax({
+      //   type: "POST",
+      //   url: "http://localhost:5000",
+      //   data: token.id,
+      //   dataType: 'text',
+      //   success: function() { alert("Success"); },
+      //   error: function() { alert('Failed!'); }
+      // });
+
+      var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "http://localhost:5000/",
+        "method": "POST",
+        "contentType": "application/json",
+        "headers": {
+          "cache-control": "no-cache",
+          "postman-token": "ee691c14-c6f8-e7e5-0d1e-0514df063d30"
+        },
+        "data": json
+      }
+
+      $.ajax(settings).done(function (response) {
+        console.log(response);
+      });
     }
   });
 
   $('#donate-button').on('click', function(e) {
     var amnt = ($('#donate-amount').val() == 'other') ? $('#other-amount').val() : $('#donate-amount').val();
-    alert(amnt);
 
     // Open Checkout with further options
     handler.open({
@@ -44,7 +78,7 @@
       description: '2 widgets',
       zipCode: true,
       currency: "chf",
-      amount: amnt * 100 // because amount is expected to be in cents
+      amount: amnt * 100 // because amount is expected to be in rappen
     });
     e.preventDefault();
   });
