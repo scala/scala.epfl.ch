@@ -12,6 +12,12 @@ Make a one-time donation to the Scala Center.
 class="highlighter-rouge">scala.center@epfl.ch</code> if you'd like to turn your
 one-time donation into a monthly or yearly recurring donation. </div>
 
+<div id="charge-error" class="alert alert-danger" style="margin-top: 14px;">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Something went wrong...</strong>
+  <p id="what-happened">here</p>
+</div>
+
 ### Why contribute?
 
 Our main focus is to improve the experience of developing in Scala. This means

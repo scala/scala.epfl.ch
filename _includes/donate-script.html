@@ -21,6 +21,10 @@
 
 <script type="text/javascript">
 
+  $(document).ready(function() {
+      $("#charge-error").hide();
+  });
+
   $("form :input").keyup(function() {
       $(this).closest('form').parsley().validate();
   });
@@ -79,15 +83,20 @@
         "method": "POST",
         "contentType": "application/json",
         "headers": {
-          "cache-control": "no-cache",
-          "postman-token": "ee691c14-c6f8-e7e5-0d1e-0514df063d30"
+          "cache-control": "no-cache"
         },
         "data": json
       }
 
-      $.ajax(settings).done(function (response) {
-        console.log(response);
-      });
+      $.ajax(settings)
+        .done(function (response) {
+          console.log(response);
+          window.location.replace("{{ site.baseurl }}/thank-you.html");
+        })
+        .fail(function(XMLHttpRequest, textStatus, errorThrown) {
+          $("#charge-error").show();
+          $("#what-happened").text("<br />" + textStatus + "<br />" + errorThrown + "<br />Please try again or contact scala.center@epfl.ch for help!");
+        });
     }
   });
 
