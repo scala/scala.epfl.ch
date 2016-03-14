@@ -1348,3 +1348,10 @@ input.parsley-error, select.parsley-error, textarea.parsley-error {
   margin-top: 32px;
   float: right;
 }
+
+.recurring {
+  padding-top: 12px;
+  color: $blue-grey;
+  font-style: italic;
+  font-size: 16px;
+}

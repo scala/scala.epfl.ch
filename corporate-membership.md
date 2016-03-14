@@ -39,9 +39,9 @@ membership: Advisory Board, and Affiliate.
 - Affiliate: organizations that are moderately invested in Scala, invited to join at the 15,000CHF level.
 
 Organizations that are unable to join at the above levels may consider making a
-one-time or recurring gift totalling 1,500CHF or more. With this contribution,
-you will be recognized as a Leadership-level donor alongside of Advisory Board
-and Affiliate members on the Scala Center homepage.
+contribution totalling 1,500CHF or more. With this contribution, you will be
+recognized as a Backer-level donor alongside of Advisory Board and Affiliate
+members on the Scala Center homepage.
 
 ### Benefits
 
