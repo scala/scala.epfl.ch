@@ -122,9 +122,11 @@ a:hover {
   font-style: normal;
   font-weight: 100;
   font-size: 42px;
-  padding-top: 300px;
 }
 
+.inner-splash {
+  padding-top: 260px;
+}
 
 .circular {
   margin-left: auto;
@@ -1287,4 +1289,57 @@ input.parsley-error, select.parsley-error, textarea.parsley-error {
   font-size: 16px;
   font-style: italic;
   font-weight: 400;
+}
+
+.chfusd {
+  font-family: "ff-enzo-web",sans-serif;
+  color: $blue-grey;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.frontpage-nav {
+  z-index: 100;
+  position: relative;
+  float: right;
+}
+
+.frontpage-nav > ul {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    // margin-top: 6px;
+    padding: 0;
+    overflow: hidden;
+    font-family: "ff-enzo-web",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.frontpage-nav > ul > li {
+    display: inline;
+    float: left;
+}
+
+.frontpage-nav > ul > li > a {
+    display: block;
+    padding: 8px;
+    padding-top: 23px;
+    padding-right: 24px;
+    color: lighten($blue-grey, 10%);
+    // color: rgba(255, 255, 255, 0.8);
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+}
+
+.frontpage-nav > ul > li > a:hover {
+  text-decoration: none;
+  color: $red-orange;
+  -webkit-transition: color .2s ease-in;
+  -moz-transition: color .2s ease-in;
+  -ms-transition: color .2s ease-in;
+  -o-transition: color .2s ease-in;
+  transition: color .2s ease-in;
 }

@@ -5,8 +5,25 @@
 
   <body>
 
+
+
     <div class="splash">
       <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="frontpage-nav">
+              <ul>
+                <li><a href="{{ site.baseurl }}/faqs.html">FAQs</a></li>
+                <li><a href="{{ site.baseurl }}/individual-membership.html">Donate</a></li>
+              </ul>
+              <a href="https://twitter.com/scala_lang" style="border: none;"><img src="{{ site.baseurl }}/resources/img/twitter-logo-white.png"></a>
+              &nbsp;
+              <a href="https://github.com/scala/scala" style="border: none;"><img src="{{ site.baseurl }}/resources/img/github-logo.png"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container inner-splash">
         <div class="row">
           <div class="col-md-12">
             <img src="{{ site.baseurl }}/resources/img/scala-center-logo.png">
@@ -37,8 +54,13 @@
           <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-4">
-              <div class="focused-on-elem"><span class="num">1.</span> Open Source Community</div>
-              <div class="focused-on-elem"><span class="num">2.</span> Education</div>
+              <div class="centered">
+                <a class="btn btn-outline btn" href="{{ site.baseurl }}/index.html#open-source">Open Source</a>
+                &nbsp;
+                <a class="btn btn-outline btn" href="{{ site.baseurl }}/index.html#education">Education</a>
+              </div>
+              <!-- <div class="focused-on-elem"><span class="num">1.</span> Open Source</div>
+              <div class="focused-on-elem"><span class="num">2.</span> Education</div> -->
             </div>
             <div class="col-md-4"></div>
           </div>
@@ -70,7 +92,7 @@
     </div>
 
     <div class="dark-blue-stripe">
-      <div class="vertical-spacer-top"></div>
+      <div class="vertical-spacer-top" id="open-source"></div>
       <div class="open-source">
         <div class="container">
           <div class="row">
@@ -110,7 +132,7 @@
     </div>
 
     <div class="light-blue-stripe">
-      <div class="vertical-spacer-top"></div>
+      <div class="vertical-spacer-top" id="education"></div>
       <div class="education">
         <div class="container">
           <div class="row">
@@ -118,18 +140,18 @@
             <div class="col-md-6 centered">
               <div class="title">Education</div>
               <!-- <div class="sect-header">Education</div> -->
-              <div class="moocs-coursera">Our Scala MOOCs on Coursera</div>
+              <!-- <div class="moocs-coursera">Our Scala MOOCs on Coursera</div> -->
             </div>
             <div class="col-md-3"></div>
           </div>
           <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6 centered">
-              <ul class="moocs-benefits">
+              <!-- <ul class="moocs-benefits">
                 <li><span class="entypo check"></span> have over <span class="orange w500">400,000 registrations</span> to date.</li>
                 <li><span class="entypo check"></span> have the <span class="orange w500">highest completion rates</span> across all MOOCs their size</li>
                 <li><span class="entypo check"></span> serve as the main educational resource for learning Scala</li>
-              </ul>
+              </ul> -->
               <div class="coming-soon">Coming soon...</div>
               <div class="mini-degree">A new Scala mini-degree offered on Coursera</div>
               <div class="what-is-mini-degree">
