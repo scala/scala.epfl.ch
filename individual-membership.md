@@ -4,9 +4,8 @@ layout: page
 
 ## Support the Scala Center!
 
-### Help us
+Make a one-time donation to the Scala Center.
 
-Contribute a one-time
 {% include donate-script.html %}
 
 <div class="recurring"> Email us at <code
