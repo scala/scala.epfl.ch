@@ -1,7 +1,7 @@
 <script src="https://checkout.stripe.com/checkout.js"></script>
 
 1CHF &cong; $1USD
-<select id="donate-amount">
+<select id="donate-amount" class="form-control">
   <option value="100">100CHF</option>
   <option value="250">250CHF</option>
   <option value="500">500CHF</option>
@@ -18,6 +18,7 @@
 <button class="btn btn-outline btn" id="donate-button">Donate</button>
 
 <script type="text/javascript">
+
   $("form :input").keyup(function() {
       $(this).closest('form').parsley().validate();
   });
@@ -94,6 +95,7 @@
     // Open Checkout with further options
     handler.open({
       name: 'The Scala Center',
+      description: "one-time donation",
       zipCode: true,
       billingAddress: true,
       currency: "chf",
