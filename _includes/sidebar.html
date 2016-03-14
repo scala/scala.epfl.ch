@@ -10,19 +10,33 @@
   <option value="other">Other amount</option>
 </select>
 <div id="showthis" >
-  <form>
-    <input type="text" id="other-amount">
+  <form id="donate">
+    <input data-parsley-type="number" data-parsley-type="integer" min="5" data-parsley-min="5" data-parsley-trigger="keyup" id="other-amount">
   </form>
 </div>
 
 <button id="donate-button">Donate</button>
 
 <script type="text/javascript">
+  $("form :input").keyup(function() {
+      $(this).closest('form').parsley().validate();
+  });
+
   $('#showthis').hide();
   $('#donate-amount').change(function(){
       var show = $(this).val() == 'other';
       $('#showthis').toggle(show);
+      $('#donate-button').prop('disabled', show);
   });
+
+  $('#donate').parsley().on('field:validated', function() {
+    $('#donate-button').prop('disabled', false);
+  });
+
+  function getAmount() {
+    var amt = ($('#donate-amount').val() == 'other') ? $('#other-amount').val() : $('#donate-amount').val();
+    return amt * 100; // because amount is expected to be in rappen
+  }
 
   var handler = StripeCheckout.configure({
     key: 'pk_test_wG81vQhDff5ErZXKZ4Uiyjgm',
@@ -31,14 +45,10 @@
     token: function(token) {
       // Use the token to create the charge with a server-side script.
       // You can access the token ID with `token.id`
-      // Access-Control-Allow-Origin: http://localhost:5000
-
-      alert($(this).amount);
 
       var data = new Object();
       data.token = token.id;
-      data.amount = $(this).amount;
-      data.misc = "misc field";
+      data.amount = getAmount().toString();
       var json = JSON.stringify(data);
 
       // $.ajax({
@@ -53,7 +63,7 @@
       var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "http://localhost:5000/",
+        "url": "https://scalacenter-donations.herokuapp.com/",
         "method": "POST",
         "contentType": "application/json",
         "headers": {
@@ -70,15 +80,15 @@
   });
 
   $('#donate-button').on('click', function(e) {
-    var amnt = ($('#donate-amount').val() == 'other') ? $('#other-amount').val() : $('#donate-amount').val();
+    var amnt = getAmount();
 
     // Open Checkout with further options
     handler.open({
       name: 'The Scala Center',
-      description: '2 widgets',
       zipCode: true,
+      billingAddress: true,
       currency: "chf",
-      amount: amnt * 100 // because amount is expected to be in rappen
+      amount: amnt
     });
     e.preventDefault();
   });
