@@ -669,6 +669,22 @@ a.btn-outline {
   transition: background-color .2s ease-in;
 }
 
+.btn-outline:disabled {
+  background-color: $blue-grey;
+  color: #fff;
+  border-color: $blue-grey;
+  -webkit-transition: color .2s ease-in;
+  -moz-transition: color .2s ease-in;
+  -ms-transition: color .2s ease-in;
+  -o-transition: color .2s ease-in;
+  transition: color .2s ease-in;
+  -webkit-transition: background-color .2s ease-in;
+  -moz-transition: background-color .2s ease-in;
+  -ms-transition: background-color .2s ease-in;
+  -o-transition: background-color .2s ease-in;
+  transition: background-color .2s ease-in;
+}
+
 .learn-more-btn {
   padding: 0 18px;
   background: #859900; /*brighter color: 97BE49*/
@@ -1195,6 +1211,30 @@ code {
   font-style: normal;
   font-weight: 300;
   font-size: 32px;
+}
+
+input#donate {
+  font-family: "ff-enzo-web",sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 3px;
+  line-height: 22px;
+  padding: 6px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 3px solid rgba(0,0,0,0);
+  color: #002b37;
+  background-color: #e4f1f4;
+}
+
+input#donate:focus {
+  box-shadow: 0;
+  border: 3px solid $orange;
+  color: #002b37;
+  outline: none;
 }
 
 input.parsley-success, select.parsley-success, textarea.parsley-success {

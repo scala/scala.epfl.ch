@@ -28,6 +28,8 @@ corporate, are actively involved in the Scala project.
 your own open source Scala library to contribute to the overall Scala ecosystem,
 or by contributing code back to Scala. Anything helps.
 
+You may also be interested in
+
 ### How can my company support the Scala Center?
 
 Again, [Get involved](http://scala-lang.org/contribute/)! Allow your developers to
