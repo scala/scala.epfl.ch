@@ -47,8 +47,8 @@ stable Scala distribution.
 ### Who owns Scala's code?
 
 Scala is owned by EPFL. Contributors to Scala own their own contributions and
-allow us to distribute that code under [Scala's BSD
-license](http://scala-lang.org/license.html).
+allow us to distribute that code under [Scala's BSDlicense](http://scala-lang.org/license.html) by
+signing our [Contributors License Agreement (CLA)](https://www.lightbend.com/contribute/cla/scala).
 
 ### Have more questions?
 
