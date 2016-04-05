@@ -11,9 +11,9 @@ The Scala Center acts as an open source foundation for Scala. It is a unit
 within [EPFL](http://epfl.ch), a world-class research university in Lausanne,
 Switzerland.
 
-Like other open source foundations, its goals are promote, support, and advance
+Like other open source foundations, its goals are to promote, support, and advance
 Scala. It will engage with developers in the open-source community in the effort
-to improve the language, its tools and its documentation. It will also help
+to improve the language, its tools and its documentation. The center will also help
 developers learn the language through massive open online courses, seminars and
 other activities.
 
