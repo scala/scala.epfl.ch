@@ -27,7 +27,7 @@ this vision, including:
 ### How do I become a member?
 
 Reach out to us at `scala.center@epfl.ch` to let us know what level of
-membership your organiation is interested in, and any questions you may have.
+membership your organization is interested in, and any questions you may have.
 We're happy to set up a call to work through the specifics!
 
 ### Dues
