@@ -1089,8 +1089,10 @@ ul.nav > li#scala-lang-twitter > .toptip:after {
 }
 
 .main-content > h4 {
-  font-size: 19px;
-  color: #073642;
+  font-size: 22px;
+  // color: #073642;
+  color: $blue-grey;
+  font-weight: 600;
   font-family: 'ff-enzo-web', sans-serif;
   text-transform: uppercase;
   margin-bottom: 4px;

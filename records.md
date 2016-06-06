@@ -9,4 +9,4 @@ layout: page
 
 ### Board meeting minutes
 
-Will appear here after our first meeting.
+- [May 9, 2016 - First SC Advisory Board Meeting](/minutes/2016/06/06/may-9-2016.html)
