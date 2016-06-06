@@ -1376,3 +1376,19 @@ input.parsley-error, select.parsley-error, textarea.parsley-error {
     margin: 0 auto;
     pointer-events: all;
 }
+
+.backer-level > a {
+  text-align: center;
+  min-height: 540px;
+  font-family: "ff-enzo-web", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 28px;
+  color: #fff;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.backer-level > a:hover {
+  color: $orange;
+}
