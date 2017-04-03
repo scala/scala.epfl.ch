@@ -231,6 +231,7 @@
 
 .navbar-nav {
   margin: ($navbar-padding-vertical / 2) (-$navbar-padding-horizontal);
+  font-weight: bold;
 
   > li > a {
     padding-top:    10px;
