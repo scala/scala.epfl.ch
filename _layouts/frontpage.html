@@ -8,77 +8,68 @@
 
 
     <div class="splash">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="frontpage-nav">
-              <ul>
+      <div class=" navbar navbar-default" style="background-color: transparent;">
+        <div class="container">
+            <div class="frontpage-nav collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="{{ site.baseurl }}/projects.html">Projects</a></li>
+                <li><a href="{{ site.baseurl }}/team.html">Team</a></li>
                 <li><a href="{{ site.baseurl }}/faqs.html">FAQs</a></li>
                 <li><a href="{{ site.baseurl }}/individual-membership.html">Donate</a></li>
               </ul>
-              <a href="https://twitter.com/scala_lang" style="border: none;"><img src="{{ site.baseurl }}/resources/img/twitter-logo-white.png"></a>
-              &nbsp;
-              <a href="https://github.com/scala/scala" style="border: none;"><img src="{{ site.baseurl }}/resources/img/github-logo.png"></a>
+            </div>
+        </div>
+      </div>
+      <div class="container small inner-splash" style="margin-top: 135px;">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div class="swirl">
+              <img src="{{ site.baseurl }}/resources/img/scala-center-swirl.png">
+            </div>
+            <div class="swirl-text">
+              <h1><b>scala</b>center</h1>
+              <div>
+                For open source. For education.
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="container inner-splash">
+      <div class="container small">
+        <div class="vertical-spacer-top"></div>
         <div class="row">
-          <div class="col-md-12">
-            <img src="{{ site.baseurl }}/resources/img/scala-center-logo.png">
-            <br/>
-            For open source. For education.
+          <div class="col-md-12 text-center">
+            <h2>
+              Objectives
+            </h2>
+            <div class="objectives">
+              A new not-for-profit center established at EPFL.<br/>
+              <b>Focused on:</b>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <a class="btn btn-default btn" href="#open-source">Open Source</a>
+            &nbsp;
+            <a class="btn btn-default btn" href="#education">Education</a>
           </div>
         </div>
       </div>
+      <div class="vertical-spacer-bottom"></div>
     </div>
+
+
 
 
     <div class="dark-blue-stripe">
-      <div class="blurb">
-        <div class="container">
-          <div class="vertical-spacer-top"></div>
-          <div class="row">
-            <div class="col-md-12">
-              A new <span class="heavy">not-for-profit</span> center</br>established at EPFL.
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-6 focused-on">
-              <span class="heavy">Focused on:</span>
-            </div>
-            <div class="col-md-3"></div>
-          </div>
-          <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
-              <div class="centered">
-                <a class="btn btn-outline btn" href="#open-source">Open Source</a>
-                &nbsp;
-                <a class="btn btn-outline btn" href="#education">Education</a>
-              </div>
-              <!-- <div class="focused-on-elem"><span class="num">1.</span> Open Source</div>
-              <div class="focused-on-elem"><span class="num">2.</span> Education</div> -->
-            </div>
-            <div class="col-md-4"></div>
-          </div>
-        </div>
-        <div class="vertical-spacer-bottom"></div>
-      </div>
-    </div>
-
-    <div class="light-blue-stripe">
       <div class="vertical-spacer-top"></div>
       <div class="mission">
         <div class="container">
           <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-6 centered">
-              <div class="title">Our Mission</div>
-              </br>
-              <ul>
+            <div class="col-md-6 centered col-md-offset-3">
+              <h2>Our Missions</h2>
+              <ul class="red">
                 <li>Independently guide and support the Scala community</li>
                 <li>Coordinate and develop open source libraries and tools for the benefit of all Scala users</li>
                 <li>Provide deep, and quality, educational materials for Scala</li>
@@ -86,7 +77,6 @@
               <br/>
               <div class="centered"><a class="btn btn-outline btn" href="http://scala-lang.org/blog/2016/03/14/announcing-the-scala-center.html">See the blog article</a></div>
             </div>
-            <div class="col-md-3"></div>
           </div>
         </div>
       </div>
