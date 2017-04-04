@@ -5,42 +5,10 @@
 
   <body>
 
-  <div class="blue-stripe">
-    <nav class="navbar navbar-default navbar-static-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="frontpage-nav">
-              <ul>
-                <li><a href="{{ site.baseurl }}/faqs.html" style="padding-top: 36px;">FAQs</a></li>
-                <li><a href="{{ site.baseurl }}/individual-membership.html" style="padding-top: 36px;">Donate</a></li>
-              </ul>
-              <div class="social">
-                <a href="https://twitter.com/scala_lang" style="border: none;"><img src="{{ site.baseurl }}/resources/img/twitter-logo-white.png"></a>
-                &nbsp;
-                <a href="https://github.com/scala/scala" style="border: none;"><img src="{{ site.baseurl }}/resources/img/github-logo.png"></a>
-              </div>
-            </div>
-            <div class="navbar-header">
-              <div class="navbar-brand scalacenter-logo" style="float: left;"><a href="{{ site.baseurl }}/" style="border: none;"><img src="{{ site.baseurl }}/resources/img/scala-center-logo-top.png"></a></div>
-              <div class="tagline hidden-xs" style="float: left;">For open source. For education.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </div>
-
-    <div class="page-container">
-      <div class="container" style="margin-top: -48px; min-height: 540px;">
-        <div class="row">
-          <div class="col-md-8 main-content">
-            {{ content }}
-          </div>
-          <div class="col-md-4 sidebar">
-            {% include sidebar.html %}
-          </div>
-        </div>
+  <div id="wrap">
+    {% include navbar.html %}
+    <div id="main" class="container clear-top">
+        {{ content }}
       </div>
     </div>
 
