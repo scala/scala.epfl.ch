@@ -151,6 +151,7 @@ h2 {
   background-color: rgba(34, 73, 81, 1);
   min-height: 140px;
   font-size: 24px;
+  padding-bottom: 90px;
 }
 
 .light-grey-stripe {
@@ -158,9 +159,13 @@ h2 {
   position: relative;
   min-height: 140px;
   font-size: 24px;
+  color: #15414c;
 
   h2 {
     color: #15414c;
+    &:before, &:after {
+      background-color: #cad3d4;
+    }
   }
 
   h3 {
@@ -168,6 +173,41 @@ h2 {
     font-weight: bold;
     line-height: 1.42;
     color: #15414c;
+  }
+
+  .the-courses {
+    font-weight: bold;
+    line-height: 1.42;
+    margin-bottom: 40px;
+  }
+
+  ul.course-list {
+    list-style: none;
+    padding: 0;
+
+    li {
+      background-color: #fff;
+      border-radius: 3px;
+      padding: 24px;
+      margin: 0 0 40px 0;
+
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.42;
+        color: #15414c;
+        margin-bottom: 10px;
+      }
+
+      .description {
+        font-size: 20px;
+        color: #f1592a;
+
+        em {
+          font-style: italic;
+        }
+      }
+    }
   }
 }
 
