@@ -99,6 +99,32 @@ $top-bar-height:   106px;
   }
 }
 
+.header-logo {
+  .swirl {
+    display: inline-block;
+    img {
+      height: 50px;
+      margin: auto;
+      display: block;
+      margin-right: 12px;
+    }
+  }
+
+  .swirl-text {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 17px;
+    h1 {
+      font-size: 36px;
+      line-height: 42px;
+      margin-top: 3px;
+      margin-bottom: 0px;
+      font-weight: normal;
+      display: inline-block;
+    }
+  }
+}
+
 h2 {
   font-size: 36px;
   font-weight: normal;
