@@ -20,9 +20,9 @@
             </div>
         </div>
       </div>
-      <div class="container small inner-splash" style="margin-top: 135px;">
+      <div class="container inner-splash" style="margin-top: 135px;">
         <div class="row">
-          <div class="col-md-12 text-center">
+          <div class="col-md-6 col-md-offset-3 text-center">
             <div class="swirl">
               <img src="{{ site.baseurl }}/resources/img/scala-center-swirl.png">
             </div>
@@ -35,10 +35,10 @@
           </div>
         </div>
       </div>
-      <div class="container small">
+      <div class="container">
         <div class="vertical-spacer-top"></div>
         <div class="row">
-          <div class="col-md-12 text-center">
+          <div class="col-md-6 col-md-offset-3 text-center">
             <h2>
               Objectives
             </h2>
@@ -56,7 +56,7 @@
           </div>
         </div>
       </div>
-      <div class="vertical-spacer-bottom"></div>
+      <div class="vertical-spacer-bottom gradient"></div>
     </div>
 
 
@@ -74,49 +74,10 @@
                 <li>Coordinate and develop open source libraries and tools for the benefit of all Scala users</li>
                 <li>Provide deep, and quality, educational materials for Scala</li>
               </ul>
-              <br/>
-              <div class="centered"><a class="btn btn-outline btn" href="http://scala-lang.org/blog/2016/03/14/announcing-the-scala-center.html">See the blog article</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="vertical-spacer-bottom"></div>
-    </div>
-
-    <div class="dark-blue-stripe">
-      <div class="vertical-spacer-top" id="open-source"></div>
-      <div class="open-source">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-6 centered">
-              <!-- <div class="sect-header">Open Source</div> -->
-              <div class="title">Open Source</div>
-              <div class="improve">Let's improve Scala together.</div>
-              <br /><br />
-              <div class="moocs-coursera">The Scala Center seeks to:</div>
-              <ul class="open-source-goals">
-                <li><span class="entypo dash"></span>  Coordinate and direct the open source development of libraries/tools of broad benefit to the community.</li>
-                <li><span class="entypo dash"></span>  Substantially grow our community of open source contributors.</li>
-                <li><span class="entypo dash"></span>  Improve the landscape of Scala's libraries.</li>
-                <li><span class="entypo dash"></span>  Provide scaffolding to help the community develop, publish, find, and evaluate Scala libraries.</li>
-              </ul>
-              <br /><br />
-            </div>
-            <div class="col-md-3"></div>
-          </div>
-          <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8 centered">
-              <div class="founding-blurb">
-                We'll start by consulting with the user community, defining common
-                goals, and organizing contributions and its own resources to achieve
-                these goals.
+              <div class="text-center">
+                <a class="btn btn-default btn" href="http://scala-lang.org/blog/2016/03/14/announcing-the-scala-center.html">See the blog article</a>
               </div>
-              <br /><br />
-              <div class="centered"><a class="btn btn-outline btn" href="{{ site.baseurl }}/contact.html">Join the Discussion</a></div>
             </div>
-            <div class="col-md-2"></div>
           </div>
         </div>
       </div>
@@ -124,6 +85,37 @@
     </div>
 
     <div class="light-blue-stripe">
+      <div class="vertical-spacer-top" id="open-source"></div>
+      <div class="open-source">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12"><h2>Open Source</h2></div>
+            <div class="col-md-6 col-md-offset-3 centered">
+              <!-- <div class="sect-header">Open Source</div> -->
+              <div class="improve">Let's improve Scala together. The Scala Center seeks to:</div>
+              <ul class="red">
+                <li>Coordinate and direct the open source development of libraries/tools of broad benefit to the community.</li>
+                <li>Substantially grow our community of open source contributors.</li>
+                <li>Improve the landscape of Scala's libraries.</li>
+                <li>Provide scaffolding to help the community develop, publish, find, and evaluate Scala libraries.</li>
+              </ul>
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-12">
+              <p>
+                We'll start by consulting with the user community, defining common
+                goals, and organizing contributions and its own resources to achieve
+                these goals.
+              </p>
+              <div class="text-center"><a class="btn btn-default btn" href="{{ site.baseurl }}/contact.html">Join the Discussion</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="vertical-spacer-bottom"></div>
+    </div>
+
+    <div class="light-grey-stripe">
       <div class="vertical-spacer-top" id="education"></div>
       <div class="education">
         <div class="container">
@@ -293,7 +285,7 @@
     <script type="text/javascript">
       $(document).ready(function(){
         // background image on frontpage
-        $(".splash").backstretch("{{ site.baseurl }}/resources/img/lakegeneva-gradientmapped.jpg");
+        $(".splash").backstretch("{{ site.baseurl }}/resources/img/home-bg.png");
       });
     </script>
   </body>

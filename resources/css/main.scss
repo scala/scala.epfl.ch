@@ -60,15 +60,23 @@ $top-bar-height:   106px;
 //         "base",
 //         "syntax-highlighting"
 // ;
-.container.small {
-  width: 556px;
-}
 
 .splash {
   height: 815px;
   background-color: #15414c;
   position: relative;
   font-family: Lato;
+
+  .gradient {
+    background: -moz-linear-gradient(top, rgba(0,43,54,0) 0%, rgba(0,43,54,0) 1%, rgba(0,43,54,1) 100%) !important;
+    background: -webkit-linear-gradient(top, rgba(0,43,54,0) 0%,rgba(0,43,54,0) 1%,rgba(0,43,54,1) 100%) !important;
+    background: linear-gradient(to bottom, rgba(0,43,54,0) 0%,rgba(0,43,54,0) 1%,rgba(0,43,54,1) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00002b36', endColorstr='#002b36',GradientType=0 ) !important;
+    position: absolute;
+    bottom: 0;
+    min-height: 154px;
+    width: 100%;
+  }
 
   .swirl {
     display: inline-block;
@@ -160,12 +168,33 @@ h2 {
   position: relative;
   background-color: #002b37;
   min-height: 140px;
+  font-size: 24px;
+  padding-bottom: 90px;
 }
 
 .light-blue-stripe {
   position: relative;
   background-color: rgba(34, 73, 81, 1);
   min-height: 140px;
+  font-size: 24px;
+}
+
+.light-grey-stripe {
+  background-color: #e9ecec;
+  position: relative;
+  min-height: 140px;
+  font-size: 24px;
+
+  h2 {
+    color: #15414c;
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.42;
+    color: #15414c;
+  }
 }
 
 ul.red {
@@ -181,7 +210,7 @@ ul.red {
       content: " ";
       border-radius: 50%;
       display: inline-block;
-      margin-right: 20px;
+      margin-right: 16px;
     }
   }
 }
