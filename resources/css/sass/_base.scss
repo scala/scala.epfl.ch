@@ -2,6 +2,7 @@
 @import "_bootstrap-compass.scss";
 @import "_bootstrap-mincer.scss";
 @import "_bootstrap-sprockets.scss";
+@import "../../../bower_components/font-awesome/scss/font-awesome";
 
 /**
  * Site footer
@@ -11,7 +12,7 @@ footer {
     margin-top: -340px; /* negative value of footer height */
     height: 340px;
     clear:both;
-    padding-top: 70px;
+    padding: 70px 150px 0 150px;
     color: $home-text-color;
     background-color: $background-menu;
     a, a:hover {
@@ -24,7 +25,7 @@ footer {
         opacity: 0.8;
     }
 
-    a.fa {
+    a i.fa {
         font-size: 26px;
         margin-right: 12px;
     }
