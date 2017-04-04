@@ -203,3 +203,10 @@ ul.red {
     }
   }
 }
+
+/* PROJECTS */
+div.search input {
+  &:before {
+    content: "";
+  }
+}

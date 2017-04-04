@@ -1,4 +1,14 @@
 ---
 layout: page
 ---
-{{ content }}
+<div class="search">
+    <input class="col-xs-12 form-control" value="" placeholder="Search a Project..." type="text">
+</div>
+
+<div class="projects">
+    {% for pr in site.projects %}
+    <div class="project">
+        {{ pr.name }}<br>
+    </div>
+    {% endfor %}
+</div>
