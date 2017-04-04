@@ -9,6 +9,7 @@ $red-orange:       #da4323;
 $white:            #ffffff;
 $blue-grey:        #668086;
 $middle-blue:      #224951;
+$background-menu:  #002b36;
 
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -19,8 +20,8 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #fff;
-$background-color: #002b37;
+$home-text-color:  #fff;
+$background-color: $background-menu;
 $link-color:      $orange;
 
 $grey-color:       #828282;
@@ -50,22 +51,15 @@ $top-bar-height:   106px;
     }
 }
 
-
-
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base"
-;
-// @import
-//         "base",
-//         "syntax-highlighting"
-// ;
+@import "base";
 
 .splash {
   height: 815px;
   background-color: #15414c;
   position: relative;
   font-family: Lato;
+  color: $home-text-color;
 
   .gradient {
     background: -moz-linear-gradient(top, rgba(0,43,54,0) 0%, rgba(0,43,54,0) 1%, rgba(0,43,54,1) 100%) !important;
@@ -170,6 +164,7 @@ h2 {
   min-height: 140px;
   font-size: 24px;
   padding-bottom: 90px;
+  color: $home-text-color;
 }
 
 .light-blue-stripe {
@@ -177,6 +172,7 @@ h2 {
   background-color: rgba(34, 73, 81, 1);
   min-height: 140px;
   font-size: 24px;
+  color: $home-text-color;
 }
 
 .light-grey-stripe {
