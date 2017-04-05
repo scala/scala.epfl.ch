@@ -440,6 +440,46 @@ div.search {
       margin: 0px -30px;
       padding: 14px 30px;
       border-top: 1px solid #15414c;
+      font-size: 18px;
+      line-height: 30px;
+      height: 58px;
+      overflow: hidden;
+
+      a {
+        color: #15414c;
+      }
+
+      a.contributors-modal {
+        display: inline-block;
+        float: left;
+        height: 30px;
+        line-height: 30px;
+      }
+
+      ul {
+        list-style: none;
+        display: inline-block;
+        margin-bottom: 0px;
+        height: 30px;
+        padding: 0px 0px 0px 20px;
+        li {
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          border-radius: 15px;
+          margin-right: 16px;
+          overflow: hidden;
+          img {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+
+    .origin {
+      float: right;
     }
   }
 }
