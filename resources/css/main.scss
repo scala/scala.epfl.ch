@@ -114,6 +114,7 @@ body.home {
         font-size: 77px;
         font-weight: lighter;
         display: inline-block;
+        margin-bottom: 10px;
       }
     }
 
@@ -509,5 +510,17 @@ div.search {
       top: 40px;
       right: 40px;
     }
+  }
+
+  &.contributor-list {
+    .team-member {
+      margin: 0;
+    }
+  }
+}
+
+.contributors-dialog {
+  .modal-dialog, .modal-header, .modal-body {
+    background-color: #fafafa;
   }
 }

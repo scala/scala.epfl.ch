@@ -21,7 +21,7 @@ layout: page
         <div class="clearfix"></div>
         {{ pr }}
         <div class="contributors">
-            <i class="fa fa-user"></i> {{ pr.contributors | size }} Contributors
+            <i class="fa fa-user"></i> <a href="#" data-toggle="modal" data-target="#modal-{{ pr.label }}">{{ pr.contributors | size }} Contributors</a>
             <ul>
                 {% for contributor in pr.contributors %}
                 {% assign contr = site.team | where: "member", contributor| first %}
@@ -36,3 +36,47 @@ layout: page
     </div>
     {% endfor %}
 </div>
+
+{% for pr in site.projects %}
+<div class="modal fade contributors-dialog" tabindex="-1" role="dialog" id="modal-{{ pr.label }}">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">{{ pr.name }} contributors</h4>
+            </div>
+            <div class="modal-body team">
+
+                {% for contributor in pr.contributors %}
+                {% assign member = site.team | where: "member", contributor| first %}
+                <div class="team-member">
+                    <h2>{{ member.name }}</h2>
+                    <h3>{{ member.title }}</h3>
+                    <div class="circular" style="background-image: url({{ member.photo }});"></div>
+                    <a href="mailto:{{ team.email }}">{{ member.email }}</a>
+                    <ul class="contact-for">
+                        {% for c in member.contact_for %}
+                        <li>
+                            {% assign link = site.contact | where: "label", c | first %}
+                            {% if link %}
+                            <a href="{{ link.link }}">{{ link.name }}</a>
+                            {% else %}
+                            {% assign link = site.projects | where: "label", c | first %}
+                            {% if link.github %}
+                            <a href="{{ link.github }}">{{ link.name }}</a> {% if link.status %}<span class="status">{{ link.status }}</span>{% endif %}
+                            {% elsif link.web %}
+                            <a href="{{ link.web }}">{{ link.name }}</a> {% if link.status %}<span class="status">{{ link.status }}</span>{% endif %}
+                            {% else %}
+                            <a href="{{ link.link }}">{{ link.name }}</a>
+                            {% endif %}
+                            {% endif %}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endfor %}
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+{% endfor %}}
