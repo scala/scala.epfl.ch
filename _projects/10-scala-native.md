@@ -1,5 +1,5 @@
 ---
-id: scalaNative
+label: scalaNative
 name: Scala-Native
 web:
 github: https://github.com/scalacenter/spores

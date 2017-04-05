@@ -1,0 +1,33 @@
+---
+layout: page
+---
+
+<div class="team">
+    {% for member in site.team %}
+    <div class="team-member">
+        <h2>{{ member.name }}</h2>
+        <h3>{{ member.title }}</h3>
+        <div class="circular" style="background-image: url({{ member.photo }});"></div>
+        <a href="mailto:{{ team.email }}">{{ member.email }}</a>
+        <ul class="contact-for">
+            {% for c in member.contact_for %}
+                <li>
+                    {% assign link = site.contact | where: "label", c | first %}
+                    {% if link %}
+                        <a href="{{ link.link }}">{{ link.name }}</a>
+                    {% else %}
+                        {% assign link = site.projects | where: "label", c | first %}
+                        {% if link.github %}
+                            <a href="{{ link.github }}">{{ link.name }}</a> {% if link.status %}<span class="status">{{ link.status }}</span>{% endif %}
+                        {% elsif link.web %}
+                            <a href="{{ link.web }}">{{ link.name }}</a> {% if link.status %}<span class="status">{{ link.status }}</span>{% endif %}
+                        {% else %}
+                            <a href="{{ link.link }}">{{ link.name }}</a>
+                        {% endif %}
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endfor %}
+</div>

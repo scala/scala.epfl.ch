@@ -1,8 +1,5 @@
 ---
-id: serverIssues
+label: serverIssues
 name: Server Issues
 link:
 ---
-Scaladex
-Scastie
-Discourse

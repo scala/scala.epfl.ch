@@ -1,5 +1,5 @@
 ---
-id: collectionsRedesign
+label: collectionsRedesign
 name: Collections Redesign
 web:
 github:

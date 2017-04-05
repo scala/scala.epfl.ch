@@ -369,3 +369,66 @@ div.search input {
   font-weight: lighter;
   margin: 15px 0 35px 0;
 }
+
+
+/* TEAM */
+.team {
+  .team-member {
+    margin-bottom: 30px;
+    padding: 40px;
+    background-color: #fafafa;
+    border-radius: 3px;
+    text-align: left;
+    position: relative;
+
+    h2 {
+      text-align: left;
+      font-size: 30px;
+      font-weight: bold;
+      color: #15414c;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 20px;
+      color: #f1592a;
+    }
+
+    a {
+      font-size: 18px;
+      color: #15414c;
+      text-decoration: underline;
+    }
+
+    ul.contact-for {
+      list-style: none;
+      padding: 0;
+      margin-top: 40px;
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      .status {
+        font-size: 12px;
+        font-weight: bold;
+        color: #ffffff;
+        text-transform: uppercase;
+        padding: 3px 6px;
+        border-radius: 2px;
+        background-color: #5c6367;
+        margin-left: 10px;
+      }
+    }
+
+    .circular {
+      width: 129px;
+      height: 129px;
+      border-radius: 50%;
+      position: absolute;
+      top: 40px;
+      right: 40px;
+    }
+  }
+}

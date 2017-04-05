@@ -1,5 +1,5 @@
 ---
-id: scalaPlatformProcess
+label: scalaPlatformProcess
 name: Scala Platform Process
 web: https://scalacenter.github.io/platform-staging/
 github: https://github.com/scalacenter/platform-staging

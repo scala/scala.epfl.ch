@@ -1,5 +1,5 @@
 ---
-id: documentationImprovements
+label: documentationImprovements
 name: Documentation Improvements
 web:
 github: https://github.com/scalacenter/exercises-scalatutorial

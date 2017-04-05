@@ -1,5 +1,5 @@
 ---
-id: scaladex
+label: scaladex
 name: Scaladex
 web:
 github: https://github.com/scalacenter/scaladex

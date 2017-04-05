@@ -1,5 +1,5 @@
 ---
-id: scalajsBundler
+label: scalajsBundler
 name: Scalajs-bundler
 web:
 github: https://github.com/scalacenter/scalajs-bundler
