@@ -599,6 +599,7 @@ div.search {
     font-size: 26px;
     font-weight: bold;
     color: #15414c;
+    margin: 40px 0 15px 0;
   }
 
   p {
@@ -612,4 +613,45 @@ div.search {
   a {
     text-decoration: underline;
   }
+
+
+  ul {
+    font-size: 20px;
+    color: #888888;
+    font-weight: lighter;
+    list-style: none;
+    li {
+      padding-bottom: 20px;
+      position: relative;
+      &:before {
+        background-color: #f1592a;
+        min-width: 8px;
+        min-height: 8px;
+        margin-left: -30px;
+        content: " ";
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 20px;
+        position: absolute;
+        top: 12px;
+        left: 5px;
+      }
+
+    }
+  }
+}
+
+/* DONATE SCREEN */
+.chfusd {
+  font-size: 13px;
+  color: #888888;
+  margin-bottom: 20px;
+}
+
+.donate-input {
+  font-size: 18px;
+  padding-left: 14px;
+  color: #15414c;
+  margin-bottom: 20px;
+  max-width: 230px;
 }

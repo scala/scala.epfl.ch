@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: contact
 ---
 
 ## Support the Scala Center!
@@ -8,9 +8,9 @@ Make a one-time donation to the Scala Center.
 
 {% include donate-script.html %}
 
-<div class="recurring"> Email us at <code
-class="highlighter-rouge">scala.center@epfl.ch</code> if you'd like to turn your
-one-time donation into a monthly or yearly recurring donation. </div>
+<p> Email us at <a
+href="mailto:scala.center@epfl.ch">scala.center@epfl.ch</a> if you'd like to turn your
+one-time donation into a monthly or yearly recurring donation. </p>
 
 <div id="charge-error" class="alert alert-danger" style="margin-top: 14px;">
   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>

@@ -1,7 +1,7 @@
 <script src="https://checkout.stripe.com/checkout.js"></script>
 
 
-<select id="donate-amount" class="form-control">
+<select id="donate-amount" class="form-control donate-input">
   <option value="100">100CHF</option>
   <option value="250">250CHF</option>
   <option value="500">500CHF</option>
@@ -11,11 +11,11 @@
 </select>
 <div id="showthis" >
   <form id="donate">
-    <input data-parsley-type="number" data-parsley-type="integer" min="5" data-parsley-min="5" data-parsley-trigger="keyup" minlength="1"	data-parsley-minlength="1" required="" placeholder="other amount" id="other-amount">
+    <input class="form-control donate-input" data-parsley-type="number" data-parsley-type="integer" min="5" data-parsley-min="5" data-parsley-trigger="keyup" minlength="1"	data-parsley-minlength="1" required="" placeholder="Other amount" id="other-amount">
   </form>
 </div>
 
-<button class="btn btn-outline btn" id="donate-button">Donate</button>
+<button class="btn btn-default btn" id="donate-button">Donate</button>
 
 <div class="chfusd">1 CHF &cong; $1 USD</div>
 
