@@ -19,7 +19,9 @@ layout: page
             {% endif %}
         </div>
         <div class="clearfix"></div>
-        {{ pr }}
+        <div class="content">
+            {{ pr }}
+        </div>
         <div class="contributors">
             <a class="contributors-modal" href="#" data-toggle="modal" data-target="#modal-{{ pr.label }}">
                 <i class="fa fa-user"></i> {{ pr.contributors | size }} Contributors
@@ -81,4 +83,4 @@ layout: page
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div>
-{% endfor %}}
+{% endfor %}
