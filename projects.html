@@ -4,11 +4,35 @@ layout: page
 <div class="search">
     <input class="col-xs-12 form-control" value="" placeholder="Search a Project..." type="text">
 </div>
+<div class="clearfix"></div>
 
 <div class="projects">
     {% for pr in site.projects %}
     <div class="project">
-        {{ pr.name }}<br>
+        <h2>{{ pr.name }}</h2>
+        <div class="references">
+            {% if pr.web %}
+            <a href="{{ pr.web }}"><i class="fa fa-globe"></i></a>
+            {% endif %}
+            {% if pr.github %}
+            <a href="{{ pr.github }}"><i class="fa fa-github"></i></a>
+            {% endif %}
+        </div>
+        <div class="clearfix"></div>
+        {{ pr }}
+        <div class="contributors">
+            <i class="fa fa-user"></i> {{ pr.contributors | size }} Contributors
+            <ul>
+                {% for contributor in pr.contributors %}
+                {% assign contr = site.team | where: "member", contributor| first %}
+                <li><img src="{{ contr.photo }}" alt="{{ contr.name}}" ></li>
+                {% endfor %}
+            </ul>
+
+            {% if pr.origin %}
+            <a class="origin" href="{{ pr.origin }}"><i class="fa fa-eye">Origin of the project</a>
+            {% endif %}
+        </div>
     </div>
     {% endfor %}
 </div>

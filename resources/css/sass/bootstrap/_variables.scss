@@ -68,7 +68,7 @@ $line-height-computed:    floor(($font-size-base * $line-height-base)) !default;
 //** By default, this inherits from the `<body>`.
 $headings-font-family:    inherit !default;
 $headings-font-weight:    500 !default;
-$headings-line-height:    1.1 !default;
+$headings-line-height:    1 !default;
 $headings-color:          inherit !default;
 
 
@@ -205,7 +205,7 @@ $input-border-radius-large:      $border-radius-large !default;
 $input-border-radius-small:      $border-radius-small !default;
 
 //** Border color for inputs on focus
-$input-border-focus:             #66afe9 !default;
+$input-border-focus:             #f1592a !default;
 
 //** Placeholder text color
 $input-color-placeholder:        #999 !default;
