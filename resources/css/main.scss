@@ -72,6 +72,7 @@ $fa-font-path: "./../../bower_components/font-awesome/fonts";
       margin: auto;
       display: block;
       margin-right: 25px;
+      margin-bottom: -10px;
     }
   }
 
@@ -79,9 +80,10 @@ $fa-font-path: "./../../bower_components/font-awesome/fonts";
     display: inline-block;
     font-size: 29px;
     line-height: 0;
+    font-weight: lighter;
     h1 {
       font-size: 77px;
-      font-weight: normal;
+      font-weight: lighter;
       display: inline-block;
     }
   }
@@ -91,6 +93,7 @@ $fa-font-path: "./../../bower_components/font-awesome/fonts";
     font-size: 24px;
     line-height: 1.42;
     margin-bottom: 40px;
+    font-weight: lighter;
   }
 }
 
@@ -158,6 +161,7 @@ h2 {
   font-size: 24px;
   padding-bottom: 90px;
   color: $home-text-color;
+  font-weight: lighter;
 }
 
 .light-blue-stripe {
@@ -166,6 +170,8 @@ h2 {
   min-height: 140px;
   font-size: 24px;
   color: $home-text-color;
+  padding-bottom: 90px;
+  font-weight: lighter;
 }
 
 .light-grey-stripe {
@@ -173,9 +179,14 @@ h2 {
   position: relative;
   min-height: 140px;
   font-size: 24px;
+  padding-bottom: 70px;
+  color: #15414c;
 
   h2 {
     color: #15414c;
+    &:before, &:after {
+      background-color: #cad3d4;
+    }
   }
 
   h3 {
@@ -183,6 +194,41 @@ h2 {
     font-weight: bold;
     line-height: 1.42;
     color: #15414c;
+  }
+
+  .the-courses {
+    font-weight: bold;
+    line-height: 1.42;
+    margin-bottom: 40px;
+  }
+
+  ul.course-list {
+    list-style: none;
+    padding: 0;
+
+    li {
+      background-color: #fff;
+      border-radius: 3px;
+      padding: 24px;
+      margin: 0 0 40px 0;
+
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.42;
+        color: #15414c;
+        margin-bottom: 10px;
+      }
+
+      .description {
+        font-size: 20px;
+        color: #f1592a;
+
+        em {
+          font-style: italic;
+        }
+      }
+    }
   }
 }
 
@@ -209,4 +255,117 @@ div.search input {
   &:before {
     content: "";
   }
+}
+
+.supporters {
+  .col-sm-4, .subtitle {
+    height: 115px;
+    line-height: 115px;
+    vertical-align: middle;
+    a {
+      display: block;
+      height: 115px;
+      img {
+        margin: auto;
+        line-height: 115px;
+      }
+    }
+  }
+  .subtitle {
+    height: 100px;
+    font-size: 26px;
+  }
+}
+
+.back-level {
+  text-align: center;
+  a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: lighter;
+  }
+}
+
+.founding-blurb {
+  font-size: 24px;
+  line-height: 1.5;
+  color: #4f6b72;
+  font-weight: normal;
+  margin-top: 50px;
+  text-align: left;
+
+  p {
+    margin-bottom: 25px;
+  }
+}
+
+
+.subtitle {
+  font-size: 26px;
+  color: #fff;
+  text-align: center;
+}
+
+.circular {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 14px;
+  width: 125px;
+  height: 125px;
+  border-radius: 75px;
+  -webkit-border-radius: 75px;
+  -moz-border-radius: 75px;
+}
+
+.circular.heather {
+  background-image: url('{{ site.baseurl }}/resources/img/heather.png');
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .circular.heather {
+    background-image: url('{{ site.baseurl }}/resources/img/heather@2x.png');
+    background-size: 98px 98px;
+  }
+}
+
+.circular.jon {
+  background-image: url('{{ site.baseurl }}/resources/img/jon.png');
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .circular.jon {
+    background-image: url('{{ site.baseurl }}/resources/img/jon@2x.png');
+    background-size: 98px 98px;
+  }
+}
+
+.circular.martin {
+  background-image: url('{{ site.baseurl }}/resources/img/martin.png');
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .circular.martin {
+    background-image: url('{{ site.baseurl }}/resources/img/martin@2x.png');
+    background-size: 98px 98px;
+  }
+}
+
+
+
+.us > .name {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.us > .about {
+  font-size: 20px;
+  line-height: 1em;
+  color: lighten($blue-grey, 10%);
+  font-weight: 500;
+}
+
+.join-us {
+  color: rgba(255, 255, 255, 0.35);
+  font-weight: lighter;
+  margin: 15px 0 35px 0;
 }
