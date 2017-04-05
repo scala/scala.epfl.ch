@@ -1,5 +1,5 @@
 ---
-id: education
+label: education
 name: Education
 web:
 github:

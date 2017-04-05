@@ -1,5 +1,5 @@
 ---
-id: improveBuilds
+label: improveBuilds
 name: Improve builds with direct dependencies
 web:
 github:

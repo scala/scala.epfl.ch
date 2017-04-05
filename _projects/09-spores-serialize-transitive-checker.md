@@ -1,5 +1,5 @@
 ---
-id: spores
+label: spores
 name: Spores and serializable transitive checker
 web:
 github: https://github.com/scalacenter/spores

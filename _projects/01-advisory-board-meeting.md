@@ -1,5 +1,5 @@
 ---
-id: advisoryBoardMeeting
+label: advisoryBoardMeeting
 name: Advisory Board Meeting
 web:
 github: https://github.com/scalacenter/advisoryboard

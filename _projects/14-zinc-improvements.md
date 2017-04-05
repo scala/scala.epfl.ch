@@ -1,5 +1,5 @@
 ---
-id: zincImprovements
+label: zincImprovements
 name: Zinc Improvements
 github: https://github.com/sbt/zinc
 origin: Scala Center’s decision

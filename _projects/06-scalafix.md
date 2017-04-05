@@ -1,5 +1,5 @@
 ---
-id: scalafix
+label: scalafix
 name: Scalafix
 web:
 github: https://github.com/scalacenter/scalafix

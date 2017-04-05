@@ -1,5 +1,5 @@
 ---
-id: advisoryBoardProposals
+label: advisoryBoardProposals
 name: Advisory Board Proposals
 web:
 github:

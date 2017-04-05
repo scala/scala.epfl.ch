@@ -1,5 +1,5 @@
 ---
-id: scalaCenterActivities
+label: scalaCenterActivities
 name: Scala Center Supporting Activities
 link:
 ---

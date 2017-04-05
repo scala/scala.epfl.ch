@@ -1,5 +1,5 @@
 ---
-id: scastie
+label: scastie
 name: Scastie
 web: https://scastie.scala-lang.org
 github: https://github.com/ScalaCenter/scastie
