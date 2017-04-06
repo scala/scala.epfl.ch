@@ -9,34 +9,34 @@ layout: page
         <div class="clearfix"></div>
 
         <div class="projects">
-            {% for pr in site.projects %}
+            {% for project in site.projects %}
             <div class="project">
-                <h2>{{ pr.name }}</h2>
+                <h2>{{ project.name }}</h2>
                 <div class="references">
-                    {% if pr.web %}
-                    <a href="{{ pr.web }}"><i class="fa fa-globe"></i></a>
+                    {% if project.web %}
+                    <a href="{{ project.web }}"><i class="fa fa-globe"></i></a>
                     {% endif %}
-                    {% if pr.github %}
-                    <a href="{{ pr.github }}"><i class="fa fa-github"></i></a>
+                    {% if project.github %}
+                    <a href="{{ project.github }}"><i class="fa fa-github"></i></a>
                     {% endif %}
                 </div>
                 <div class="clearfix"></div>
                 <div class="content">
-                    {{ pr }}
+                    {{ project }}
                 </div>
                 <div class="contributors">
-                    <a class="contributors-modal" href="#" data-toggle="modal" data-target="#modal-{{ pr.label }}">
-                        <i class="fa fa-user"></i> {{ pr.contributors | size }} Contributors
+                    <a class="contributors-modal" href="#" data-toggle="modal" data-target="#modal-{{ project.label }}">
+                        <i class="fa fa-user"></i> {{ project.contributors | size }} Contributors
                     </a>
                     <ul>
-                        {% for contributor in pr.contributors %}
+                        {% for contributor in project.contributors %}
                         {% assign contr = site.team | where: "member", contributor| first %}
                         <li title="{{ contr.name }}"><img src="{{ contr.photo }}" alt="{{ contr.name}}" ></li>
                         {% endfor %}
                     </ul>
 
-                    {% if pr.origin %}
-                    <a class="origin" href="{{ pr.origin }}"><i class="fa fa-eye"></i> Origin of the project</a>
+                    {% if project.origin %}
+                    <a class="origin" href="{{ project.origin }}"><i class="fa fa-eye"></i> Origin of the project</a>
                     {% endif %}
                 </div>
             </div>
@@ -45,17 +45,17 @@ layout: page
     </div>
 </div>
 
-{% for pr in site.projects %}
-<div class="modal fade contributors-dialog" tabindex="-1" role="dialog" id="modal-{{ pr.label }}">
+{% for project in site.projects %}
+<div class="modal fade contributors-dialog" tabindex="-1" role="dialog" id="modal-{{ project.label }}">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">{{ pr.name }} contributors</h4>
+                <h4 class="modal-title">{{ project.name }} contributors</h4>
             </div>
             <div class="modal-body team">
 
-                {% for contributor in pr.contributors %}
+                {% for contributor in project.contributors %}
                 {% assign member = site.team | where: "member", contributor| first %}
                 <div class="team-member">
                     <h2>{{ member.name }}</h2>
