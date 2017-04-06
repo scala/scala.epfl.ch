@@ -595,12 +595,18 @@ div.search {
     h3 {
       font-size: 20px;
       color: #f1592a;
+      margin: 10px 0;
     }
 
     a {
       font-size: 18px;
       color: #15414c;
       text-decoration: underline;
+    }
+
+    p {
+      font-size: 18px;
+      color: #15414c;
     }
 
     ul.contact-for {
@@ -627,6 +633,8 @@ div.search {
     .circular {
       width: 129px;
       height: 129px;
+      background-repeat: no-repeat;
+      background-size: cover;
       border-radius: 50%;
       position: absolute;
       top: 40px;

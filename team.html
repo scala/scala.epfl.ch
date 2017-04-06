@@ -16,7 +16,11 @@ layout: page
                         <li>
                             {% assign link = site.contact | where: "label", c | first %}
                             {% if link %}
-                                <a href="{{ link.link }}">{{ link.name }}</a>
+                                {% if link.link %}
+                                    <a href="{{ link.link }}">{{ link.name }}</a>
+                                {% else %}
+                            <p>{{ link.name }}</p>
+                                {% endif %}
                             {% else %}
                                 {% assign link = site.projects | where: "label", c | first %}
                                 {% if link.github %}
