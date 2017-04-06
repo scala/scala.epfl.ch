@@ -747,4 +747,30 @@ div.search {
   color: #15414c;
   margin-bottom: 20px;
   max-width: 230px;
+  border-radius: 2px;
+  border-width: 2px;
+}
+
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+  max-width: 230px;
+  width: 230px;
+
+  &:after {
+    content: "\f0d7";
+    font-family: FontAwesome;
+    color: #15414c;
+    position: absolute;
+    top: 11px;
+    right: 16px;
+    font-size: 20px;
+  }
+
+  select.donate-input {
+    padding: 10px 24px;
+    appearance:none;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+  }
 }

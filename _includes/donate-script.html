@@ -1,14 +1,15 @@
 <script src="https://checkout.stripe.com/checkout.js"></script>
 
-
-<select id="donate-amount" class="form-control donate-input">
-  <option value="100">100CHF</option>
-  <option value="250">250CHF</option>
-  <option value="500">500CHF</option>
-  <option value="1000">1000CHF</option>
-  <option value="1500">1500CHF</option>
-  <option value="other">Other amount</option>
-</select>
+<div class="select-wrapper">
+  <select id="donate-amount" class="form-control donate-input">
+    <option value="100">100CHF</option>
+    <option value="250">250CHF</option>
+    <option value="500">500CHF</option>
+    <option value="1000">1000CHF</option>
+    <option value="1500">1500CHF</option>
+    <option value="other">Other amount</option>
+  </select>
+</div>
 <div id="showthis" >
   <form id="donate">
     <input class="form-control donate-input" data-parsley-type="number" data-parsley-type="integer" min="5" data-parsley-min="5" data-parsley-trigger="keyup" minlength="1"	data-parsley-minlength="1" required="" placeholder="Other amount" id="other-amount">
