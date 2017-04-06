@@ -7,6 +7,7 @@ origin: https://github.com/scalacenter/advisoryboard/blob/master/proposals/008-w
 contributors: [julien]
 status: Completed
 type: project
+active: true
 ---
 [Scala tutorial based on the existing MOOCs.](https://www.scala-exercises.org/scala_tutorial/terms_and_types)
 [Improvements](https://github.com/scala/scala.github.com/pulls/travis032654) for [http://docs.scala-lang.org/](http://docs.scala-lang.org/)

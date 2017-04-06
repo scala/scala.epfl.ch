@@ -466,6 +466,7 @@ div.search {
     border-radius: 3px;
     padding: 40px 30px 0px 30px;
     margin-bottom: 30px;
+    word-wrap: break-word;
 
     h2 {
       font-size: 30px;
@@ -473,6 +474,16 @@ div.search {
       margin-bottom: 20px;
       display: inline-block;
       float: left;
+    }
+
+    h3 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    ol {
+      padding-left: 15px;
+      font-size: 20px;
     }
 
     .references {
@@ -531,6 +542,20 @@ div.search {
             width: 35px;
             height: 35px;
           }
+        }
+      }
+
+      @media(max-width: 767px) {
+        min-height: 58px;
+        text-align: center;
+        height: auto;
+        a, a.contributors-modal {
+          float: none;
+          display: block;
+        }
+        ul {
+          padding: 0;
+          margin: 15px 0;
         }
       }
     }
@@ -635,6 +660,7 @@ div.search {
     font-size: 28px;
     color: #9b9b9b;
     margin-top: 4px;
+    opacity: 1;
   }
 }
 

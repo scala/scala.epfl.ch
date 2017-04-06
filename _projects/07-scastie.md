@@ -7,5 +7,6 @@ origin: https://github.com/scalacenter/advisoryboard/blob/master/minutes/001-201
 contributors: [olafur, travis]
 status: Active
 type: project
+active: true
 ---
 Initially announce as ScalaFiddle. We decided to collaborate on an existing project called Scastie. It leverage sbt, you can easily depend on published libraries, change the Scala version, target a new platform(Scala.Js, Native) or use Dotty.

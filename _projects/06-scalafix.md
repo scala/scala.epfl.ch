@@ -7,5 +7,6 @@ origin: https://github.com/scalacenter/advisoryboard/blob/master/agendas/001-201
 contributors: [olafur, guillaume]
 status: Active
 type: project
+active: true
 ---
 Most of the heavy lifting happens in [scalameta](https://github.com/scalameta/scalameta)

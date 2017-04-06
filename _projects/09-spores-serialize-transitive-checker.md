@@ -7,5 +7,6 @@ origin: https://github.com/scalacenter/advisoryboard/blob/master/minutes/002-201
 contributors: [jorge, heather, julien]
 status: Completed
 type: project
+active: true
 ---
 A production-ready version of spores compatible with `{java, scala}.util.Serializable`. Provide a way to turn runtime serialization errors into compile-time errors via a compiler plugin, and lets users customize which checks should and should not be enforced.
