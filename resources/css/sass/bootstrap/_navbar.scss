@@ -418,6 +418,10 @@
       padding-top: 47px;
       padding-bottom: 26px;
       text-transform: uppercase;
+      @media(max-width: $grid-float-breakpoint-max) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
 
       &:hover,
       &:focus {
@@ -476,6 +480,8 @@
       // Dropdowns get custom display when collapsed
       .open .dropdown-menu {
         > li > a {
+          padding-top: 10px;
+          padding-bottom: 10px;
           color: $navbar-default-link-color;
           &:hover,
           &:focus {

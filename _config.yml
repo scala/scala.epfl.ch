@@ -13,11 +13,11 @@ github_username:  scala
 # Collections
 collections:
   contact:
-    output: true
+    output: false
   projects:
-    output: true
+    output: false
   team:
-    output: true
+    output: false
 
 # Build settings
 markdown: kramdown

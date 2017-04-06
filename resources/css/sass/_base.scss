@@ -9,12 +9,27 @@
  */
 footer {
     position: relative;
-    margin-top: -340px; /* negative value of footer height */
-    height: 340px;
+    margin-top: -360px; /* negative value of footer height */
+    min-height: 340px;
     clear:both;
-    padding: 70px 150px 0 150px;
+    padding: 70px 0 0 0;
     color: $home-text-color;
     background-color: $background-menu;
+
+    @media(max-width: 767px) {
+        padding: 30px 0 30px 0;
+        text-align: center;
+
+        h5 {
+            margin-top: 30px;
+        }
+
+        a i.fa {
+            font-size: 26px;
+            margin: 0 6px;
+        }
+    }
+
     a, a:hover {
         text-decoration: none;
         color: white;
@@ -33,6 +48,7 @@ footer {
     .footer-logo {
         text-align: center;
         color: white;
+        opacity: 1 !important;
         img {
             height: 80px;
             display: block;
