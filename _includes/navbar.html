@@ -1,14 +1,36 @@
-<ul class="nav">
-  <li><a href="{{ site.baseurl }}/documentation/">Documentation</a></li>
-  <li><a href="{{ site.baseurl }}/download/">Download</a></li>
-  <li><a href="{{ site.baseurl }}/community/">Community</a></li>
-  <li><a href="{{ site.baseurl }}/contribute/">Contribute</a></li>
-  <li id="source-code" >
-    <a href="http://github.com/scala/scala"></a>
-    <div class="toptip">Source Code</div>
-  </li>
-  <li id="scala-lang-twitter">
-    <a href="http://twitter.com/scala_lang"><img src="{{ site.baseurl }}/resources/img/twitter-logo-white.png" alt="Twitter Logo" /></a>
-    <div class="toptip">Scala on Twitter</div>
-  </li>
-</ul>
+<nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{ site.baseurl }}/">
+        <div class="header-logo">
+          <div class="swirl">
+            <img src="{{ site.baseurl }}/resources/img/scala-center-swirl.png">
+          </div>
+          <div class="swirl-text">
+            <h1><b>scala</b>center</h1>
+            <div>
+              For open source. For education.
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li {% if page.path == 'projects.html' %}class="active" {% endif %}><a href="{{ site.baseurl }}/projects.html">Projects</a></li>
+        <li {% if page.path == 'team.html' %}class="active" {% endif %}><a href="{{ site.baseurl }}/team.html">Team</a></li>
+        <li {% if page.path == 'faqs.md' %}class="active" {% endif %}><a href="{{ site.baseurl }}/faqs.html">FAQs</a></li>
+        <li {% if page.path == 'donate.md' %}class="active" {% endif %}><a href="{{ site.baseurl }}/donate.html">Donate</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
