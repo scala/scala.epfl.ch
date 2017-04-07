@@ -5,7 +5,7 @@ web:
 github:
 origin:
 contributors: [heather, julien]
-status:
+status: Active
 type: education
 active: true
 ---

@@ -639,6 +639,17 @@ div.search {
       position: absolute;
       top: 40px;
       right: 40px;
+
+      @media(max-width: 767px) {
+        float: none;
+        position: relative;
+        text-align: center;
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+        top: auto;
+        right: auto;
+      }
     }
   }
 }
