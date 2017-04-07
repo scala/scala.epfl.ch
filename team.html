@@ -23,12 +23,22 @@ layout: page
                                 {% endif %}
                             {% else %}
                                 {% assign link = site.projects | where: "label", c | first %}
-                                {% if link.github %}
+                                {% if link.label == 'education' %}
+                                    {% if member.member == 'heather' %}
+                                        <a href="https://www.coursera.org/learn/scala-spark-big-data">
+                                            Big Data Analysis with Scala and Spark
+                                        </a>
+                                    {% else %}
+                                        <a href="https://www.coursera.org/learn/scala-capstone">
+                                            Functional Programming in Scala Capstone
+                                        </a>
+                                    {% endif %}
+                                {% elsif link.github %}
                                     <a href="{{ link.github }}">{{ link.name }}</a> {% if link.status %}<span class="status">{{ link.status }}</span>{% endif %}
                                 {% elsif link.web %}
                                     <a href="{{ link.web }}">{{ link.name }}</a> {% if link.status %}<span class="status">{{ link.status }}</span>{% endif %}
                                 {% else %}
-                                    <a href="{{ link.link }}">{{ link.name }}</a>
+                                    <a href="{{ link.link }}">{{ link.name }}</a> {% if link.status %}<span class="status">{{ link.status }}</span>{% endif %}
                                 {% endif %}
                             {% endif %}
                         </li>

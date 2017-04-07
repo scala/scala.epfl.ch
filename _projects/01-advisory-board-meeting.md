@@ -5,7 +5,7 @@ web:
 github: https://github.com/scalacenter/advisoryboard
 origin:
 contributors: [heather]
-status:
+status: Active
 type: project
 active: false
 ---
