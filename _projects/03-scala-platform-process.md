@@ -5,7 +5,7 @@ web: https://scalacenter.github.io/platform-staging/
 github: https://github.com/scalacenter/platform-staging
 origin: https://docs.google.com/document/d/1lzLUQETBEwgjuLiDSTih6jgHfv_MLYQnfbMB_3bPD_w/edit
 contributors: [jorge, olafur, guillaume]
-status:
+status: Active
 type: project
 active: true
 ---
