@@ -7,24 +7,40 @@ layout: page
         <div class="team">
             {% for member in site.team %}
             <div class="team-member">
+                <div class="circular visible-xs" style="background-image: url({{ member.photo }});"></div>
                 <h2>{{ member.name }}</h2>
                 <h3>{{ member.title }}</h3>
-                <div class="circular" style="background-image: url({{ member.photo }});"></div>
+                <div class="circular hidden-xs" style="background-image: url({{ member.photo }});"></div>
                 <a href="mailto:{{ team.email }}">{{ member.email }}</a>
                 <ul class="contact-for">
                     {% for c in member.contact_for %}
                         <li>
                             {% assign link = site.contact | where: "label", c | first %}
                             {% if link %}
-                                <a href="{{ link.link }}">{{ link.name }}</a>
+                                {% if link.link %}
+                                    <a href="{{ link.link }}">{{ link.name }}</a>
+                                {% else %}
+                            <p>{{ link.name }}</p>
+                                {% endif %}
                             {% else %}
                                 {% assign link = site.projects | where: "label", c | first %}
-                                {% if link.github %}
+                                {% if link.label == 'education' %}
+                                    {% if member.member == 'heather' %}
+                                        <a href="https://www.coursera.org/learn/scala-spark-big-data">
+                                            Big Data Analysis with Scala and Spark
+                                        </a>
+                                    {% else %}
+                                        <a href="https://www.coursera.org/learn/scala-capstone">
+                                            Functional Programming in Scala Capstone
+                                        </a>
+                                    {% endif %}
+                                    {% if link.status %}<span class="status">{{ link.status }}</span>{% endif %}
+                                {% elsif link.github %}
                                     <a href="{{ link.github }}">{{ link.name }}</a> {% if link.status %}<span class="status">{{ link.status }}</span>{% endif %}
                                 {% elsif link.web %}
                                     <a href="{{ link.web }}">{{ link.name }}</a> {% if link.status %}<span class="status">{{ link.status }}</span>{% endif %}
                                 {% else %}
-                                    <a href="{{ link.link }}">{{ link.name }}</a>
+                                    <a href="{{ link.link }}">{{ link.name }}</a> {% if link.status %}<span class="status">{{ link.status }}</span>{% endif %}
                                 {% endif %}
                             {% endif %}
                         </li>

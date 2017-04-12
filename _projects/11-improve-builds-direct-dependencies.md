@@ -7,4 +7,5 @@ origin: https://github.com/scalacenter/advisoryboard/blob/master/proposals/009-i
 contributors: []
 status: Active
 type: project
+active: true
 ---

@@ -7,5 +7,6 @@ origin: https://github.com/scalacenter/advisoryboard/blob/master/minutes/001-201
 contributors: [julien]
 status: Completed
 type: project
+active: true
 ---
 Module bundler for Scala.js projects that use npm packages. Uses [webpack](https://webpack.github.io) under the hood.

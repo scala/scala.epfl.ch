@@ -6,5 +6,6 @@ origin: Scala Center’s decision
 contributors: [jorge]
 status: Active
 type: project
+active: true
 ---
 [Improvements](https://github.com/sbt/zinc/labels/Scala%20Center)

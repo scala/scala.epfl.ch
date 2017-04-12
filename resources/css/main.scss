@@ -74,6 +74,38 @@ $fa-font-path: "./../../bower_components/font-awesome/fonts";
   }
 }
 
+@media(max-width: 767px) {
+  .navbar-brand {
+    padding: 15px 15px;
+  }
+
+  .header-logo {
+    .swirl {
+      display: inline-block;
+      img {
+        height: 40px;
+        margin: auto;
+        display: block;
+        margin-right: 12px;
+      }
+    }
+
+    .swirl-text {
+      display: inline-block;
+      font-size: 12px;
+      line-height: 14px;
+      h1 {
+        font-size: 26px;
+        line-height: 26px;
+        margin-top: 3px;
+        margin-bottom: 0px;
+        font-weight: normal;
+        display: inline-block;
+      }
+    }
+  }
+}
+
 /* HOME */
 body.home {
   .splash {
@@ -109,12 +141,34 @@ body.home {
       display: inline-block;
       font-size: 29px;
       line-height: 0;
-      font-weight: lighter;
+      font-weight: normal;
       h1 {
         font-size: 77px;
-        font-weight: lighter;
+        font-weight: normal;
         display: inline-block;
         margin-bottom: 10px;
+      }
+    }
+
+    @media(max-width: 767px) {
+      .swirl {
+        display: inline-block;
+        img {
+          margin-right: 0;
+        }
+      }
+
+      .swirl-text {
+        display: block;
+        font-size: 25px;
+        line-height: 0;
+        font-weight: normal;
+        h1 {
+          font-size: 68px;
+          font-weight: normal;
+          display: block;
+          margin-bottom: 10px;
+        }
       }
     }
 
@@ -123,7 +177,7 @@ body.home {
       font-size: 24px;
       line-height: 1.42;
       margin-bottom: 40px;
-      font-weight: lighter;
+      font-weight: normal;
     }
   }
 
@@ -165,7 +219,7 @@ body.home {
     font-size: 24px;
     padding-bottom: 90px;
     color: $home-text-color;
-    font-weight: lighter;
+    font-weight: normal;
   }
 
   .light-blue-stripe {
@@ -175,7 +229,7 @@ body.home {
     font-size: 24px;
     color: $home-text-color;
     padding-bottom: 90px;
-    font-weight: lighter;
+    font-weight: normal;
   }
 
   .light-grey-stripe {
@@ -279,7 +333,7 @@ body.home {
     a {
       color: #fff;
       text-decoration: underline;
-      font-weight: lighter;
+      font-weight: normal;
     }
   }
 
@@ -312,6 +366,9 @@ body.home {
     border-radius: 75px;
     -webkit-border-radius: 75px;
     -moz-border-radius: 75px;
+    @media (max-width: 767px) {
+      margin-top: 25px;
+    }
   }
 
   .circular.heather {
@@ -321,7 +378,7 @@ body.home {
   @media all and (-webkit-min-device-pixel-ratio: 1.5) {
     .circular.heather {
       background-image: url('{{ site.baseurl }}/resources/img/heather@2x.png');
-      background-size: 98px 98px;
+      background-size: 125px 125px;
     }
   }
 
@@ -332,7 +389,7 @@ body.home {
   @media all and (-webkit-min-device-pixel-ratio: 1.5) {
     .circular.jon {
       background-image: url('{{ site.baseurl }}/resources/img/jon@2x.png');
-      background-size: 98px 98px;
+      background-size: 125px 125px;
     }
   }
 
@@ -343,7 +400,7 @@ body.home {
   @media all and (-webkit-min-device-pixel-ratio: 1.5) {
     .circular.martin {
       background-image: url('{{ site.baseurl }}/resources/img/martin@2x.png');
-      background-size: 98px 98px;
+      background-size: 125px 125px;
     }
   }
 
@@ -363,7 +420,7 @@ body.home {
 
   .join-us {
     color: rgba(255, 255, 255, 0.35);
-    font-weight: lighter;
+    font-weight: normal;
     margin: 15px 0 35px 0;
   }
 }
@@ -409,6 +466,7 @@ div.search {
     border-radius: 3px;
     padding: 40px 30px 0px 30px;
     margin-bottom: 30px;
+    word-wrap: break-word;
 
     h2 {
       font-size: 30px;
@@ -416,6 +474,16 @@ div.search {
       margin-bottom: 20px;
       display: inline-block;
       float: left;
+    }
+
+    h3 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    ol {
+      padding-left: 15px;
+      font-size: 20px;
     }
 
     .references {
@@ -476,6 +544,20 @@ div.search {
           }
         }
       }
+
+      @media(max-width: 767px) {
+        min-height: 58px;
+        text-align: center;
+        height: auto;
+        a, a.contributors-modal {
+          float: none;
+          display: block;
+        }
+        ul {
+          padding: 0;
+          margin: 15px 0;
+        }
+      }
     }
 
     .origin {
@@ -486,7 +568,7 @@ div.search {
 
 .join-us {
   color: rgba(255, 255, 255, 0.35);
-  font-weight: lighter;
+  font-weight: normal;
   margin: 15px 0 35px 0;
 }
 
@@ -513,12 +595,18 @@ div.search {
     h3 {
       font-size: 20px;
       color: #f1592a;
+      margin: 10px 0;
     }
 
     a {
       font-size: 18px;
       color: #15414c;
       text-decoration: underline;
+    }
+
+    p {
+      font-size: 18px;
+      color: #15414c;
     }
 
     ul.contact-for {
@@ -545,10 +633,23 @@ div.search {
     .circular {
       width: 129px;
       height: 129px;
+      background-repeat: no-repeat;
+      background-size: cover;
       border-radius: 50%;
       position: absolute;
       top: 40px;
       right: 40px;
+
+      @media(max-width: 767px) {
+        float: none;
+        position: relative;
+        text-align: center;
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+        top: auto;
+        right: auto;
+      }
     }
   }
 }
@@ -578,6 +679,7 @@ div.search {
     font-size: 28px;
     color: #9b9b9b;
     margin-top: 4px;
+    opacity: 1;
   }
 }
 
@@ -603,7 +705,7 @@ div.search {
   }
 
   p {
-    font-weight: lighter;
+    font-weight: normal;
     font-size: 20px;
     line-height: 1.5;
     color: #888888;
@@ -618,10 +720,10 @@ div.search {
   ul {
     font-size: 20px;
     color: #888888;
-    font-weight: lighter;
+    font-weight: normal;
     list-style: none;
     li {
-      padding-bottom: 20px;
+      padding-bottom: 15px;
       position: relative;
       &:before {
         background-color: #f1592a;
@@ -656,4 +758,30 @@ div.search {
   color: #15414c;
   margin-bottom: 20px;
   max-width: 230px;
+  border-radius: 2px;
+  border-width: 2px;
+}
+
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+  max-width: 230px;
+  width: 230px;
+
+  &:after {
+    content: "\f0d7";
+    font-family: FontAwesome;
+    color: #15414c;
+    position: absolute;
+    top: 11px;
+    right: 16px;
+    font-size: 20px;
+  }
+
+  select.donate-input {
+    padding: 10px 24px;
+    appearance:none;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+  }
 }

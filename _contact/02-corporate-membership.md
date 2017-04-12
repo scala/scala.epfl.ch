@@ -1,5 +1,5 @@
 ---
 label: corporateMembership
 name: Corporate Membership
-link: https://scala.epfl.ch/corporate-membership.html
+link: /corporate-membership.html
 ---
