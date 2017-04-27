@@ -8,5 +8,7 @@ contributors: [olafur, guillaume]
 status: Active
 type: project
 active: true
+featuredProject: true
+description:
 ---
 Most of the heavy lifting happens in [scalameta](https://github.com/scalameta/scalameta)

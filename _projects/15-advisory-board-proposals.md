@@ -8,6 +8,8 @@ contributors: []
 status:
 type: proposal
 active: true
+featuredProject: false
+description:
 ---
 1. [SCP-001: Native Execution of Scala/Spark via LLVM](https://github.com/scalacenter/advisoryboard/blob/master/proposals/001-native-scala-for-spark.md)
 2. [SCP-002: Migration path to Dotty for Scalac users](https://github.com/scalacenter/advisoryboard/blob/master/proposals/002-dotty-migration-path.md)

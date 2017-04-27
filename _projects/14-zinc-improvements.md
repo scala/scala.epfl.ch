@@ -7,5 +7,7 @@ contributors: [jorge]
 status: Active
 type: project
 active: true
+featuredProject: false
+description:
 ---
 [Improvements](https://github.com/sbt/zinc/labels/Scala%20Center)

@@ -1,0 +1,105 @@
+members:
+  - member: heather
+    name: Heather Miller
+    title: Executive Director
+    email: heather.miller@epfl.ch
+    photo: /resources/img/heather.png
+    currentlyWorkingOn: false
+    contact_for: [corporateMembership, donations, education, advisoryBoardMeeting]
+  - member: martin
+    name: Martin Odersky
+    title: Academic Director
+    email: martin.odersky@epfl.ch
+    photo: /resources/img/martin.png
+    currentlyWorkingOn: false
+    contact_for: [dotty]
+  - member: julien
+    name: Julien Richard-Foy
+    title: Software Development
+    email: julien.richard-foy@epfl.ch
+    photo: /resources/img/julien.png
+    currentlyWorkingOn: true
+    contact_for: [education, scalajsBundler, documentationImprovements, collectionsRedesign]
+    projects:
+        - title: scalajsBundler
+          percentage: 15
+        - title: documentationImprovements
+          percentage: 35
+        - title: collectionsRedesign
+          percentage: 50
+  - member: jorge
+    name: Jorge Vicente Cantero
+    title: Software Development
+    email: jorge.vicentecantero@epfl.ch
+    photo: /resources/img/jorge.png
+    currentlyWorkingOn: true
+    contact_for: [scalaPlatformProcess, sip, spores, improveBuilds, zincImprovements]
+    projects:
+        - title: scalaPlatformProcess
+          percentage: 10
+        - title: sip
+          percentage: 15
+        - title: spores
+          percentage: 20
+        - title: spores
+          percentage: 25
+        - title: spores
+          percentage: 30
+  - member: olafur
+    name: Olafur Pall Geirsson
+    title: Software Development
+    email: olafur.geirsson@epfl.ch
+    photo: /resources/img/olafur.png
+    currentlyWorkingOn: true
+    contact_for: [scalafix]
+    projects:
+       - title: scalajsBundler
+         percentage: 100
+  - member: guillaume
+    name: Guillaume Massé
+    title: Software Engineer
+    email: guillaume.masse@epfl.ch
+    photo: /resources/img/guillaume.png
+    currentlyWorkingOn: true
+    contact_for: [scalaNative, scastie, scaladex]
+    projects:
+       - title: scalaNative
+         percentage: 10
+       - title: scastie
+         percentage: 30
+       - title: scaladex
+         percentage: 60
+  - member: travis
+    name: Travis Lee
+    title: Communications Manager, Contractor
+    email:
+    photo: /resources/img/travis.png
+    currentlyWorkingOn: true
+    contact_for: [documentationImprovements]
+    projects:
+       - title: documentationImprovements
+         percentage: 100
+  - member: johndoe
+    name: John Doe
+    title: Software Engineer
+    email:
+    photo: /resources/img/travis.png
+    currentlyWorkingOn: true
+    contact_for: [scalaNative]
+    projects:
+      - title: scalaNative
+        percentage: 100
+  - member: fabien
+    name: Fabien Salvi
+    title: System Administrator
+    email: fabien.salvi@epfl.ch
+    photo: /resources/img/fabien.png
+    currentlyWorkingOn: false
+    contact_for: [jenkinsInfrastructure, serverIssues]
+  - member: sylvie
+    name: Sylvie Jankow
+    title: Secretary
+    email: sylvie.jankow@epfl.ch
+    photo: /resources/img/sylvie.png
+    currentlyWorkingOn: false
+    contact_for: [scalaCenterActivities]

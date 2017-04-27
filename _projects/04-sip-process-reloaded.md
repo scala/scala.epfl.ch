@@ -8,6 +8,8 @@ contributors: []
 status: Active
 type: project
 active: true
+featuredProject: false
+description: "Scala improvement process"
 ---
 SLIP: Scala library improvement process
 Anything related to scala modules (scala-xml, scala-swing, pickling, etc)

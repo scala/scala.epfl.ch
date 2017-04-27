@@ -8,5 +8,7 @@ contributors: [julien]
 status: Completed
 type: project
 active: true
+featuredProject: true
+description: "Module bundler for Scala.js projects that use npm packages."
 ---
 Module bundler for Scala.js projects that use npm packages. Uses [webpack](https://webpack.github.io) under the hood.

@@ -5,7 +5,8 @@ layout: page
 <div class="row">
     <div class="col-md-8 col-md-offset-2">
         <div class="team">
-            {% for member in site.team %}
+            {% assign members = site.data.team-members.members %}
+            {% for member in members %}
             <div class="team-member">
                 <div class="circular visible-xs" style="background-image: url({{ member.photo }});"></div>
                 <h2>{{ member.name }}</h2>

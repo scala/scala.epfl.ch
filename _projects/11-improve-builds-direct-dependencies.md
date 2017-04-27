@@ -5,7 +5,9 @@ web:
 github:
 origin: https://github.com/scalacenter/advisoryboard/blob/master/proposals/009-improve-direct-dependency-experience.md
 contributors: []
-status: Active
+status: NeedMantainers
 type: project
 active: true
+featuredProject: false
+description:
 ---
