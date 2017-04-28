@@ -9,6 +9,7 @@ $red-orange:       #da4323;
 $white:            #ffffff;
 $blue-grey:        #668086;
 $middle-blue:      #224951;
+$dark-blue:        #002b36;
 $background-menu:  #002b36;
 
 // Our variables
@@ -214,7 +215,7 @@ body.home {
 
   .dark-blue-stripe {
     position: relative;
-    background-color: #002b37;
+    background-color: $dark-blue;
     min-height: 140px;
     font-size: 24px;
     padding-bottom: 90px;
@@ -422,6 +423,68 @@ body.home {
     color: rgba(255, 255, 255, 0.35);
     font-weight: normal;
     margin: 15px 0 35px 0;
+  }
+
+  /* HOME OUR PROJECTS */
+  .projects {
+    padding-left: 1%;
+    .project {
+      position: relative;
+      width: 18%;
+      float: left;
+      background-color: #15414c;
+      padding: 20px;
+      border-radius: 8px;
+      margin-right: 2%;
+      height: 133px;
+      max-height: 133px;
+      overflow: visible;
+      padding-top: 42px;
+
+      &:last-of-type {
+        margin-right: 0px;
+      }
+
+      .icon-status {
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        width: 42px;
+        height: 42px;
+        font-size: 15px;
+        text-align: center;
+        border-radius: 21px;
+        border-collapse: collapse;
+        border: 8px solid $dark-blue;
+
+        i.fa {
+          color: $dark-blue;
+          font-size: 15px;
+          line-height: 26px;
+
+        }
+      }
+
+      .icon-status.in-proccess {
+       background-color: #f1592a;
+      }
+      .icon-status.active {
+       background-color: #7ed321;
+      }
+      .icon-status.need-help {
+       background-color: #d0011b;
+      }
+
+      .text {
+        display: block;
+        font-size: 14px;
+        color: white;
+        background-color: $dark-blue;
+        border-radius: 8px;
+        padding: 6px;
+      }
+
+    }
   }
 }
 
