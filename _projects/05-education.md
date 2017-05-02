@@ -8,7 +8,7 @@ contributors: [heather, julien]
 status: Active
 type: education
 active: true
-featuredProject: false
+home: false
 ---
 ### Big Data Analysis with Scala and Spark
 [Course on Coursera](https://www.coursera.org/learn/scala-spark-big-data)

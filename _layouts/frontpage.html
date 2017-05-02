@@ -23,7 +23,11 @@
                 <li><a href="{{ site.baseurl }}/projects.html">Projects</a></li>
                 <li><a href="{{ site.baseurl }}/team.html">Team</a></li>
                 <li><a href="{{ site.baseurl }}/faqs.html">FAQs</a></li>
+                <li><a href="{{ site.baseurl }}/records.html">Records</a></li>
+                <li><a href="{{ site.baseurl }}/contact.html">Contact</a></li>
                 <li><a href="{{ site.baseurl }}/donate.html">Donate</a></li>
+                <li class="social first"><a href="https://twitter.com/scala_lang"><i class="fa fa-twitter"></i></a></li>
+                <li class="social"><a href="https://github.com/scalacenter"><i class="fa fa-github"></i></a></li>
               </ul>
             </div>
         </div>
@@ -43,13 +47,10 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container" style="margin-top: 60px;">
         <div class="vertical-spacer-top"></div>
         <div class="row">
           <div class="col-md-6 col-md-offset-3 text-center">
-            <h2>
-              Objectives
-            </h2>
             <div class="objectives">
               A new not-for-profit center established at EPFL.<br/>
               <b>Focused on:</b>
@@ -57,112 +58,226 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-12 text-center">
-            <a class="btn btn-default btn" href="#open-source">Open Source</a>
-            &nbsp;
-            <a class="btn btn-default btn" href="#education">Education</a>
+          <div class="col-md-12 text-center home-popovers">
+            <a class="btn btn-default btn" data-toggle="popover" data-placement="bottom" data-container="body" href="#open-source">Open Source</a>
+            <a class="btn btn-default btn" data-toggle="popover" data-placement="bottom" data-container="body" href="#education">Education</a>
+            <a class="btn btn-default btn" data-toggle="popover" data-placement="bottom" data-container="body" href="#our-missions">Our missions</a>
           </div>
         </div>
       </div>
       <div class="vertical-spacer-bottom gradient"></div>
     </div>
 
+    <div class="mission hidden" id="our-missions">
+      <div class="close-popover">
+        <i class="fa fa-close"></i>
+      </div>
+      <div class="col-md-12">
+        <ul class="red">
+          <li>Independently guide and support the Scala community</li>
+          <li>Coordinate and develop open source libraries and tools for the benefit of all Scala users</li>
+          <li>Provide deep, and quality, educational materials for Scala</li>
+        </ul>
+        <div class="text-left">
+          <a class="btn btn-default btn" href="http://scala-lang.org/blog/2016/03/14/announcing-the-scala-center.html">See the blog article</a>
+        </div>
+      </div>
+    </div>
 
+    <div class="open-source hidden" id="open-source">
+      <div class="close-popover">
+        <i class="fa fa-close"></i>
+      </div>
+      <div class="col-md-12">
+        <!-- <div class="sect-header">Open Source</div> -->
+        <p>Let's improve Scala together. The Scala Center seeks to:</p>
+        <ul class="red">
+          <li>Coordinate and direct the open source development of libraries/tools of broad benefit to the community.</li>
+          <li>Substantially grow our community of open source contributors.</li>
+          <li>Improve the landscape of Scala's libraries.</li>
+          <li>Provide scaffolding to help the community develop, publish, find, and evaluate Scala libraries.</li>
+        </ul>
+      </div>
+      <div class="col-md-12">
+        <p>
+          We'll start by consulting with the user community, defining common
+          goals, and organizing contributions and its own resources to achieve
+          these goals.
+        </p>
+        <div class="text-left" style="margin-top: 30px;"><a class="btn btn-default btn" href="{{ site.baseurl }}/contact.html">Join the Discussion</a></div>
+      </div>
+    </div>
+
+
+    <div class="education hidden" id="education">
+      <div class="close-popover">
+        <i class="fa fa-close"></i>
+      </div>
+      <div class="col-md-12">
+        <div class="the-courses">The courses:</div>
+        <ul class="course-list">
+          <li>
+            <div class="title">Functional Programming Principles in Scala</div>
+            <div class="description">Taught by: Martin Odersky</div>
+          </li>
+          <li>
+            <div class="title">Functional Program Design in Scala</div>
+            <div class="description">Taught by: Martin Odersky</div>
+          </li>
+          <li>
+            <div class="title">Parallel Programming</div>
+            <div class="description">Taught by: Viktor Kuncak, Aleksandar Prokopec</div>
+          </li>
+          <li>
+            <div class="title">Big Data Analysis in Scala and Spark</div>
+              <div class="description">Taught by: Heather Miller</div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-12 text-left">
+        <a href="https://www.coursera.org/epfl" class="btn btn-default">View al courses</a>
+      </div>
+    </div>
 
 
     <div class="dark-blue-stripe">
       <div class="vertical-spacer-top"></div>
-      <div class="mission">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 centered col-md-offset-3">
-              <h2>Our Missions</h2>
-              <ul class="red">
-                <li>Independently guide and support the Scala community</li>
-                <li>Coordinate and develop open source libraries and tools for the benefit of all Scala users</li>
-                <li>Provide deep, and quality, educational materials for Scala</li>
-              </ul>
-              <div class="text-center">
-                <a class="btn btn-default btn" href="http://scala-lang.org/blog/2016/03/14/announcing-the-scala-center.html">See the blog article</a>
-              </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 text-center col-md-offset-1">
+            <h2>Projects that we've worked on</h2>
+            <div class="row" id="projects-logo">
+              <div class="col-md-2 col-xs-4"><img width="100%" src="/resources/img/scala@2x.png" alt="Scala"></div>
+              <div class="col-md-2 col-xs-4"><img width="100%" src="/resources/img/sbt@2x.png" alt="SBT"></div>
+              <div class="col-md-2 col-xs-4"><img width="100%" src="/resources/img/Community@2x.png" alt="Community"></div>
+              <div class="col-md-2 col-xs-4"><img width="100%" src="/resources/img/scastie@2x.png" alt="Scastie"></div>
+              <div class="col-md-2 col-xs-4"><img width="100%" src="/resources/img/scaladex-brand@2x.png" alt="Scaladex"></div>
+              <div class="col-md-2 col-xs-4"><img width="100%" src="/resources/img/coursera@2x.png" alt="Coursera"></div>
             </div>
           </div>
         </div>
       </div>
-      <div class="vertical-spacer-bottom"></div>
     </div>
 
-    <div class="light-blue-stripe">
-      <div class="vertical-spacer-top" id="open-source"></div>
-      <div class="open-source">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12"><h2>Open Source</h2></div>
-            <div class="col-md-6 col-md-offset-3 centered">
-              <!-- <div class="sect-header">Open Source</div> -->
-              <div class="improve">Let's improve Scala together. The Scala Center seeks to:</div>
-              <ul class="red">
-                <li>Coordinate and direct the open source development of libraries/tools of broad benefit to the community.</li>
-                <li>Substantially grow our community of open source contributors.</li>
-                <li>Improve the landscape of Scala's libraries.</li>
-                <li>Provide scaffolding to help the community develop, publish, find, and evaluate Scala libraries.</li>
-              </ul>
+
+    <div class="dark-blue-stripe">
+        <div class="vertical-spacer-top" id="our-projects"></div>
+        <div class="open-source">
+            <div class="container">
+                <h2>Our Projects</h2>
+                <div class="projects">
+                    {% assign homeProjects = site.projects | where: "home", "true" %}
+                    {% for project in homeProjects %}
+                      <div class="project">
+                          <div class="icon-status {{ project.status|downcase }}">
+                            <i class="fa fa-{{ project.status|downcase }}"></i>
+                          </div>
+                          {% if project.logo-home %}
+                          <div class="logo"><img src="{{ project.logo-home }}" alt="{{ project.name }}"></div>
+                          {% else %}
+                          <div class="text">{{ project.name }}</div>
+                          {% endif %}
+                      </div>
+                    {% endfor %}
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div class="text-center" style="margin-top: 45px; clear: both;">
+                  <a href="/projects.html" class="btn btn-default">See our full project list</a>
+                </div>
             </div>
-            <div class="col-md-3"></div>
-            <div class="col-md-12">
-              <p>
-                We'll start by consulting with the user community, defining common
-                goals, and organizing contributions and its own resources to achieve
-                these goals.
-              </p>
-              <div class="text-center" style="margin-top: 30px;"><a class="btn btn-default btn" href="{{ site.baseurl }}/contact.html">Join the Discussion</a></div>
-            </div>
-          </div>
+
         </div>
-      </div>
-      <div class="vertical-spacer-bottom"></div>
+        <div class="vertical-spacer-bottom"></div>
     </div>
 
     <div class="light-grey-stripe">
-      <div class="vertical-spacer-top" id="education"></div>
-      <div class="education">
+      <div class="vertical-spacer-top"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2>What we're currently working on</h2>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          {% assign members = site.data.team-members.members %}
+          {% for member in members %}
+            {% if member.currentlyWorkingOn %}
+              <div class="working-on col-md-4 col-xs-6">
+                <div class="member-info">
+                  <div class="circular" style="background-image: url({{ member.photo }});"></div>
+                  <h3>{{ member.name }}</h3>
+                  <h4>{{ member.title }}</h4>
+                  <div class="social">
+                    <a href="#"><i class="fa fa-github"></i></a> <a href="#"><i class="fa fa-twitter"></i></a>
+                  </div>
+                </div>
+                <div class="current-projects">
+                  {% assign initialZ = 10 %}
+                  {% assign initialHeight = 0 %}
+                  {% assign i = 0 %}
+                  {% for project in member.projects %}
+                    {% assign initialHeight = project.percentage | plus: initialHeight %}
+                    {% assign colors = '#15414c,#325a63,#5f7e86,#79959c,#9bb0b5'|split: ',' ] %}
+                    <div class="project" style="height: {{ initialHeight }}%; background-color: {{ colors[i] }}; z-index: {{ initialZ }};">
+                      <div class="title">
+                        {% assign data = site.projects | where: "label", project.title | first %}
+                        {{ data.name }}
+                      </div>
+                      <div class="percentage">
+                        {{ project.percentage }}
+                      </div>
+                    </div>
+                  {% assign initialZ = initialZ | minus: 1 %}
+                  {% assign i = i | plus: 1 %}
+                  {% endfor %}
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+          <div class="col-md-12 text-center">
+            <p style="margin: 40px 0;">Talk to us about any of these projects!</p>
+          </div>
+          <div class="col-md-12 text-center">
+            <a href="https://www.coursera.org/epfl" class="btn btn-default">Discourse</a>
+            <a href="http://gitter.im/scala/center" class="btn btn-default" style="margin-left: 20px;"><img src="/resources/img/gitter-icon.png" style="margin: 0 10px 5px 0;"/> Gitter</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="light-blue-stripe" style="padding-bottom: 70px;">
+      <div class="vertical-spacer-top"></div>
+      <div class="who-are-we">
         <div class="container">
           <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-6">
-              <h2>Education</h2>
-              <!-- <div class="sect-header">Education</div> -->
-              <!-- <div class="moocs-coursera">Our Scala MOOCs on Coursera</div> -->
+            <div class="col-md-8 col-md-offset-2 text-center">
+              <!-- <div class="sect-header">Who are we?</div> -->
+              <h2>Who are we?</h2>
             </div>
-            <div class="col-md-3"></div>
+          </div>
+          <div class="col-md-10 col-md-offset-1 text-center">
+            {% assign members = site.data.team-members.members %}
+            {% for member in members %}
+              <div class="us text-center">
+                <div class="circular" style="background-image: url({{ member.photo }});"></div>
+                <div class="us-data">
+                  <div class="name">{{ member.name }}</div>
+                  <div class="about">{{ member.title }}</div>
+                </div>
+              </div>
+            {% endfor %}
           </div>
           <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-6 centered">
-              <div class="the-courses">The courses:</div>
-              <ul class="course-list">
-                <li>
-                  <div class="title">Functional Programming Principles in Scala</div>
-                  <div class="description"><em>Taught by:</em> Martin Odersky</div>
-                </li>
-                <li>
-                  <div class="title">Functional Program Design in Scala</div>
-                  <div class="description"><em>Taught by:</em> Martin Odersky</div>
-                </li>
-                <li>
-                  <div class="title">Parallel Programming</div>
-                  <div class="description"><em>Taught by:</em> Viktor Kuncak, Aleksandar Prokopec</div>
-                </li>
-                <li>
-                  <div class="title">Big Data Analysis in Scala and Spark</div>
-                    <div class="description"><em>Taught by:</em> Heather Miller</div>
-                </li>
-              </ul>
+            <div class="col-md-8 text-center col-md-offset-2">
+              <div class="text-center" style="margin-top: 40px;">
+                <a class="btn btn-default btn" href="{{ site.baseurl }}/team.html">Get to know our team</a>
+              </div>
             </div>
-            <div class="col-md-3"></div>
-            <div class="col-md-12 text-center">
-              <a href="https://www.coursera.org/epfl" class="btn btn-default">View al courses</a>
-            </div>
+            <div class="col-md-2"></div>
           </div>
         </div>
       </div>
@@ -175,7 +290,7 @@
       <div class="supporters">
         <div class="container">
           <div class="row">
-            <div class="col-md-12text-center">
+            <div class="col-md-12 text-center">
               <!-- <div class="sect-header">Brought to you by</div> -->
               <h2>Brought to you by</h2>
             </div>
@@ -184,31 +299,30 @@
                <a href="http://epfl.ch" style="border: none;"><img src="{{ site.baseurl }}/resources/img/epfl.png" /></a>
               </div>
               <div class="subtitle col-sm-12">Advisory Board members:</div>
-              <div class="col-sm-4">
+              <div class="col-sm-3 supporter-logo">
                 <a href="http://www.spark.tc/" style="border: none;"><img src="{{ site.baseurl }}/resources/img/ibm.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </div>
-              <div class="col-sm-4">
+              <div class="col-sm-3 supporter-logo">
                 <a href="http://www.verizon.com/" style="border: none;"><img src="{{ site.baseurl }}/resources/img/verizon.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </div>
-              <div class="col-sm-4">
+              <div class="col-sm-3 supporter-logo">
                 <a href="http://www.goldmansachs.com/" style="border: none;"><img src="{{ site.baseurl }}/resources/img/goldman.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </div>
-              <div class="col-sm-4">
+              <div class="col-sm-3 supporter-logo">
                 <a href="http://www.gonitro.com/" style="border: none;"><img src="{{ site.baseurl }}/resources/img/nitro.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </div>
-              <div class="col-sm-4">
+              <div class="col-sm-3 supporter-logo">
                 <a href="http://www.lightbend.com/" style="border: none;"><img src="{{ site.baseurl }}/resources/img/lightbend.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </div>
-              <div class="col-sm-4">
+              <div class="col-sm-3 supporter-logo">
                 <a href="http://www.47deg.com/" style="border: none;"><img src="{{ site.baseurl }}/resources/img/47deg.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </div>
-              <div class="col-sm-4">
+              <div class="col-sm-3 supporter-logo">
                 <a href="http://www.sap.com/" style="border: none;"><img src="{{ site.baseurl }}/resources/img/sap.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </div>
-              <div class="col-sm-4">
+              <div class="col-sm-3 supporter-logo">
                 <a href="http://www.tapad.com/" style="border: none;"><img src="{{ site.baseurl }}/resources/img/tapad.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </div>
-              <div class="col-sm-4 hidden-xs"></div>
             </div>
             <div class="col-md-12 text-center">
               <span class="subtitle col-sm-12">Backer-level members:</span>
@@ -248,48 +362,6 @@
       <div class="vertical-spacer-bottom"></div>
     </div>
 
-    <div class="light-blue-stripe" style="padding-bottom: 70px;">
-      <div class="vertical-spacer-top"></div>
-      <div class="who-are-we">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-center">
-              <!-- <div class="sect-header">Who are we?</div> -->
-              <h2>Who are we?</h2>
-            </div>
-          </div>
-          <div class="col-md-8 col-md-offset-2">
-            <div class="us col-md-4 text-center">
-              <div class="circular martin"></div>
-              <div class="name">Martin Odersky</div>
-              <div class="about">Creator of Scala</div>
-            </div>
-            <div class="us col-md-4 text-center">
-              <div class="circular heather"></div>
-              <div class="name">Heather Miller</div>
-              <div class="about">Scala Team Member.<br />PhD at EPFL.</div>
-            </div>
-            <div class="us col-md-4 text-center">
-              <div class="circular jon"></div>
-              <div class="name">Jon Pretty</div>
-              <div class="about">Longtime Scala community leader</div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-8 text-center col-md-offset-2">
-              <br /><br />
-              <div class="subtitle text-center">Interested in joining us?</div>
-              <p class="join-us">
-                We're looking for motivated team members to help shape Scala's future.
-              </p>
-              <div class="text-center"><a class="btn btn-default btn" href="{{ site.baseurl }}/jobs.html">Learn More</a></div>
-            </div>
-            <div class="col-md-2"></div>
-          </div>
-        </div>
-      </div>
-      <div class="vertical-spacer-bottom"></div>
-    </div>
   </div>
   </div>
 
@@ -300,6 +372,20 @@
       $(document).ready(function(){
         // background image on frontpage
         $(".splash").backstretch("{{ site.baseurl }}/resources/img/home-bg.png");
+        $(document).on('click', '.close-popover', function (e) {
+            e.preventDefault();
+            $(this).closest('.popover').popover('hide');
+        });
+        $('.home-popovers a').each(function () {
+            $(this).data('html', true);
+            $(this).data('content', $($(this).attr('href')).html());
+            $(this).click(function(e){
+                e.preventDefault();
+                $('.popover').popover('hide');
+                $(this).popover('toggle');
+                $('.popover .arrow').css('left', $(this).offset().left + $(this).width()/2 - $('.popover').offset().left);
+            });
+        });
       });
     </script>
   </body>

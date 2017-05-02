@@ -8,6 +8,6 @@ contributors: []
 status: NeedMantainers
 type: project
 active: true
-featuredProject: false
+home: false
 description:
 ---

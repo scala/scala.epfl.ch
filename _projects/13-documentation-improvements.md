@@ -8,7 +8,7 @@ contributors: [julien, travis]
 status: Active
 type: project
 active: true
-featuredProject: false
+home: false
 description:
 ---
 [Scala tutorial based on the existing MOOCs.](https://www.scala-exercises.org/scala_tutorial/terms_and_types)
