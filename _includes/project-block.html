@@ -11,9 +11,9 @@
             {% endif %}
             <div class="references">
                 {% if project.status %}
-                <span class="status {{ project.status | downcase }}">
-                                        {{ project.status }}
-                                    </span>
+                    <span class="status {{ project.status | downcase }}">
+                        {{ project.status }}
+                    </span>
                 {% endif %}
                 {% if project.web %}
                 <a href="{{ project.web }}"><i class="fa fa-globe"></i></a>
@@ -30,10 +30,13 @@
                 <i class="fa fa-plus"></i> Read more
             </a>
         </div>
+        <div class="hidden modal-content-text">
+            {{ project }}
+        </div>
         <div class="contributors">
             {% assign contributors = project.contributors | size %}
             {% if contributors > 0 %}
-            <a class="contributors-modal" href="#" data-toggle="modal" data-target="#modal-{{ project.label }}">
+            <a class="contributors-modal" href="#" data-target="#modal-{{ project.label }}">
                 <i class="fa fa-user"></i> {{ contributors }} Contributors
             </a>
             <ul>
