@@ -930,7 +930,9 @@ div.search {
 
 /* TEAM */
 .team {
+
   .team-member {
+    height: 385px;
     margin-bottom: 30px;
     padding: 40px;
     background-color: #fafafa;
@@ -971,6 +973,9 @@ div.search {
 
       li {
         margin-bottom: 10px;
+        a {
+          text-decoration: none;
+        }
       }
 
       .status {
@@ -978,7 +983,7 @@ div.search {
         font-weight: bold;
         color: #ffffff;
         text-transform: uppercase;
-        padding: 3px 6px;
+        padding: 3px 12px;
         border-radius: 2px;
         margin-left: 10px;
         //background-color: #5c6367;
