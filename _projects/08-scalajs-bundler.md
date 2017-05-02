@@ -8,7 +8,8 @@ contributors: [julien]
 status: Completed
 type: project
 active: true
-featuredProject: true
+home: true
 description: "Module bundler for Scala.js projects that use npm packages."
+logo-home: /resources/img/scala-js-site-logo@2x.png
 ---
 Module bundler for Scala.js projects that use npm packages. Uses [webpack](https://webpack.github.io) under the hood.
