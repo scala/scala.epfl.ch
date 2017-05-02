@@ -9,7 +9,6 @@ status: Active
 type: project
 active: true
 home: false
-featuredProject: true
 description:
 ---
 Most of the heavy lifting happens in [scalameta](https://github.com/scalameta/scalameta)

@@ -9,7 +9,6 @@ status: Active
 type: project
 active: true
 home: false
-featuredProject: true
 description: "We extended Scala.js’ crossProject and %%% to support Scala-Native."
 ---
 [Sbt-cross-project](https://github.com/scala-native/sbt-crossproject)

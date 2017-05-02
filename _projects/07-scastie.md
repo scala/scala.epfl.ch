@@ -9,7 +9,6 @@ status: Active
 type: project
 active: true
 home: true
-featuredProject: true
 description: "Scastie can run any Scala program with any library in your browser. You don’t need to download or install anything."
 logo-home: /resources/img/scastie@2x.png
 ---

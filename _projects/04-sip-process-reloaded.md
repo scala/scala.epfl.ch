@@ -9,7 +9,6 @@ status: Active
 type: project
 active: true
 home: true
-featuredProject: false
 description: "Scala improvement process"
 ---
 SLIP: Scala library improvement process
