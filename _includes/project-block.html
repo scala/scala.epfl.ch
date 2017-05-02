@@ -2,8 +2,8 @@
 {% for project in projects %}
 {% if project.active %}
 <div class="col-md-6">
-    <div class="project">
-        <div class="header">
+    <div class="project" id="{{ project.label }}">
+        <div class="header" data-title="{{ project.name }}">
             {% if project.logo %}
             <img class="project-logo" src="{{ project.logo }}" alt="{{ project.name }}"/>
             {% else %}
@@ -26,9 +26,11 @@
         <div class="clearfix"></div>
         <div class="content">
             {{ project.description }}
-            <a href="#" class="read-more">
-                <i class="fa fa-plus"></i> Read more
-            </a>
+            {% if project.content.size > 1 %}
+                <a href="#" class="read-more clearfix">
+                    <i class="fa fa-plus"></i> Read more
+                </a>
+            {% endif %}
         </div>
         <div class="hidden modal-content-text">
             {{ project }}
@@ -37,7 +39,7 @@
             {% assign contributors = project.contributors | size %}
             {% if contributors > 0 %}
             <a class="contributors-modal" href="#" data-target="#modal-{{ project.label }}">
-                <i class="fa fa-user"></i> {{ contributors }} Contributors
+                <i class="fa fa-user"></i> <span class="hidden-xs hidden-sm">{{ contributors }} Contributors</span>
             </a>
             <ul>
                 {% for contributor in project.contributors %}
@@ -48,7 +50,7 @@
             {% endif %}
 
             {% if project.origin %}
-            <a class="origin" href="{{ project.origin }}"><i class="fa fa-eye"></i> Origin of the project</a>
+            <a class="origin" href="{{ project.origin }}"><i class="fa fa-eye"></i> <span class="hidden-xs hidden-sm">Origin of the project</span></a>
             {% endif %}
         </div>
     </div>

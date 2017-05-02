@@ -48,6 +48,10 @@ $fa-font-path: "./../../bower_components/font-awesome/fonts";
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "base";
 
+.home #main {
+  overflow-x: hidden;
+}
+
 /* HEADER */
 .header-logo {
   .swirl {
@@ -69,7 +73,7 @@ $fa-font-path: "./../../bower_components/font-awesome/fonts";
       line-height: 42px;
       margin-top: 3px;
       margin-bottom: 0px;
-      font-weight: normal;
+      font-weight: 400;
       display: inline-block;
     }
   }
@@ -77,7 +81,7 @@ $fa-font-path: "./../../bower_components/font-awesome/fonts";
 
 @media(max-width: 767px) {
   .navbar-brand {
-    padding: 15px 15px;
+    padding: 5px 15px;
   }
 
   .header-logo {
@@ -100,10 +104,20 @@ $fa-font-path: "./../../bower_components/font-awesome/fonts";
         line-height: 26px;
         margin-top: 3px;
         margin-bottom: 0px;
-        font-weight: normal;
+        font-weight: 400;
         display: inline-block;
       }
     }
+  }
+}
+
+
+@media (max-width: 520px) {
+  .popover .arrow {
+    left: 50% !important;
+  }
+  body.home .splash {
+    height: 815px !important;
   }
 }
 
@@ -160,11 +174,17 @@ body.home {
   }
 
   .splash {
-    height: 815px;
+    height: 650px;
     background-color: #15414c;
     position: relative;
-    font-family: Lato;
+    font-family: "Lato", sans-serif;
     color: $home-text-color;
+
+    .inner-splash {
+      img {
+        max-width: 455px;
+      }
+    }
 
     .gradient {
       background: -moz-linear-gradient(top, rgba(0,43,54,0) 0%, rgba(0,43,54,0) 1%, rgba(0,43,54,1) 100%) !important;
@@ -173,7 +193,7 @@ body.home {
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00002b36', endColorstr='#002b36',GradientType=0 ) !important;
       position: absolute;
       bottom: 0;
-      min-height: 154px;
+      min-height: 75px;
       width: 100%;
     }
 
@@ -192,10 +212,10 @@ body.home {
       display: inline-block;
       font-size: 29px;
       line-height: 0;
-      font-weight: normal;
+      font-weight: 400;
       h1 {
         font-size: 77px;
-        font-weight: normal;
+        font-weight: 400;
         display: inline-block;
         margin-bottom: 10px;
       }
@@ -213,10 +233,10 @@ body.home {
         display: block;
         font-size: 25px;
         line-height: 0;
-        font-weight: normal;
+        font-weight: 400;
         h1 {
           font-size: 68px;
-          font-weight: normal;
+          font-weight: 400;
           display: block;
           margin-bottom: 10px;
         }
@@ -228,7 +248,7 @@ body.home {
       font-size: 24px;
       line-height: 1.42;
       margin-bottom: 40px;
-      font-weight: normal;
+      font-weight: 400;
       b {
         margin-top: 15px;
         display: block;
@@ -244,13 +264,19 @@ body.home {
           margin-top: 25px;
         }
       }
+      @media (max-width: 520px) {
+        a.btn {
+          display: block;
+          margin-left: 0 !important;
+        }
+      }
     }
   }
 
   h2 {
     font-size: 36px;
     line-height: 42px;
-    font-weight: normal;
+    font-weight: bold;
     color: #fff;
     margin-top: 45px;
     margin-bottom: 40px;
@@ -267,6 +293,9 @@ body.home {
       height: 3px;
       content: '\a0';
       background-color: rgba(255, 255, 255, 0.12);
+      @media (max-width: $screen-sm) {
+        display: none;
+      }
     }
     &:before {
       margin-left: -55%;
@@ -286,17 +315,17 @@ body.home {
     font-size: 24px;
     padding-bottom: 90px;
     color: $home-text-color;
-    font-weight: normal;
+    font-weight: 400;
   }
 
   .light-blue-stripe {
     position: relative;
-    background-color: rgba(34, 73, 81, 1);
+    background-color: #15414c;
     min-height: 140px;
     font-size: 24px;
     color: $home-text-color;
     padding-bottom: 90px;
-    font-weight: normal;
+    font-weight: 400;
   }
 
   .light-grey-stripe {
@@ -316,14 +345,14 @@ body.home {
 
     h3 {
       font-size: 24px;
-      font-weight: bold;
+      font-weight: 700;
       line-height: 1.42;
       color: #15414c;
     }
   }
 
   .the-courses {
-    font-weight: bold;
+    font-weight: 700;
     line-height: 1.42;
     margin-bottom: 20px;
   }
@@ -340,10 +369,14 @@ body.home {
 
       .title {
         font-size: 20px;
-        font-weight: bold;
+        font-weight: 700;
         line-height: 1.42;
         color: #f1592a;
         margin-bottom: 10px;
+
+        &:hover {
+          color: #da3e0e;
+        }
       }
 
       .description {
@@ -374,8 +407,11 @@ body.home {
   .supporters {
     .col-sm-4, .subtitle {
       height: 115px;
-      line-height: 115px;
       vertical-align: middle;
+      line-height: 115px;
+      @media(max-width: $screen-xs) {
+        line-height: 40px;
+      }
       a {
         display: block;
         height: 115px;
@@ -393,10 +429,15 @@ body.home {
 
   .back-level {
     text-align: center;
+
+    @media(max-width: $screen-xs) {
+      margin-bottom: 40px;
+    }
+
     a {
       color: #fff;
       text-decoration: underline;
-      font-weight: normal;
+      font-weight: 400;
     }
   }
 
@@ -404,7 +445,7 @@ body.home {
     font-size: 24px;
     line-height: 1.5;
     color: #4f6b72;
-    font-weight: normal;
+    font-weight: 400;
     margin-top: 50px;
     text-align: left;
 
@@ -483,7 +524,7 @@ body.home {
 
   .join-us {
     color: rgba(255, 255, 255, 0.35);
-    font-weight: normal;
+    font-weight: 400;
     margin: 15px 0 35px 0;
   }
 
@@ -492,12 +533,20 @@ body.home {
     img {
       margin-top: 90px;
       opacity: 0.2;
+      transition: opacity 0.1s;
+      @media(max-width: 991px) {
+        max-width: 180px;
+      }
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 
   /* HOME OUR PROJECTS */
   .projects {
     padding-left: 1%;
+    padding-top: 10px;
     .project {
       position: relative;
       width: 18%;
@@ -513,6 +562,63 @@ body.home {
 
       &:last-of-type {
         margin-right: 0px;
+      }
+
+      &:hover {
+        .status {
+          opacity: 1;
+        }
+      }
+
+      .status {
+        opacity: 0;
+        font-size: 12px;
+        font-weight: 700;
+        color: #ffffff;
+        text-transform: uppercase;
+        padding: 2px 10px;
+        border-radius: 2px;
+        //background-color: #5c6367;
+        background-color: #d0011b;
+        margin-left: 10px;
+        position: absolute;
+        right: 0;
+        margin-right: -65px;
+        top: -44px;
+        transition: opacity 0.1s;
+        margin-top: 0;
+        &:after {
+          content: " ";
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          width: 0;
+          height: 0;
+          border-left: 6px solid transparent;
+          border-right: 6px solid transparent;
+
+          border-top: 7px solid #d0011b;
+        }
+
+        &.active {
+          background-color: #f1592a;
+          margin-right: -25px;
+
+          &:after {
+            border-top-color: #f1592a;
+          }
+        }
+
+        &.completed {
+          background-color: #7ed321;
+          margin-right: -40px;
+
+          &:after {
+            border-top-color: #7ed321;
+          }
+        }
       }
 
       .icon-status {
@@ -547,6 +653,12 @@ body.home {
 
       .logo img {
         width: 100%;
+        //max-width: 123px;
+        margin: auto;
+        display: block;
+        @media(max-width: 991px) {
+          max-width: 123px;
+        }
       }
 
       .text {
@@ -590,11 +702,16 @@ body.home {
 
     .member-info {
       margin-top: 35px;
-      min-height: 300px;
+      min-height: 246px;
       position: relative;
+
+      h3 {
+        font-size: 28px;
+      }
 
       h4 {
         color: #f1592a;
+        font-size: 17px;
       }
 
       .member-name {
@@ -614,24 +731,35 @@ body.home {
 
     .current-projects {
       border-radius: 8px;
-      margin-top: 25px;
-      height: 350px;
+      margin: 25px auto;
+      height: 360px;
+      max-width: 280px;
       position: relative;
 
       .project {
         position: absolute;
         top: 0;
         border-radius: 8px;
+        width: 100%;
+        min-height: 11%;
+      }
+
+      .project-data {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 30;
         font-size: 16px;
         text-align: left;
-        width: 100%;
-        min-height: 12%;
+
         .title {
           position: absolute;
           bottom: 15px;
           left: 15px;
           color: #fff;
           width: 70%;
+          padding: 15px 0;
         }
         .percentage {
           color: rgba(255, 255, 255, 0.5);
@@ -639,6 +767,8 @@ body.home {
           position: absolute;
           bottom: 15px;
           right: 15px;
+          padding: 15px 0;
+
         }
       }
     }
@@ -648,7 +778,7 @@ body.home {
     .us {
       display: inline-block;
       position: relative;
-      opacity: 0.3;
+      opacity: 1;
       transition: all 0.2s;
       margin: 30px 20px;
       cursor: pointer;
@@ -661,6 +791,9 @@ body.home {
         z-index: 10;
         min-width: 250px;
         left: -50%;
+        @media(max-width: $screen-sm) {
+          top: 160px;
+        }
 
         .about {
           color: #f1592a;
@@ -677,6 +810,16 @@ body.home {
     }
   }
 
+  .first-supporter-logo {
+    a {
+      opacity: 0.2;
+      transition: opacity 0.1s;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
   .supporter-logo {
     margin: 40px 0;
     height: 50px;
@@ -685,6 +828,11 @@ body.home {
       position: relative;
       display: block;
       width: 100%;
+      opacity: 0.2;
+      transition: opacity 0.1s;
+      &:hover {
+        opacity: 1;
+      }
       img {
         position: absolute;
         top: 0;
@@ -698,6 +846,10 @@ body.home {
 }
 
 /* PROJECTS */
+div.no-results {
+  display: none;
+}
+
 div.search {
   margin-bottom: 24px;
 
@@ -733,6 +885,9 @@ div.search {
 
 .projects, .description-dialog {
   margin-top: 10px;
+  @media(max-width: 991px) {
+    margin-top: 25px;
+  }
 
   button.close {
     font-size: 24px;
@@ -744,7 +899,7 @@ div.search {
 
   h2 {
     font-size: 28px;
-    font-weight: bold;
+    font-weight: 700;
     color: #002b36;
     margin-bottom: 30px;
   }
@@ -774,7 +929,7 @@ div.search {
 
     .status {
       font-size: 12px;
-      font-weight: bold;
+      font-weight: 700;
       color: #ffffff;
       text-transform: uppercase;
       padding: 3px 12px;
@@ -784,6 +939,8 @@ div.search {
       margin-left: 10px;
       position: relative;
       top: -4px;
+      margin-top: 7px;
+      display: inline-block;
 
       &.active {
         background-color: #f1592a;
@@ -799,7 +956,13 @@ div.search {
       line-height: 1.31;
       color: #888888;
       padding: 20px 0 10px 0;
-      height: 90px;
+      height: 95px;
+
+      @media(max-width: $screen-sm) {
+        height: auto;
+        min-height: 90px;
+      }
+
       position: relative;
 
       a.read-more {
@@ -810,19 +973,25 @@ div.search {
         font-size: 15px;
         position: absolute;
         bottom: 10px;
+        @media(max-width: 767px) {
+          margin-top: 10px;
+          position: relative;
+          bottom: 0;
+        }
       }
     }
 
     .header > h3 {
-      max-width: 50%;
-      height: 42px;
+      max-width: 70%;
+      min-height: 42px;
       border-radius: 8px;
-      background-color: #002b36;
+      //background-color: #002b36;
       display: inline-block;
       float: left;
-      color: #ffffff;
-      font-size: 14px;
-      padding: 8px 10px;
+      color: #002b36;
+      font-size: 20px;
+      line-height: 20px;
+      padding: 12px 0;
       margin-top: -10px;
     }
 
@@ -901,6 +1070,7 @@ div.search {
       }
 
       @media(max-width: 767px) {
+        /*
         min-height: 58px;
         text-align: center;
         height: auto;
@@ -908,9 +1078,11 @@ div.search {
           float: none;
           display: block;
         }
+        */
         ul {
           padding: 0;
-          margin: 15px 0;
+          margin-left: 15px;
+          text-align: center;
         }
       }
     }
@@ -923,7 +1095,7 @@ div.search {
 
 .join-us {
   color: rgba(255, 255, 255, 0.35);
-  font-weight: normal;
+  font-weight: 400;
   margin: 15px 0 35px 0;
 }
 
@@ -932,7 +1104,7 @@ div.search {
 .team {
 
   .team-member {
-    height: 385px;
+    min-height: 395px;
     margin-bottom: 30px;
     padding: 40px;
     background-color: #fafafa;
@@ -943,7 +1115,7 @@ div.search {
     h2 {
       text-align: left;
       font-size: 30px;
-      font-weight: bold;
+      font-weight: 700;
       color: #15414c;
       margin-top: 0;
       margin-bottom: 10px;
@@ -953,6 +1125,8 @@ div.search {
       font-size: 20px;
       color: #f1592a;
       margin: 10px 0;
+      max-width: 70%;
+      line-height: 24px;
     }
 
     a {
@@ -975,12 +1149,13 @@ div.search {
         margin-bottom: 10px;
         a {
           text-decoration: none;
+          cursor: pointer;
         }
       }
 
       .status {
         font-size: 12px;
-        font-weight: bold;
+        font-weight: 700;
         color: #ffffff;
         text-transform: uppercase;
         padding: 3px 12px;
@@ -1023,7 +1198,15 @@ div.search {
   }
 }
 
+
+.contributors-dialog, .description-dialog {
+  .modal-dialog {
+    margin-top: 10%;
+  }
+}
+
 .contributors-dialog {
+
   .team-member {
     margin: 0;
     border-top: solid 1px #e5e5e5;
@@ -1040,13 +1223,15 @@ div.search {
 
   h4.modal-title {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 700;
     color: #15414c;
   }
 
   button.close {
-    font-size: 28px;
-    color: #9b9b9b;
+    font-size: 24px;
+    color: #002b36;
+    opacity: 1;
+    margin-left: 15px;
     margin-top: 4px;
     opacity: 1;
   }
@@ -1062,24 +1247,25 @@ div.search {
   &.generic-block {
     padding: 50px 60px;
     margin-bottom: 80px;
+    margin-top: 30px;
   }
 
   h2 {
     font-size: 30px;
-    font-weight: bold;
+    font-weight: 700;
     color: #15414c;
     margin: 10px 0 30px 0;
   }
 
   h3 {
     font-size: 26px;
-    font-weight: bold;
+    font-weight: 700;
     color: #15414c;
     margin: 40px 0 15px 0;
   }
 
   p {
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 1.5;
     color: #888888;
@@ -1094,7 +1280,7 @@ div.search {
   ul {
     font-size: 20px;
     color: #888888;
-    font-weight: normal;
+    font-weight: 400;
     list-style: none;
     li {
       padding-bottom: 15px;
@@ -1164,6 +1350,9 @@ ul.nav {
   li.social {
     &.first {
       margin-left: 10px;
+      @media(max-width: $screen-sm) {
+        margin-left: 0;
+      }
     }
     a {
       font-size: 24px;

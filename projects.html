@@ -9,21 +9,28 @@ layout: page
 
     <div class="projects">
         {% assign projects = site.projects | where: "status", "Active" %}
-        <div class="col-md-12">
+        <div class="col-md-12 title active">
             <h2>Active</h2>
         </div>
-        {% include project-block.html %}
+        <div class=" project-list active">
+            {% include project-block.html %}
+        </div>
         {% assign projects = site.projects | where: "status", "Completed" %}
-        <div class="col-md-12">
+        <div class="col-md-12 title completed">
             <h2>Completed</h2>
         </div>
-        {% include project-block.html %}
+        <div class="project-list completed">
+            {% include project-block.html %}
+        </div>
         {% assign advisory = site.projects | where: "label", "advisoryBoardProposals" | first %}
         <div class="col-md-12">
-            <div class="block" style="font-size: 20px; line-height: 30px; margin: 40px 0 80px 0;">
+            <div class="advisory block" style="font-size: 20px; line-height: 30px; margin: 40px 0 80px 0;">
                 <h2>{{ advisory.name }}</h2>
                 {{ advisory }}
             </div>
+        </div>
+        <div class="col-md-12 no-results">
+            No results found
         </div>
     </div>
 </div>
@@ -34,7 +41,7 @@ layout: page
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
                         <h4 class="modal-title">{{ project.name }} contributors</h4>
                     </div>
                     <div class="modal-body team">

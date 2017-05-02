@@ -35,22 +35,14 @@
       <div class="container inner-splash" style="margin-top: 135px;">
         <div class="row">
           <div class="col-md-6 col-md-offset-3 text-center">
-            <div class="swirl">
-              <img src="{{ site.baseurl }}/resources/img/scala-center-swirl.png">
-            </div>
-            <div class="swirl-text">
-              <h1><b>scala</b>center</h1>
-              <div>
-                For open source. For education.
-              </div>
-            </div>
+            <img src="/resources/img/scala-center-main-logo@2x.png" width="100%" alt="ScalaCenter. For Open Source. For Education" >
           </div>
         </div>
       </div>
       <div class="container" style="margin-top: 60px;">
         <div class="vertical-spacer-top"></div>
         <div class="row">
-          <div class="col-md-6 col-md-offset-3 text-center">
+          <div class="col-md-12 text-center">
             <div class="objectives">
               A new not-for-profit center established at EPFL.<br/>
               <b>Focused on:</b>
@@ -115,23 +107,14 @@
       </div>
       <div class="col-md-12">
         <div class="the-courses">The courses:</div>
+        {% assign courses = site.data.education.courses %}
         <ul class="course-list">
-          <li>
-            <div class="title">Functional Programming Principles in Scala</div>
-            <div class="description">Taught by: Martin Odersky</div>
-          </li>
-          <li>
-            <div class="title">Functional Program Design in Scala</div>
-            <div class="description">Taught by: Martin Odersky</div>
-          </li>
-          <li>
-            <div class="title">Parallel Programming</div>
-            <div class="description">Taught by: Viktor Kuncak, Aleksandar Prokopec</div>
-          </li>
-          <li>
-            <div class="title">Big Data Analysis in Scala and Spark</div>
-              <div class="description">Taught by: Heather Miller</div>
-          </li>
+          {% for course in courses %}
+            <li>
+              <a class="title" href="{{ course.url }}" target="_blank">{{ course.title }}</a>
+              <div class="description">Taught by: {{ course.taught_by }}</div>
+            </li>
+          {% endfor %}
         </ul>
       </div>
       <div class="col-md-12 text-left">
@@ -141,18 +124,21 @@
 
 
     <div class="dark-blue-stripe">
+      <div id="popover-spacer"></div>
       <div class="vertical-spacer-top"></div>
       <div class="container">
         <div class="row">
-          <div class="col-md-10 text-center col-md-offset-1">
+          <div class="col-md-12 text-center">
             <h2>Projects that we've worked on</h2>
+          </div>
+          <div class="col-md-10 text-center col-md-offset-1">
             <div class="row" id="projects-logo">
-              <div class="col-md-2 col-xs-4"><img width="100%" src="/resources/img/scala@2x.png" alt="Scala"></div>
-              <div class="col-md-2 col-xs-4"><img width="100%" src="/resources/img/sbt@2x.png" alt="SBT"></div>
-              <div class="col-md-2 col-xs-4"><img width="100%" src="/resources/img/Community@2x.png" alt="Community"></div>
-              <div class="col-md-2 col-xs-4"><img width="100%" src="/resources/img/scastie@2x.png" alt="Scastie"></div>
-              <div class="col-md-2 col-xs-4"><img width="100%" src="/resources/img/scaladex-brand@2x.png" alt="Scaladex"></div>
-              <div class="col-md-2 col-xs-4"><img width="100%" src="/resources/img/coursera@2x.png" alt="Coursera"></div>
+              <div class="col-md-2 col-xs-4"><a href="https://www.scala-lang.org/" target="_blank"><img width="100%" src="/resources/img/scala@2x.png" alt="Scala"></a></div>
+              <div class="col-md-2 col-xs-4"><a href="http://www.scala-sbt.org/" target="_blank"><img width="100%" src="/resources/img/sbt@2x.png" alt="SBT"></a></div>
+              <div class="col-md-2 col-xs-4"><a href="http://scala-lang.org/community/" target="_blank"><img width="100%" src="/resources/img/Community@2x.png" alt="Community"></a></div>
+              <div class="col-md-2 col-xs-4"><a href="http://scastie.scala-lang.org/" target="_blank"><img width="100%" src="/resources/img/scastie@2x.png" alt="Scastie"></a></div>
+              <div class="col-md-2 col-xs-4"><a href="https://index.scala-lang.org/" target="_blank"><img width="100%" src="/resources/img/scaladex-brand@2x.png" alt="Scaladex"></a></div>
+              <div class="col-md-2 col-xs-4"><a href="https://www.coursera.org" target="_blank"><img width="100%" src="/resources/img/coursera@2x.png" alt="Coursera"></a></div>
             </div>
           </div>
         </div>
@@ -168,7 +154,8 @@
                 <div class="projects">
                     {% assign homeProjects = site.projects | where: "home", "true" %}
                     {% for project in homeProjects %}
-                      <div class="project">
+                      <a href="/projects.html#{{ project.label }}" class="project">
+                          <div class="status {{ project.status|downcase }}">{{ project.status }}</div>
                           <div class="icon-status {{ project.status|downcase }}">
                             <i class="fa fa-{{ project.status|downcase }}"></i>
                           </div>
@@ -177,7 +164,7 @@
                           {% else %}
                           <div class="text">{{ project.name }}</div>
                           {% endif %}
-                      </div>
+                      </a>
                     {% endfor %}
                 </div>
 
@@ -206,7 +193,7 @@
           {% assign members = site.data.team-members.members %}
           {% for member in members %}
             {% if member.currentlyWorkingOn %}
-              <div class="working-on col-md-4 col-xs-6">
+              <div class="working-on col-md-4 col-xs-12">
                 <div class="member-info">
                   <div class="circular" style="background-image: url({{ member.photo }});"></div>
                   <h3>{{ member.name }}</h3>
@@ -218,21 +205,34 @@
                 <div class="current-projects">
                   {% assign initialZ = 10 %}
                   {% assign initialHeight = 0 %}
+                  {% assign titlePosition = 0 %}
                   {% assign i = 0 %}
-                  {% for project in member.projects %}
+                  {% assign projects = member.projects | sort: 'percentage' %}
+                  {% for project in projects reversed %}
                     {% assign initialHeight = project.percentage | plus: initialHeight %}
                     {% assign colors = '#15414c,#325a63,#5f7e86,#79959c,#9bb0b5'|split: ',' ] %}
-                    <div class="project" style="height: {{ initialHeight }}%; background-color: {{ colors[i] }}; z-index: {{ initialZ }};">
-                      <div class="title">
+                    {% if initialHeight >= 90 and initialHeight < 100 %}
+                      {% assign thisHeight = 89 %}
+                    {% else %}
+                      {% assign thisHeight = initialHeight %}
+                    {% endif %}
+                    {% if titlePosition >= 90 %}
+                      {% assign titlePosition = titlePosition | minus: 2 %}
+                    {% endif %}
+                    <div class="project" style="height: {{ thisHeight }}%; background-color: {{ colors[i] }}; z-index: {{ initialZ }};">
+                    </div>
+                    <div class="project-data">
+                      <div class="title" style="top: {{ titlePosition }}%;">
                         {% assign data = site.projects | where: "label", project.title | first %}
                         {{ data.name }}
                       </div>
-                      <div class="percentage">
-                        {{ project.percentage }}
+                      <div class="percentage" style="top: {{ titlePosition }}%;">
+                        {{ project.percentage }} %
                       </div>
                     </div>
+                  {% assign titlePosition = initialHeight %}
                   {% assign initialZ = initialZ | minus: 1 %}
-                  {% assign i = i | plus: 1 %}
+                    {% assign i = i | plus: 1 %}
                   {% endfor %}
                 </div>
               </div>
@@ -254,7 +254,7 @@
       <div class="who-are-we">
         <div class="container">
           <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-center">
+            <div class="col-md-12 text-center">
               <!-- <div class="sect-header">Who are we?</div> -->
               <h2>Who are we?</h2>
             </div>
@@ -295,7 +295,7 @@
               <h2>Brought to you by</h2>
             </div>
             <div class="col-md-8 col-md-offset-2 text-center">
-              <div class="col-sm-12">
+              <div class="col-sm-12 first-supporter-logo" style="margin: 0;">
                <a href="http://epfl.ch" style="border: none;"><img src="{{ site.baseurl }}/resources/img/epfl.png" /></a>
               </div>
               <div class="subtitle col-sm-12">Advisory Board members:</div>
@@ -327,10 +327,10 @@
             <div class="col-md-12 text-center">
               <span class="subtitle col-sm-12">Backer-level members:</span>
               <br/><br/><br/>
-              <div class="text-center back-level col-md-12">
-                <a href="https://twitter.com/andy1138" class="col-md-4">Andy Hicks</a>
-                <a href="http://trondbjerkestrand.no/" class="col-md-4">Trond Bjerkstand</a>
-                <a href="http://www.heikoseeberger.de/" class="col-md-4">Heiko Seeberger</a>
+              <div class="text-center back-level clearfix">
+                <a href="https://twitter.com/andy1138" class="col-md-4 col-xs-12">Andy Hicks</a>
+                <a href="http://trondbjerkestrand.no/" class="col-md-4 col-xs-12">Trond Bjerkstand</a>
+                <a href="http://www.heikoseeberger.de/" class="col-md-4 col-xs-12">Heiko Seeberger</a>
               </div>
               <div class="col-md-12 founding-blurb">
                 <p>
@@ -375,17 +375,40 @@
         $(document).on('click', '.close-popover', function (e) {
             e.preventDefault();
             $(this).closest('.popover').popover('hide');
+            $('#popover-spacer').animate({'height': 0});
         });
         $('.home-popovers a').each(function () {
-            $(this).data('html', true);
-            $(this).data('content', $($(this).attr('href')).html());
-            $(this).click(function(e){
-                e.preventDefault();
-                $('.popover').popover('hide');
-                $(this).popover('toggle');
-                $('.popover .arrow').css('left', $(this).offset().left + $(this).width()/2 - $('.popover').offset().left);
-            });
+            var button = $(this);
+            button.data('html', true);
+            button.data('content', $($(this).attr('href')).html());
         });
+        $(document).on('click', '.home-popovers a', function(e){
+            var button = $(this);
+            e.preventDefault();
+            $('.popover').popover('hide');
+            setTimeout(function () {
+                button.popover('show');
+                if(button.attr('href') == '#education') {
+                    $('.popover .arrow').css('left', button.offset().left + 65 - $('.popover').offset().left);
+                } else {
+                    $('.popover .arrow').css('left', button.offset().left + 73 - $('.popover').offset().left);
+                }
+                setTimeout(function() {
+                    $('#popover-spacer').animate({'height': $('.popover').height()});
+                }, 150);
+            }, 150);
+        });
+
+        // Who we are effects
+        $('.who-are-we .us').mouseenter(function() {
+            $(this).find('.circular').addClass('active');
+            $('.who-are-we .circular:not(.active)').stop().animate({'opacity':'.3'}, 300);
+        });
+
+          $('.who-are-we .us').mouseleave(function() {
+              $('.who-are-we .circular').removeClass('active');
+              $('.who-are-we .circular').stop().animate({'opacity':'1'}, 300);
+          });
       });
     </script>
   </body>

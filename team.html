@@ -2,8 +2,8 @@
 layout: page
 ---
 
-<div class="row">
-    <div class="col-md-12" style="margin-bottom: 50px;">
+<div class="row" style="margin-bottom: 50px;">
+    <div style="margin-top: 30px;">
         <div class="team">
             {% assign members = site.data.team-members.members %}
             {% for member in members %}
@@ -31,12 +31,13 @@ layout: page
                                             <a href="https://www.coursera.org/learn/scala-spark-big-data">
                                                 Big Data Analysis with Scala and Spark
                                             </a>
+                                            {% if link.status %}<span class="status {{ link.status | downcase }}">{{ link.status }}</span>{% endif %}
                                         {% else %}
                                             <a href="https://www.coursera.org/learn/scala-capstone">
                                                 Functional Programming in Scala Capstone
                                             </a>
+                                            {% if link.status %}<span class="status completed">Completed</span>{% endif %}
                                         {% endif %}
-                                        {% if link.status %}<span class="status {{ link.status | downcase }}">{{ link.status }}</span>{% endif %}
                                     {% elsif link.github %}
                                         <a href="{{ link.github }}">{{ link.name }}</a> {% if link.status %}<span class="status {{ link.status | downcase }}">{{ link.status }}</span>{% endif %}
                                     {% elsif link.web %}

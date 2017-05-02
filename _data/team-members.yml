@@ -41,9 +41,9 @@ members:
           percentage: 15
         - title: spores
           percentage: 20
-        - title: spores
+        - title: improveBuilds
           percentage: 25
-        - title: spores
+        - title: zincImprovements
           percentage: 30
   - member: olafur
     name: Olafur Pall Geirsson
@@ -69,6 +69,16 @@ members:
          percentage: 30
        - title: scaladex
          percentage: 60
+  - member: martinduhem
+    name: Martin Duhem
+    title: Software Engineer
+    email:
+    photo: /resources/img/jon.png
+    currentlyWorkingOn: true
+    contact_for: [scalaNative]
+    projects:
+       - title: scalaNative
+         percentage: 100
   - member: travis
     name: Travis Lee
     title: Communications Manager, Contractor
@@ -79,16 +89,6 @@ members:
     projects:
        - title: documentationImprovements
          percentage: 100
-  - member: johndoe
-    name: John Doe
-    title: Software Engineer
-    email:
-    photo: /resources/img/travis.png
-    currentlyWorkingOn: true
-    contact_for: [scalaNative]
-    projects:
-      - title: scalaNative
-        percentage: 100
   - member: fabien
     name: Fabien Salvi
     title: System Administrator
