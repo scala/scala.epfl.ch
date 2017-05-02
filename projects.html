@@ -20,7 +20,7 @@ layout: page
         {% include project-block.html %}
         {% assign advisory = site.projects | where: "label", "advisoryBoardProposals" | first %}
         <div class="col-md-12">
-            <div class="block" style="font-size: 20px; line-height: 30px;">
+            <div class="block" style="font-size: 20px; line-height: 30px; margin: 40px 0 80px 0;">
                 <h2>{{ advisory.name }}</h2>
                 {{ advisory }}
             </div>
