@@ -10,5 +10,6 @@ type: project
 active: true
 featuredProject: true
 description: "Module bundler for Scala.js projects that use npm packages."
+logo: /resources/img/scala-js-dark.png
 ---
 Module bundler for Scala.js projects that use npm packages. Uses [webpack](https://webpack.github.io) under the hood.

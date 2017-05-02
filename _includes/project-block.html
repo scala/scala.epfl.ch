@@ -1,0 +1,54 @@
+
+{% for project in projects %}
+{% if project.active %}
+<div class="col-md-6">
+    <div class="project">
+        <div class="header">
+            {% if project.logo %}
+            <img class="project-logo" src="{{ project.logo }}" alt="{{ project.name }}"/>
+            {% else %}
+            <h3>{{ project.name }}</h3>
+            {% endif %}
+            <div class="references">
+                {% if project.status %}
+                <span class="status {{ project.status | downcase }}">
+                                        {{ project.status }}
+                                    </span>
+                {% endif %}
+                {% if project.web %}
+                <a href="{{ project.web }}"><i class="fa fa-globe"></i></a>
+                {% endif %}
+                {% if project.github %}
+                <a href="{{ project.github }}"><i class="fa fa-github"></i></a>
+                {% endif %}
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="content">
+            {{ project.description }}
+            <a href="#" class="read-more">
+                <i class="fa fa-plus"></i> Read more
+            </a>
+        </div>
+        <div class="contributors">
+            {% assign contributors = project.contributors | size %}
+            {% if contributors > 0 %}
+            <a class="contributors-modal" href="#" data-toggle="modal" data-target="#modal-{{ project.label }}">
+                <i class="fa fa-user"></i> {{ contributors }} Contributors
+            </a>
+            <ul>
+                {% for contributor in project.contributors %}
+                {% assign contr = site.data.team-members.members | where: "member", contributor| first %}
+                <li title="{{ contr.name }}"><img src="{{ contr.photo }}" alt="{{ contr.name}}" ></li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+
+            {% if project.origin %}
+            <a class="origin" href="{{ project.origin }}"><i class="fa fa-eye"></i> Origin of the project</a>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endfor %}

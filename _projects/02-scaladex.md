@@ -10,5 +10,6 @@ type: project
 active: true
 featuredProject: true
 description: "Scaladex is a catalogue of open source library. It’s auto generated based on data from Github and Maven Central."
+logo: /resources/img/scaladex-dark.png
 ---
 Scaladex is a catalogue of open source library. It’s auto generated based on data from Github and Maven Central.
