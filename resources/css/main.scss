@@ -731,8 +731,36 @@ div.search {
   }
 }
 
-.projects {
-  margin-top: 30px;
+.projects, .description-dialog {
+  margin-top: 10px;
+
+  button.close {
+    font-size: 24px;
+    color: #002b36;
+    opacity: 1;
+    margin-top: 2px;
+    margin-left: 15px;
+  }
+
+  h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #002b36;
+    margin-bottom: 30px;
+  }
+
+  .block > ol > li {
+    margin-bottom: 20px;
+  }
+
+  .modal-body.project {
+    margin: 0 !important;
+  }
+
+  .modal-content-text {
+    padding-top: 30px;
+  }
+
   .project {
     background-color: #fafafa;
     border-radius: 3px;
@@ -740,22 +768,71 @@ div.search {
     margin-bottom: 30px;
     word-wrap: break-word;
 
-    h2 {
-      font-size: 30px;
-      line-height: 36px;
-      margin-bottom: 20px;
-      display: inline-block;
-      float: left;
+    .project-logo {
+      max-height: 40px;
     }
 
-    h3 {
-      font-size: 26px;
-      margin-bottom: 10px;
+    .status {
+      font-size: 12px;
+      font-weight: bold;
+      color: #ffffff;
+      text-transform: uppercase;
+      padding: 3px 12px;
+      border-radius: 2px;
+      //background-color: #5c6367;
+      background-color: #d0011b;
+      margin-left: 10px;
+      position: relative;
+      top: -4px;
+
+      &.active {
+        background-color: #f1592a;
+      }
+
+      &.completed {
+        background-color: #7ed321;
+      }
+    }
+
+    .content {
+      font-size: 16px;
+      line-height: 1.31;
+      color: #888888;
+      padding: 20px 0 10px 0;
+      height: 90px;
+      position: relative;
+
+      a.read-more {
+        display: block;
+        width: 100%;
+        text-align: right;
+        color: #15414c;
+        font-size: 15px;
+        position: absolute;
+        bottom: 10px;
+      }
+    }
+
+    .header > h3 {
+      max-width: 50%;
+      height: 42px;
+      border-radius: 8px;
+      background-color: #002b36;
+      display: inline-block;
+      float: left;
+      color: #ffffff;
+      font-size: 14px;
+      padding: 8px 10px;
+      margin-top: -10px;
     }
 
     ol {
       padding-left: 15px;
       font-size: 20px;
+    }
+
+    .header {
+      height: 45px;
     }
 
     .references {
@@ -780,10 +857,14 @@ div.search {
       margin: 0px -30px;
       padding: 14px 30px;
       border-top: 1px solid rgb(202, 211, 212);
-      font-size: 18px;
+      font-size: 15px;
       line-height: 30px;
       height: 58px;
       overflow: hidden;
+
+      i {
+        font-size: 22px;
+      }
 
       a {
         color: #15414c;
@@ -802,17 +883,19 @@ div.search {
         margin-bottom: 0px;
         height: 30px;
         padding: 0px 0px 0px 20px;
+        overflow: hidden;
+        max-width: 180px;
         li {
           display: inline-block;
-          width: 30px;
-          height: 30px;
-          line-height: 30px;
+          width: 25px;
+          height: 25px;
+          line-height: 25px;
           border-radius: 15px;
-          margin-right: 16px;
+          margin-right: 4px;
           overflow: hidden;
           img {
-            width: 35px;
-            height: 35px;
+            width: 30px;
+            height: 30px;
           }
         }
       }
@@ -897,8 +980,17 @@ div.search {
         text-transform: uppercase;
         padding: 3px 6px;
         border-radius: 2px;
-        background-color: #5c6367;
         margin-left: 10px;
+        //background-color: #5c6367;
+        background-color: #d0011b;
+
+        &.active {
+          background-color: #f1592a;
+        }
+
+        &.completed {
+          background-color: #7ed321;
+        }
       }
     }
 
@@ -961,6 +1053,11 @@ div.search {
   border-radius: 3px;
   padding: 40px 30px 30px 30px;
   margin-bottom: 30px;
+
+  &.generic-block {
+    padding: 50px 60px;
+    margin-bottom: 80px;
+  }
 
   h2 {
     font-size: 30px;
@@ -1029,7 +1126,7 @@ div.search {
   padding-left: 14px;
   color: #15414c;
   margin-bottom: 20px;
-  max-width: 230px;
+  max-width: 300px;
   border-radius: 2px;
   border-width: 2px;
 }
@@ -1037,8 +1134,8 @@ div.search {
 .select-wrapper {
   position: relative;
   display: inline-block;
-  max-width: 230px;
-  width: 230px;
+  max-width: 300px;
+  width: 300px;
 
   &:after {
     content: "\f0d7";

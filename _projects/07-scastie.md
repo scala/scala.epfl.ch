@@ -11,5 +11,6 @@ active: true
 home: true
 description: "Scastie can run any Scala program with any library in your browser. You don’t need to download or install anything."
 logo-home: /resources/img/scastie@2x.png
+logo: /resources/img/scastie-dark.png
 ---
 Initially announce as ScalaFiddle. We decided to collaborate on an existing project called Scastie. It leverage sbt, you can easily depend on published libraries, change the Scala version, target a new platform(Scala.Js, Native) or use Dotty.
