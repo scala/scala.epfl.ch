@@ -8,6 +8,7 @@ contributors: [guillaume]
 status: Active
 type: project
 active: true
+home: false
 featuredProject: true
 description: "We extended Scala.js’ crossProject and %%% to support Scala-Native."
 ---

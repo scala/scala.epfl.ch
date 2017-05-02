@@ -8,6 +8,7 @@ contributors: [jorge, olafur, guillaume]
 status: Active
 type: project
 active: true
+home: true
 featuredProject: false
 description: "The Scala Platform Process provides organizational support for a broad range of open source software projects."
 ---

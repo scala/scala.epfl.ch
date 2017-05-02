@@ -8,6 +8,7 @@ contributors: [olafur, guillaume]
 status: Active
 type: project
 active: true
+home: false
 featuredProject: true
 description:
 ---

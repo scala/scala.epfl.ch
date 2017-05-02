@@ -8,6 +8,7 @@ contributors: []
 status: Active
 type: project
 active: true
+home: false
 featuredProject: false
 description: "The Scala collections library underwent a major redesign in Scala 2.8."
 ---

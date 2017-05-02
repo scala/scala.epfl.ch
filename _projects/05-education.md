@@ -8,6 +8,7 @@ contributors: [heather, julien]
 status: Active
 type: education
 active: true
+home: false
 featuredProject: false
 ---
 ### Big Data Analysis with Scala and Spark

@@ -8,6 +8,7 @@ contributors: [heather]
 status: Active
 type: project
 active: true
+home: false
 featuredProject: false
 description:
 ---

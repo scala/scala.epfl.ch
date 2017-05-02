@@ -8,6 +8,7 @@ contributors: []
 status:
 type: proposal
 active: true
+home: false
 featuredProject: false
 description:
 ---

@@ -7,6 +7,7 @@ contributors: [jorge]
 status: Active
 type: project
 active: true
+home: false
 featuredProject: false
 description:
 ---

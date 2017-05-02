@@ -146,12 +146,18 @@
         <div class="row">
           <div class="col-md-10 text-center col-md-offset-1">
             <h2>Projects that we've worked on</h2>
+            <div class="row" id="projects-logo">
+              <div class="col-md-2 col-xs-4"><img width="100%" src="/resources/img/scala@2x.png" alt="Scala"></div>
+              <div class="col-md-2 col-xs-4"><img width="100%" src="/resources/img/sbt@2x.png" alt="SBT"></div>
+              <div class="col-md-2 col-xs-4"><img width="100%" src="/resources/img/Community@2x.png" alt="Community"></div>
+              <div class="col-md-2 col-xs-4"><img width="100%" src="/resources/img/scastie@2x.png" alt="Scastie"></div>
+              <div class="col-md-2 col-xs-4"><img width="100%" src="/resources/img/scaladex-brand@2x.png" alt="Scaladex"></div>
+              <div class="col-md-2 col-xs-4"><img width="100%" src="/resources/img/coursera@2x.png" alt="Coursera"></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-
 
 
     <div class="dark-blue-stripe">
@@ -160,32 +166,28 @@
             <div class="container">
                 <h2>Our Projects</h2>
                 <div class="projects">
-                    <div class="project">
-                        <div class="icon-status in-proccess"><i class="fa fa-cog"></i></div>
-                        <div class="logo">Logo</div>
-                    </div>
+                    {% assign homeProjects = site.projects | where: "home", "true" %}
+                    {% for project in homeProjects %}
+                      <div class="project">
+                          <div class="icon-status {{ project.status|downcase }}">
+                            <i class="fa fa-{{ project.status|downcase }}"></i>
+                          </div>
+                          {% if project.logo-home %}
+                          <div class="logo"><img src="{{ project.logo-home }}" alt="{{ project.name }}"></div>
+                          {% else %}
+                          <div class="text">{{ project.name }}</div>
+                          {% endif %}
+                      </div>
+                    {% endfor %}
+                </div>
 
-                    <div class="project">
-                        <div class="icon-status in-proccess"><i class="fa fa-cog"></i></div>
-                        <div class="text">Scala<br>Platform Proccess</div>
-                    </div>
+                <div class="clearfix"></div>
 
-                    <div class="project">
-                        <div class="icon-status in-proccess"><i class="fa fa-cog"></i></div>
-                        <div class="logo">Logo</div>
-                    </div>
-
-                    <div class="project">
-                        <div class="icon-status active"><i class="fa fa-cog"></i></div>
-                        <div class="text">Scala<br>Platform Proccess</div>
-                    </div>
-
-                    <div class="project">
-                        <div class="icon-status need-help"><i class="fa fa-cog"></i></div>
-                        <div class="text">Scala<br>Platform Proccess</div>
-                    </div>
+                <div class="text-center" style="margin-top: 45px; clear: both;">
+                  <a href="/projects.html" class="btn btn-default">See our full project list</a>
                 </div>
             </div>
+
         </div>
         <div class="vertical-spacer-bottom"></div>
     </div>
@@ -194,7 +196,7 @@
       <div class="vertical-spacer-top"></div>
       <div class="container">
         <div class="row">
-          <div class="col-md-10 text-center col-md-offset-1">
+          <div class="col-md-12 text-center">
             <h2>What we're currently working on</h2>
           </div>
         </div>
@@ -204,7 +206,7 @@
           {% assign members = site.data.team-members.members %}
           {% for member in members %}
             {% if member.currentlyWorkingOn %}
-              <div class="working-on col-md-4">
+              <div class="working-on col-md-4 col-xs-6">
                 <div class="member-info">
                   <div class="circular" style="background-image: url({{ member.photo }});"></div>
                   <h3>{{ member.name }}</h3>
