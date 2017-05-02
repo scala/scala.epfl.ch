@@ -2,7 +2,7 @@
 layout: contact
 ---
 
-## Get in Touch
+## Contact
 
 If you'd like to join in on the discussion about Scala Center activities, then
 head over to the [Scala Center gitter channel](http://gitter.im/scala/center).

@@ -690,6 +690,11 @@ div.search {
   padding: 40px 30px 30px 30px;
   margin-bottom: 30px;
 
+  &.generic-block {
+    padding: 50px 60px;
+    margin-bottom: 80px;
+  }
+
   h2 {
     font-size: 30px;
     font-weight: bold;
@@ -757,7 +762,7 @@ div.search {
   padding-left: 14px;
   color: #15414c;
   margin-bottom: 20px;
-  max-width: 230px;
+  max-width: 300px;
   border-radius: 2px;
   border-width: 2px;
 }
@@ -765,8 +770,8 @@ div.search {
 .select-wrapper {
   position: relative;
   display: inline-block;
-  max-width: 230px;
-  width: 230px;
+  max-width: 300px;
+  width: 300px;
 
   &:after {
     content: "\f0d7";
