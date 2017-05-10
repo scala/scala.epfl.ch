@@ -100,7 +100,7 @@
         </ul>
       </div>
       <div class="col-md-12 text-left">
-        <a href="https://www.coursera.org/epfl" class="btn btn-default">View al courses</a>
+        <a href="https://www.coursera.org/epfl" class="btn btn-default" target="_blank">View al courses</a>
       </div>
     </div>
 
@@ -212,8 +212,22 @@
                   <div class="circular" style="background-image: url({{ member.photo }});"></div>
                   <h3>{{ member.name }}</h3>
                   <h4>{{ member.title }}</h4>
+
                   <div class="social">
-                    <a href="#"><i class="fa fa-github"></i></a> <a href="#"><i class="fa fa-twitter"></i></a>
+                    {% assign github = member.github %}
+                    {% unless github %}
+                      {% assign displayGithub = "none" %}
+                    {% endunless %}
+                    {% assign twitter = member.twitter %}
+                    {% unless twitter %}
+                      {% assign displayTwitter = "none" %}
+                    {% endunless %}
+                      <a href="https://github.com/{{ github }}" style="display: {{ displayGithub }}" target="_blank">
+                        <i class="fa fa-github"></i>
+                      </a>
+                      <a href="https://twitter.com/{{ twitter }}" style="display: {{ displayTwitter }}" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                      </a>
                   </div>
                 </div>
                 <div class="current-projects">
@@ -256,8 +270,11 @@
             <p style="margin: 40px 0;">Talk to us about any of these projects!</p>
           </div>
           <div class="col-md-12 text-center">
-            <a href="https://www.coursera.org/epfl" class="btn btn-default">Discourse</a>
-            <a href="http://gitter.im/scala/center" class="btn btn-default" style="margin-left: 20px;"><img src="/resources/img/gitter-icon.png" style="margin: 0 10px 5px 0;"/> Gitter</a>
+            <a href="http://gitter.im/scala/center" class="btn btn-default" target="_blank">Discourse</a>
+            <a href="https://contributors.scala-lang.org/" class="btn btn-default" style="margin-left: 20px;" target="_blank">
+              <img src="/resources/img/gitter-icon.png" style="margin: 0 10px 5px 0;"/>
+              Gitter
+            </a>
           </div>
         </div>
       </div>
@@ -310,45 +327,45 @@
             </div>
             <div class="col-md-8 col-md-offset-2 text-center">
               <div class="col-sm-12 first-supporter-logo" style="margin: 0;">
-               <a href="http://epfl.ch" style="border: none;"><img src="{{ site.baseurl }}/resources/img/epfl.png" /></a>
+               <a href="http://epfl.ch" style="border: none;" target="_blank"><img src="{{ site.baseurl }}/resources/img/epfl.png" /></a>
               </div>
               <div class="subtitle col-sm-12">Advisory Board members:</div>
               <div class="col-sm-3 supporter-logo">
-                <a href="http://www.spark.tc/" style="border: none;"><img src="{{ site.baseurl }}/resources/img/ibm.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="http://www.spark.tc/" style="border: none;" target="_blank"><img src="{{ site.baseurl }}/resources/img/ibm.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </div>
               <div class="col-sm-3 supporter-logo">
-                <a href="http://www.verizon.com/" style="border: none;"><img src="{{ site.baseurl }}/resources/img/verizon.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="http://www.verizon.com/" style="border: none;" target="_blank"><img src="{{ site.baseurl }}/resources/img/verizon.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </div>
               <div class="col-sm-3 supporter-logo">
-                <a href="http://www.goldmansachs.com/" style="border: none;"><img src="{{ site.baseurl }}/resources/img/goldman.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="http://www.goldmansachs.com/" style="border: none;" target="_blank"><img src="{{ site.baseurl }}/resources/img/goldman.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </div>
               <div class="col-sm-3 supporter-logo">
-                <a href="http://www.gonitro.com/" style="border: none;"><img src="{{ site.baseurl }}/resources/img/nitro.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="http://www.gonitro.com/" style="border: none;" target="_blank"><img src="{{ site.baseurl }}/resources/img/nitro.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </div>
               <div class="col-sm-3 supporter-logo">
-                <a href="http://www.lightbend.com/" style="border: none;"><img src="{{ site.baseurl }}/resources/img/lightbend.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="http://www.lightbend.com/" style="border: none;" target="_blank"><img src="{{ site.baseurl }}/resources/img/lightbend.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </div>
               <div class="col-sm-3 supporter-logo">
-                <a href="http://www.47deg.com/" style="border: none;"><img src="{{ site.baseurl }}/resources/img/47deg.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="http://www.47deg.com/" style="border: none;" target="_blank"><img src="{{ site.baseurl }}/resources/img/47deg.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </div>
               <div class="col-sm-3 supporter-logo">
-                <a href="http://www.sap.com/" style="border: none;"><img src="{{ site.baseurl }}/resources/img/sap.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="http://www.sap.com/" style="border: none;" target="_blank"><img src="{{ site.baseurl }}/resources/img/sap.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </div>
               <div class="col-sm-3 supporter-logo">
-                <a href="http://www.tapad.com/" style="border: none;"><img src="{{ site.baseurl }}/resources/img/tapad.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="http://www.tapad.com/" style="border: none;" target="_blank"><img src="{{ site.baseurl }}/resources/img/tapad.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </div>
             </div>
             <div class="col-md-12 text-center">
               <span class="subtitle col-sm-12">Backer-level members:</span>
               <br/><br/><br/>
               <div class="text-center back-level clearfix">
-                <a href="https://twitter.com/andy1138" class="col-md-4 col-xs-12">Andy Hicks</a>
-                <a href="http://trondbjerkestrand.no/" class="col-md-4 col-xs-12">Trond Bjerkstand</a>
-                <a href="http://www.heikoseeberger.de/" class="col-md-4 col-xs-12">Heiko Seeberger</a>
+                <a href="https://twitter.com/andy1138" class="col-md-4 col-xs-12" target="_blank">Andy Hicks</a>
+                <a href="http://trondbjerkestrand.no/" class="col-md-4 col-xs-12" target="_blank">Trond Bjerkstand</a>
+                <a href="http://www.heikoseeberger.de/" class="col-md-4 col-xs-12" target="_blank">Heiko Seeberger</a>
               </div>
               <div class="col-md-12 founding-blurb">
                 <p>
-                  The Scala Center is backed by <a href="http://epfl.ch">EPFL</a>, a world-class research
+                  The Scala Center is backed by <a href="http://epfl.ch" target="_blank">EPFL</a>, a world-class research
                   university in Lausanne, Switzerland, several industries that depend
                   on Scala every day, and countless individual members of the Scala
                   community.

@@ -28,22 +28,22 @@ layout: page
                                     {% assign link = site.projects | where: "label", c | first %}
                                     {% if link.label == 'education' %}
                                         {% if member.member == 'heather' %}
-                                            <a href="https://www.coursera.org/learn/scala-spark-big-data">
+                                            <a href="https://www.coursera.org/learn/scala-spark-big-data" target="_blank">
                                                 Big Data Analysis with Scala and Spark
                                             </a>
                                             {% if link.status %}<span class="status {{ link.status | downcase }}">{{ link.status }}</span>{% endif %}
                                         {% else %}
-                                            <a href="https://www.coursera.org/learn/scala-capstone">
+                                            <a href="https://www.coursera.org/learn/scala-capstone" target="_blank">
                                                 Functional Programming in Scala Capstone
                                             </a>
                                             {% if link.status %}<span class="status completed">Completed</span>{% endif %}
                                         {% endif %}
                                     {% elsif link.github %}
-                                        <a href="{{ link.github }}">{{ link.name }}</a> {% if link.status %}<span class="status {{ link.status | downcase }}">{{ link.status }}</span>{% endif %}
+                                        <a href="{{ link.github }}" target="_blank">{{ link.name }}</a> {% if link.status %}<span class="status {{ link.status | downcase }}">{{ link.status }}</span>{% endif %}
                                     {% elsif link.web %}
-                                        <a href="{{ link.web }}">{{ link.name }}</a> {% if link.status %}<span class="status {{ link.status | downcase }}">{{ link.status }}</span>{% endif %}
+                                        <a href="{{ link.web }}" target="_blank">{{ link.name }}</a> {% if link.status %}<span class="status {{ link.status | downcase }}">{{ link.status }}</span>{% endif %}
                                     {% else %}
-                                        <a href="{{ link.link }}">{{ link.name }}</a> {% if link.status %}<span class="status {{ link.status | downcase }}">{{ link.status }}</span>{% endif %}
+                                        <a >{{ link.name }}</a> {% if link.status %}<span class="status {{ link.status | downcase }}">{{ link.status }}</span>{% endif %}
                                     {% endif %}
                                 {% endif %}
                             </li>
