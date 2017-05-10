@@ -33,7 +33,7 @@ members:
     email: jorge.vicentecantero@epfl.ch
     photo: /resources/img/jorge.png
     currentlyWorkingOn: true
-    contact_for: [scalaPlatformProcess, sip, spores, improveBuilds, zincImprovements]
+    contact_for: [scalaPlatformProcess, sip, spores, buildTools]
     projects:
         - title: scalaPlatformProcess
           percentage: 10
@@ -41,10 +41,8 @@ members:
           percentage: 15
         - title: spores
           percentage: 20
-        - title: improveBuilds
-          percentage: 25
-        - title: zincImprovements
-          percentage: 30
+        - title: buildTools
+          percentage: 55
   - member: olafur
     name: Olafur Pall Geirsson
     title: Software Development
