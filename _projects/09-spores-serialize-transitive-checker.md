@@ -7,7 +7,7 @@ origin: https://github.com/scalacenter/advisoryboard/blob/master/minutes/002-201
 contributors: [jorge, heather, julien]
 status: Completed
 type: project
-active: true
+active: false
 home: false
 description: "A production-ready version of spores compatible with `{java, scala}.util.Serializable`."
 ---

@@ -1,6 +1,5 @@
 
 {% for project in projects %}
-{% if project.active %}
 <div class="col-md-6">
     <div class="project" id="{{ project.label }}">
         <div class="header" data-title="{{ project.name }}">
@@ -55,5 +54,4 @@
         </div>
     </div>
 </div>
-{% endif %}
 {% endfor %}

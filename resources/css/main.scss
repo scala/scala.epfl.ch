@@ -256,6 +256,10 @@ body.home {
     }
 
     .home-popovers {
+      .btn-default {
+        min-width: 150px;
+      }
+
       a.btn:not(:first-child) {
         margin-left: 25px;
       }
@@ -306,7 +310,16 @@ body.home {
     }
   }
 
+  .btn-blue-stripe {
+    position: relative;
+    background-color: $dark-blue;
+    min-height: 100px;
 
+      h3 {
+        color: white;
+        text-decoration: underline;
+      }
+  }
 
   .dark-blue-stripe {
     position: relative;
@@ -532,7 +545,7 @@ body.home {
   #projects-logo {
     img {
       margin-top: 90px;
-      opacity: 0.2;
+      opacity: 0.4;
       transition: opacity 0.1s;
       @media(max-width: 991px) {
         max-width: 180px;
@@ -662,12 +675,12 @@ body.home {
       }
 
       .text {
-        display: block;
-        font-size: 14px;
+        min-height: 42px;
+        display: inline-block;
+        float: left;
         color: white;
-        background-color: $dark-blue;
-        border-radius: 8px;
-        padding: 6px;
+        font-size: 20px;
+        font-weight: bold;
       }
 
     }

@@ -71,14 +71,16 @@ members:
          percentage: 60
   - member: martinduhem
     name: Martin Duhem
-    title: Software Engineer
-    email:
-    photo: /resources/img/jon.png
+    title: Software Development
+    email: martin.duhem@epfl.ch
+    photo: /resources/img/martinduhem.png
     currentlyWorkingOn: true
-    contact_for: [scalaNative]
+    contact_for: [scalaNative, buildTools]
     projects:
        - title: scalaNative
-         percentage: 100
+         percentage: 50
+       - title: buildTools
+         percentage: 50
   - member: travis
     name: Travis Lee
     title: Communications Manager, Contractor

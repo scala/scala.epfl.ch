@@ -5,11 +5,11 @@ web:
 github: https://github.com/scalacenter/spores
 origin: SCP-001 - Native Execution of Scala/Spark via LLVM
 contributors: [guillaume]
-status: Active
+status: Need Maintainers
 type: project
 active: true
-home: false
-description: "We extended Scala.js’ crossProject and %%% to support Scala-Native."
+home: true
+description: "Compiler backend producing native programs."
 ---
 [Sbt-cross-project](https://github.com/scala-native/sbt-crossproject)
   We extended Scala.js’ crossProject and %%% to support Scala-Native. You can publish and depend on Scala Native libraries.

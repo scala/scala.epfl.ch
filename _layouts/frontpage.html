@@ -53,27 +53,10 @@
           <div class="col-md-12 text-center home-popovers">
             <a class="btn btn-default btn" data-toggle="popover" data-placement="bottom" data-container="body" href="#open-source">Open Source</a>
             <a class="btn btn-default btn" data-toggle="popover" data-placement="bottom" data-container="body" href="#education">Education</a>
-            <a class="btn btn-default btn" data-toggle="popover" data-placement="bottom" data-container="body" href="#our-missions">Our missions</a>
           </div>
         </div>
       </div>
       <div class="vertical-spacer-bottom gradient"></div>
-    </div>
-
-    <div class="mission hidden" id="our-missions">
-      <div class="close-popover">
-        <i class="fa fa-close"></i>
-      </div>
-      <div class="col-md-12">
-        <ul class="red">
-          <li>Independently guide and support the Scala community</li>
-          <li>Coordinate and develop open source libraries and tools for the benefit of all Scala users</li>
-          <li>Provide deep, and quality, educational materials for Scala</li>
-        </ul>
-        <div class="text-left">
-          <a class="btn btn-default btn" href="http://scala-lang.org/blog/2016/03/14/announcing-the-scala-center.html">See the blog article</a>
-        </div>
-      </div>
     </div>
 
     <div class="open-source hidden" id="open-source">
@@ -100,7 +83,6 @@
       </div>
     </div>
 
-
     <div class="education hidden" id="education">
       <div class="close-popover">
         <i class="fa fa-close"></i>
@@ -122,10 +104,38 @@
       </div>
     </div>
 
-
-    <div class="dark-blue-stripe">
+    <div class="btn-blue-stripe">
       <div id="popover-spacer"></div>
       <div class="vertical-spacer-top"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center home-popovers">
+            <a data-toggle="popover" data-placement="bottom" data-container="body" href="#our-missions">
+              <h3>What is the Scala Center's Mission?</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="popover-spacer-2"></div>
+    </div>
+
+    <div class="mission hidden" id="our-missions">
+      <div class="close-popover">
+        <i class="fa fa-close"></i>
+      </div>
+      <div class="col-md-12">
+        <ul class="red">
+          <li>Independently guide and support the Scala community</li>
+          <li>Coordinate and develop open source libraries and tools for the benefit of all Scala users</li>
+          <li>Provide deep, and quality, educational materials for Scala</li>
+        </ul>
+        <div class="text-left">
+          <a class="btn btn-default btn" href="http://scala-lang.org/blog/2016/03/14/announcing-the-scala-center.html">See the blog article</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="dark-blue-stripe">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
@@ -145,7 +155,6 @@
       </div>
     </div>
 
-
     <div class="dark-blue-stripe">
         <div class="vertical-spacer-top" id="our-projects"></div>
         <div class="open-source">
@@ -155,9 +164,14 @@
                     {% assign homeProjects = site.projects | where: "home", "true" %}
                     {% for project in homeProjects %}
                       <a href="/projects.html#{{ project.label }}" class="project">
+                        {% if project.status == "Need Maintainers" %}
+                          {% assign projectStatus ="needmaintainers" %}
+                        {% else %}
+                          {% assign projectStatus = project.status %}
+                        {% endif %}
                           <div class="status {{ project.status|downcase }}">{{ project.status }}</div>
-                          <div class="icon-status {{ project.status|downcase }}">
-                            <i class="fa fa-{{ project.status|downcase }}"></i>
+                          <div class="icon-status {{ projectStatus|downcase }}">
+                            <i class="fa fa-{{ projectStatus|downcase }}"></i>
                           </div>
                           {% if project.logo-home %}
                           <div class="logo"><img src="{{ project.logo-home }}" alt="{{ project.name }}"></div>
@@ -376,6 +390,7 @@
             e.preventDefault();
             $(this).closest('.popover').popover('hide');
             $('#popover-spacer').animate({'height': 0});
+            $('#popover-spacer-2').animate({'height': 0});
         });
         $('.home-popovers a').each(function () {
             var button = $(this);
@@ -386,17 +401,29 @@
             var button = $(this);
             e.preventDefault();
             $('.popover').popover('hide');
-            setTimeout(function () {
-                button.popover('show');
-                if(button.attr('href') == '#education') {
-                    $('.popover .arrow').css('left', button.offset().left + 65 - $('.popover').offset().left);
-                } else {
-                    $('.popover .arrow').css('left', button.offset().left + 73 - $('.popover').offset().left);
-                }
                 setTimeout(function() {
-                    $('#popover-spacer').animate({'height': $('.popover').height()});
+                    if(button.attr('href') == '#our-missions') {
+                        $('#popover-spacer').animate({'height': 0}, 150, function() {
+                            button.popover('show');
+                            $('#popover-spacer-2').animate({'height': $('.popover').height() + 100});
+                        });
+                    } else {
+                        $('#popover-spacer-2').animate({'height': 0}, 50, function() {
+                            $('#popover-spacer').animate({'height': $('.popover').height()});
+                        });
+                        button.popover('show');
+                    }
+
+                    setTimeout(function () {
+                        if(button.attr('href') == '#education') {
+                            $('.popover .arrow').css('left', button.offset().left + 65 - $('.popover').offset().left);
+                        } else if(button.attr('href') != '#our-missions') {
+                            $('.popover .arrow').css('left', button.offset().left + 73 - $('.popover').offset().left);
+                        } else {
+                            $('.popover .arrow').css('left', '');
+                        }
+                    }, 150);
                 }, 150);
-            }, 150);
         });
 
         // Who we are effects

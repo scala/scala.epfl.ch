@@ -9,7 +9,7 @@ status: Active
 type: project
 active: true
 home: false
-description:
+description: "Simplify and upgrade code examples, improve the structure and the design of the scala-lang.org website."
 ---
 [Scala tutorial based on the existing MOOCs.](https://www.scala-exercises.org/scala_tutorial/terms_and_types)
 

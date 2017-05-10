@@ -7,7 +7,7 @@ origin:
 contributors: []
 status:
 type: proposal
-active: true
+active:
 home: false
 description:
 ---

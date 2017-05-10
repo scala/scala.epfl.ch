@@ -9,7 +9,7 @@ status: Active
 type: project
 active: true
 home: true
-description: "Scala improvement process"
+description: "Set of processes involving the community and aiming at improving the Scala language."
 ---
 SLIP: Scala library improvement process
 Anything related to scala modules (scala-xml, scala-swing, pickling, etc)

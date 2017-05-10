@@ -8,14 +8,14 @@ layout: page
     <div class="clearfix"></div>
 
     <div class="projects">
-        {% assign projects = site.projects | where: "status", "Active" %}
+        {% assign projects = site.projects | where: "active", "true" %}
         <div class="col-md-12 title active">
             <h2>Active</h2>
         </div>
         <div class=" project-list active">
             {% include project-block.html %}
         </div>
-        {% assign projects = site.projects | where: "status", "Completed" %}
+        {% assign projects = site.projects | where: "active", "false" %}
         <div class="col-md-12 title completed">
             <h2>Completed</h2>
         </div>
@@ -36,7 +36,7 @@ layout: page
 </div>
 
 {% for project in site.projects %}
-    {% if project.active and project.status == "Active" or project.status == "Completed" %}
+    {% if project.status == "Active" or project.status == "Completed" %}
         <div class="modal fade contributors-dialog" tabindex="-1" role="dialog" id="modal-{{ project.label }}">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
