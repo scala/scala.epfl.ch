@@ -1361,6 +1361,7 @@ div.search {
 
 ul.nav {
   li.social {
+    width: 52px;
     &.first {
       margin-left: 10px;
       @media(max-width: $screen-sm) {
