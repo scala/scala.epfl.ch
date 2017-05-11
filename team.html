@@ -1,0 +1,57 @@
+---
+layout: page
+---
+
+<div class="row" style="margin-bottom: 50px;">
+    <div style="margin-top: 30px;">
+        <div class="team">
+            {% assign members = site.data.team-members.members %}
+            {% for member in members %}
+            <div class="col-md-6">
+                <div class="team-member">
+                    <div class="circular visible-xs" style="background-image: url({{ member.photo }});"></div>
+                    <h2>{{ member.name }}</h2>
+                    <h3>{{ member.title }}</h3>
+                    <div class="circular hidden-xs" style="background-image: url({{ member.photo }});"></div>
+                    <a href="mailto:{{ team.email }}">{{ member.email }}</a>
+                    <ul class="contact-for">
+                        {% for c in member.contact_for %}
+                            <li>
+                                {% assign link = site.contact | where: "label", c | first %}
+                                {% if link %}
+                                    {% if link.link %}
+                                        <a href="{{ link.link }}">{{ link.name }}</a>
+                                    {% else %}
+                                <p>{{ link.name }}</p>
+                                    {% endif %}
+                                {% else %}
+                                    {% assign link = site.projects | where: "label", c | first %}
+                                    {% if link.label == 'education' %}
+                                        {% if member.member == 'heather' %}
+                                            <a href="https://www.coursera.org/learn/scala-spark-big-data" target="_blank">
+                                                Big Data Analysis with Scala and Spark
+                                            </a>
+                                            {% if link.status %}<span class="status {{ link.status | downcase }}">{{ link.status }}</span>{% endif %}
+                                        {% else %}
+                                            <a href="https://www.coursera.org/learn/scala-capstone" target="_blank">
+                                                Functional Programming in Scala Capstone
+                                            </a>
+                                            {% if link.status %}<span class="status completed">Completed</span>{% endif %}
+                                        {% endif %}
+                                    {% elsif link.github %}
+                                        <a href="{{ link.github }}" target="_blank">{{ link.name }}</a> {% if link.status %}<span class="status {{ link.status | downcase }}">{{ link.status }}</span>{% endif %}
+                                    {% elsif link.web %}
+                                        <a href="{{ link.web }}" target="_blank">{{ link.name }}</a> {% if link.status %}<span class="status {{ link.status | downcase }}">{{ link.status }}</span>{% endif %}
+                                    {% else %}
+                                        <a >{{ link.name }}</a> {% if link.status %}<span class="status {{ link.status | downcase }}">{{ link.status }}</span>{% endif %}
+                                    {% endif %}
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

@@ -9,6 +9,16 @@ url: "http://scala.epfl.ch" # the base hostname & protocol for your site
 twitter_username: scala_lang
 github_username:  scala
 
+
+# Collections
+collections:
+  contact:
+    output: false
+  projects:
+    output: false
+  team:
+    output: false
+
 # Build settings
 markdown: kramdown
 exclude: ["node_modules", "gulpfile.js", "package.json"]
