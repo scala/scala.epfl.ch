@@ -4,3 +4,4 @@ _site
 node_modules
 bower_components
 .DS_Store
+vendor/bundle/

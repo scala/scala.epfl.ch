@@ -21,6 +21,6 @@ collections:
 
 # Build settings
 markdown: kramdown
-exclude: ["node_modules", "gulpfile.js", "package.json"]
+exclude: ["node_modules", "gulpfile.js", "package.json", "vendor"]
 sass:
   sass_dir: resources/css/sass
