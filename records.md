@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: contact
 ---
 
 ## Scala Center Public Records
@@ -17,3 +17,4 @@ layout: page
 ### Other Resources
 
 - [Full Text of Proposals](https://github.com/scalacenter/advisoryboard/tree/master/proposals)
+

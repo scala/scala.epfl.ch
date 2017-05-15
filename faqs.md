@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: contact
 ---
 
 ## Scala Center FAQ
@@ -28,7 +28,7 @@ corporate, are actively involved in the Scala project.
 your own open source Scala library to contribute to the overall Scala ecosystem,
 or by contributing code back to Scala. Anything helps.
 
-We also [accept donations]({{ site.baseurl }}/individual-membership.html).
+We also [accept donations]({{ site.baseurl }}/donate.html).
 
 ### How can my company support the Scala Center?
 
@@ -54,4 +54,4 @@ signing our [Contributors License Agreement (CLA)](https://www.lightbend.com/con
 
 Please get in touch! Either drop into the [Scala Center gitter
 channel](http://gitter.im/scala/center), or drop us a line at
-`scala.center@epfl.ch`.
+<a href="mailto:scala.center@epfl.ch">scala.center@epfl.ch</a>.

@@ -1,0 +1,89 @@
+---
+layout: page
+---
+<div class="row">
+    <div class="col-md-12 search">
+        <input class="col-xs-12 form-control" value="" placeholder="Search a Project..." type="text">
+    </div>
+    <div class="clearfix"></div>
+
+    <div class="projects">
+        {% assign projects = site.projects | where: "active", "true" %}
+        <div class="col-md-12 title active">
+            <h2>Active</h2>
+        </div>
+        <div class=" project-list active">
+            {% include project-block.html %}
+        </div>
+        {% assign projects = site.projects | where: "active", "false" %}
+        <div class="col-md-12 title completed">
+            <h2>Completed</h2>
+        </div>
+        <div class="project-list completed">
+            {% include project-block.html %}
+        </div>
+        {% assign advisory = site.projects | where: "label", "advisoryBoardProposals" | first %}
+        <div class="col-md-12">
+            <div class="advisory block" style="font-size: 20px; line-height: 30px; margin: 40px 0 80px 0;">
+                <h2>{{ advisory.name }}</h2>
+                {{ advisory }}
+            </div>
+        </div>
+        <div class="col-md-12 no-results">
+            <h3>No results found</h3>
+        </div>
+    </div>
+</div>
+
+{% for project in site.projects %}
+    <div class="modal fade contributors-dialog" tabindex="-1" role="dialog" id="modal-{{ project.label }}">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+                    <h4 class="modal-title">{{ project.name }} contributors</h4>
+                </div>
+                <div class="modal-body team">
+
+                    {% for contributor in project.contributors %}
+                    {% assign member = site.data.team-members.members | where: "member", contributor| first %}
+                    <div class="team-member">
+                        <h2>{{ member.name }}</h2>
+                        <h3>{{ member.title }}</h3>
+                        <div class="circular" style="background-image: url({{ member.photo }});"></div>
+                        <a href="mailto:{{ team.email }}">{{ member.email }}</a>
+                        <ul class="contact-for">
+                            {% for c in member.contact_for %}
+                            <li>
+                                {% assign link = site.contact | where: "label", c | first %}
+                                {% if link %}
+                                <a href="{{ link.link }}">{{ link.name }}</a>
+                                {% else %}
+                                {% assign link = site.projects | where: "label", c | first %}
+                                {% if link.github %}
+                                <a href="{{ link.github }}">{{ link.name }}</a> {% if link.status %}<span class="status {{ link.status | downcase }}">{{ link.status }}</span>{% endif %}
+                                {% elsif link.web %}
+                                <a href="{{ link.web }}">{{ link.name }}</a> {% if link.status %}<span class="status {{ link.status | downcase }}">{{ link.status }}</span>{% endif %}
+                                {% else %}
+                                <a href="{{ link.link }}">{{ link.name }}</a>
+                                {% endif %}
+                                {% endif %}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+{% endfor %}
+
+<div class="modal fade description-dialog" tabindex="-1" role="dialog" id="modal-description">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body project">
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
