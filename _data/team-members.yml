@@ -28,9 +28,9 @@ members:
     contact_for: [education, scalajsBundler, documentationImprovements, collectionsRedesign]
     projects:
         - title: scalajsBundler
-          percentage: 15
-        - title: documentationImprovements
-          percentage: 35
+          percentage: 5
+        - title: education
+          percentage: 45
         - title: collectionsRedesign
           percentage: 50
   - member: jorge
