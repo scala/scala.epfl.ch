@@ -61,8 +61,10 @@ members:
     currentlyWorkingOn: true
     contact_for: [scalafix]
     projects:
-       - title: scalajsBundler
-         percentage: 100
+       - title: scalameta
+         percentage: 50
+       - title: scalafix
+         percentage: 50
   - member: guillaume
     name: Guillaume Massé
     title: Software Engineer
