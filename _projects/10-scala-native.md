@@ -5,7 +5,7 @@ web:
 github: https://github.com/scalacenter/spores
 origin: SCP-001 - Native Execution of Scala/Spark via LLVM
 contributors: [guillaume]
-status: Need Maintainers
+status: Contributors are welcome
 type: project
 active: true
 home: true

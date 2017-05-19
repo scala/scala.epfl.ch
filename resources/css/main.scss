@@ -663,6 +663,9 @@ body.home {
       .icon-status.needmaintainers {
        background-color: #d0011b;
       }
+      .icon-status.contributorsarewelcome {
+       background-color: #29a503;
+      }
 
       .logo img {
         width: 100%;
@@ -698,6 +701,10 @@ body.home {
   }
 
   .fa-needmaintainers:before {
+    content: "\f12a";
+  }
+
+  .fa-contributorsarewelcome:before {
     content: "\f12a";
   }
 

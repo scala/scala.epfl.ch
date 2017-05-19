@@ -166,6 +166,8 @@
                       <a href="/projects.html#{{ project.label }}" class="project">
                         {% if project.status == "Need Maintainers" %}
                           {% assign projectStatus ="needmaintainers" %}
+                        {% else if project.status == "Contributors are welcome" %}
+                          {% assign projectStatus ="contributorsarewelcome" %}
                         {% else %}
                           {% assign projectStatus = project.status %}
                         {% endif %}

@@ -5,7 +5,7 @@ web:
 github: https://github.com/scalacenter/scalajs-bundler
 origin: https://github.com/scalacenter/advisoryboard/blob/master/minutes/001-2016-q2.md#proposal-scp-005-ensurance-of-continuity-of-scalajs-project
 contributors: [julien]
-status: Need Maintainers
+status: Contributors are welcome
 type: project
 active: true
 home: true
