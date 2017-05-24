@@ -1,6 +1,6 @@
 ---
 label: scalaNative
-name: Scala-Native
+name: Scala-Native Support
 web:
 github: https://github.com/scalacenter/spores
 origin: SCP-001 - Native Execution of Scala/Spark via LLVM
