@@ -5,7 +5,7 @@ web:
 github: https://github.com/scalacenter/scalafix
 origin: https://github.com/scalacenter/advisoryboard/blob/master/agendas/001-2016-q2.md
 contributors: [olafur, guillaume]
-status: Need Maintainers
+status: Active
 type: project
 active: true
 home: true
