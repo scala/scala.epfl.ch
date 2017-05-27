@@ -61,10 +61,12 @@ members:
     currentlyWorkingOn: true
     contact_for: [scalafix]
     projects:
-       - title: scalameta
+       - title: Scalafix
          percentage: 50
-       - title: scalafix
-         percentage: 50
+       - title: Scalameta
+         percentage: 40
+       - title: Dotty
+         percentage: 10
   - member: guillaume
     name: Guillaume Massé
     title: Software Engineer
