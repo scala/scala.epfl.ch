@@ -2,7 +2,7 @@
 label: buildTools
 name: Build Tools
 github: https://github.com/sbt/zinc
-origin: Scala Center’s decision
+origin: "https://twitter.com/scala_lang/status/854613464223973377"
 contributors: [jorge, martinduhem]
 status: Active
 type: project
