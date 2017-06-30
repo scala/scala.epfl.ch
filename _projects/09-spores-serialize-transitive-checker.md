@@ -1,5 +1,6 @@
 ---
 label: spores
+short-name: "Spores & transitivity check"
 name: Spores and serializable transitive checker
 web:
 github: https://github.com/scalacenter/spores

@@ -8,7 +8,7 @@ contributors: []
 status:
 type: proposal
 active:
-home: false
+hide-from-homepage: true
 description:
 ---
 1. [SCP-001: Native Execution of Scala/Spark via LLVM](https://github.com/scalacenter/advisoryboard/blob/master/proposals/001-native-scala-for-spark.md)

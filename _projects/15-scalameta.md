@@ -8,7 +8,7 @@ contributors: [olafur]
 status: Active
 type: project
 active: true
-home: true
+home: false
 description: "fill in"
 ---
 
