@@ -4,7 +4,7 @@ name: Collections Redesign
 web:
 github:
 origin: https://github.com/scalacenter/advisoryboard/blob/master/proposals/007-collections.md
-contributors: []
+contributors: [julien]
 status: Active
 type: project
 active: true
