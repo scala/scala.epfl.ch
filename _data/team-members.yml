@@ -44,11 +44,9 @@ members:
         - title: scalaPlatformProcess
           percentage: 10
         - title: sip
-          percentage: 15
-        - title: spores
-          percentage: 20
+          percentage: 10
         - title: buildTools
-          percentage: 55
+          percentage: 80
   - member: olafur
     name: Olafur Pall Geirsson
     title: Software Development
