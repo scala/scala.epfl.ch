@@ -39,13 +39,13 @@ members:
     twitter: jvican
     photo: /resources/img/jorge.png
     currentlyWorkingOn: true
-    contact_for: [scalaPlatformProcess, sip, spores, buildTools]
+    contact_for: [scalaPlatformProcess, sip, spores, build-tools]
     projects:
         - title: scalaPlatformProcess
           percentage: 10
         - title: sip
           percentage: 10
-        - title: buildTools
+        - title: build-tools
           percentage: 80
   - member: olafur
     name: Olafur Pall Geirsson
@@ -87,11 +87,11 @@ members:
     twitter: mnduhem
     photo: /resources/img/martinduhem.png
     currentlyWorkingOn: true
-    contact_for: [scalaNative, buildTools]
+    contact_for: [scalaNative, build-tools]
     projects:
        - title: scalaNative
          percentage: 50
-       - title: buildTools
+       - title: build-tools
          percentage: 50
   - member: travis
     name: Travis Lee

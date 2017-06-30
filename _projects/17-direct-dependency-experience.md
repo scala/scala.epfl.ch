@@ -21,4 +21,4 @@ As a result, they can be removed from the classpath and developers can avoid the
 This initiative consisted in [the creation of a scalac plugin](https://github.com/scalacenter/classpath-shrinker) to detect unused classpath entries so that users can have fine-grained control on the compilation classpath, thus enabling faster distributed compilation of Scala projects.
 This plugin is available for both 2.12.x and 2.11.x and will be most useful to those build tools that allow you to control the library dependencies explicitly.
 
-More information are available in the [Classpath Shrinker](https://github.com/scalacenter/classpath-shrinker) repository.
+More information is available in the [Classpath Shrinker](https://github.com/scalacenter/classpath-shrinker) repository.
