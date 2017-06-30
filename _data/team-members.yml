@@ -27,10 +27,8 @@ members:
     currentlyWorkingOn: true
     contact_for: [education, scalajsBundler, documentationImprovements, collectionsRedesign]
     projects:
-        - title: scalajsBundler
-          percentage: 5
         - title: education
-          percentage: 45
+          percentage: 50
         - title: collectionsRedesign
           percentage: 50
   - member: jorge
@@ -61,11 +59,11 @@ members:
     currentlyWorkingOn: true
     contact_for: [scalafix]
     projects:
-       - title: Scalafix
+       - title: scalafix
          percentage: 50
-       - title: Scalameta
+       - title: scalameta
          percentage: 40
-       - title: Dotty
+       - title: dotty
          percentage: 10
   - member: guillaume
     name: Guillaume Massé
