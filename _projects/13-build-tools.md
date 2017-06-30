@@ -21,6 +21,8 @@ Our involvement in these projects have helped them to improve on the following t
 5. Welcoming experience to OSS developers.
 <hr>
 
+These contributions started off after the "[Improve builds with direct dependencies](https://github.com/scalacenter/advisoryboard/blob/master/proposals/009-improve-direct-dependency-experience.md)" proposal was finished before the estimated end time.
+
 ## Summaries
 
 To see our contributions to Zinc [follow this link](https://github.com/sbt/zinc/labels/Scala%20Center).
