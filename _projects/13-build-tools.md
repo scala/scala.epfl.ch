@@ -1,5 +1,5 @@
 ---
-label: build-tools
+label: buildTools
 name: Build Tools
 github: https://github.com/sbt/zinc
 origin: "https://twitter.com/scala_lang/status/854613464223973377"
