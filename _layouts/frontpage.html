@@ -88,6 +88,13 @@
         <i class="fa fa-close"></i>
       </div>
       <div class="col-md-12">
+       
+        The Scala Center is committed to creating quality and freely-available
+        educational resources for leaning Scala and functional programming. For
+        now, we have produced a handful of courses that combine to form a
+        "mini-degree" on Coursera, as well as an interactive tutorial series
+        based on our functional programming course on Coursera.
+        <br/><br/>
         <div class="the-courses">The courses:</div>
         {% assign courses = site.data.education.courses %}
         <ul class="course-list">
@@ -97,6 +104,7 @@
               <div class="description">Taught by: {{ course.taught_by }}</div>
             </li>
           {% endfor %}
+          + an <a href="https://www.scala-exercises.org/scala_tutorial/terms_and_types">interactive introduction to Scala and FP</a> on scala-exercises.org.
         </ul>
       </div>
       <div class="col-md-12 text-left">
