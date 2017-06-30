@@ -164,14 +164,12 @@
                     {% assign homeProjects = site.projects | where: "home", "true" %}
                     {% for project in homeProjects %}
                       <a href="/projects.html#{{ project.label }}" class="project">
-                        {% if project.status == "Need Maintainers" %}
-                          {% assign projectStatus ="needmaintainers" %}
-                        {% else if project.status == "Contributors are welcome" %}
-                          {% assign projectStatus ="contributorsarewelcome" %}
+                        {% if project.status == "Contributors Welcome!" %}
+                          {% assign projectStatus ="contributorswelcome" %}
                         {% else %}
                           {% assign projectStatus = project.status %}
                         {% endif %}
-                          <div class="status {{ project.status|downcase }}">{{ project.status }}</div>
+                          <div class="status {{ project.status| downcase | remove: " " | remove: "!" }}">{{ project.status }}</div>
                           <div class="icon-status {{ projectStatus|downcase }}">
                             <i class="fa fa-{{ projectStatus|downcase }}"></i>
                           </div>

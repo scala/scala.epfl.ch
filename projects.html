@@ -61,9 +61,9 @@ layout: page
                                 {% else %}
                                 {% assign link = site.projects | where: "label", c | first %}
                                 {% if link.github %}
-                                <a href="{{ link.github }}">{{ link.name }}</a> {% if link.status %}<span class="status {{ link.status | downcase }}">{{ link.status }}</span>{% endif %}
+                                <a href="{{ link.github }}">{{ link.name }}</a> {% if link.status %}<span class="status {{ link.status | downcase | remove: ' ' | remove: '!'}}">{{ link.status }}</span>{% endif %}
                                 {% elsif link.web %}
-                                <a href="{{ link.web }}">{{ link.name }}</a> {% if link.status %}<span class="status {{ link.status | downcase }}">{{ link.status }}</span>{% endif %}
+                                <a href="{{ link.web }}">{{ link.name }}</a> {% if link.status %}<span class="status {{ link.status | downcase | remove: ' ' | remove: '!'}}">{{ link.status }}</span>{% endif %}
                                 {% else %}
                                 <a href="{{ link.link }}">{{ link.name }}</a>
                                 {% endif %}

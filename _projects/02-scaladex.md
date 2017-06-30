@@ -5,7 +5,7 @@ web:
 github: https://github.com/scalacenter/scaladex
 origin: https://github.com/scalacenter/advisoryboard/blob/master/minutes/001-2016-q2.md#scala-center-activities
 contributors: [guillaume, julien, heather, jorge, travis, olafur]
-status: Need Maintainers
+status: "Contributors Welcome!"
 type: project
 active: true
 home: false

@@ -10,7 +10,7 @@
             {% endif %}
             <div class="references">
                 {% if project.status %}
-                    <span class="status {{ project.status | downcase }}">
+                    <span class="status {{ project.status | downcase | remove: ' ' | remove: '!'}}">
                         {{ project.status }}
                     </span>
                 {% endif %}

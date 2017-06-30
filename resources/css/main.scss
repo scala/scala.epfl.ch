@@ -592,11 +592,12 @@ body.home {
         padding: 2px 10px;
         border-radius: 2px;
         //background-color: #5c6367;
-        background-color: #d0011b;
+        //background-color: #d0011b;
+        background-color: #278bd2;
         margin-left: 10px;
         position: absolute;
         right: 0;
-        margin-right: -65px;
+        margin-right: -84px;
         top: -44px;
         transition: opacity 0.1s;
         margin-top: 0;
@@ -612,7 +613,7 @@ body.home {
           border-left: 6px solid transparent;
           border-right: 6px solid transparent;
 
-          border-top: 7px solid #d0011b;
+          border-top: 7px solid #278bd2;
         }
 
         &.active {
@@ -660,12 +661,10 @@ body.home {
       .icon-status.completed {
        background-color: #7ed321;
       }
-      .icon-status.needmaintainers {
-       background-color: #d0011b;
-      }
-      .icon-status.contributorsarewelcome {
-       background-color: #29a503;
-      }
+      .icon-status.contributorswelcome {
+       background-color: #278bd2;
+      } 
+      // red: d0011b
 
       .logo img {
         width: 100%;
@@ -700,11 +699,7 @@ body.home {
     content: "";
   }
 
-  .fa-needmaintainers:before {
-    content: "\f12a";
-  }
-
-  .fa-contributorsarewelcome:before {
+  .fa-contributorswelcome:before {
     content: "\f12a";
   }
 
@@ -955,7 +950,8 @@ div.search {
       padding: 3px 12px;
       border-radius: 2px;
       //background-color: #5c6367;
-      background-color: #d0011b;
+      //background-color: #d0011b
+      background-color: #278bd2;
       margin-left: 10px;
       position: relative;
       top: -4px;
@@ -1182,7 +1178,8 @@ div.search {
         border-radius: 2px;
         margin-left: 10px;
         //background-color: #5c6367;
-        background-color: #d0011b;
+        // background-color: #d0011b;
+        background-color: #278bd2;
 
         &.active {
           background-color: #f1592a;

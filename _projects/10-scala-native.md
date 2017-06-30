@@ -5,7 +5,7 @@ web:
 github: https://github.com/scala-native/scala-native
 origin: SCP-001 - Native Execution of Scala/Spark via LLVM
 contributors: [guillaume]
-status: Contributors are welcome
+status: "Contributors Welcome!"
 type: project
 active: true
 home: true
