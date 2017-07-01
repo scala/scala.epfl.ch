@@ -23,11 +23,6 @@ logo: /resources/img/scastie-dark.png
 This is all possible because Scastie is based on sbt, allowing us to support newer
 Scala versions and resolve library dependencies on Maven.
 
-Want to see what Scastie can do? Check out our [ray tracer demo using Scala.js on Scastie](https://scastie.scala-lang.org/9ZgBIUCQQ6u8bRaJFLI0Yg) below!
-
-<a href="/resources/img/scastie2.png" target="_blank">
-  <img alt="scastie screenshot"
-       src="/resources/img/scastie2.png">
-</a>
+Want to see what Scastie can do? Check out our [ray tracer demo using Scala.js on Scastie](https://scastie.scala-lang.org/9ZgBIUCQQ6u8bRaJFLI0Yg)!
 
 Scastie is an original idea from Aleh Aleshka ([OlegYch](https://github.com/OlegYch/)).
