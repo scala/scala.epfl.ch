@@ -20,3 +20,4 @@ description:
 7. [SCP-007: Collaborative redesign and implementation of Scala 2.13's collections library](https://github.com/scalacenter/advisoryboard/blob/master/proposals/007-collections.md)
 8. [SCP-008: Maintain scala-lang, docs.scala-lang, scala.epfl.ch websites](https://github.com/scalacenter/advisoryboard/blob/master/proposals/008-websites.md)
 9. [SCP-009: Improve user experience for builds that use only direct dependencies](https://github.com/scalacenter/advisoryboard/blob/master/proposals/009-improve-direct-dependency-experience.md)
+10. [SCP-010: Providing Better Compilation Performance Information](https://github.com/scalacenter/advisoryboard/blob/master/proposals/010-compiler-profiling.md)
