@@ -1,6 +1,6 @@
 ---
 label: scalameta
-name: Scala Meta
+name: Scalameta
 web:
 github: https://github.com/scalameta/scalameta
 origin: https://github.com/scalacenter/advisoryboard/blob/master/agendas/001-2016-q2.md
