@@ -1,6 +1,6 @@
 ---
 label: advisoryBoardProposals
-name: Advisory Board Proposals
+name: Accepted Advisory Board Proposals
 web:
 github:
 origin:
