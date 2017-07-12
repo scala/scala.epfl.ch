@@ -12,4 +12,8 @@ active: false
 home: false
 description: "A production-ready version of spores compatible with `{java, scala}.util.Serializable`."
 ---
-A production-ready version of spores compatible with `{java, scala}.util.Serializable`. Provide a way to turn runtime serialization errors into compile-time errors via a compiler plugin, and lets users customize which checks should and should not be enforced.
+
+A production-ready version of spores compatible with `{java,
+scala}.util.Serializable`. Provide a way to turn runtime serialization errors
+into compile-time errors via a compiler plugin, and lets users customize which
+checks should and should not be enforced.

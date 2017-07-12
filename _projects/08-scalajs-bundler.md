@@ -13,8 +13,10 @@ description: "Module bundler for Scala.js projects that use npm packages."
 logo-home: /resources/img/scala-js-site-logo@2x.png
 logo: /resources/img/scala-js-dark.png
 ---
-scalajs-bundler is an sbt-plugin that provides a module bundler for Scala.js projects that use npm packages: it bundles the .js file
-emitted by the Scala.js compiler with its npm dependencies into a single .js file executable by Web browsers. It aims to provide a replacement
-for `jsDependencies`.
+
+scalajs-bundler is an sbt-plugin that provides a module bundler for Scala.js
+projects that use npm packages: it bundles the .js file emitted by the Scala.js
+compiler with its npm dependencies into a single .js file executable by Web
+browsers. It aims to provide a replacement for `jsDependencies`.
 
 scalajs-bundler uses [npm](https://www.npmjs.com) and [webpack](https://webpack.github.io/) under the hood. It also supports [Yarn](https://yarnpkg.com/en/).
