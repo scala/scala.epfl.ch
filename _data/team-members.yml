@@ -41,12 +41,12 @@ members:
     currentlyWorkingOn: true
     contact_for: [scalaPlatformProcess, sip, spores, buildTools]
     projects:
-        - title: scalaPlatformProcess
-          percentage: 10
         - title: sip
           percentage: 10
+        - title: scalaPlatformProcess
+          percentage: 15
         - title: buildTools
-          percentage: 80
+          percentage: 75
   - member: olafur
     name: Olafur Pall Geirsson
     title: Software Development
