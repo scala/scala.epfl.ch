@@ -3,7 +3,7 @@ label: scalafix
 name: Scalafix
 web:
 github: https://github.com/scalacenter/scalafix
-origin: https://github.com/scalacenter/advisoryboard/blob/master/agendas/001-2016-q2.md
+origin: https://github.com/scalacenter/advisoryboard/blob/master/proposals/002-dotty-migration-path.md
 contributors: [olafur]
 status: Active
 type: project

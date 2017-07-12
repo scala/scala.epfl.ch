@@ -4,7 +4,7 @@ short-name: "Spores & transitivity check"
 name: Spores and serializable transitive checker
 web:
 github: https://github.com/scalacenter/spores
-origin: https://github.com/scalacenter/advisoryboard/blob/master/minutes/002-2016-q3.md#proposal-scp-006-compile-time-check-of-serializability
+origin: https://github.com/scalacenter/advisoryboard/blob/master/proposals/006-compile-time-serializibility-check.md
 contributors: [jorge, heather, julien]
 status: Completed
 type: project

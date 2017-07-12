@@ -1,9 +1,9 @@
 ---
 label: scalaPlatformProcess
 name: Scala Platform Process
-web: https://scalacenter.github.io/platform-staging/
+web: https://platform.scala-lang.org
 github: https://github.com/scalacenter/platform-staging
-origin: https://platform.scala-lang.org
+origin: https://github.com/scalacenter/advisoryboard/blob/master/proposals/004-sip-and-slip-coordination.md
 contributors: [jorge, olafur, guillaume]
 status: Active
 type: project
