@@ -4,17 +4,39 @@ name: Scala-Native Support
 web:
 github: https://github.com/scala-native/scala-native
 origin: https://github.com/scalacenter/advisoryboard/blob/master/proposals/001-native-scala-for-spark.md
-contributors: [martin, guillaume]
+contributors: [martinduhem, guillaume]
 status: "Contributors Welcome!"
 type: project
 active: true
 home: true
 description: "Compiler backend producing native programs."
 ---
-[Sbt-cross-project](https://github.com/scala-native/sbt-crossproject)
-  We extended Scala.js’ crossProject and %%% to support Scala-Native. You can publish and depend on Scala Native libraries.
+Scala Native is an ahead-of-time compiler for Scala. Its goal is to compile Scala code to native
+binaries, using the Scala compiler as front-end, its own optimizer and [LLVM](https://llvm.org)
+as back-end.
 
-  [Roadmap](https://docs.google.com/document/d/1HLpwa7Uz0mKzldBlalkTh1zI1OoEwWlrMFrqnDc6x_M/edit?ts=57d7ee43) We are implementing JDK core libraries based on open source usage. We are building libraries from the Scala Index against Scala Native and we implement the missing methods.
+Scala Native follows the behavior of Scala on the JVM (Java Virtual Machine) as much as possible
+and can compile existing Scala programs with little to no modification.
 
-  [Improvements](https://github.com/scala-native/scala-native/pulls/MasseGuillaume)
+By moving away from the JVM (Java Virtual Machine), Scala Native introduces Scala as a candidate
+for system programming, latency-sensitive applications and other areas where the JVM’s warmup
+time would be problematic. Finally, Scala Native offers interoperability with existing C
+libraries.
 
+The Scala Center is involved in multiple aspects of the development of Scala Native:
+
+ - [sbt-crossproject](https://github.com/scala-native/sbt-crossproject) is an re-implementation
+   of Scala.js’ crossProject and %%% to support Scala Native, allowing users to publish and
+   depend on Scala Native libraries.
+
+ - We added [support for regexes](https://github.com/scala-native/scala-native/pulls/588), which
+   helped greatly in implementing other missing features (`java.util.Formatter`, `String.split`,
+   etc.)
+
+ - We contributed [I/O support](https://github.com/scala-native/scala-native/pulls/574) and
+   [java NIO support](https://github.com/scala-native/scala-native/pull/694). Scala Native
+   programs can now perform I/O operations using the same APIs as they would on the JVM.
+
+ - Support for [testing frameworks](https://github.com/scala-native/scala-native/pull/755) was
+   added by the Scala Center. The supported test frameworks include
+   [uTest](https://github.com/lihaoyi/utest) and [ScalaCheck](https://www.scalacheck.org).
