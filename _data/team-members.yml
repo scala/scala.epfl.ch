@@ -55,7 +55,7 @@ members:
     twitter: olafurpg
     photo: /resources/img/olafur.png
     currentlyWorkingOn: true
-    contact_for: [scalafix]
+    contact_for: [scalafix, scalameta]
     projects:
        - title: scalafix
          percentage: 50
