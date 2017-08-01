@@ -93,18 +93,18 @@ members:
          percentage: 50
        - title: buildTools
          percentage: 50
-  - member: travis
-    name: Travis Lee
-    title: Communications Manager, Contractor
-    email:
-    github:
-    twitter:
-    photo: /resources/img/travis.png
-    currentlyWorkingOn: true
-    contact_for: [documentationImprovements]
-    projects:
-       - title: documentationImprovements
-         percentage: 100
+  # - member: travis
+  #   name: Travis Lee
+  #   title: Communications Manager, Contractor
+  #   email:
+  #   github:
+  #   twitter:
+  #   photo: /resources/img/travis.png
+  #   currentlyWorkingOn: true
+  #   contact_for: [documentationImprovements]
+  #   projects:
+  #      - title: documentationImprovements
+  #        percentage: 100
   - member: fabien
     name: Fabien Salvi
     title: System Administrator
