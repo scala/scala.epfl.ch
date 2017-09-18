@@ -87,12 +87,12 @@ members:
     twitter: mnduhem
     photo: /resources/img/martinduhem.png
     currentlyWorkingOn: true
-    contact_for: [scalaNative, buildTools]
+    contact_for: [scalaNative, dotty]
     projects:
        - title: scalaNative
-         percentage: 50
-       - title: buildTools
-         percentage: 50
+         percentage: 10
+       - title: dotty
+         percentage: 90
   # - member: travis
   #   name: Travis Lee
   #   title: Communications Manager, Contractor
