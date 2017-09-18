@@ -76,9 +76,9 @@ members:
        - title: scalaNative
          percentage: 10
        - title: scastie
-         percentage: 30
+         percentage: 75
        - title: scaladex
-         percentage: 60
+         percentage: 15
   - member: martinduhem
     name: Martin Duhem
     title: Software Development
