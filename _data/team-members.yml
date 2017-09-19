@@ -39,7 +39,7 @@ members:
     twitter: jvican
     photo: /resources/img/jorge.png
     currentlyWorkingOn: true
-    contact_for: [scalaPlatformProcess, sip, spores, buildTools, scalacProfiling]
+    contact_for: [scalaPlatformProcess, sip, buildTools, scalacProfiling]
     projects:
         - title: sip
           percentage: 15
