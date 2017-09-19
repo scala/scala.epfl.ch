@@ -9,6 +9,7 @@ layout: contact
 
 ### Board meeting minutes
 
+- [September 12, 2017 - Sixth SC Advisory Board Meeting](/minutes/2017/09/12/september-12-2017.html)
 - [May 30, 2017 - Fifth SC Advisory Board Meeting](/minutes/2017/05/30/may-30-2017.html)
 - [February 28, 2017 - Fourth SC Advisory Board Meeting](/minutes/2017/02/28/february-28-2017.html)
 - [November 30, 2016 - Third SC Advisory Board Meeting](https://github.com/scalacenter/advisoryboard/blob/master/minutes/003-2016-q4.md)
