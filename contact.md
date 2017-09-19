@@ -15,7 +15,7 @@ For questions on how to use Scala, or for general debates about the language,
 please head over to our [mailing lists](http://scala-lang.org/community/).
 
 If you'd like to report a problem with this website, use the
-[Github repo](https://github.com/scala/scala.epfl.ch).
+[GitHub repo](https://github.com/scala/scala.epfl.ch).
 
 For any other questions regarding the Scala Center, membership info, or
-information about donation, please write to <a href="scala.center@epfl.ch">scala.center@epfl.ch</a>
+information about donation, please write to <a href="scala.center@epfl.ch">scala.center@epfl.ch</a>.
