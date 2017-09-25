@@ -19,7 +19,6 @@ to the development of Dotty on several fronts
 - Migration tool ([scalafix](https://scalacenter.github.io/scalafix))
 - Community build ([lampepfl/dotty-community-build](https://github.com/lampepfl/dotty-community-build))
 - Reporting incompatibilities with Scala 2.x ([dotty/issues](https://github.com/lampepfl/dotty/issues/created_by/olafurpg))
-- Benchmark infrastructure ([scala/compiler-benchmark#31](https://github.com/scala/compiler-benchmark/pull/31))
 - Next generation macros ([scalamacros/scalamacros](https://github.com/scalamacros/scalamacros))
 
 

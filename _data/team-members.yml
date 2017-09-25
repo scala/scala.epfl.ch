@@ -55,14 +55,12 @@ members:
     twitter: olafurpg
     photo: /resources/img/olafur.png
     currentlyWorkingOn: true
-    contact_for: [scalafix, scalameta]
+    contact_for: [scalafix, scalameta, macros]
     projects:
        - title: scalafix
          percentage: 50
-       - title: scalameta
-         percentage: 40
-       - title: dotty
-         percentage: 10
+       - title: macros
+         percentage: 50
   - member: guillaume
     name: Guillaume Massé
     title: Software Development
