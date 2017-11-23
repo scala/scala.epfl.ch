@@ -69,14 +69,10 @@ members:
     twitter: MasseGuillaume
     photo: /resources/img/guillaume.png
     currentlyWorkingOn: true
-    contact_for: [scalaNative, scastie, scaladex]
+    contact_for: [scalaNative, scastie, scaladex, scalafix]
     projects:
-       - title: scalaNative
-         percentage: 10
-       - title: scastie
-         percentage: 75
-       - title: scaladex
-         percentage: 15
+       - title: scalafix
+         percentage: 100
   - member: martinduhem
     name: Martin Duhem
     title: Software Development
