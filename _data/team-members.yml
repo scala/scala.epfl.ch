@@ -87,18 +87,6 @@ members:
          percentage: 10
        - title: dotty
          percentage: 90
-  # - member: travis
-  #   name: Travis Lee
-  #   title: Communications Manager, Contractor
-  #   email:
-  #   github:
-  #   twitter:
-  #   photo: /resources/img/travis.png
-  #   currentlyWorkingOn: true
-  #   contact_for: [documentationImprovements]
-  #   projects:
-  #      - title: documentationImprovements
-  #        percentage: 100
   - member: fabien
     name: Fabien Salvi
     title: System Administrator
@@ -115,5 +103,14 @@ members:
     github:
     twitter:
     photo: /resources/img/sylvie.png
+    currentlyWorkingOn: false
+    contact_for: [scalaCenterActivities]
+  - member: darja
+    name: Darja Jovanovic
+    title: Communication Manager
+    email: darja.jovanovic@epfl.ch
+    github: darjutak
+    twitter: darjutak
+    photo: /resources/img/darja.png
     currentlyWorkingOn: false
     contact_for: [scalaCenterActivities]
