@@ -37,7 +37,7 @@ $on-laptop:        800px;
 $top-bar-height:   106px;
 
 // FontAwesome path
-$fa-font-path: "./../../bower_components/font-awesome/fonts";
+$fa-font-path: "./../../node_modules/font-awesome/fonts";
 
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
@@ -664,7 +664,7 @@ body.home {
       }
       .icon-status.contributorswelcome {
        background-color: #278bd2;
-      } 
+      }
       // red: d0011b
 
       .logo img {

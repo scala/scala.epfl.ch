@@ -11,8 +11,8 @@ install:
 - bundle install
 
 before_script:
-- npm install -g bower
-- bower install
+- npm install -g yarn
+- yarn install
 
 script:
 - bundle exec jekyll build 2> error.log
