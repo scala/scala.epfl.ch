@@ -29,3 +29,6 @@ From the proposal:
 > don’t expand properly in Intellij. This leads to a proliferation of spurious
 > “red squiggle” errors, even in simple projects. As a result of these problems,
 > the language committee has decided to retire the current macro system.
+
+- November 27th 2017 - [What's happening with macros](http://www.scala-lang.org/blog/2017/11/27/macros.html)
+- October 9th 2017 - [Roadmap towardss non-experimental macros](http://www.scala-lang.org/blog/2017/10/09/scalamacros.html)

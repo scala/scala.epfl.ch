@@ -59,8 +59,10 @@ members:
     projects:
        - title: scalafix
          percentage: 50
+       - title: buildTools
+         percentage: 20
        - title: macros
-         percentage: 50
+         percentage: 30
   - member: guillaume
     name: Guillaume Massé
     title: Software Development
@@ -87,18 +89,6 @@ members:
          percentage: 10
        - title: dotty
          percentage: 90
-  # - member: travis
-  #   name: Travis Lee
-  #   title: Communications Manager, Contractor
-  #   email:
-  #   github:
-  #   twitter:
-  #   photo: /resources/img/travis.png
-  #   currentlyWorkingOn: true
-  #   contact_for: [documentationImprovements]
-  #   projects:
-  #      - title: documentationImprovements
-  #        percentage: 100
   - member: fabien
     name: Fabien Salvi
     title: System Administrator

@@ -4,7 +4,7 @@ name: Scastie
 web: https://scastie.scala-lang.org
 github: https://github.com/ScalaCenter/scastie
 origin: https://github.com/scalacenter/advisoryboard/blob/master/minutes/001-2016-q2.md#scala-center-activities
-contributors: [guillaume, olafur, travis]
+contributors: [guillaume, olafur]
 status: "Contributors Welcome!"
 type: project
 active: true
