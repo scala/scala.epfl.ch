@@ -117,3 +117,12 @@ members:
     photo: /resources/img/sylvie.png
     currentlyWorkingOn: false
     contact_for: [scalaCenterActivities]
+  - member: darja
+     name: Darja Jovanovic
+     title: Communication Manager
+     email: darja.jovanovic@epfl.ch
+     github: darjutak
+     twitter: darjutak
+     photo: /resources/img/darja.png
+     currentlyWorkingOn: false
+     contact_for: [scalaCenterActivities]
