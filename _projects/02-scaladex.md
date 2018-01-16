@@ -4,7 +4,7 @@ name: Scaladex
 web: https://index.scala-lang.org
 github: https://github.com/scalacenter/scaladex
 origin: https://github.com/scalacenter/advisoryboard/blob/master/minutes/001-2016-q2.md#scala-center-activities
-contributors: [guillaume, julien, heather, jorge, travis, olafur]
+contributors: [guillaume, julien, heather, jorge, olafur]
 status: "Contributors Welcome!"
 type: project
 active: true

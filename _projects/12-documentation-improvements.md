@@ -4,8 +4,8 @@ name: Documentation Improvements
 web:
 github: https://github.com/scalacenter/exercises-scalatutorial
 origin: https://github.com/scalacenter/advisoryboard/blob/master/proposals/008-websites.md
-contributors: [julien, travis]
-status: Active
+contributors: [julien, jorge]
+status: "Contributors Welcome!"
 type: project
 active: true
 home: false

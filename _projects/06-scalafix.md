@@ -4,7 +4,7 @@ name: Scalafix
 web:
 github: https://github.com/scalacenter/scalafix
 origin: https://github.com/scalacenter/advisoryboard/blob/master/proposals/002-dotty-migration-path.md
-contributors: [olafur]
+contributors: [guillaume, olafur]
 status: Active
 type: project
 active: true
@@ -23,7 +23,7 @@ Scalafix rewrites are either *syntactic* or *semantic*.
 A syntactic rewrite can use tokens and parsed abstract syntax trees.
 A semantic rewrite can use the same features as a syntactic rewrite in addition to extracted semantic information from the compiler, including resolved names,
 reported compiler messages and inferred type annotations.
-Semantic information is extracted from an instrumented version of the Scala compiler using [scalameta](http://scalameta.org).
+Semantic information is extracted from an instrumented version of the Scala compiler using [Scalameta](http://scalameta.org).
 
 It is possible to run scalafix as a standalone command-line interface or as an sbt plugin.
 Integrations for other build tools and potentially IDEs are planned in the future.
