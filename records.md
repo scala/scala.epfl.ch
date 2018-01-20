@@ -9,6 +9,7 @@ layout: contact
 
 ### Board meeting minutes
 
+- [December 1, 2017 - Seventh SC Advisory Board Meeting](/minutes/2017/12/01/december-1-2017.html)
 - [September 12, 2017 - Sixth SC Advisory Board Meeting](/minutes/2017/09/12/september-12-2017.html)
 - [May 30, 2017 - Fifth SC Advisory Board Meeting](/minutes/2017/05/30/may-30-2017.html)
 - [February 28, 2017 - Fourth SC Advisory Board Meeting](/minutes/2017/02/28/february-28-2017.html)
