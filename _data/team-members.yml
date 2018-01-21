@@ -83,12 +83,12 @@ members:
     twitter: mnduhem
     photo: /resources/img/martinduhem.png
     currentlyWorkingOn: true
-    contact_for: [scalaNative, dotty]
+    contact_for: [bloop, scalaNative, dotty]
     projects:
-       - title: scalaNative
-         percentage: 10
-       - title: dotty
+       - title: bloop
          percentage: 90
+       - title: dotty
+         percentage: 10
   - member: fabien
     name: Fabien Salvi
     title: System Administrator
