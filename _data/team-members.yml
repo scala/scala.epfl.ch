@@ -39,13 +39,13 @@ members:
     twitter: jvican
     photo: /resources/img/jorge.png
     currentlyWorkingOn: true
-    contact_for: [scalaPlatformProcess, sip, spores, buildTools, scalacProfiling]
+    contact_for: [scalaPlatformProcess, sip, spores, buildTools, scalacProfiling, bloop]
     projects:
         - title: sip
           percentage: 15
         - title: scalaPlatformProcess
           percentage: 10
-        - title: scalacProfiling
+        - title: bloop
           percentage: 75
   - member: olafur
     name: Olafur Pall Geirsson
@@ -83,12 +83,12 @@ members:
     twitter: mnduhem
     photo: /resources/img/martinduhem.png
     currentlyWorkingOn: true
-    contact_for: [scalaNative, dotty]
+    contact_for: [bloop, scalaNative, dotty]
     projects:
-       - title: scalaNative
-         percentage: 10
-       - title: dotty
+       - title: bloop
          percentage: 90
+       - title: dotty
+         percentage: 10
   - member: fabien
     name: Fabien Salvi
     title: System Administrator

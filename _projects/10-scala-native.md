@@ -1,7 +1,7 @@
 ---
 label: scalaNative
-name: Scala-Native Support
-web:
+name: Scala Native Support
+web: http://www.scala-native.org
 github: https://github.com/scala-native/scala-native
 origin: https://github.com/scalacenter/advisoryboard/blob/master/proposals/001-native-scala-for-spark.md
 contributors: [martinduhem, guillaume]
