@@ -59,10 +59,8 @@ members:
     projects:
        - title: scalafix
          percentage: 50
-       - title: buildTools
-         percentage: 20
-       - title: macros
-         percentage: 30
+       - title: scalameta
+         percentage: 50
   - member: guillaume
     name: Guillaume Massé
     title: Software Development
