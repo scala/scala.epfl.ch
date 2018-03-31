@@ -3,7 +3,7 @@ label: scalajsBundler
 name: scalajs-bundler
 web: https://scalacenter.github.io/scalajs-bundler
 github: https://github.com/scalacenter/scalajs-bundler
-origin: https://github.com/scalacenter/advisoryboard/blob/master/minutes/001-2016-q2.md#proposal-scp-005-ensurance-of-continuity-of-scalajs-project
+origin: https://github.com/scala/scala.epfl.ch/blob/master/minutes/_posts/2016-06-06-may-9-2016.md#proposal-scp-005-ensurance-of-continuity-of-scalajs-project
 contributors: [julien]
 status: "Contributors Welcome!"
 type: project
