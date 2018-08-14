@@ -2,7 +2,7 @@
 label: sip
 name: SIP Process Reloaded!
 web: https://contributors.scala-lang.org/search?q=SIP
-github: https://github.com/scala/scala.github.com/tree/master/sips
+github: https://github.com/scala/docs.scala-lang/tree/master/_sips
 origin: https://github.com/scalacenter/advisoryboard/blob/master/proposals/004-sip-and-slip-coordination.md
 contributors: [jorge]
 status: Active
