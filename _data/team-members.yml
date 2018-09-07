@@ -28,9 +28,7 @@ members:
     contact_for: [education, scalajsBundler, documentationImprovements, collectionsRedesign]
     projects:
         - title: education
-          percentage: 50
-        - title: collectionsRedesign
-          percentage: 50
+          percentage: 100
   - member: jorge
     name: Jorge Vicente Cantero
     title: Software Development
