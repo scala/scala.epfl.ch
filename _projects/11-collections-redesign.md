@@ -5,7 +5,7 @@ web:
 github: https://github.com/scala/collection-strawman
 origin: https://github.com/scalacenter/advisoryboard/blob/master/proposals/007-collections.md
 contributors: [julien]
-status: Active
+status: Completed
 type: project
 active: true
 home: false
