@@ -7,7 +7,7 @@ origin: https://github.com/scalacenter/advisoryboard/blob/master/proposals/007-c
 contributors: [julien]
 status: Completed
 type: project
-active: true
+active: false
 home: false
 description: "A new collections library design for Scala 2.13."
 ---
