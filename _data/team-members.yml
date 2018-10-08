@@ -66,7 +66,7 @@ members:
     github: MasseGuillaume
     twitter: MasseGuillaume
     photo: /resources/img/guillaume.png
-    currentlyWorkingOn: true
+    currentlyWorkingOn: false
     contact_for: [scalaNative, scastie, scaladex, scalafix]
     projects:
        - title: scalafix
