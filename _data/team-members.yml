@@ -79,6 +79,21 @@ members:
        - title: dotty
          percentage: 10
     active: true
+  - member: alexandre
+    name: Alexandre Archambault
+    title: Software Development
+    email: alexandre.archambault@epfl.ch
+    github: alexarchambault
+    twitter: alxarchambault
+    photo:
+    currentlyWorkingOn: true
+    contact_for: [coursier]
+    projects:
+       - title: coursier
+         percentage: 50
+       - title: other
+         percentage: 50
+    active: true
   - member: fabien
     name: Fabien Salvi
     title: System Administrator
