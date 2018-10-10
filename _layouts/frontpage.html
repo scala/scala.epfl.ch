@@ -88,7 +88,7 @@
         <i class="fa fa-close"></i>
       </div>
       <div class="col-md-12">
-       
+
         The Scala Center is committed to creating quality and freely-available
         educational resources for leaning Scala and functional programming. For
         now, we have produced a handful of courses that combine to form a
@@ -306,7 +306,7 @@
           </div>
           <div class="col-md-10 col-md-offset-1 text-center">
             {% assign members = site.data.team-members.members %}
-            {% for member in members %}
+            {% for member in members %}{% if member.active %}
               <div class="us text-center">
                 <div class="circular" style="background-image: url({{ member.photo }});"></div>
                 <div class="us-data">
@@ -314,7 +314,7 @@
                   <div class="about">{{ member.title }}</div>
                 </div>
               </div>
-            {% endfor %}
+            {% endif %}{% endfor %}
           </div>
           <div class="row">
             <div class="col-md-8 text-center col-md-offset-2">

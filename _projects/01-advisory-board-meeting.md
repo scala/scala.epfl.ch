@@ -4,7 +4,7 @@ name: Advisory Board Meeting
 web:
 github: https://github.com/scalacenter/advisoryboard
 origin:
-contributors: [heather]
+contributors: [sjrd]
 status: Active
 type: project
 active: true
