@@ -1,13 +1,14 @@
 members:
-  - member: heather
-    name: Heather Miller
+  - member: sjrd
+    name: Sébastien Doeraene
     title: Executive Director
-    email: heather.miller@epfl.ch
-    github: heathermiller
-    twitter: heathercmiller
-    photo: /resources/img/heather.png
+    email: sebastien.doeraene@epfl.ch
+    github: sjrd
+    twitter: sjrdoeraene
+    photo: /resources/img/sjrd.png
     currentlyWorkingOn: false
-    contact_for: [corporateMembership, donations, education, advisoryBoardMeeting]
+    contact_for: [corporateMembership, donations, advisoryBoardMeeting, scalajs]
+    active: true
   - member: martin
     name: Martin Odersky
     title: Academic Director
@@ -17,6 +18,7 @@ members:
     photo: /resources/img/martin.png
     currentlyWorkingOn: false
     contact_for: [dotty]
+    active: true
   - member: julien
     name: Julien Richard-Foy
     title: Software Development
@@ -29,6 +31,7 @@ members:
     projects:
         - title: education
           percentage: 100
+    active: true
   - member: jorge
     name: Jorge Vicente Cantero
     title: Software Development
@@ -45,6 +48,7 @@ members:
           percentage: 10
         - title: bloop
           percentage: 75
+    active: true
   - member: olafur
     name: Olafur Pall Geirsson
     title: Software Development
@@ -59,18 +63,7 @@ members:
          percentage: 50
        - title: scalameta
          percentage: 50
-  - member: guillaume
-    name: Guillaume Massé
-    title: Software Development
-    email: guillaume.masse@epfl.ch
-    github: MasseGuillaume
-    twitter: MasseGuillaume
-    photo: /resources/img/guillaume.png
-    currentlyWorkingOn: false
-    contact_for: [scalaNative, scastie, scaladex, scalafix]
-    projects:
-       - title: scalafix
-         percentage: 100
+    active: true
   - member: martinduhem
     name: Martin Duhem
     title: Software Development
@@ -85,6 +78,7 @@ members:
          percentage: 90
        - title: dotty
          percentage: 10
+    active: true
   - member: fabien
     name: Fabien Salvi
     title: System Administrator
@@ -94,6 +88,7 @@ members:
     photo: /resources/img/fabien.png
     currentlyWorkingOn: false
     contact_for: [jenkinsInfrastructure, serverIssues]
+    active: true
   - member: sylvie
     name: Sylvie Jankow
     title: Secretary
@@ -103,6 +98,7 @@ members:
     photo: /resources/img/sylvie.png
     currentlyWorkingOn: false
     contact_for: [scalaCenterActivities]
+    active: true
   - member: darja
     name: Darja Jovanovic
     title: Communication Manager
@@ -112,3 +108,24 @@ members:
     photo: /resources/img/darja.png
     currentlyWorkingOn: false
     contact_for: [scalaCenterActivities]
+    active: true
+  - member: heather
+    name: Heather Miller
+    title: Executive Director
+    email: heather.miller@epfl.ch
+    github: heathermiller
+    twitter: heathercmiller
+    photo: /resources/img/heather.png
+    currentlyWorkingOn: false
+    contact_for: []
+    active: false
+  - member: guillaume
+    name: Guillaume Massé
+    title: Software Development
+    email: guillaume.masse@epfl.ch
+    github: MasseGuillaume
+    twitter: MasseGuillaume
+    photo: /resources/img/guillaume.png
+    currentlyWorkingOn: false
+    contact_for: [scalaNative, scastie, scaladex, scalafix]
+    active: false

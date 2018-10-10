@@ -6,7 +6,7 @@ layout: page
     <div style="margin-top: 30px;">
         <div class="team">
             {% assign members = site.data.team-members.members %}
-            {% for member in members %}
+            {% for member in members %}{% if member.active %}
             <div class="col-md-6">
                 <div class="team-member">
                     <div class="circular visible-xs" style="background-image: url({{ member.photo }});"></div>
@@ -27,12 +27,7 @@ layout: page
                                 {% else %}
                                     {% assign link = site.projects | where: "label", c | first %}
                                     {% if link.label == 'education' %}
-                                        {% if member.member == 'heather' %}
-                                            <a href="https://www.coursera.org/learn/scala-spark-big-data" target="_blank">
-                                                Big Data Analysis with Scala and Spark
-                                            </a>
-                                            {% if link.status %}<span class="status {{ link.status | downcase }}">{{ link.status }}</span>{% endif %}
-                                        {% else %}
+                                        {% if member.member == 'julien' %}
                                             <a href="https://www.coursera.org/learn/scala-capstone" target="_blank">
                                                 Functional Programming in Scala Capstone
                                             </a>
@@ -51,7 +46,7 @@ layout: page
                     </ul>
                 </div>
             </div>
-            {% endfor %}
+            {% endif %}{% endfor %}
         </div>
     </div>
 </div>
