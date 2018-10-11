@@ -9,33 +9,17 @@ status: Active
 type: project
 active: true
 home: false
-description: "Cross-platform metaprogramming toolkit for Scala"
+description: "Library to read, analyze, transform and generate Scala programs"
 ---
-Scalameta is a compiler-agnostic metaprogramming toolkit that can be used to
-build a wide range of Scala developer tools. Tools currently using Scalameta
-include
 
-- [scalafix](https://scala.epfl.ch/projects.html#scalafix) (refactoring)
-- [scalafmt](http://scalameta.org/scalafmt/) (formatting)
-- [scastie](https://scastie.scala-lang.org/) (worksheet-mode)
-- [metadoc](https://github.com/olafurpg/metadoc) (online code browsing with "jump to definition")
-- [stags](https://github.com/pjrt/stags) (ctags generator)
+Scalameta is library to read, analyze, transform and generate Scala programs.
+Scalameta is used by a range of tools including:
 
-The Scala Center contributes to the development of Scalameta's ["Semantic
-API"](http://scalameta.org/tutorial/#SemanticAPI).  The Semantic API enables
-tools to query for information from an instrumented compiler such as inferred
-types, resolved symbols, implicits, reported compiler messages and more. Such
-information opens possibilities to build a wide range of new developer and
-productivity tools for Scala.  In particular, the Semantic API is used by
-[scalafix](https://scala.epfl.ch/projects.html#scalafix),
-another Scala Center project with the mission to help automate the migration
-between different Scala compiler and library versions.
+- [Scalafix](https://scalacenter.github.io/scalafix/): refactoring and linting
+  tool
+- [Scalafmt](http://scalameta.org/scalafmt/): code formatter
+- [Metals](http://scalameta.org/metals/): language server for code navigation
+- [Metadoc](https://github.com/scalameta/metadoc): static site generator for
+  code navigation
 
-Scalameta is compiler-agnostic. This means Scalameta's syntactic and semantic
-model is not tied to a particular compiler version such as `scalac`, `dotc` or
-the IntelliJ Scala Plugin. By being compiler agnostic, Scalameta enables
-developer tools to be portable across multiple environments and support many
-different dialects or flavours of Scala.
-
-See the [official Scalameta website](http://scalameta.org) to to learn
-more about Scalameta.
+Visit [scalameta.org](http://scalameta.org) to to learn more about Scalameta.
