@@ -57,12 +57,10 @@ members:
     twitter: olafurpg
     photo: /resources/img/olafur.png
     currentlyWorkingOn: true
-    contact_for: [scalafix, scalameta, macros]
+    contact_for: [scalafix, scalameta]
     projects:
-       - title: scalafix
-         percentage: 50
        - title: scalameta
-         percentage: 50
+         percentage: 100
     active: true
   - member: martinduhem
     name: Martin Duhem
