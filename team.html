@@ -26,19 +26,20 @@ layout: page
                                     {% endif %}
                                 {% else %}
                                     {% assign link = site.projects | where: "label", c | first %}
-                                    {% if link.label == 'education' %}
-                                        {% if member.member == 'julien' %}
-                                            <a href="https://www.coursera.org/learn/scala-capstone" target="_blank">
-                                                Functional Programming in Scala Capstone
-                                            </a>
-                                            {% if link.status %}<span class="status completed">Completed</span>{% endif %}
-                                        {% endif %}
-                                    {% elsif link.github %}
-                                        <a href="{{ link.github }}" target="_blank">{{ link.name }}</a> {% if link.status %}<span class="status {{ link.status | downcase }}">{{ link.status }}</span>{% endif %}
-                                    {% elsif link.web %}
-                                        <a href="{{ link.web }}" target="_blank">{{ link.name }}</a> {% if link.status %}<span class="status {{ link.status | downcase }}">{{ link.status }}</span>{% endif %}
-                                    {% else %}
-                                        <a >{{ link.name }}</a> {% if link.status %}<span class="status {{ link.status | downcase }}">{{ link.status }}</span>{% endif %}
+                                    {% if link.status == 'Active' %}
+                                      {% if link.label == 'education' %}
+                                          {% if member.member == 'julien' %}
+                                              <a href="https://www.coursera.org/learn/scala-capstone" target="_blank">
+                                                  Functional Programming in Scala Capstone
+                                              </a>
+                                          {% endif %}
+                                      {% elsif link.github %}
+                                          <a href="{{ link.github }}" target="_blank">{{ link.name }}</a>
+                                      {% elsif link.web %}
+                                          <a href="{{ link.web }}" target="_blank">{{ link.name }}</a>
+                                      {% else %}
+                                          <a >{{ link.name }}</a>
+                                      {% endif %}
                                     {% endif %}
                                 {% endif %}
                             </li>
