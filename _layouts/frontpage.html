@@ -252,7 +252,7 @@
                   {% assign projects = member.projects | sort: 'percentage' %}
                   {% for project in projects reversed %}
                     {% assign initialHeight = project.percentage | plus: initialHeight %}
-                    {% assign colors = '#15414c,#325a63,#5f7e86,#79959c,#9bb0b5'|split: ',' ] %}
+                    {% assign colors = '#15414c,#325a63,#5f7e86,#79959c,#9bb0b5'|split: ',' %}
                     {% if initialHeight >= 90 and initialHeight < 100 %}
                       {% assign thisHeight = 89 %}
                     {% else %}
