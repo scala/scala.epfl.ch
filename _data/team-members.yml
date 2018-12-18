@@ -119,8 +119,15 @@ members:
     github: darjutak
     twitter: darjutak
     photo: /resources/img/darja.png
-    currentlyWorkingOn: false
-    contact_for: [scalaCenterActivities]
+    currentlyWorkingOn: true
+    contact_for: [scalaCenterActivities, sip, events, communication]
+    projects:
+      - title: events
+        percentage: 40
+      - title: communication
+        percentage: 40
+      - title: sip
+        percentage: 20
     active: true
   - member: heather
     name: Heather Miller
