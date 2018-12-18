@@ -69,14 +69,14 @@ members:
     github: Duhemm
     twitter: mnduhem
     photo: /resources/img/martinduhem.png
-    currentlyWorkingOn: true
+    currentlyWorkingOn: false
     contact_for: [bloop, scalaNative, dotty]
     projects:
        - title: bloop
          percentage: 90
        - title: dotty
          percentage: 10
-    active: true
+    active: false
   - member: alexandre
     name: Alexandre Archambault
     title: Software Development
