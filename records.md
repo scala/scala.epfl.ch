@@ -9,6 +9,7 @@ layout: contact
 
 ### Board meeting minutes
 
+- [December 5, 2018 - Eleventh SC Advisory Board Meeting](/minutes/2018/12/05/december-5-2018.html)
 - [September 21, 2018 - Tenth SC Advisory Board Meeting](/minutes/2018/09/21/september-21-2018.html)
 - [June 19, 2018 - Ninth SC Advisory Board Meeting](/minutes/2018/06/19/june-19-2018.html)
 - [March 16, 2018 - Eighth SC Advisory Board Meeting](/minutes/2018/03/16/march-16-2018.html)
