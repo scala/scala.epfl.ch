@@ -83,7 +83,7 @@ members:
     email: alexandre.archambault@epfl.ch
     github: alexarchambault
     twitter: alxarchambault
-    photo:
+    photo: /resources/img/alexarchambault.png
     currentlyWorkingOn: true
     contact_for: [coursier]
     projects:
