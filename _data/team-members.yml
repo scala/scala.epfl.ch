@@ -56,12 +56,12 @@ members:
     github: olafurpg
     twitter: olafurpg
     photo: /resources/img/olafur.png
-    currentlyWorkingOn: true
+    currentlyWorkingOn: false
     contact_for: [scalafix, scalameta]
     projects:
        - title: scalameta
          percentage: 100
-    active: true
+    active: false
   - member: martinduhem
     name: Martin Duhem
     title: Software Development
