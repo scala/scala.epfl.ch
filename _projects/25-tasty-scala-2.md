@@ -9,7 +9,7 @@ status: Active
 type: project
 active: true
 home: false
-description: Read Scala 3 libraries from Scala 2
+description: Consume Scala 3 libraries from Scala 2
 
 ---
 The upcoming Scala 3 has a new syntax and different rules for type inference, breaking source compatibility with the Scala 2 series. The Scala 3 compiler uses a new binary format, TASTy (Typed Abstract Syntax Trees), to serialise code after type checking is completed.
