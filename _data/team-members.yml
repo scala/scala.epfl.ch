@@ -149,3 +149,18 @@ members:
     currentlyWorkingOn: false
     contact_for: [scalaNative, scastie, scaladex, scalafix]
     active: false
+  - member: jamie
+    name: Jamie Thompson
+    title: Software Development
+    email: jamesrichard.thompson@epfl.ch
+    github: bishabosha
+    twitter: bishabosha
+    photo: /resources/img/jamiethompson.png
+    currentlyWorkingOn: true
+    contact_for: [tastyScala2]
+    projects:
+        - title: tastyScala2
+          percentage: 90
+        - title: dotty
+          percentage: 10
+    active: true
