@@ -16,4 +16,4 @@ The upcoming Scala 3 has a new syntax and different rules for type inference, br
 
 Among other uses, TASTy contains all the information required to read typed Scala signatures from packaged binaries, agnostic to a particular compiler implementation. By enabling the Scala 2 compiler to read signatures from TASTy, Scala 2 libraries can have dependencies compiled with Scala 3 or anything else that targets the format.
 
-In addition, the Scala 3 compiler can read pickled signatures from Scala 2 binaries, enabling separate modules to migrate gradually to the new compiler, rather than all at once.
+Since the Scala 3 compiler can already read pickled signatures from Scala 2 binaries, this project will enable bidirectional dependencies between Scala 2 and 3, allowing separate modules to migrate gradually to the new compiler, rather than all at once.
