@@ -2,7 +2,7 @@
 label: tastyScala2
 name: TASTy Reader For Scala 2
 web:
-github:
+github: https://github.com/scalacenter/scala/tree/tasty_reader
 origin:
 contributors: [jamie]
 status: Active
