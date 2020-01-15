@@ -39,7 +39,7 @@ members:
     github: jvican
     twitter: jvican
     photo: /resources/img/jorge.png
-    currentlyWorkingOn: true
+    currentlyWorkingOn: false
     contact_for: [scalaPlatformProcess, sip, spores, buildTools, scalacProfiling, bloop]
     projects:
         - title: sip
@@ -48,7 +48,7 @@ members:
           percentage: 10
         - title: bloop
           percentage: 75
-    active: true
+    active: false
   - member: olafur
     name: Olafur Pall Geirsson
     title: Software Development
@@ -84,14 +84,14 @@ members:
     github: alexarchambault
     twitter: alxarchambault
     photo: /resources/img/alexarchambault.png
-    currentlyWorkingOn: true
+    currentlyWorkingOn: false
     contact_for: [coursier]
     projects:
        - title: coursier
          percentage: 50
        - title: other
          percentage: 50
-    active: true
+    active: false
   - member: fabien
     name: Fabien Salvi
     title: System Administrator
@@ -163,4 +163,17 @@ members:
           percentage: 90
         - title: dotty
           percentage: 10
+    active: true
+  - member: ergys
+    name: Ergys Dona
+    title: Software Development
+    email: ergys.dona@epfl.ch
+    github: errikos
+    twitter: ergysdona
+    photo: /resources/img/github-logo.png
+    currentlyWorkingOn: true
+    contact_for: [scalaNative]
+    projects:
+        - title: scalaNative
+          percentage: 100
     active: true
