@@ -16,7 +16,7 @@ layout: page
             {% include project-block.html %}
         </div>
         {% assign projects = site.projects | where: "active", "false" %}
-        <div class="col-md-12 title completed">
+        <div class="col-md-12 title completed" id="projects-completed">
             <h2>Completed</h2>
         </div>
         <div class="project-list completed">

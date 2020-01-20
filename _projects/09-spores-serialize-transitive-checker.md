@@ -10,6 +10,7 @@ status: Completed
 type: project
 active: false
 home: false
+hide-from-homepage: true
 description: "A production-ready version of spores compatible with `{java, scala}.util.Serializable`."
 ---
 

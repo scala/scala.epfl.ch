@@ -8,7 +8,7 @@ contributors: [jvican]
 status: Completed
 type: project
 active: false
-hide-from-homepage: false
+hide-from-homepage: true
 description: "Enabling statistics in the compiler and creating the infrastructure around it."
 ---
 

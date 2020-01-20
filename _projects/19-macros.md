@@ -9,6 +9,7 @@ status: Completed
 type: project
 active: false
 home: false
+hide-from-homepage: true
 description: "Bring non-experimental and portable macros to Scala 2.x and Dotty"
 ---
 

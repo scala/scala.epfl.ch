@@ -3,10 +3,11 @@ label: coursier
 name: coursier
 github: https://github.com/coursier/coursier
 contributors: [alexandre]
-status: Active
+status: Community Maintained
 type: project
-active: true
-home: true
+active: false
+home: false
+hide-from-homepage: true
 description: "Library and CLI to manage dependencies"
 ---
 
