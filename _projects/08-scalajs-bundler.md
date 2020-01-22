@@ -9,6 +9,7 @@ status: "Contributors Welcome!"
 type: project
 active: true
 home: true
+hide-from-homepage: true
 description: "Module bundler for Scala.js projects that use npm packages."
 logo-home: /resources/img/scala-js-site-logo@2x.png
 logo: /resources/img/scala-js-dark.png

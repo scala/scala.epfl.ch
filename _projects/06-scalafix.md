@@ -9,6 +9,7 @@ status: Active
 type: project
 active: true
 home: true
+hide-from-homepage: false
 description: "Refactoring and linting tool"
 ---
 

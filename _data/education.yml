@@ -18,3 +18,7 @@ courses:
     title: Big Data Analysis with Scala and Spark
     member: heather
     taught_by: Heather Miller
+  - url: https://www.edx.org/course/programming-reactive-systems
+    label: programming-reactive-systems
+    title: Programming Reactive Systems
+    taught_by: Roland Kuhn, Konrad Malawski, and Julien Richard-Foy

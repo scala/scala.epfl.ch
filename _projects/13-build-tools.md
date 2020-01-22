@@ -8,6 +8,7 @@ status: Active
 type: project
 active: true
 home: false
+hide-from-homepage: true
 description: "Contributions to Zinc, Scala's incremental compiler, and sbt."
 ---
 
