@@ -190,3 +190,13 @@ members:
         - title: scaladex
           percentage: 100
     active: true
+  - member: meriam
+    name: Meriam Lachkar
+    title: Software Development
+    email: meriam.lachkar@epfl.ch
+    github: mlachkar
+    twitter: meriamLachkar
+    photo: /resources/img/meriam.png
+    currentlyWorkingOn: false
+    contact_for: []
+    active: true
