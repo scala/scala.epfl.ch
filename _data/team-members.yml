@@ -177,3 +177,16 @@ members:
         - title: scalaNative
           percentage: 100
     active: true
+  - member: adrien
+    name: Adrien Piquerez
+    title: Software Development
+    email: adrien.piquerez@epfl.ch
+    github: adpi2
+    twitter: adrienpi2
+    photo: /resources/img/adrien.png
+    currentlyWorkingOn: true
+    contact_for: [scaladex]
+    projects:
+        - title: scaladex
+          percentage: 100
+    active: true
