@@ -200,3 +200,16 @@ members:
     currentlyWorkingOn: false
     contact_for: []
     active: true
+  - member: tgodzik
+    name: Tomasz Godzik
+    title: Software Development
+    email: tgodzik@virtuslab.com
+    github: tgodzik
+    twitter: TomekGodzik
+    photo: /resources/img/tgodzik.png
+    currentlyWorkingOn: true
+    contact_for: [metals]
+    projects:
+        - title: metals
+          percentage: 100
+    active: true
