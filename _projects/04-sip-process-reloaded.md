@@ -1,10 +1,10 @@
 ---
 label: sip
-name: Scala improvement process lead
+name: Scala improvement process
 web: https://contributors.scala-lang.org/search?q=SIP
 github: https://github.com/scala/docs.scala-lang/tree/master/_sips
 origin: https://github.com/scalacenter/advisoryboard/blob/master/proposals/004-sip-and-slip-coordination.md
-contributors: [jorge, darja]
+contributors: [jorge, darja, sjrd]
 status: Active
 type: project
 active: true

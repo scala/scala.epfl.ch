@@ -1,13 +1,37 @@
 members:
+  - member: darja
+    name: Darja Jovanovic
+    title: Executive Director
+    email: darja.jovanovic@epfl.ch
+    github: darjutak
+    twitter: darjutak
+    photo: /resources/img/darja.png
+    currentlyWorkingOn: true
+    contact_for: [corporateMembership, donations, advisoryBoardMeeting, scalaCenterActivities, sip, events, communication]
+    projects:
+      - title: events
+        percentage: 40
+      - title: communication
+        percentage: 40
+      - title: sip
+        percentage: 20
+    active: true
   - member: sjrd
     name: Sébastien Doeraene
-    title: Executive Director
+    title: Technical Director
     email: sebastien.doeraene@epfl.ch
     github: sjrd
     twitter: sjrdoeraene
     photo: /resources/img/sjrd.png
-    currentlyWorkingOn: false
-    contact_for: [corporateMembership, donations, advisoryBoardMeeting, scalajs]
+    currentlyWorkingOn: true
+    contact_for: [scalajs, traitInitEncoding]
+    projects:
+      - title: sip
+        percentage: 10
+      - title: scalajs
+        percentage: 10
+      - title: traitInitEncoding
+        percentage: 80
     active: true
   - member: martin
     name: Martin Odersky
@@ -111,23 +135,6 @@ members:
     photo: /resources/img/sylvie.png
     currentlyWorkingOn: false
     contact_for: [scalaCenterActivities]
-    active: true
-  - member: darja
-    name: Darja Jovanovic
-    title: Communication Manager
-    email: darja.jovanovic@epfl.ch
-    github: darjutak
-    twitter: darjutak
-    photo: /resources/img/darja.png
-    currentlyWorkingOn: true
-    contact_for: [scalaCenterActivities, sip, events, communication]
-    projects:
-      - title: events
-        percentage: 40
-      - title: communication
-        percentage: 40
-      - title: sip
-        percentage: 20
     active: true
   - member: heather
     name: Heather Miller
