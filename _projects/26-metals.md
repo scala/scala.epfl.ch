@@ -1,6 +1,7 @@
 ---
 label: metals
 name: Metals
+web: https://scalameta.org/metals/
 github: https://github.com/scalameta/metals
 contributors: [olafur, tgodzik, meriam]
 status: Active
@@ -12,5 +13,4 @@ hide-from-homepage: false
 description: "Scala language server with rich IDE features"
 ---
 
-Scala language server with rich IDE features.
-See [project web page](https://scalameta.org/metals/).
+Scala language server with rich IDE features. Supported by many build tools and editors.

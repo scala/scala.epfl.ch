@@ -3,6 +3,8 @@ label: events
 name: Scala Days and other events
 contributors: [darja]
 status: Active
+web: https://scaladays.org
+github: https://github.com/scalacenter/sprees
 type: project
 active: true
 category: community
