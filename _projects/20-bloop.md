@@ -8,6 +8,7 @@ contributors: [jorge, martinduhem]
 status: Active
 type: project
 active: true
+category: tooling
 home: false
 hide-from-homepage: true
 description: Bloop is a command-line tool for fast edit/compile/test workflows. Its primary goal is to compile and test your project as fast as possible, offering a snappy developer experience.

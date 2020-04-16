@@ -8,6 +8,7 @@ contributors: [olafur]
 status: Active
 type: project
 active: true
+category: tooling
 home: true
 hide-from-homepage: false
 description: "Refactoring and linting tool for Scala."

@@ -7,6 +7,7 @@ contributors: [jorge, martinduhem, olafur]
 status: Active
 type: project
 active: true
+category: tooling
 home: false
 hide-from-homepage: true
 description: "Contributions to Zinc, Scala's incremental compiler, and sbt."
@@ -27,7 +28,7 @@ These contributions started off after the "[Improve builds with direct dependenc
 ## Summaries
 
 To see our contributions to Zinc [follow this link](https://github.com/sbt/zinc/labels/Scala%20Center).
-  
+
 To see our contributions to sbt [read this thread](https://contributors.scala-lang.org/t/reply-to-your-feedback-on-sbt/892).
 
 ## Give us feedback

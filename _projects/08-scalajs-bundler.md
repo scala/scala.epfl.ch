@@ -8,6 +8,7 @@ contributors: [julien]
 status: "Contributors Welcome!"
 type: project
 active: true
+category: tooling
 home: true
 hide-from-homepage: true
 description: "Module bundler for Scala.js projects that use npm packages."

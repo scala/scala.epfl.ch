@@ -8,6 +8,7 @@ contributors: [jorge]
 status: Completed
 type: project
 active: false
+category: tooling
 home: true
 hide-from-homepage: true
 description: "Improving scalac to improve the experience for builds using direct dependencies."

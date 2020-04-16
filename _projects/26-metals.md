@@ -6,6 +6,7 @@ contributors: [olafur, tgodzik, meriam]
 status: Active
 type: project
 active: true
+category: tooling
 home: false
 hide-from-homepage: false
 description: "Scala language server with rich IDE features"

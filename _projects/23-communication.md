@@ -6,6 +6,7 @@ status: Active
 type: project
 active: true
 home: true
+category: process
 description: "Reporting to the advisory board on Scala Center activities. Building relationships with
 communities around the world."
 ---

@@ -8,6 +8,7 @@ contributors: [heather, julien]
 status: Active
 type: education
 active: true
+category: education
 home: false
 description: The Scala Center is responsible for many online courses that introduce the multiple styles of programming in Scala.
 ---

@@ -8,6 +8,7 @@ contributors: [olafur]
 status: Active
 type: project
 active: true
+category: tooling
 home: false
 hide-from-homepage: true
 description: "Library to read, analyze, transform and generate Scala programs"

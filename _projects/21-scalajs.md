@@ -8,6 +8,7 @@ contributors: [sjrd]
 status: Active
 type: project
 active: true
+category: enhancement
 home: true
 description: "Core compiler, library and tools for Scala.js."
 logo-home: /resources/img/scala-js-site-logo@2x.png

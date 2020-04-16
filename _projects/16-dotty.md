@@ -8,6 +8,7 @@ contributors: [olafur, jamie]
 status: "Contributors Welcome!"
 type: project
 active: true
+category: enhancement
 home: false
 description: "Next-generation compiler for Scala"
 ---
@@ -20,5 +21,3 @@ to the development of Dotty on several fronts
 - Community build ([lampepfl/dotty-community-build](https://github.com/lampepfl/dotty-community-build))
 - Reporting incompatibilities with Scala 2.x ([dotty/issues](https://github.com/lampepfl/dotty/issues/created_by/olafurpg))
 - Next generation macros ([scalamacros/scalamacros](http://www.scala-lang.org/blog/2017/11/27/macros.html))
-
-

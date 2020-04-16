@@ -7,6 +7,7 @@ contributors: [alexandre]
 status: Active
 type: project
 active: true
+category: tooling
 home: false
 hide-from-homepage: true
 description: "Library and CLI to manage dependencies and your JVM environment."
