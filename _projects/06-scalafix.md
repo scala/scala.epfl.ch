@@ -1,7 +1,7 @@
 ---
 label: scalafix
 name: Scalafix
-web:
+web: https://scalacenter.github.io/scalafix/
 github: https://github.com/scalacenter/scalafix
 origin: https://github.com/scalacenter/advisoryboard/blob/master/proposals/002-dotty-migration-path.md
 contributors: [olafur]
@@ -10,7 +10,7 @@ type: project
 active: true
 home: true
 hide-from-homepage: false
-description: "Refactoring and linting tool"
+description: "Refactoring and linting tool for Scala."
 ---
 
 Scalafix is a refactoring and linting tool created at the Scala Center with the

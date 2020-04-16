@@ -5,11 +5,11 @@ web: https://index.scala-lang.org
 github: https://github.com/scalacenter/scaladex
 origin: https://github.com/scala/scala.epfl.ch/blob/master/minutes/_posts/2016-06-06-may-9-2016.md#scala-center-activities
 contributors: [guillaume, julien, heather, jorge, olafur, adrien]
-status: "Contributors Welcome!"
+status: Active
 type: project
 active: true
 home: false
-description: "Scaladex is a catalogue of open source library. It’s auto generated based on data from GitHub and Maven Central."
+description: "Scaladex is a catalogue of open source libraries, populated with data from GitHub and Maven Central. Projects can use SEO for more relevant results."
 logo: /resources/img/scaladex-dark.png
 logo-home: /resources/img/scaladex-brand@2x.png
 ---

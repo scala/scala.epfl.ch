@@ -1,7 +1,7 @@
 ---
 label: bloop
 name: Bloop
-web:
+web: https://scalacenter.github.io/bloop/
 github: https://github.com/scalacenter/bloop
 origin:
 contributors: [jorge, martinduhem]

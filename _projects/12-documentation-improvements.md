@@ -1,8 +1,8 @@
 ---
 label: documentationImprovements
 name: Documentation Improvements
-web:
-github: https://github.com/scalacenter/exercises-scalatutorial
+web: https://www.scala-lang.org
+github:
 origin: https://github.com/scalacenter/advisoryboard/blob/master/proposals/008-websites.md
 contributors: [julien, jorge]
 status: "Contributors Welcome!"

@@ -6,7 +6,8 @@ status: Active
 type: project
 active: true
 home: true
-description: ""
+description: "Reporting to the advisory board on Scala Center activities. Building relationships with
+communities around the world."
 ---
 
 Reporting to the advisory board on Scala Center activities. Building relationships with

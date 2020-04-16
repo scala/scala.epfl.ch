@@ -1,7 +1,7 @@
 ---
 label: sip
-name: Scala improvement process
-web: https://contributors.scala-lang.org/search?q=SIP
+name: Scala Improvement Process
+web: https://docs.scala-lang.org/sips/index.html
 github: https://github.com/scala/docs.scala-lang/tree/master/_sips
 origin: https://github.com/scalacenter/advisoryboard/blob/master/proposals/004-sip-and-slip-coordination.md
 contributors: [jorge, darja, sjrd]

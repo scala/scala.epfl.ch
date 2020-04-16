@@ -4,12 +4,12 @@ name: Scala Native Support
 web: http://www.scala-native.org
 github: https://github.com/scala-native/scala-native
 origin: https://github.com/scalacenter/advisoryboard/blob/master/proposals/001-native-scala-for-spark.md
-contributors: [martinduhem, guillaume]
-status: "Contributors Welcome!"
+contributors: [martinduhem, guillaume, ergys]
+status: Active
 type: project
 active: true
 home: true
-description: "Compiler backend producing native programs."
+description: "A compiler for Scala programs producing native binaries and integrating with C."
 ---
 Scala Native is an ahead-of-time compiler for Scala. Its goal is to compile Scala code to native
 binaries, using the Scala compiler as front-end, its own optimizer and [LLVM](https://llvm.org)
@@ -29,11 +29,11 @@ The Scala Center is involved in multiple aspects of the development of Scala Nat
    of Scala.js’ crossProject and %%% to support Scala Native, allowing users to publish and
    depend on Scala Native libraries.
 
- - We added [support for regexes](https://github.com/scala-native/scala-native/pulls/588), which
+ - We added [support for regexes](https://github.com/scala-native/scala-native/pull/588), which
    helped greatly in implementing other missing features (`java.util.Formatter`, `String.split`,
    etc.)
 
- - We contributed [I/O support](https://github.com/scala-native/scala-native/pulls/574) and
+ - We contributed [I/O support](https://github.com/scala-native/scala-native/pull/574) and
    [java NIO support](https://github.com/scala-native/scala-native/pull/694). Scala Native
    programs can now perform I/O operations using the same APIs as they would on the JVM.
 

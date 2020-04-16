@@ -6,7 +6,7 @@ status: Active
 type: project
 active: true
 home: true
-description: ""
+description: "Organization of the Scala Days conference and Scala sprees."
 ---
 
 Organization of the Scala Days conference and Scala sprees.
