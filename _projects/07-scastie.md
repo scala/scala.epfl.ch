@@ -8,6 +8,7 @@ contributors: [guillaume, olafur]
 status: "Contributors Welcome!"
 type: project
 active: true
+category: tooling
 home: false
 hide-from-homepage: true
 description: "Scastie can run any Scala program with any library in your browser. You don’t need to download or install anything."

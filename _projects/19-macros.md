@@ -8,6 +8,7 @@ contributors: [olafur]
 status: Completed
 type: project
 active: false
+category: enhancement
 home: false
 hide-from-homepage: true
 description: "Bring non-experimental and portable macros to Scala 2.x and Dotty"
@@ -36,4 +37,3 @@ September 2017 with an
 [update](http://www.scala-lang.org/blog/2017/11/27/macros.html) in
 November 2017.
 The archived source code for this project is hosted in the repository [scalacenter/macros](https://github.com/scalacenter/macros).
-

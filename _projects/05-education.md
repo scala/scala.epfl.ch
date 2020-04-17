@@ -1,15 +1,16 @@
 ---
 label: education
 name: Education
-web:
+web: https://docs.scala-lang.org/learn.html#online-courses-from-epfl
 github:
 origin:
 contributors: [heather, julien]
 status: Active
 type: education
 active: true
+category: education
 home: false
-description: Online MOOCs and tutorials
+description: The Scala Center is responsible for many online courses that introduce the multiple styles of programming in Scala.
 ---
 
 Our mission is to develop quality and widely accessible educational materials,

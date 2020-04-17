@@ -8,6 +8,7 @@ contributors: [jamie]
 status: Active
 type: project
 active: true
+category: scala3migration
 home: false
 description: Consume Scala 3 libraries from Scala 2
 

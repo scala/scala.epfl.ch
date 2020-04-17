@@ -8,18 +8,46 @@ layout: page
     <div class="clearfix"></div>
 
     <div class="projects">
-        {% assign projects = site.projects | where: "active", "true" %}
-        <div class="col-md-12 title active">
-            <h2>Active</h2>
+        {% assign projects = site.projects | where: "category", "tooling" %}
+        <div class="col-md-12 title tooling">
+            <h2>Tooling</h2>
         </div>
-        <div class=" project-list active">
+        <div class=" project-list tooling">
             {% include project-block.html %}
         </div>
-        {% assign projects = site.projects | where: "active", "false" %}
-        <div class="col-md-12 title completed" id="projects-completed">
-            <h2>Completed</h2>
+        {% assign projects = site.projects | where: "category", "scala3migration" %}
+        <div class="col-md-12 title scala3migration">
+            <h2>Scala 3 Migration</h2>
         </div>
-        <div class="project-list completed">
+        <div class=" project-list scala3migration">
+            {% include project-block.html %}
+        </div>
+        {% assign projects = site.projects | where: "category", "enhancement" %}
+        <div class="col-md-12 title enhancement">
+            <h2>Scala Language Enhancements</h2>
+        </div>
+        <div class=" project-list enhancement">
+            {% include project-block.html %}
+        </div>
+        {% assign projects = site.projects | where: "category", "community" %}
+        <div class="col-md-12 title community">
+            <h2>Community</h2>
+        </div>
+        <div class=" project-list community">
+            {% include project-block.html %}
+        </div>
+        {% assign projects = site.projects | where: "category", "education" %}
+        <div class="col-md-12 title education">
+            <h2>Education</h2>
+        </div>
+        <div class=" project-list education">
+            {% include project-block.html %}
+        </div>
+        {% assign projects = site.projects | where: "category", "process" %}
+        <div class="col-md-12 title process">
+            <h2>Processes Managed by the Scala Center</h2>
+        </div>
+        <div class=" project-list process">
             {% include project-block.html %}
         </div>
         {% assign advisory = site.projects | where: "label", "advisoryBoardProposals" | first %}

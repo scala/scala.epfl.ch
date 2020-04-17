@@ -8,6 +8,7 @@ contributors: [julien]
 status: Completed
 type: project
 active: false
+category: enhancement
 home: false
 hide-from-homepage: true
 description: "A new collections library design for Scala 2.13."
@@ -16,4 +17,3 @@ The Scala collections library underwent a major redesign in Scala 2.8. While the
     The work in progress can be seen in the following github repository: [https://github.com/scala/collection-strawman](https://github.com/scala/collection-strawman)
 
 [Improvements](https://github.com/scala/collection-strawman/pulls/julienrf)
-

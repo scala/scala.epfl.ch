@@ -204,8 +204,11 @@ members:
     github: mlachkar
     twitter: meriamLachkar
     photo: /resources/img/meriam.png
-    currentlyWorkingOn: false
-    contact_for: []
+    currentlyWorkingOn: true
+    contact_for: [metals]
+    projects:
+        - title: metals
+          percentage: 100
     active: true
   - member: tgodzik
     name: Tomasz Godzik

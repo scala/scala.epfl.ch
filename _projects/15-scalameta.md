@@ -1,13 +1,14 @@
 ---
 label: scalameta
 name: Scalameta
-web:
+web: https://scalameta.org
 github: https://github.com/scalameta/scalameta
 origin: https://github.com/scalacenter/advisoryboard/blob/master/agendas/001-2016-q2.md
 contributors: [olafur]
 status: Active
 type: project
 active: true
+category: tooling
 home: false
 hide-from-homepage: true
 description: "Library to read, analyze, transform and generate Scala programs"

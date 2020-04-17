@@ -1,13 +1,14 @@
 ---
 label: sip
-name: Scala improvement process
-web: https://contributors.scala-lang.org/search?q=SIP
+name: Scala Improvement Process
+web: https://docs.scala-lang.org/sips/index.html
 github: https://github.com/scala/docs.scala-lang/tree/master/_sips
 origin: https://github.com/scalacenter/advisoryboard/blob/master/proposals/004-sip-and-slip-coordination.md
 contributors: [jorge, darja, sjrd]
 status: Active
 type: project
 active: true
+category: process
 home: true
 description: "Set of processes involving the community and aiming at improving the Scala language."
 ---
