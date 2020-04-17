@@ -8,7 +8,7 @@ contributors: [guillaume, julien, heather, jorge, olafur, adrien]
 status: Active
 type: project
 active: true
-priority: 1
+priority: 4
 category: tooling
 home: false
 description: "Scaladex is a catalogue of open source libraries, populated with data from GitHub and Maven Central. Projects can use SEO for more relevant results."

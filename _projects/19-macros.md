@@ -8,7 +8,7 @@ contributors: [olafur]
 status: Completed
 type: project
 active: false
-priority: 1000
+priority: -1
 category: enhancement
 home: false
 hide-from-homepage: true

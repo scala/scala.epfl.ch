@@ -8,7 +8,7 @@ contributors: [jorge]
 status: Completed
 type: project
 active: false
-priority: 1000
+priority: -1
 category: tooling
 home: true
 hide-from-homepage: true

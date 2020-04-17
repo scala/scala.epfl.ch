@@ -7,7 +7,7 @@ contributors: [jorge, martinduhem, olafur, jamie]
 status: Active
 type: project
 active: true
-priority: 10
+priority: 1
 category: tooling
 home: false
 hide-from-homepage: true

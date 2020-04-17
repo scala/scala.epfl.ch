@@ -8,7 +8,7 @@ contributors: [olafur, jamie]
 status: "Contributors Welcome!"
 type: project
 active: true
-priority: 10
+priority: 1
 category: enhancement
 home: false
 description: "The future compiler of Scala 3.0"

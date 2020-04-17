@@ -8,7 +8,7 @@ contributors: [jorge, guillaume]
 status: Aborted
 type: project
 active: false
-priority: 1000
+priority: -1
 category: process
 home: true
 hide-from-homepage: true

@@ -8,7 +8,7 @@ contributors: [jorge, darja, sjrd]
 status: Active
 type: project
 active: true
-priority: 10
+priority: 1
 category: process
 home: true
 description: "Set of processes involving the community and aiming at improving the Scala language."

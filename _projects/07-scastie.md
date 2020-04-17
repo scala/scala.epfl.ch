@@ -8,7 +8,7 @@ contributors: [guillaume, olafur]
 status: "Contributors Welcome!"
 type: project
 active: true
-priority: 0
+priority: 8
 category: tooling
 home: false
 hide-from-homepage: true

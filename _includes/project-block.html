@@ -1,5 +1,5 @@
 
-{% assign projects_by_status = projects | sort: "priority" %}
+{% assign projects_by_status = projects | sort: "priority" | reverse %}
 {% for project in projects_by_status %}
 <div class="col-md-6">
     <div class="project" id="{{ project.label }}">

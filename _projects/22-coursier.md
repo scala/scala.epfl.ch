@@ -7,7 +7,7 @@ contributors: [alexandre]
 status: Active
 type: project
 active: true
-priority: 1
+priority: 4
 category: tooling
 home: false
 hide-from-homepage: true

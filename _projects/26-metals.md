@@ -7,7 +7,7 @@ contributors: [olafur, tgodzik, meriam]
 status: Active
 type: project
 active: true
-priority: 0
+priority: 8
 category: tooling
 home: false
 hide-from-homepage: false
