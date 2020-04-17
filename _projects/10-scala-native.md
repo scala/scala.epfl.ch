@@ -8,6 +8,7 @@ contributors: [martinduhem, guillaume, ergys]
 status: Active
 type: project
 active: true
+priority: 10
 category: enhancement
 home: true
 description: "A compiler for Scala programs producing native binaries and integrating with C."

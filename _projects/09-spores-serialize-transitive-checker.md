@@ -9,6 +9,7 @@ contributors: [jorge, heather, julien]
 status: Completed
 type: project
 active: false
+priority: 1000
 category: enhancement
 home: false
 hide-from-homepage: true

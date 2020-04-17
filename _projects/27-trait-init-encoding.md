@@ -8,6 +8,7 @@ contributors: [sjrd]
 status: Active
 type: project
 active: true
+priority: 10
 category: scala3migration
 home: false
 description: Reconcile the trait init encoding of Scala 3 with Scala 2

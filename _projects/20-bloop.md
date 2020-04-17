@@ -8,6 +8,7 @@ contributors: [jorge, martinduhem]
 status: Active
 type: project
 active: true
+priority: 2
 category: tooling
 home: false
 hide-from-homepage: true

@@ -8,6 +8,7 @@ contributors: [olafur]
 status: Active
 type: project
 active: true
+priority: 10
 category: tooling
 home: true
 hide-from-homepage: false

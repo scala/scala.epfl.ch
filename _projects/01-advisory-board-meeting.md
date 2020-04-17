@@ -8,6 +8,7 @@ contributors: [sjrd]
 status: Active
 type: project
 active: true
+priority: 10
 category: process
 hide-from-homepage: true
 description: Each quarter the advisory board meets to make recommendations on the activities of the Scala Center.
