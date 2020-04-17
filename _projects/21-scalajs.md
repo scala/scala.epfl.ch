@@ -8,6 +8,7 @@ contributors: [sjrd]
 status: Active
 type: project
 active: true
+priority: 1
 category: enhancement
 home: true
 description: "Core compiler, library and tools for Scala.js."

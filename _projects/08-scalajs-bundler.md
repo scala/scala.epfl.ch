@@ -8,6 +8,7 @@ contributors: [julien]
 status: "Contributors Welcome!"
 type: project
 active: true
+priority: 2
 category: tooling
 home: true
 hide-from-homepage: true

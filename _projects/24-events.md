@@ -7,6 +7,7 @@ web: https://scaladays.org
 github: https://github.com/scalacenter/sprees
 type: project
 active: true
+priority: 1
 category: community
 home: true
 description: "Organization of the Scala Days conference and Scala sprees."

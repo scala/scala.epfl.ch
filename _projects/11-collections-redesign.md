@@ -8,6 +8,7 @@ contributors: [julien]
 status: Completed
 type: project
 active: false
+priority: -1
 category: enhancement
 home: false
 hide-from-homepage: true
