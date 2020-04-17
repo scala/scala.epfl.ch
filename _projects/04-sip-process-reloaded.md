@@ -9,7 +9,7 @@ status: Active
 type: project
 active: true
 priority: 1
-category: process
+category: enhancement
 home: true
 description: "Set of processes involving the community and aiming at improving the Scala language."
 ---
