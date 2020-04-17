@@ -9,7 +9,7 @@ status: "Contributors Welcome!"
 type: project
 active: true
 priority: 1
-category: enhancement
+category: education
 home: false
 description: "Simplify and upgrade code examples, improve the structure and the design of the scala-lang.org website."
 ---
