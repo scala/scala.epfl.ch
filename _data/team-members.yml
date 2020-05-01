@@ -115,7 +115,7 @@ members:
          percentage: 50
        - title: other
          percentage: 50
-    active: false
+    active: true
   - member: fabien
     name: Fabien Salvi
     title: System Administrator
