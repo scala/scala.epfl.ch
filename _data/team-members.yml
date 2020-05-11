@@ -182,7 +182,9 @@ members:
     contact_for: [scalaNative]
     projects:
         - title: scalaNative
-          percentage: 100
+          percentage: 60
+        - title: scalacDebugging
+          percentage: 40
     active: true
   - member: adrien
     name: Adrien Piquerez
