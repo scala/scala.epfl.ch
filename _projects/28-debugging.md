@@ -16,7 +16,9 @@ description: "Improve the debugging experience for Scala developers."
 At the moment, the debug information embedded to the class files produced by the Scala
 compiler is limited. Notably, information for inline functions is not included, which
 affects the overall debugging experience when working with classes that have inline
-functions from other classes.
+functions from other classes. Please note that this limitation is due to the class file
+specification and is not related to Scala.
 
 The Scala Center is working towards solving the above problem by looking into various
-formats in which the information for inline functions could be stored.
+formats in which the information for inline functions could be stored into the output
+class files.
