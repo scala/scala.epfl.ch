@@ -15,7 +15,7 @@ description: "The future compiler of Scala 3.0"
 ---
 [Dotty](http://dotty.epfl.ch/) is a platform to try out new language concepts
 and compiler technologies for Scala with a focus is mainly on simplification.
-Eventually, Dotty is planned to become Scala 3.  The Scala Center has contributed
+Dotty is planned to become Scala 3 in December 2020. The Scala Center has contributed
 to the development of Dotty on several fronts
 
 - Migration tool ([scalafix](https://scalacenter.github.io/scalafix))

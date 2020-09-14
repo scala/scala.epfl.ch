@@ -29,9 +29,7 @@ members:
       - title: sip
         percentage: 10
       - title: scalajs
-        percentage: 10
-      - title: traitInitEncoding
-        percentage: 80
+        percentage: 90
     active: true
   - member: martin
     name: Martin Odersky
@@ -167,9 +165,9 @@ members:
     contact_for: [tastyScala2]
     projects:
         - title: tastyScala2
-          percentage: 90
+          percentage: 50
         - title: dotty
-          percentage: 10
+          percentage: 50
     active: true
   - member: ergys
     name: Ergys Dona
@@ -194,10 +192,12 @@ members:
     twitter: adrienpi2
     photo: /resources/img/adrien.png
     currentlyWorkingOn: true
-    contact_for: [scaladex]
+    contact_for: [scala3MigrationGuide]
     projects:
+        - title: scala3MigrationGuide
+          percentage: 90
         - title: scaladex
-          percentage: 100
+          percentage: 10
     active: true
   - member: meriam
     name: Meriam Lachkar
@@ -207,10 +207,12 @@ members:
     twitter: meriamLachkar
     photo: /resources/img/meriam.png
     currentlyWorkingOn: true
-    contact_for: [metals]
+    contact_for: [metals, scalafix]
     projects:
         - title: metals
-          percentage: 100
+          percentage: 50
+        - title: scalafix
+          percentage: 50
     active: true
   - member: tgodzik
     name: Tomasz Godzik
