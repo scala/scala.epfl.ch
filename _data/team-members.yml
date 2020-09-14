@@ -115,7 +115,7 @@ members:
          percentage: 50
        - title: other
          percentage: 50
-    active: true
+    active: false
   - member: fabien
     name: Fabien Salvi
     title: System Administrator
@@ -178,14 +178,14 @@ members:
     github: errikos
     twitter: ergysdona
     photo: /resources/img/ergys.png
-    currentlyWorkingOn: true
+    currentlyWorkingOn: false
     contact_for: [scalaNative]
     projects:
         - title: scalaNative
           percentage: 60
         - title: scalacDebugging
           percentage: 40
-    active: true
+    active: false
   - member: adrien
     name: Adrien Piquerez
     title: Software Development
