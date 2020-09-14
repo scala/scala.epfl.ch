@@ -162,12 +162,14 @@ members:
     twitter: bishabosha
     photo: /resources/img/jamiethompson.png
     currentlyWorkingOn: true
-    contact_for: [tastyScala2]
+    contact_for: [tastyScala2, enumFinalisation]
     projects:
         - title: tastyScala2
-          percentage: 50
+          percentage: 40
+        - title: enumFinalisation
+          percentage: 40
         - title: dotty
-          percentage: 50
+          percentage: 20
     active: true
   - member: ergys
     name: Ergys Dona
