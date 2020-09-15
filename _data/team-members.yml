@@ -194,10 +194,12 @@ members:
     twitter: adrienpi2
     photo: /resources/img/adrien.png
     currentlyWorkingOn: true
-    contact_for: [scala3MigrationGuide]
+    contact_for: [scala3MigrationGuide, scaladex, bspForSbt]
     projects:
         - title: scala3MigrationGuide
-          percentage: 90
+          percentage: 70
+        - title: bspForSbt
+          percentage: 20
         - title: scaladex
           percentage: 10
     active: true
@@ -209,11 +211,13 @@ members:
     twitter: meriamLachkar
     photo: /resources/img/meriam.png
     currentlyWorkingOn: true
-    contact_for: [metals, scalafix]
+    contact_for: [metals, scalafix, migrat3]
     projects:
         - title: metals
-          percentage: 50
+          percentage: 20
         - title: scalafix
+          percentage: 30
+        - title: migrat3
           percentage: 50
     active: true
   - member: tgodzik
