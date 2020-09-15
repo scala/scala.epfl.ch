@@ -225,3 +225,16 @@ members:
         - title: metals
           percentage: 100
     active: true
+  - member: wmazur
+    name: Wojciech Mazur
+    title: Software Development
+    email: wmazur@virtuslab.com
+    github: wojciechmazur
+    twitter: wojciech_maz
+    photo: /resources/img/wmazur.png
+    currentlyWorkingOn: true
+    contact_for: [scalaNative]
+    projects:
+        - title: scalaNative
+          percentage: 100
+    active: true    
