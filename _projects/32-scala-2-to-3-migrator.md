@@ -1,6 +1,6 @@
 ---
 label: migrat3
-name: lorem ipsum
+name: Scala 2 to 3 Migration Tool
 web:
 github:
 origin: https://contributors.scala-lang.org/t/the-scala-2-to-scala-3-typer-and-implicit-resolver/4446
