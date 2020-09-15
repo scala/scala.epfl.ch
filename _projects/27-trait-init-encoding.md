@@ -5,7 +5,7 @@ web:
 github:
 origin:
 contributors: [sjrd]
-status: Active
+status: Completed
 type: project
 active: true
 priority: 1
