@@ -4,7 +4,7 @@ name: Scalameta
 web: https://scalameta.org
 github: https://github.com/scalameta/scalameta
 origin: https://github.com/scalacenter/advisoryboard/blob/master/agendas/001-2016-q2.md
-contributors: [olafur]
+contributors: [olafur, tgodzik]
 status: Active
 type: project
 active: true
@@ -22,6 +22,8 @@ Scalameta is used by a range of tools including:
   tool
 - [Scalafmt](http://scalameta.org/scalafmt/): code formatter
 - [Metals](http://scalameta.org/metals/): language server for code navigation
+- [Mdoc](http://scalameta.org/mdoc/): typechecked markdown documentation for
+  Scala
 - [Metadoc](https://github.com/scalameta/metadoc): static site generator for
   code navigation
 

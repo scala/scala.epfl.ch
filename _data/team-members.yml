@@ -230,7 +230,7 @@ members:
     twitter: TomekGodzik
     photo: /resources/img/tgodzik.png
     currentlyWorkingOn: true
-    contact_for: [metals]
+    contact_for: [metals, scalameta, bloop]
     projects:
         - title: metals
           percentage: 100
