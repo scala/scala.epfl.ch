@@ -4,11 +4,11 @@ name: Scala Native Support
 web: http://www.scala-native.org
 github: https://github.com/scala-native/scala-native
 origin: https://github.com/scalacenter/advisoryboard/blob/master/proposals/001-native-scala-for-spark.md
-contributors: [martinduhem, guillaume, ergys]
+contributors: [martinduhem, guillaume, ergys, wmazur]
 status: Active
 type: project
 active: true
-priority: 1
+priority: 2
 category: enhancement
 home: true
 description: "A compiler for Scala programs producing native binaries and integrating with C."

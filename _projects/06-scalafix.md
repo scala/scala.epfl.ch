@@ -4,7 +4,7 @@ name: Scalafix
 web: https://scalacenter.github.io/scalafix/
 github: https://github.com/scalacenter/scalafix
 origin: https://github.com/scalacenter/advisoryboard/blob/master/proposals/002-dotty-migration-path.md
-contributors: [olafur]
+contributors: [olafur, meriam]
 status: Active
 type: project
 active: true
