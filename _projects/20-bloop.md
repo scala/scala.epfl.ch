@@ -4,7 +4,7 @@ name: Bloop
 web: https://scalacenter.github.io/bloop/
 github: https://github.com/scalacenter/bloop
 origin:
-contributors: [jorge, martinduhem]
+contributors: [jorge, martinduhem, tgodzik]
 status: Active
 type: project
 active: true
