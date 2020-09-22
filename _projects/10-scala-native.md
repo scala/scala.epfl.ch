@@ -1,6 +1,6 @@
 ---
 label: scalaNative
-name: Scala Native Support
+name: Scala Native
 web: http://www.scala-native.org
 github: https://github.com/scala-native/scala-native
 origin: https://github.com/scalacenter/advisoryboard/blob/master/proposals/001-native-scala-for-spark.md
@@ -41,4 +41,8 @@ The Scala Center is involved in multiple aspects of the development of Scala Nat
 
  - Support for [testing frameworks](https://github.com/scala-native/scala-native/pull/755) was
    added by the Scala Center. The supported test frameworks include
-   [uTest](https://github.com/lihaoyi/utest) and [ScalaCheck](https://www.scalacheck.org).
+   [uTest](https://github.com/lihaoyi/utest), [ScalaCheck](https://www.scalacheck.org) 
+   and [JUnit](https://junit.org).
+
+ - We contributed to [Scala 2.12 support](https://github.com/scala-native/scala-native/pull/1877) 
+   Also we will develop & maintain support for Scala 2.13 and eventually Dotty
