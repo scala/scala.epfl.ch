@@ -9,7 +9,7 @@ status: Active
 type: project
 active: true
 priority: 2
-category: tooling
+category: scala3migration
 home: false
 description: Develop a tool that can resolve the types and implicits required to make a Scala 2 codebase compile in Scala 3.
 ---
