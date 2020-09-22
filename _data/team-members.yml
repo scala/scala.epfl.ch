@@ -24,12 +24,14 @@ members:
     twitter: sjrdoeraene
     photo: /resources/img/sjrd.png
     currentlyWorkingOn: true
-    contact_for: [scalajs, traitInitEncoding]
+    contact_for: [scalajs, scalaNative]
     projects:
       - title: sip
         percentage: 10
+      - title: scalaNative
+        percentage: 20
       - title: scalajs
-        percentage: 90
+        percentage: 70
     active: true
   - member: martin
     name: Martin Odersky

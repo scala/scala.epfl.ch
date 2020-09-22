@@ -1,10 +1,10 @@
 ---
 label: scalaNative
-name: Scala Native Support
+name: Scala Native
 web: http://www.scala-native.org
 github: https://github.com/scala-native/scala-native
 origin: https://github.com/scalacenter/advisoryboard/blob/master/proposals/001-native-scala-for-spark.md
-contributors: [martinduhem, guillaume, ergys, wmazur]
+contributors: [wmazur, ergys, martinduhem, guillaume, sjrd]
 status: Active
 type: project
 active: true
