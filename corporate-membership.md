@@ -11,6 +11,8 @@ evaluate Scala libraries, improving the landscape of Scala's libraries, and
 coordinating and directing the development of libraries/tools of broad benefit
 to the community.
 
+(For individuals, please consider [a one-time donation](./donate.html).)
+
 ### Why join?
 
 Our main focus is to support the Scala developer community. We aim to focus on
