@@ -50,3 +50,20 @@ layout: page
         </div>
     </div>
 </div>
+
+<div class="row">
+    <h2>Former Team Members</h2>
+    <div style="margin-top: 30px;">
+        {% for member in members %}{% if member.active != true %}
+        <div class="col-md-4">
+            <div style="margin-bottom: 30px; min-height: 180px; padding: 30px; background-color: #fafafa; border-radius: 3px;">
+                <div style="text-align: center">
+                    <div style="display: inline-block; background-image: url({{ member.photo }}); border-radius: 50%; width: 128px; height: 128px;"></div>
+                </div>
+                <h3>{{ member.name }}</h3>
+            </div>
+        </div>
+        {% endif %}{% endfor %}
+
+    </div>
+</div>
