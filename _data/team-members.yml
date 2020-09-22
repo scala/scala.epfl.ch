@@ -245,4 +245,17 @@ members:
     projects:
         - title: scalaNative
           percentage: 100
-    active: true    
+    active: true
+  - member: vincenzobaz
+    name: Vincenzo Bazzucchi
+    title: Software Development
+    email: vincenzo.bazzucchi@epfl.ch
+    github: vincenzobaz
+    twitter: vincenzobaz
+    photo: /resources/img/vincenzobaz.png
+    currentlyWorkingOn: true
+    projects:
+      - title: education
+        percentage: 100
+    active: true
+
