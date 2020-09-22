@@ -7,7 +7,7 @@ members:
     twitter: darjutak
     photo: /resources/img/darja.png
     currentlyWorkingOn: true
-    contact_for: [corporateMembership, donations, advisoryBoardMeeting, scalaCenterActivities, sip, events, communication]
+    contact_for: [corporateMembership, donations, advisoryBoardMeeting, sip, events, communication]
     projects:
       - title: events
         percentage: 40
