@@ -11,6 +11,9 @@ $blue-grey:        #668086;
 $middle-blue:      #224951;
 $dark-blue:        #002b36;
 $background-menu:  #002b36;
+$active-color:    #f1592a;
+$completed-color: #7ed321;
+$contributorswelcome-color: #278bd2;
 
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -618,20 +621,20 @@ body.home {
         }
 
         &.active {
-          background-color: #f1592a;
+          background-color: $active-color;
           margin-right: -25px;
 
           &:after {
-            border-top-color: #f1592a;
+            border-top-color: $active-color;
           }
         }
 
         &.completed {
-          background-color: #7ed321;
+          background-color: $completed-color;
           margin-right: -40px;
 
           &:after {
-            border-top-color: #7ed321;
+            border-top-color: $completed-color;
           }
         }
       }
@@ -657,13 +660,13 @@ body.home {
       }
 
       .icon-status.active {
-       background-color: #f1592a;
+       background-color: $active-color;
       }
       .icon-status.completed {
-       background-color: #7ed321;
+       background-color: $completed-color;
       }
       .icon-status.contributorswelcome {
-       background-color: #278bd2;
+       background-color: $contributorswelcome-color;
       } 
       // red: d0011b
 
@@ -960,11 +963,11 @@ div.search {
       display: inline-block;
 
       &.active {
-        background-color: #f1592a;
+        background-color: $active-color;
       }
 
       &.completed {
-        background-color: #7ed321;
+        background-color: $completed-color;
       }
     }
 
@@ -1183,11 +1186,11 @@ div.search {
         background-color: #278bd2;
 
         &.active {
-          background-color: #f1592a;
+          background-color: $active-color;
         }
 
         &.completed {
-          background-color: #7ed321;
+          background-color: $completed-color;
         }
       }
     }
