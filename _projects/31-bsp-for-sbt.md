@@ -1,6 +1,6 @@
 ---
 label: bspForSbt
-name: Build Server Protocol Support for sbt
+name: Build Server Protocol in sbt
 web:
 github:
 origin: https://github.com/scalacenter/advisoryboard/blob/master/proposals/023-bsp.md
@@ -8,7 +8,7 @@ contributors: [adrien]
 status: Active
 type: project
 active: true
-priority: 2
+priority: 3
 category: tooling
 home: false
 description: Implement the Build Server Protocol in sbt to ease the integration with IDEs.

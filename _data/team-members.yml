@@ -199,9 +199,9 @@ members:
     contact_for: [scala3MigrationGuide, scaladex, bspForSbt]
     projects:
         - title: scala3MigrationGuide
-          percentage: 70
+          percentage: 60
         - title: bspForSbt
-          percentage: 20
+          percentage: 30
         - title: scaladex
           percentage: 10
     active: true
