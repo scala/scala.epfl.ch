@@ -14,6 +14,7 @@ $background-menu:  #002b36;
 $active-color:    #f1592a;
 $completed-color: #7ed321;
 $contributorswelcome-color: #278bd2;
+$maintenance-color: #7ed321;
 
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -637,6 +638,15 @@ body.home {
             border-top-color: $completed-color;
           }
         }
+
+        &.maintenance {
+          background-color:  $maintenance-color;
+          margin-right: -50px;
+
+          &:after {
+            border-top-color:$maintenance-color;
+          }
+        }
       }
 
       .icon-status {
@@ -667,7 +677,10 @@ body.home {
       }
       .icon-status.contributorswelcome {
        background-color: $contributorswelcome-color;
-      } 
+      }
+      .icon-status.maintenance {
+        background-color: $maintenance-color;
+      }
       // red: d0011b
 
       .logo img {
@@ -705,6 +718,10 @@ body.home {
 
   .fa-contributorswelcome:before {
     content: "\f12a";
+  }
+
+  .fa-maintenance:before {
+    content: "\f021";
   }
 
   /* Projects Mobile */
@@ -969,6 +986,10 @@ div.search {
       &.completed {
         background-color: $completed-color;
       }
+
+      &.maintenance {
+        background-color: $maintenance-color;
+      }
     }
 
     .content {
@@ -1191,6 +1212,10 @@ div.search {
 
         &.completed {
           background-color: $completed-color;
+        }
+
+        &.maintenance {
+          background-color: $maintenance-color;
         }
       }
     }

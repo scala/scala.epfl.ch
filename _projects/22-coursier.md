@@ -4,10 +4,10 @@ name: coursier
 web: https://get-coursier.io
 github: https://github.com/coursier/coursier
 contributors: [alexandre]
-status: Active
+status: Maintenance
 type: project
 active: true
-priority: 4
+priority: 2
 category: tooling
 home: false
 hide-from-homepage: true

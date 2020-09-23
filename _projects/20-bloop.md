@@ -5,7 +5,7 @@ web: https://scalacenter.github.io/bloop/
 github: https://github.com/scalacenter/bloop
 origin:
 contributors: [jorge, martinduhem, tgodzik]
-status: Active
+status: Maintenance
 type: project
 active: true
 priority: 2
