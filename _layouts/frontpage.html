@@ -162,25 +162,26 @@
                     {% for project in site.projects %}
                       {% if project.hide-from-homepage != true %}
                       <a href="/projects.html#{{ project.label }}" class="project">
-                        {% if project.status == "Contributors Welcome!" %}
-                          {% assign projectStatus ="contributorswelcome" %}
-                        {% else %}
-                          {% assign projectStatus = project.status %}
+                        {% case project.status %}
+                          {% when "Contributors Welcome!" %}
+                            {% assign projectStatus ="contributorswelcome" %}
+                          {% else %}
+                            {% assign projectStatus = project.status %}
+                        {% endcase %}
+                        <div class="status {{ project.status| downcase | remove: " " | remove: "!" }}">{{ project.status }}</div>
+                        <div class="icon-status {{ projectStatus|downcase }}">
+                          <i class="fa fa-{{ projectStatus|downcase }}"></i>
+                        </div>
+                        {% if project.logo-home %}
+                        <div class="logo"><img src="{{ project.logo-home }}" alt="{{ project.name }}"></div>
                         {% endif %}
-                          <div class="status {{ project.status| downcase | remove: " " | remove: "!" }}">{{ project.status }}</div>
-                          <div class="icon-status {{ projectStatus|downcase }}">
-                            <i class="fa fa-{{ projectStatus|downcase }}"></i>
-                          </div>
-                          {% if project.logo-home %}
-                          <div class="logo"><img src="{{ project.logo-home }}" alt="{{ project.name }}"></div>
+                        <div class="text">
+                          {% if project.short-name %}
+                            {{ project.short-name }}
+                          {% else %}
+                            {{ project.name }}
                           {% endif %}
-                          <div class="text">
-                            {% if project.short-name %}
-                              {{ project.short-name }}
-                            {% else %}
-                              {{ project.name }}
-                            {% endif %}
-                          </div>
+                        </div>
                       </a>
                       {% endif %}
                     {% endfor %}

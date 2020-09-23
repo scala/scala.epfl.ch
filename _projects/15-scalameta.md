@@ -5,7 +5,7 @@ web: https://scalameta.org
 github: https://github.com/scalameta/scalameta
 origin: https://github.com/scalacenter/advisoryboard/blob/master/agendas/001-2016-q2.md
 contributors: [olafur, tgodzik]
-status: Active
+status: Maintenance
 type: project
 active: true
 priority: 1
