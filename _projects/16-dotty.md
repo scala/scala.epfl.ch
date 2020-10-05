@@ -4,7 +4,7 @@ name: Dotty
 web: https://dotty.epfl.ch
 github: https://github.com/lampepfl/dotty
 origin: https://github.com/scalacenter/advisoryboard/blob/master/agendas/001-2016-q2.md
-contributors: [olafur, jamie]
+contributors: [olafur, jamie, fengyun]
 status: "Contributors Welcome!"
 type: project
 active: true

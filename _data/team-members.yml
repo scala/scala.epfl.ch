@@ -260,4 +260,17 @@ members:
       - title: education
         percentage: 100
     active: true
+  - member: fengyun
+    name: Fengyun Liu
+    title: Software Development
+    email: fengyun.liu@epfl.ch
+    github: liufengyun
+    twitter: liufengyun
+    photo: /resources/img/fengyun.jpg
+    currentlyWorkingOn: true
+    contact_for: [dotty]
+    projects:
+      - title: dotty
+        percentage: 100
+    active: true
 
