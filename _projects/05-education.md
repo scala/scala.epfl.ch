@@ -24,7 +24,7 @@ certificate).
 - [Parallel Programming](https://www.coursera.org/learn/parprog1)
 - [Big Data Analysis with Scala and Spark](https://www.coursera.org/learn/scala-spark-big-data)
 - [Functional Programming in Scala Capstone Project](https://www.coursera.org/learn/scala-capstone).
-- [Programming Reactive Systems](https://www.edx.org/course/programming-reactive-systems-3)
+- [Programming Reactive Systems](https://www.coursera.org/learn/scala-reactive) (also available on [edX](https://www.edx.org/course/programming-reactive-systems-3))
 - Effective Programming in Scala (work in progress)
 
 We have also created a [Scala Exercises](https://www.scala-exercises.org/scala_tutorial/terms_and_types)
