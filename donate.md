@@ -18,6 +18,8 @@ one-time donation into a monthly or yearly recurring donation. </p>
   <p id="what-happened">here</p>
 </div>
 
+(For companies, please consider [the corporate membership options](./corporate-membership.html).)
+
 ### Why contribute?
 
 Our main focus is to improve the experience of developing in Scala. This means
