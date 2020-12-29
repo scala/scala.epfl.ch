@@ -1,4 +1,4 @@
-<script src="https://checkout.stripe.com/checkout.js"></script>
+<script src="https://js.stripe.com/v3/"></script>
 
 <div class="select-wrapper">
   <select id="donate-amount" class="form-control donate-input">
@@ -55,72 +55,41 @@
     return amt * 100; // because amount is expected to be in rappen
   }
 
-  var handler = StripeCheckout.configure({
-    key: 'pk_live_S9WePNCTK9N2YkRzuC6pICVt',
-    // key: 'pk_test_wG81vQhDff5ErZXKZ4Uiyjgm',
-    image: 'https://s3.amazonaws.com/stripe-uploads/acct_17mObqLDtHx5gUQ3merchant-icon-1457703549446-scala-center-swirl.png',
-    locale: 'auto',
-    token: function(token) {
-      // Use the token to create the charge with a server-side script.
-      // You can access the token ID with `token.id`
+  // Based on https://stripe.com/docs/payments/accept-a-payment
+  $(document).ready(function () {
+    //var stripe = Stripe('pk_test_wG81vQhDff5ErZXKZ4Uiyjgm');
+    var stripe = Stripe('pk_live_S9WePNCTK9N2YkRzuC6pICVt');
 
-      var data = new Object();
-      data.token = token.id;
-      data.amount = getAmount().toString();
-      data.email = token.email;
-      var json = JSON.stringify(data);
+    $('#donate-button').on('click', function () {
 
-      // $.ajax({
-      //   type: "POST",
-      //   url: "http://localhost:5000",
-      //   data: token.id,
-      //   dataType: 'text',
-      //   success: function() { alert("Success"); },
-      //   error: function() { alert('Failed!'); }
-      // });
-
-      var settings = {
-        "async": true,
-        "crossDomain": true,
-        // "url": "http://localhost:5000",
-        "url": "https://scalacenter-donations.herokuapp.com/",
-        "method": "POST",
-        "contentType": "application/json",
-        "headers": {
-          "cache-control": "no-cache"
-        },
-        "data": json
-      }
-
-      $.ajax(settings)
-        .done(function (response) {
-          console.log(response);
-          window.location.replace("{{ site.baseurl }}/thank-you.html");
-        })
-        .fail(function(XMLHttpRequest, textStatus, errorThrown) {
+      //fetch('http://localhost:9000', {
+      fetch('https://scalacenter-donations.herokuapp.com/', {
+        method: 'POST',
+        body: JSON.stringify({ amount: getAmount() }),
+        mode: 'cors',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json'
+        }
+      })
+      .then(function (response) {
+        return response.json()
+      })
+      .then(function (session) {
+        return stripe.redirectToCheckout({ sessionId: session.id })
+      })
+      .then(function (result) {
+        if (result.error) {
           $("#charge-error").show();
-          $("#what-happened").text("<br />" + textStatus + "<br />" + errorThrown + "<br />Please try again or contact scala.center@epfl.ch for help!");
-        });
-    }
-  });
+          $("#what-happened").text("<br />" + result.error.message + "<br />Please try again or contact scala.center@epfl.ch for help!");
+        }
+      })
+      .catch(function (error) {
+        console.error('Error:', error);
+      })
 
-  $('#donate-button').on('click', function(e) {
-    var amnt = getAmount();
-
-    // Open Checkout with further options
-    handler.open({
-      name: 'The Scala Center',
-      description: "one-time donation",
-      zipCode: true,
-      billingAddress: true,
-      currency: "chf",
-      amount: amnt
     });
-    e.preventDefault();
+
   });
 
-  // Close Checkout on page navigation
-  $(window).on('popstate', function() {
-    handler.close();
-  });
 </script>
