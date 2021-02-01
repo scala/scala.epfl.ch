@@ -1,5 +1,4 @@
-
-Copyright (c) 2002-2017 EPFL
+Copyright (c) 2002-2021 EPFL
 
 All rights reserved.
 
