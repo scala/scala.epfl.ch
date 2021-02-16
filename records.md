@@ -9,6 +9,9 @@ layout: contact
 
 ### Board meeting minutes
 
+- [February 4, 2021 - Nineteenth SC Advisory Board Meeting](/minutes/2021/02/04/february-4-2021.html)
+- [October 28, 2020 - Eighteenth SC Advisory Board Meeting](/minutes/2020/10/28/october-28-2020.html)
+- [June 30, 2020 - Seventeeth SC Advisory Board Meeting](/minutes/2020/06/30/june-30-2020.html)
 - [March 27, 2020 - Sixteenth SC Advisory Board Meeting](/minutes/2020/03/27/march-27-2020.html)
 - [December 16, 2019 - Fifteenth SC Advisory Board Meeting](/minutes/2019/12/16/december-16-2019.html)
 - [September 11, 2019 - Fourteenth SC Advisory Board Meeting](/minutes/2019/09/11/september-11-2019.html)
