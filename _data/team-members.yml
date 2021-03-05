@@ -56,6 +56,17 @@ members:
         - title: education
           percentage: 100
     active: true
+  - member: vincent
+    name: Vincent Derouand
+    title: Communication Manager
+    email: vincent.derouand@epfl.ch
+    twitter: VincentDerouand
+    photo: /resources/img/vincent.png
+    active: true
+    projects:
+      - title: communication
+        percentage: 40
+    currentlyWorkingOn: true
   - member: jorge
     name: Jorge Vicente Cantero
     title: Software Development
