@@ -14,4 +14,4 @@ community required.
 
 If getting paid to build up important community open source projects, and
 promoting, advancing, and supporting Scala, sounds like you, then drop us a line
-at <a href="scala.center@epfl.ch">scala.center@epfl.ch</a> with your resume and GitHub profile.
+at <a href="mailto:scala.center@epfl.ch">scala.center@epfl.ch</a> with your resume and GitHub profile.
