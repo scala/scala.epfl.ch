@@ -63,6 +63,7 @@ members:
     twitter: VincentDerouand
     photo: /resources/img/vincent.png
     active: true
+    contact_for: [communication]
     projects:
       - title: communication
         percentage: 40
@@ -73,6 +74,7 @@ members:
     email: valerie.pedroni@epfl.ch
     photo: /resources/img/valerie.png
     active: true
+    contact_for: [communication]
     projects:
       - title: communication
         percentage: 80
