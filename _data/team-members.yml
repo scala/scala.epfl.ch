@@ -67,6 +67,16 @@ members:
       - title: communication
         percentage: 40
     currentlyWorkingOn: true
+  - member: valerie
+    name: Valérie Pedroni
+    title: Communication Intern
+    email: valerie.pedroni@epfl.ch
+    photo: /resources/img/valerie.png
+    active: true
+    projects:
+      - title: communication
+        percentage: 80
+    currentlyWorkingOn: true
   - member: jorge
     name: Jorge Vicente Cantero
     title: Software Development
