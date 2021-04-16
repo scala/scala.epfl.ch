@@ -1,7 +1,7 @@
 ---
 label: communication
 name: Communication and outreach
-contributors: [darja]
+contributors: [darja, vincent, valerie]
 status: Active
 type: project
 active: true
