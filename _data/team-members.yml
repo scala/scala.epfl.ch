@@ -150,9 +150,9 @@ members:
     contact_for: [jenkinsInfrastructure, serverIssues]
     active: true
   - member: sylvie
-    name: Sylvie Jankow
-    title: Secretary
-    email: sylvie.jankow@epfl.ch
+    name: Sylvie Buchard
+    title: Administrative Specialist
+    email: sylvie.buchard@epfl.ch
     github:
     twitter:
     photo: /resources/img/sylvie.png
