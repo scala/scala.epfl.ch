@@ -18,6 +18,11 @@ courses:
     title: Big Data Analysis with Scala and Spark
     member: heather
     taught_by: Heather Miller
+  - url: https://www.coursera.org/learn/effective-scala
+    label: effective-scala
+    title: Effective Programming in Scala
+    member: julien
+    taught_by: Julien Richard-Foy and Noel Welsh
   - url: https://www.edx.org/course/programming-reactive-systems
     label: programming-reactive-systems
     title: Programming Reactive Systems
