@@ -54,7 +54,7 @@ members:
     contact_for: [education, scalajsBundler, documentationImprovements, collectionsRedesign]
     projects:
         - title: education
-          percentage: 100
+          percentage: 60
     active: true
   - member: vincent
     name: Vincent Derouand
