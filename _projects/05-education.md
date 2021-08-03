@@ -4,7 +4,7 @@ name: Education
 web: https://docs.scala-lang.org/learn.html#online-courses-from-epfl
 github:
 origin:
-contributors: [heather, julien]
+contributors: [heather, julien, vincenzobaz]
 status: Active
 type: education
 active: true
@@ -19,9 +19,9 @@ and to make them freely available. We have launched 6 courses along with a
 capstone project. All the courses deliver a certificate of completion, or they
 can be taken for free.
 
-- [Functional Programming Principles in Scala](https://www.coursera.org/learn/progfun1)
-- [Functional Program Design in Scala](https://www.coursera.org/learn/progfun2)
-- [Parallel Programming](https://www.coursera.org/learn/parprog1)
+- [Functional Programming Principles in Scala](https://www.coursera.org/learn/scala-functional-programming)
+- [Functional Program Design in Scala](https://www.coursera.org/learn/scala-functional-program-design)
+- [Parallel Programming](https://www.coursera.org/learn/scala-parallel-programming)
 - [Big Data Analysis with Scala and Spark](https://www.coursera.org/learn/scala-spark-big-data)
 - [Functional Programming in Scala Capstone Project](https://www.coursera.org/learn/scala-capstone).
 - [Programming Reactive Systems](https://www.coursera.org/learn/scala-akka-reactive)
