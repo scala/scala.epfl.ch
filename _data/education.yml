@@ -1,15 +1,15 @@
 courses:
-  - url: https://www.coursera.org/learn/progfun1
+  - url: https://www.coursera.org/learn/scala-functional-programming
     label: functional-program-principles
     title: Functional Programming Principles in Scala
     member: martin
     taught_by: Martin Odersky
-  - url: https://www.coursera.org/learn/progfun2
+  - url: https://www.coursera.org/learn/scala-functional-program-design
     label: functional-program
     title: Functional Program Design in Scala
     member: martin
     taught_by: Martin Odersky
-  - url: https://www.coursera.org/learn/parprog1
+  - url: https://www.coursera.org/learn/scala-parallel-programming
     label: parallel-programming
     title: Parallel Programming
     taught_by: Viktor Kuncak and Aleksandar Prokopec
