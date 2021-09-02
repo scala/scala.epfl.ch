@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.6.6'
+          bundler-cache: true
+      - name: Bower
+        run: |
+          npm install -g bower
+          bower install
+      - name: Build site
+        run: |
+          bundle exec jekyll build 2> error.log
+          cat >&2 error.log
+          ( ! grep -qie Error -e Warn error.log )
