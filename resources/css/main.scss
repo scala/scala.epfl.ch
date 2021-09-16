@@ -486,6 +486,7 @@ body.home {
     width: 125px;
     height: 125px;
     border-radius: 75px;
+    background-size: cover;
     -webkit-border-radius: 75px;
     -moz-border-radius: 75px;
     @media (max-width: 767px) {
@@ -1104,8 +1105,9 @@ div.search {
           margin-right: 4px;
           overflow: hidden;
           img {
-            width: 30px;
-            height: 30px;
+            width: 27px;
+            height: 27px;
+            border-radius: 50%;
           }
         }
       }
