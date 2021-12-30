@@ -9,4 +9,3 @@ layout: page
 </div>
 <h3 class="centered">We'll be in touch!</h3>
 
-In the meantime, why not visit us in the [Scala Center gitter channel](http://gitter.im/scala/center) to connect and say hi.
