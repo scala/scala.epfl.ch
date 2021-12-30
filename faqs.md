@@ -52,6 +52,5 @@ signing our [Contributors License Agreement (CLA)](https://www.lightbend.com/con
 
 ### Have more questions?
 
-Please get in touch! Either drop into the [Scala Center gitter
-channel](http://gitter.im/scala/center), or drop us a line at
+Please get in touch! Either drop us a line at
 <a href="mailto:scala.center@epfl.ch">scala.center@epfl.ch</a>.

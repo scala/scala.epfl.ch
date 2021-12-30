@@ -5,7 +5,7 @@ layout: contact
 ## Contact
 
 If you'd like to join in on the discussion about Scala Center activities, then
-head over to the [Scala Center gitter channel](http://gitter.im/scala/center).
+head over to the [Scala Contributors forum](https://contributors.scala-lang.org/).
 
 If you'd like to report a bug, make a feature request, report a documentation
 issue in any of Scala's libraries or tools, please head over to the [Bug Reporting](http://scala-lang.org/contribute/bug-reporting-guide.html) to see
