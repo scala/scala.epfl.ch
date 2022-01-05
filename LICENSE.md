@@ -1,4 +1,4 @@
-Copyright (c) 2002-2021 EPFL
+Copyright (c) 2002-2022 EPFL
 
 All rights reserved.
 
