@@ -62,7 +62,7 @@ members:
     email: vincent.derouand@epfl.ch
     twitter: VincentDerouand
     photo: /resources/img/vincent.png
-    active: true
+    active: false
     contact_for: [communication]
     projects:
       - title: communication
@@ -270,7 +270,7 @@ members:
     projects:
         - title: scalaNative
           percentage: 100
-    active: true
+    active: false
   - member: vincenzobaz
     name: Vincenzo Bazzucchi
     title: Software Development
@@ -282,7 +282,7 @@ members:
     projects:
       - title: education
         percentage: 100
-    active: true
+    active: false
   - member: fengyun
     name: Fengyun Liu
     title: Software Development
