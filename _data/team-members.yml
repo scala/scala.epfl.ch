@@ -67,7 +67,7 @@ members:
     projects:
       - title: communication
         percentage: 40
-    currentlyWorkingOn: true
+    currentlyWorkingOn: false
   - member: valerie
     name: Valérie Pedroni
     title: Communication Intern
@@ -258,6 +258,19 @@ members:
         - title: metals
           percentage: 100
     active: true
+  - member: toli
+    name: Anatolii Kmetiuk
+    title: Software Development
+    email: anatolii.kmetiuk@epfl.ch
+    github: anatoliykmetyuk
+    twitter: akmetiuk
+    photo: /resources/img/toli.png
+    currentlyWorkingOn: true
+    contact_for: []
+    projects:
+        - title: dotty
+          percentage: 100
+    active: true
   - member: wmazur
     name: Wojciech Mazur
     title: Software Development
@@ -265,7 +278,7 @@ members:
     github: wojciechmazur
     twitter: wojciech_maz
     photo: /resources/img/wmazur.png
-    currentlyWorkingOn: true
+    currentlyWorkingOn: false
     contact_for: [scalaNative]
     projects:
         - title: scalaNative
@@ -278,7 +291,7 @@ members:
     github: vincenzobaz
     twitter: vincenzobaz
     photo: /resources/img/vincenzobaz.png
-    currentlyWorkingOn: true
+    currentlyWorkingOn: false
     projects:
       - title: education
         percentage: 100
@@ -296,4 +309,3 @@ members:
       - title: dotty
         percentage: 100
     active: false
-
