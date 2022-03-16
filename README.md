@@ -13,12 +13,17 @@ The site is built and hosted using GitHub Pages and Jekyll.
 You need to have npm and Docker Compose installed on your machine.
 
 ```
-npm install
-npm run bower-install
 docker-compose up
 ```
 
 The generated site is available at `http://localhost:4000`.
+
+When the website dependencies change (the content of the `Gemfile`),
+you have to re-build the Docker image:
+
+```
+docker-compose up --build
+```
 
 ### Without Docker Compose
 
