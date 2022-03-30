@@ -209,25 +209,16 @@ for Scala 2 and Scala 3.
 
 To increase the number of Coursera learners, we launched on January 20th a 
 promotion campaign on both [Twitter](https://twitter.com/scala_lang) and 
-[LinkedIn](https://www.linkedin.com/company/scala-center/). Every Thursday, 
-we published a LinkedIn post and a tweet highlighting a specific aspect of our courses. 47 Degrees produced the promotional material for us based on the taglines we sent them.
+[LinkedIn](https://www.linkedin.com/company/scala-center/). As we are in the early stages of understanding the benefits, we are tracking the statistics and will launch a new campaign based on those indicators. 
+A new promotion campaign will start on April 24th on [EPFL MOOCs Facebook page](https://www.facebook.com/cede.epfl).
 
 The [Scala documentation website](https://docs.scala-lang.org/online-courses.html) was restructured to move the information about the MOOCs into a dedicated page, where we included a trailer presenting our online courses. We also published a blog article showing some stats for 2021, and sharing our plans for 2022 regarding online education.
 
-The campaign ended on March 17th with a total of 8 LinkedIn posts and 8 tweets. To this day (23.03.2022) We had 614 visits on Coursera through LinkedIn and 9 new enrollments. We also had 301 visits on the Scala documentation website through LinkedIn and 2000 through Twitter.
-
-A new promotion campaign will start on April 24th on [EPFL MOOCs Facebook page](https://www.facebook.com/cede.epfl).
-
-### Scala online shop
-
-We are in the process of creating a Scala online shop to offer a range of Scala merch to community members while giving individuals the possibility to donate.
-This platform would participate in raising funds towards the Scala Center and allow Scala fans and community members to support the center while highlighting their affiliations to Scala language with exclusive merchandise.
-
-We ordered and received 20 Scala 3 books from Artima.  We already ordered our first products, namely Scala earrings and Swiss knives. We asked EPFL to already set up a Scala Center section on the EPFL shop online platform.
-
 ### Scala for Ukrainians
 
-Due to the current war taking place in Ukraine, we wanted to take part in the global effort and help these refugees as much as we can. To do that we are thinking of offering Scala programming classes to Ukrainian refugees here in Switzerland.
+The Scala Center team published a [blog post](https://www.scala-lang.org/blog-detail/2022/03/04/in-support-of-ukraine.html) condemning the war in Ukraine.
+
+Furthermore, we wanted to take part in the global effort and help these refugees as much as we can. We are considering to offer Scala programming classes to Ukrainian (and other) refugees in Switzerland.
 
 We are currently working on this project and hope to start it in the following months.
 
