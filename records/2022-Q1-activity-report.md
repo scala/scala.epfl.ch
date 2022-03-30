@@ -225,7 +225,7 @@ This platform would participate in raising funds towards the Scala Center and al
 
 We ordered and received 20 Scala 3 books from Artima.  We already ordered our first products, namely Scala earrings and Swiss knives. We asked EPFL to already set up a Scala Center section on the EPFL shop online platform.
 
-### Scala for ukrainians
+### Scala for Ukrainians
 
 Due to the current war taking place in Ukraine, we wanted to take part in the global effort and help these refugees as much as we can. To do that we are thinking of offering Scala programming classes to Ukrainian refugees here in Switzerland.
 

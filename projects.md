@@ -9,7 +9,7 @@ projects in the [quarterly activity reports](./records.html).
 ## Roadmap for 2022 Q2
 {: .no_toc}
 
-The following sections present our plans for the current quarter. Every 
+The following sections present our plan for the current quarter. Every 
 project description is followed by the concrete results we will deliver, and 
 their expected outcome on the Scala community.
 
@@ -26,9 +26,9 @@ not exist in the source code. We will improve the implementation of the
 [scala-debug-adapter](https://github.com/scalacenter/scala-debug-adapter) to
 address this issue.
 
-#### “setup-scala” Github action
+#### “setup-scala” GitHub action
 
-The way to set up Github Actions for the CI of Scala projects is unclear at
+The way to set up GitHub Actions for the CI of Scala projects is unclear at
 the moment. There used to be [olafurpg/setup-scala](https://github.com/olafurpg/setup-scala)
 but that project is not maintained anymore. There are other alternatives
 such as [japgolly/setup-everything-scala](https://github.com/japgolly/setup-everything-scala)
@@ -38,18 +38,18 @@ Furthermore, it turns out that the official
 project. What should Scala project maintainers use? What is currently
 recommended in
 [the library author guide](https://docs.scala-lang.org/overviews/contributors/index.html#setup-continuous-integration)
-is to use setup-java. However, this action does not support caching with
-coursier and sbt out of the box. It does not support Scala.js either. We
-will make sure there is a simple way to set up Github actions for typical
+is to use setup-java. However, this action does not support coursier caching 
+and sbt caching out of the box. It does not support Scala.js either. We
+will make sure there is a simple way to set up GitHub actions for typical
 Scala projects, and that this action is the recommended choice in the
-documentation and in the Github UI.
+documentation and in the GitHub UI.
 
-#### Github Security Alerts
+#### GitHub Security Alerts
 
 We want to harden the security of the Scala ecosystem by implementing
-Security Alerts for Scala projects using the Github API. We will publish a
-Github action that can be used by library maintainers to get notified about
-vulnerabilities in their projects.
+Security Alerts for Scala projects using the GitHub API. We will publish a
+GitHub action that can be used by library maintainers to get notified about
+vulnerabilities in their sbt projects.
 
 #### TASTy-query and TASTy-MiMa
 
@@ -100,10 +100,10 @@ release of [Metals 1.0.0](https://github.com/scalameta/metals/milestone/36).
 
 #### Add Support for Binary Compatible Evolutions to Case Classes
 
-Case classes are a popular tool to achieve domain modeling. However, they 
-come with an important drawback: it is impossible to apply evolutions 
+Case classes are popular to achieve domain modeling. However, they 
+come with an important drawback: it is impossible to apply any evolution 
 (adding/removing fields on a case class) in a backward binary compatible way.
-This forces library authors to, manually re-implement the features of 
+This forces library authors to manually re-implement the features of 
 case classes that they need (typically, structural equality) at the price of 
 more verbosity. Other solutions include tools generating code (e.g. 
 contraband), or experimental macro annotations (e.g. data-class, scalameta).
