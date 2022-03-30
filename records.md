@@ -7,6 +7,26 @@ layout: contact
 - [Membership regulations]({{ site.baseurl }}/docs/ScalaCenterMembershipRegulations.pdf)
 - [Membership agreement]({{ site.baseurl }}/docs/ScalaCenterMembershipAgreement.pdf)
 
+### Quarterly Activity Reports
+
+Every quarter, the Scala Center publishes an activity report detailing the
+work that has been achieved. You can find the roadmap for the current quarter
+in the [Projects page]({% link projects.md %}).
+
+- [2022, Q1]({% link records/2022-Q1-activity-report.md %})
+- 2021, Q4
+- [2021, Q3](/minutes/2021/11/10/2021-11-10-november-10-2021.pdf)
+- [2021, Q2](/minutes/2021/06/28/2021-06-28-seb-june-28-2021.pdf)
+- [2021, Q1](/minutes/2021/03/30/2021-03-30-seb-march-30-2021.pdf)
+- [2020, Q4](/minutes/2021/02/04/2021-02-04-seb-february-4-2021.pdf)
+- [2020, Q3](/minutes/2020/10/28/2020-10-28-seb-october-28-2020.pdf)
+- [2020, Q2](/minutes/2020/06/30/2020-06-30-seb-june-30-2020.pdf)
+- [2020, Q1](/minutes/2020/03/27/2020-03-27-march-27-2020.pdf)
+- [2019, Q4](/minutes/2019/12/16/2019-12-16-december-16-2019.pdf)
+- [2019, Q3](/minutes/2019/09/11/2019-09-11-september-11-2019.pdf)
+- [2019, Q2](/minutes/2019/06/19/2019-06-19-june-19-2019.pdf)
+- [2019, Q1](/minutes/2019/03/06/2019-03-06-march-6-2019.pdf)
+
 ### Board meeting minutes
 
 - [November 10, 2021 - Twenty-Second SC Advisory Board Meeting](/minutes/2021/11/10/november-10-2021.html)

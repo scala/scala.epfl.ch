@@ -148,7 +148,7 @@
         </div>
         <div class="clearfix"></div>
         <div class="text-center" style="margin-top: 45px; clear: both;">
-          <a href="/projects.html#projects-completed" class="btn btn-default">See all the projects we’ve worked on</a>
+          <a href="/records.html" class="btn btn-default">See all our project reports</a>
         </div>
       </div>
     </div>
@@ -157,40 +157,34 @@
         <div class="vertical-spacer-top" id="our-projects"></div>
         <div class="open-source">
             <div class="container">
-                <h2>Currently working on...</h2>
-                <div class="projects">
-                    {% for project in site.projects %}
-                      {% if project.hide-from-homepage != true %}
-                      <a href="/projects.html#{{ project.label }}" class="project">
-                        {% case project.status %}
-                          {% when "Contributors Welcome!" %}
-                            {% assign projectStatus ="contributorswelcome" %}
-                          {% else %}
-                            {% assign projectStatus = project.status %}
-                        {% endcase %}
-                        <div class="status {{ project.status| downcase | remove: " " | remove: "!" }}">{{ project.status }}</div>
-                        <div class="icon-status {{ projectStatus|downcase }}">
-                          <i class="fa fa-{{ projectStatus|downcase }}"></i>
-                        </div>
-                        {% if project.logo-home %}
-                        <div class="logo"><img src="{{ project.logo-home }}" alt="{{ project.name }}"></div>
-                        {% endif %}
-                        <div class="text">
-                          {% if project.short-name %}
-                            {{ project.short-name }}
-                          {% else %}
-                            {{ project.name }}
-                          {% endif %}
-                        </div>
-                      </a>
-                      {% endif %}
-                    {% endfor %}
+                <h2>Current priorities</h2>
+                <div class="clearfix"></div>
+                <div class="text-left">
+                  <div>
+                    <ul class="red">
+                      <li>
+                        <strong>Communicate excitement about Scala</strong>. We want more people (programmers, teachers,
+                        scientists) to know about Scala’s strengths.
+                      </li>
+                      <li>
+                        <strong>Newcomers onboarding experience</strong>. We want newcomers to quickly get started in
+                        Scala, with no hassles.
+                      </li>
+                      <li>
+                        <strong>Robust and seamless tooling</strong>. We want the infrastructure that supports the Scala
+                        ecosystem to be reliable while being "invisible" to the end-users.
+                      </li>
+                      <li>
+                        <strong>Sustainability and governance</strong>. We want to make sure that the Scala
+                        infrastructure has no technical debt, and is easy to maintain. We want to help every actor of
+                        the community to contribute to Scala.
+                      </li>
+                    </ul>
+                  </div>
                 </div>
 
-                <div class="clearfix"></div>
-
                 <div class="text-center" style="margin-top: 45px; clear: both;">
-                  <a href="/projects.html" class="btn btn-default">See our full project list</a>
+                  <a href="/projects.html" class="btn btn-default">See our full roadmap</a>
                 </div>
             </div>
 
