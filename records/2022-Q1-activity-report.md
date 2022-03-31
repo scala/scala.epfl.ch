@@ -201,6 +201,16 @@ Among other things, three important conclusions were drawn from the discussions:
 - the task force that we had planned should be split in two: one focused on the library aspect, and one on the tooling aspect,
 - ScalaFiddle is dearly missed, and should be brought back up.
 
+### “Write Simpler Command-Line Programs” Video
+
+for Scala 3.
+
+Our collaboration with 47 Degrees continues, and we published a
+[new video](https://www.youtube.com/watch?v=uVMGPrH5_Uc&list=PLTx-VKTe8yLxYQfX_eGHCxaTuWvvG28Ml&index=13)
+in the series [Let’s Talk About Scala 3](https://www.youtube.com/playlist?list=PLTx-VKTe8yLxYQfX_eGHCxaTuWvvG28Ml).
+The video explains how the `@main` annotation works in Scala 3 to create 
+program entry points and to process command-line arguments.
+
 ## Community
 
 ### MOOCs promotion campaign

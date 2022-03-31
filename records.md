@@ -14,7 +14,7 @@ work that has been achieved. You can find the roadmap for the current quarter
 in the [Projects page]({% link projects.md %}).
 
 - [2022, Q1]({% link records/2022-Q1-activity-report.md %})
-- 2021, Q4
+- [2021, Q4](/minutes/2022/01/28/2022-01-28-january-28-2022.pdf)
 - [2021, Q3](/minutes/2021/11/10/2021-11-10-november-10-2021.pdf)
 - [2021, Q2](/minutes/2021/06/28/2021-06-28-seb-june-28-2021.pdf)
 - [2021, Q1](/minutes/2021/03/30/2021-03-30-seb-march-30-2021.pdf)
