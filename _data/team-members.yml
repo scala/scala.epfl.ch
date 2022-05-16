@@ -16,9 +16,32 @@ members:
       - title: sip
         percentage: 20
     active: true
+  - member: julien
+    name: Julien Richard-Foy
+    title: Technical Director
+    email: julien.richard-foy@epfl.ch
+    github: julienrf
+    twitter: julienrf
+    photo: /resources/img/julien.png
+    currentlyWorkingOn: true
+    contact_for: [education, scalajsBundler, documentationImprovements, collectionsRedesign]
+    projects:
+      - title: education
+        percentage: 60
+    active: true
+  - member: martin
+    name: Martin Odersky
+    title: Academic Director
+    email: martin.odersky@epfl.ch
+    github: odersky
+    twitter: odersky
+    photo: /resources/img/martin.png
+    currentlyWorkingOn: false
+    contact_for: [dotty]
+    active: true
   - member: sjrd
     name: Sébastien Doeraene
-    title: Technical Director
+    title: Principal Engineer
     email: sebastien.doeraene@epfl.ch
     github: sjrd
     twitter: sjrdoeraene
@@ -32,29 +55,6 @@ members:
         percentage: 20
       - title: scalajs
         percentage: 70
-    active: true
-  - member: martin
-    name: Martin Odersky
-    title: Academic Director
-    email: martin.odersky@epfl.ch
-    github: odersky
-    twitter: odersky
-    photo: /resources/img/martin.png
-    currentlyWorkingOn: false
-    contact_for: [dotty]
-    active: true
-  - member: julien
-    name: Julien Richard-Foy
-    title: Education Director
-    email: julien.richard-foy@epfl.ch
-    github: julienrf
-    twitter: julienrf
-    photo: /resources/img/julien.png
-    currentlyWorkingOn: true
-    contact_for: [education, scalajsBundler, documentationImprovements, collectionsRedesign]
-    projects:
-        - title: education
-          percentage: 60
     active: true
   - member: vincent
     name: Vincent Derouand
