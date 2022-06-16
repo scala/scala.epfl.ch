@@ -12,8 +12,25 @@ layout: page
                     <div class="circular visible-xs" style="background-image: url({{ member.photo }});"></div>
                     <h2>{{ member.name }}</h2>
                     <h3>{{ member.title }}</h3>
+                    <a href="mailto:{{ member.email }}">{{ member.email }}</a>
+                    <div class="social">
+                        {% assign github = member.github %}
+                        {% unless github %}
+                        {% assign displayGithub = "none" %}
+                        {% endunless %}
+                        {% assign twitter = member.twitter %}
+                        {% unless twitter %}
+                        {% assign displayTwitter = "none" %}
+                        {% endunless %}
+                        <a href="https://github.com/{{ github }}" style="display: {{ displayGithub }}" target="_blank">
+                            <i class="fa fa-github"></i>
+                        </a>
+                        <a href="https://twitter.com/{{ twitter }}" style="display: {{ displayTwitter }}" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </div>
+
                     <div class="circular hidden-xs" style="background-image: url({{ member.photo }});"></div>
-                    <a href="mailto:{{ team.email }}">{{ member.email }}</a>
                     <ul class="contact-for">
                         {% for c in member.contact_for %}
                             <li>
