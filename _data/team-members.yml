@@ -6,15 +6,7 @@ members:
     github: darjutak
     twitter: darjutak
     photo: /resources/img/darja.png
-    currentlyWorkingOn: true
     contact_for: [corporateMembership, donations, advisoryBoardMeeting, sip, communication]
-    projects:
-      - title: events
-        percentage: 40
-      - title: communication
-        percentage: 40
-      - title: sip
-        percentage: 20
     active: true
   - member: julien
     name: Julien Richard-Foy
@@ -23,11 +15,7 @@ members:
     github: julienrf
     twitter: julienrf
     photo: /resources/img/julien.png
-    currentlyWorkingOn: true
     contact_for: [education, scalajsBundler, documentationImprovements, collectionsRedesign]
-    projects:
-      - title: education
-        percentage: 60
     active: true
   - member: martin
     name: Martin Odersky
@@ -36,7 +24,6 @@ members:
     github: odersky
     twitter: odersky
     photo: /resources/img/martin.png
-    currentlyWorkingOn: false
     contact_for: [dotty]
     active: true
   - member: sjrd
@@ -46,15 +33,7 @@ members:
     github: sjrd
     twitter: sjrdoeraene
     photo: /resources/img/sjrd.png
-    currentlyWorkingOn: true
     contact_for: [scalajs, scalaNative]
-    projects:
-      - title: sip
-        percentage: 10
-      - title: scalaNative
-        percentage: 20
-      - title: scalajs
-        percentage: 70
     active: true
   - member: vincent
     name: Vincent Derouand
@@ -64,10 +43,6 @@ members:
     photo: /resources/img/vincent.png
     active: false
     contact_for: [communication]
-    projects:
-      - title: communication
-        percentage: 40
-    currentlyWorkingOn: false
   - member: valerie
     name: Valérie Pedroni
     title: Communication Intern
@@ -75,10 +50,6 @@ members:
     photo: /resources/img/valerie.png
     active: true
     contact_for: [communication]
-    projects:
-      - title: communication
-        percentage: 80
-    currentlyWorkingOn: true
   - member: jorge
     name: Jorge Vicente Cantero
     title: Software Development
@@ -86,15 +57,7 @@ members:
     github: jvican
     twitter: jvican
     photo: /resources/img/jorge.png
-    currentlyWorkingOn: false
     contact_for: [scalaPlatformProcess, sip, spores, buildTools, scalacProfiling, bloop]
-    projects:
-        - title: sip
-          percentage: 15
-        - title: scalaPlatformProcess
-          percentage: 10
-        - title: bloop
-          percentage: 75
     active: false
   - member: olafur
     name: Olafur Pall Geirsson
@@ -103,11 +66,7 @@ members:
     github: olafurpg
     twitter: olafurpg
     photo: /resources/img/olafur.png
-    currentlyWorkingOn: false
     contact_for: [scalafix, scalameta]
-    projects:
-       - title: scalameta
-         percentage: 100
     active: false
   - member: martinduhem
     name: Martin Duhem
@@ -116,13 +75,7 @@ members:
     github: Duhemm
     twitter: mnduhem
     photo: /resources/img/martinduhem.png
-    currentlyWorkingOn: false
     contact_for: [bloop, scalaNative, dotty]
-    projects:
-       - title: bloop
-         percentage: 90
-       - title: dotty
-         percentage: 10
     active: false
   - member: alexandre
     name: Alexandre Archambault
@@ -131,13 +84,7 @@ members:
     github: alexarchambault
     twitter: alxarchambault
     photo: /resources/img/alexarchambault.png
-    currentlyWorkingOn: false
     contact_for: [coursier]
-    projects:
-       - title: coursier
-         percentage: 50
-       - title: other
-         percentage: 50
     active: false
   - member: fabien
     name: Fabien Salvi
@@ -146,7 +93,6 @@ members:
     github:
     twitter:
     photo: /resources/img/fabien.png
-    currentlyWorkingOn: false
     contact_for: [jenkinsInfrastructure, serverIssues]
     active: true
   - member: sylvie
@@ -156,7 +102,6 @@ members:
     github:
     twitter:
     photo: /resources/img/sylvie.png
-    currentlyWorkingOn: false
     contact_for: [scalaCenterActivities]
     active: true
   - member: heather
@@ -166,7 +111,6 @@ members:
     github: heathermiller
     twitter: heathercmiller
     photo: /resources/img/heather.png
-    currentlyWorkingOn: false
     contact_for: []
     active: false
   - member: guillaume
@@ -176,7 +120,6 @@ members:
     github: MasseGuillaume
     twitter: MasseGuillaume
     photo: /resources/img/guillaume.png
-    currentlyWorkingOn: false
     contact_for: [scalaNative, scastie, scaladex, scalafix]
     active: false
   - member: jamie
@@ -186,15 +129,7 @@ members:
     github: bishabosha
     twitter: bishabosha
     photo: /resources/img/jamiethompson.png
-    currentlyWorkingOn: true
     contact_for: [tastyScala2, enumFinalisation]
-    projects:
-        - title: tastyScala2
-          percentage: 40
-        - title: enumFinalisation
-          percentage: 40
-        - title: dotty
-          percentage: 20
     active: true
   - member: ergys
     name: Ergys Dona
@@ -203,13 +138,7 @@ members:
     github: errikos
     twitter: ergysdona
     photo: /resources/img/ergys.png
-    currentlyWorkingOn: false
     contact_for: [scalaNative]
-    projects:
-        - title: scalaNative
-          percentage: 60
-        - title: scalacDebugging
-          percentage: 40
     active: false
   - member: adrien
     name: Adrien Piquerez
@@ -218,15 +147,7 @@ members:
     github: adpi2
     twitter: adrienpi2
     photo: /resources/img/adrien.png
-    currentlyWorkingOn: true
     contact_for: [scala3MigrationGuide, scaladex, bspForSbt]
-    projects:
-        - title: scala3MigrationGuide
-          percentage: 60
-        - title: bspForSbt
-          percentage: 30
-        - title: scaladex
-          percentage: 10
     active: true
   - member: meriam
     name: Meriam Lachkar
@@ -235,15 +156,7 @@ members:
     github: mlachkar
     twitter: meriamLachkar
     photo: /resources/img/meriam.png
-    currentlyWorkingOn: false
     contact_for: [metals, scalafix, migrat3]
-    projects:
-        - title: metals
-          percentage: 20
-        - title: scalafix
-          percentage: 30
-        - title: migrat3
-          percentage: 50
     active: false
   - member: tgodzik
     name: Tomasz Godzik
@@ -252,11 +165,7 @@ members:
     github: tgodzik
     twitter: TomekGodzik
     photo: /resources/img/tgodzik.png
-    currentlyWorkingOn: true
     contact_for: [metals, scalameta, bloop]
-    projects:
-        - title: metals
-          percentage: 100
     active: true
   - member: toli
     name: Anatolii Kmetiuk
@@ -265,11 +174,7 @@ members:
     github: anatoliykmetyuk
     twitter: akmetiuk
     photo: /resources/img/toli.png
-    currentlyWorkingOn: true
     contact_for: []
-    projects:
-        - title: dotty
-          percentage: 100
     active: true
   - member: wmazur
     name: Wojciech Mazur
@@ -278,11 +183,7 @@ members:
     github: wojciechmazur
     twitter: wojciech_maz
     photo: /resources/img/wmazur.png
-    currentlyWorkingOn: false
     contact_for: [scalaNative]
-    projects:
-        - title: scalaNative
-          percentage: 100
     active: false
   - member: vincenzobaz
     name: Vincenzo Bazzucchi
@@ -291,10 +192,6 @@ members:
     github: vincenzobaz
     twitter: vincenzobaz
     photo: /resources/img/vincenzobaz.png
-    currentlyWorkingOn: false
-    projects:
-      - title: education
-        percentage: 100
     active: false
   - member: fengyun
     name: Fengyun Liu
@@ -303,9 +200,5 @@ members:
     github: liufengyun
     twitter: liufengyun
     photo: /resources/img/fengyun.jpg
-    currentlyWorkingOn: false
     contact_for: [dotty]
-    projects:
-      - title: dotty
-        percentage: 100
     active: false
