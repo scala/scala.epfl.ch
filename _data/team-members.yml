@@ -235,7 +235,7 @@ members:
     github: mlachkar
     twitter: meriamLachkar
     photo: /resources/img/meriam.png
-    currentlyWorkingOn: true
+    currentlyWorkingOn: false
     contact_for: [metals, scalafix, migrat3]
     projects:
         - title: metals
@@ -244,7 +244,7 @@ members:
           percentage: 30
         - title: migrat3
           percentage: 50
-    active: true
+    active: false
   - member: tgodzik
     name: Tomasz Godzik
     title: Software Development
