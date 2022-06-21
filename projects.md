@@ -26,23 +26,12 @@ not exist in the source code. We will improve the implementation of the
 [scala-debug-adapter](https://github.com/scalacenter/scala-debug-adapter) to
 address this issue.
 
-#### “setup-scala” GitHub action
+#### Implement JSR-45 in Scala 2 and Scala 3 compilers
 
-The way to set up GitHub Actions for the CI of Scala projects is unclear at
-the moment. There used to be [olafurpg/setup-scala](https://github.com/olafurpg/setup-scala)
-but that project is not maintained anymore. There are other alternatives
-such as [japgolly/setup-everything-scala](https://github.com/japgolly/setup-everything-scala)
-or [coursier/setup-action](https://github.com/coursier/setup-action).
-Furthermore, it turns out that the official
-[actions/setup-java](https://github.com/actions/setup-java) does support sbt
-project. What should Scala project maintainers use? What is currently
-recommended in
-[the library author guide](https://docs.scala-lang.org/overviews/contributors/index.html#setup-continuous-integration)
-is to use setup-java. However, this action does not support coursier caching 
-and sbt caching out of the box. It does not support Scala.js either. We
-will make sure there is a simple way to set up GitHub actions for typical
-Scala projects, and that this action is the recommended choice in the
-documentation and in the GitHub UI.
+We want to improve the debugging experience by implementing JSR-45 in both
+Scala 2 and Scala 3. This was requested by an
+[Advisory Board Proposal](https://github.com/scalacenter/advisoryboard/blob/main/proposals/022-jsr-45.md). Some work
+has already been done, but it needs a final push.
 
 #### GitHub Security Alerts
 
@@ -70,12 +59,6 @@ You can read the full roadmap
 #### Scaladex
 
 [Scaladex](https://index.scala-lang.org) is an index of the Scala ecosystem.
-
-Currently, every Scala “project” has a dedicated page on Scaladex. This page
-lists the project releases and their artifacts. However, the user interface is 
-hard to use because it mixes several types of information at the same place 
-(project-related information, and artifact-related information). We plan to
-address this problem by introducing a separate page for the artifacts.
 
 Beside being an index of Scala libraries, we believe scaladex can be a 
 place where Scala programmers can find open-source libraries to contribute 
@@ -108,11 +91,11 @@ case classes that they need (typically, structural equality) at the price of
 more verbosity. Other solutions include tools generating code (e.g. 
 contraband), or experimental macro annotations (e.g. data-class, scalameta).
 
-We would like to start a discussion to assess whether this use case 
-(defining data types with structural equality, and convenient `toString` 
-implementation, but that can evolve in a binary compatible way) should be 
-supported at the language level, and what could be the possible design 
-solutions.
+We started a [“pre-SIP” discussion](https://contributors.scala-lang.org/t/pre-sip-structural-data-structures-that-can-evolve-in-a-binary-compatible-way/5684),
+which received some support and comments from the community. Based on the collected
+feedback, we will submit a concrete Scala Improvement Proposal to support, at
+the language-level, data types with structural equality that can evolve in a
+binary compatible way.
 
 ### Education and Documentation
 
@@ -124,42 +107,36 @@ are published on the platform Coursera. These courses can be used by
 individuals to acquire new skills for a job, or by companies to train their 
 employees.
 
-Our courses provide a cost-effective training (you can get a certificate 
-of completion for about $100). However, in the current format they require a 
-lot of autonomy from the learners. The whole experience is self-paced, and 
-instructors can’t provide much feedback to the learners. We want to provide 
-an alternative way of learning, where learners could get 1-on-1 meetings 
-with Scala instructors to get more personalized feedback.
+We just launched our course Effective Programming in Scala to the
+[Extension School platform](https://www.extensionschool.ch/learn/effective-programming-in-scala). This platform allows us to provide
+individualized support to the learners, and to offer Scala trainings to companies.
 
-#### Scala teachers summit
+#### Scala Teachers Community
 
 We believe that Scala is a great language for teaching programming in academia.
 Several professors already use it, but we would like to grow this community 
-of teachers. We will organize a summit where several teachers will meet and 
-brainstorm about solutions to increase the number of Scala adopters for 
-teaching.
+of teachers.
+
+We will add a page to the Scala website to present the community of teachers
+who use Scala: what are the benefits of using Scala, in which universities
+it is taught, etc.
 
 #### Scala Website
 
 We plan to modernize the Scala website, and to integrate better the Scala 2
 and Scala 3 documentation.
 
-Following up on [the work]({% link records/2022-Q1-activity-report.md %})
+Following up on [the work]({% link records/2022-Q2-activity-report.md %})
 we did in the previous quarter, we plan to polish further the content of the
-website to make it more use-case-oriented rather than features-oriented. The
-next big task will be to finalize the [documentation website](https://docs.scala-lang.org).
-Currently, there is a division between the Scala 2 content and the Scala 3
-content, although lots of content is effectively independent of the actual
-version of Scala. We plan to unify better the Scala 2 and Scala 3 content to
-make it easier to navigate through the website. Last, the Scala 3 compiler
-team would like to have the ability to edit (some of) the documentation from
-within the same Git repository as the compiler implementation (currently,
-the documentation lives in the repository
-[scala/docs.scala-lang](https://github.com/scala/docs.scala-lang)
-whereas the compiler implementation lives in the repository
-[lampepfl/dotty](https://github.com/lampepfl/dotty)).
-With the help of VirtusLab, we will provide a technical solution to this
-problem.
+website.
+
+The next main tasks are:
+
+- make the content more use-case-oriented rather than features-oriented,
+- make the code examples available in both Scala 2 and Scala 3,
+- reorganize the structure to make it more intuitive according to the reader’s background,
+- create new tutorials to document better how to contribute to the Scala open-source
+  ecosystem.
 
 #### Scala.js
 
@@ -181,9 +158,7 @@ and making people excited about it.
   page,
 - We will create an online shop where individual will be able to give 
   donations to the Scala Center in exchange for goodies,
-- We will continue to spread the word about our
-  [MOOCs](https://docs.scala-lang.org/online-courses.html),
-- We will speak at tech conferences to encourage people to contribute to the 
+- We will speak at tech conferences and local meetups to encourage people to contribute to the 
   Scala ecosystem, and to let non-Scala programmers know about Scala,
 - Currently, Scala doesn't have much presence in fields other than backend
   development and data engineering. Given our positioning at EPFL, there are
@@ -204,29 +179,38 @@ implementation is too small. We will create a self-sustaining knowledge hub
 for the compiler where others can come and be effectively mentored to be 
 compiler contributors.
 
-More generally, we will publish a collection of best practices in the area 
-of making open source projects sustainable.
+We are continuously adding content to the
+[Scala 3 Compiler Academy](https://www.youtube.com/channel/UCIH0OgqE54-KEvYDg4LRhKQ)
+YouTube channel, and we run regular events to onboard external contributors on
+the compiler codebase. In case you are interested in contributing to the Scala 3
+compiler, please register by [filling this form](https://forms.gle/DfoSuHFm3T6MA3L59).
 
 #### Google Summer of Code
 
 The Scala Center has been accepted as a mentor organization for [Google 
 Summer of Code 2022](https://summerofcode.withgoogle.com/). We will 
-coordinate discussions between mentees and mentors, review proposals, assign 
-them to mentors, and submit them to the Google Summer of Code organization.
+coordinate discussions between mentees and mentors.
 
-#### Scala Improvement Process (SIP)
+#### Scala Improvement Process
 
 The [Scala Improvement Process](https://docs.scala-lang.org/sips/index.html) 
 is a process for submitting changes to the Scala language. It aims to evolve 
 Scala openly and collaboratively. However, that process was paused in the 
-past couple of years. We will overhaul the process to make it more 
-sustainable. This will ensure that proposals from the community always get 
-feedback, and move on throughout the process.
+past couple of years. We overhauled the process itself, and we will now enter
+the active phase: we will restart the work on reviewing proposals, and we
+will restart the regular committee meetings.
 
-#### Scala Developer Survey
+#### Promote Simple Scala Solutions
 
-We will publish a survey to collect facts about the current trends and 
-habits within the Scala community.
+We feel that, currently, the Scala ecosystem has a focus on advanced
+expert-level tools and libraries, favouring power and flexibility over
+familiarity and ease of onboarding. We believe that newcomers don’t need to
+learn advanced concepts such as pure functional programming or reactive
+programming to be productive in Scala.
+
+In partnership with VirtusLab, we will contribute to the creation of tutorials
+demonstrating how to solve typical programming tasks in a more approachable
+programming style.
 
 ### Maintenance Work
 
