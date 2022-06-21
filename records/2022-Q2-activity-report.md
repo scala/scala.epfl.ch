@@ -356,7 +356,8 @@ restart the SIP meetings, and assign proposals to reviewers.
 [ScalaCon](http://www.scalacon.org/) is a series of online conferences designed
 to bring the Scala community closer together.
 
-We coordinated the organization of ScalaCon 2022. We received about 50 proposals
+We are in charge of the program and the program committee of
+ScalaCon 2022. We received about 50 proposals
 of talks, which we reviewed with the other members of the program committee.
 
 ## Compiler maintenance
