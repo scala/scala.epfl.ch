@@ -360,6 +360,13 @@ We are in charge of the program and the program committee of
 ScalaCon 2022. We received about 50 proposals
 of talks, which we reviewed with the other members of the program committee.
 
+### Local Scala Meetups
+
+We decided to help local Scala User Groups, in the radius of 3h train ride, to jumpstart their Scala Meetups, by visiting and giving an “opening” talk. This is great for the local groups and also for our team - to practice public speaking, promote Scala and the Scala Center, and more importantly - to get to meet Scala users, which they did not have the opportunity to do since 2020.
+
+We gave a presentation in April in Lausanne (hosted by the company ZF), and in
+June in Zurich (hosted by UBS Digital Factory).
+
 ## Compiler maintenance
 
 ### Better bytecode for pattern matching and tailrec methods
