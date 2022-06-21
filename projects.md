@@ -182,7 +182,8 @@ compiler contributors.
 We are continuously adding content to the
 [Scala 3 Compiler Academy](https://www.youtube.com/channel/UCIH0OgqE54-KEvYDg4LRhKQ)
 YouTube channel, and we run regular events to onboard external contributors on
-the compiler codebase.
+the compiler codebase. In case you are interested in contributing to the Scala 3
+compiler, please register by [filling this form](https://forms.gle/DfoSuHFm3T6MA3L59).
 
 #### Google Summer of Code
 
