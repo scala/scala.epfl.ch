@@ -6,7 +6,7 @@ This page lists the projects that the Scala Center will work on during
 the current quarter. You can find more information about our completed
 projects in the [quarterly activity reports](./records.html).
 
-## Roadmap for 2022 Q2
+## Roadmap for 2022 Q3
 {: .no_toc}
 
 The following sections present our plan for the current quarter. Every 
