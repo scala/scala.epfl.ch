@@ -275,8 +275,8 @@ The full project template can be seen [here](https://github.com/sjrd/scalajs-sbt
 
 ### Let's Talk about Scala 3 Videos
 
-We published a new video “Getting Started with Scala.js + Vite” (as part of the
-“Integrated Scala.js ecosystem” project).
+We published a new video [Getting Started with Scala.js + Vite](https://www.youtube.com/watch?v=dv7fPmgFTNA&list=PLTx-VKTe8yLxYQfX_eGHCxaTuWvvG28Ml&index=14&t=522s)
+(as part of the “Integrated Scala.js ecosystem” project).
 
 ### Scala Center LinkedIn Page
 
