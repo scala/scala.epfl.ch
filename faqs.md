@@ -19,7 +19,7 @@ other activities.
 
 The Scala Center brings together a coalition of individuals and organizations
 working together to contribute to Scala.  All of our members, individual and
-corporate, are actively involved in the Scala project.
+corporate, are actively involved in the Scala ecosystem.
 
 
 ### How can I support the Scala Center?
