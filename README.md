@@ -4,7 +4,7 @@ website for the Scala Center
 
 ## Infrastructure
 
-The site is built and hosted using GitHub Pages and Jekyll.
+The site is built with a jenkins script which run the following commands "bundle install && bundle exec jekyll build"
 
 ## Building locally
 
