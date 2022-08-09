@@ -166,7 +166,7 @@ members:
     twitter: TomekGodzik
     photo: /resources/img/tgodzik.png
     contact_for: [metals, scalameta, bloop]
-    active: true
+    active: false
   - member: toli
     name: Anatolii Kmetiuk
     title: Software Development
@@ -202,3 +202,11 @@ members:
     photo: /resources/img/fengyun.jpg
     contact_for: [dotty]
     active: false
+  - member: jedrzej
+    name: Jędrzej Rochala
+    title: Software Development
+    email: jrochala@virtuslab.com
+    github: rochala
+    photo: /resources/img/jedrzej.jpg
+    contact_for: [scastie]
+    active: true
