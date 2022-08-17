@@ -210,3 +210,11 @@ members:
     photo: /resources/img/jedrzej.jpg
     contact_for: [scastie]
     active: true
+  - member: quentin
+    name: Quentin Bernet
+    title: Software Development - Intern
+    email: quentin.bernet@epfl.ch
+    github: Sporarum
+    photo: /resources/img/quentin.jpeg
+    contact_for: [dotty, documentationImprovements]
+    active: true
