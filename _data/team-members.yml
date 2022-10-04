@@ -48,7 +48,7 @@ members:
     title: Community and Communication Coordinator
     email: valerie.pedroni@epfl.ch
     photo: /resources/img/valerie.png
-    active: true
+    active: false
     contact_for: [communication]
   - member: jorge
     name: Jorge Vicente Cantero
