@@ -218,3 +218,11 @@ members:
     photo: /resources/img/quentin.jpeg
     contact_for: [dotty, documentationImprovements]
     active: true
+  - member: smarter
+    name: Guillaume Martres
+    title: Software Development
+    email: guillaume.martres@epfl.ch
+    github: smarter
+    photo: /resources/img/guillaume-martres.jpg
+    contact_for: [dotty]
+    active: true
