@@ -6,7 +6,7 @@ This page lists the projects that the Scala Center will work on during
 the current quarter. You can find more information about our completed
 projects in the [quarterly activity reports](./records.html).
 
-## Roadmap for 2022 Q3
+## Roadmap for 2022 Q4
 {: .no_toc}
 
 The following sections present our plan for the current quarter. Every 
@@ -18,6 +18,13 @@ their expected outcome on the Scala community.
 
 ### Make Scala tooling seamless for newcomers, and provide robust foundations for the Scala ecosystem
 
+#### Polish sbt and Coursier
+
+Most of the Scala projects are built with sbt, which uses Coursier under the hood.
+The Coursier CLI is also the recommended way to get started in Scala. We want to make sure these tools
+work well for everyone. In collaboration with the current maintainers Eugene Yokota and Alexandre Archambault, we will
+address the most important issues that are currently opened.
+
 #### Smarter “Step Into” when debugging
 
 The “step-into” feature in Metals is hard to use because it often goes to
@@ -26,19 +33,11 @@ not exist in the source code. We will improve the implementation of the
 [scala-debug-adapter](https://github.com/scalacenter/scala-debug-adapter) to
 address this issue.
 
-#### Implement JSR-45 in Scala 2 and Scala 3 compilers
+#### Implement JSR-45 in the Scala 3 compiler
 
-We want to improve the debugging experience by implementing JSR-45 in both
-Scala 2 and Scala 3. This was requested by an
-[Advisory Board Proposal](https://github.com/scalacenter/advisoryboard/blob/main/proposals/022-jsr-45.md). Some work
-has already been done, but it needs a final push.
-
-#### GitHub Security Alerts
-
-We want to harden the security of the Scala ecosystem by implementing
-Security Alerts for Scala projects using the GitHub API. We will publish a
-GitHub action that can be used by library maintainers to get notified about
-vulnerabilities in their sbt projects.
+We want to improve the debugging experience by implementing JSR-45 in Scala 3. This was requested by an
+[Advisory Board Proposal](https://github.com/scalacenter/advisoryboard/blob/main/proposals/022-jsr-45.md).
+You can follow our progress in [#15684](https://github.com/lampepfl/dotty/pull/15684).
 
 #### TASTy-query and TASTy-MiMa
 
@@ -56,30 +55,14 @@ prototype of TASTy-MiMa.
 You can read the full roadmap
 [here](https://contributors.scala-lang.org/t/the-scala-centers-roadmap-for-tasty-query/5564).
 
-#### Scaladex
+#### Add IDE features to Scastie
 
-[Scaladex](https://index.scala-lang.org) is an index of the Scala ecosystem.
+We want to improve the developer experience for 1000 daily programmers writing code snippets
+via [Scastie](https://scastie.scala-lang.org).
 
-Beside being an index of Scala libraries, we believe scaladex can be a 
-place where Scala programmers can find open-source libraries to contribute 
-to. We will implement new features on scaladex to allow library authors to 
-highlight how new contributors could help them, and for new contributors to 
-easily find projects to contribute to.
-
-Last, we would like to formalize the scaladex HTTP API. Scaladex exposes a 
-public HTTP API that can be used by third-party tools to search for 
-libraries. However, this API is not documented, and it may change. We will 
-formalize it, and document it.
-
-#### Metals and Bloop
-
-[Bloop](https://github.com/scalacenter/bloop) has recently been updated to use
-the latest version of Zinc. However, in the process we had to remove
-“pipelining”, which parallelizes better the compilation process. We will add 
-back pipelining to Bloop.
-
-Other than that, we will continue working on the remaining issues towards a 
-release of [Metals 1.0.0](https://github.com/scalameta/metals/milestone/36).
+We would like to bring IDE features to Scastie, such as reporting diagnostics,
+“go to definition”, “type on hover”, and “find references” actions. This requires
+running Metals on the server-side, and communicating with it from the client-side.
 
 #### Add Support for Binary Compatible Evolutions to Case Classes
 
@@ -99,41 +82,18 @@ binary compatible way.
 
 ### Education and Documentation
 
-#### Alternative online learning platform with more support for the learners
-
-As part of our mission to produce high-quality education material, we maintain
-a set of [online courses](https://docs.scala-lang.org/online-courses.html) that 
-are published on the platform Coursera. These courses can be used by 
-individuals to acquire new skills for a job, or by companies to train their 
-employees.
-
-We just launched our course Effective Programming in Scala to the
-[Extension School platform](https://www.extensionschool.ch/learn/effective-programming-in-scala). This platform allows us to provide
-individualized support to the learners, and to offer Scala trainings to companies.
-
-#### Scala Teachers Community
-
-We believe that Scala is a great language for teaching programming in academia.
-Several professors already use it, but we would like to grow this community 
-of teachers.
-
-We will add a page to the Scala website to present the community of teachers
-who use Scala: what are the benefits of using Scala, in which universities
-it is taught, etc.
-
 #### Scala Website
 
 We plan to modernize the Scala website, and to integrate better the Scala 2
 and Scala 3 documentation.
 
-Following up on [the work]({% link records/2022-Q2-activity-report.md %})
+Following up on [the work]({% link records/2022-Q3-activity-report.md %})
 we did in the previous quarter, we plan to polish further the content of the
 website.
 
 The next main tasks are:
 
 - make the content more use-case-oriented rather than features-oriented,
-- make the code examples available in both Scala 2 and Scala 3,
 - reorganize the structure to make it more intuitive according to the reader’s background,
 - create new tutorials to document better how to contribute to the Scala open-source
   ecosystem.
@@ -185,20 +145,12 @@ YouTube channel, and we run regular events to onboard external contributors on
 the compiler codebase. In case you are interested in contributing to the Scala 3
 compiler, please register by [filling this form](https://forms.gle/DfoSuHFm3T6MA3L59).
 
-#### Google Summer of Code
-
-The Scala Center has been accepted as a mentor organization for [Google 
-Summer of Code 2022](https://summerofcode.withgoogle.com/). We will 
-coordinate discussions between mentees and mentors.
-
 #### Scala Improvement Process
 
 The [Scala Improvement Process](https://docs.scala-lang.org/sips/index.html) 
 is a process for submitting changes to the Scala language. It aims to evolve 
-Scala openly and collaboratively. However, that process was paused in the 
-past couple of years. We overhauled the process itself, and we will now enter
-the active phase: we will restart the work on reviewing proposals, and we
-will restart the regular committee meetings.
+Scala openly and collaboratively. We have restarted the process in 2022, and
+we now have regular committee meetings.
 
 #### Promote Simple Scala Solutions
 
@@ -221,7 +173,9 @@ projects, to make sure important points are addressed:
 - Scala 3 compiler
 - Scala 2 TASTy reader
 - Scaladex
+- Scastie
 - Coursier
+- sbt
 
 ## Advisory Board Proposals
 {: .no_toc}

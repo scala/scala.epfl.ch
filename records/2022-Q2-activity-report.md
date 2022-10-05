@@ -282,7 +282,7 @@ We published a new video [Getting Started with Scala.js + Vite](https://www.yout
 
 Our [LinkedIn page](https://www.linkedin.com/company/scala-center) is growing in followers and content.
 
-We published 12 posts (consistent with last Q3 posting rhythm) gathering 90 new followers and 50% augmentation in page views and unique visitors.
+We published 12 posts (consistent with last Q1 posting rhythm) gathering 90 new followers and 50% augmentation in page views and unique visitors.
 
 The Scala Enthusiasts page has now more than 33,912 members (542 new members since last quarter). We repost all of our LinkedIn content on this page and accept new members daily.
 
