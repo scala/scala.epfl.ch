@@ -13,6 +13,7 @@ Every quarter, the Scala Center publishes an activity report detailing the
 work that has been achieved. You can find the roadmap for the current quarter
 in the [Projects page]({% link projects.md %}).
 
+- [2022, Q3]({% link records/2022-Q3-activity-report.md %})
 - [2022, Q2]({% link records/2022-Q2-activity-report.md %})
 - [2022, Q1]({% link records/2022-Q1-activity-report.md %})
 - [2021, Q4](/minutes/2022/01/28/2022-01-28-january-28-2022.pdf)
