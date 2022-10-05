@@ -140,6 +140,7 @@ To this effect, we achieved the following work:
 - Updated many pages of the documentation to show both Scala 2 and Scala 3 code examples. We also created an issue to coordinate this effort while inviting the community to contribute to it ([#2481](https://github.com/scala/docs.scala-lang/issues/2481)).
 - Clarified parts of the Getting Started tutorial ([#2520](https://github.com/scala/docs.scala-lang/pull/2520)).
 - Simplified the path for Java programmers coming to Scala ([#2414](https://github.com/scala/docs.scala-lang/pull/2414)).
+- Added a new page showing the benefits of using Scala for teaching programming ([#1402](https://github.com/scala/scala-lang/pull/1402)).
 - Updated `mdoc` to Scala 2.13 syntax ([#2529](https://github.com/scala/docs.scala-lang/pull/2529)).
 - Significantly improved the loading time of pages containing code snippets ([#2460](https://github.com/scala/docs.scala-lang/pull/2460)).
 
