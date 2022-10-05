@@ -6,7 +6,7 @@ title: Scala Center Activity Report for 2022 Q3
 Scala Center team: Julien Richard-Foy, 80%; Jamie Thompson, 100%;
 Adrien Piquerez, 100%; Valérie Pedroni, 60%; Sébastien Doeraene, 100%;
 Darja Jovanovic, 100%; Quentin Bernet, 50%.
-VirtusLab team: Tomasz Godzik, 33%; Jędrzej Rochalat, 67%.
+VirtusLab team: Tomasz Godzik, 33%; Jędrzej Rochala, 67%.
 
 External contractors, part-time: Adam Goodman, leadership and
 governance expert.
