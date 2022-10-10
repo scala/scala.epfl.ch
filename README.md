@@ -4,7 +4,7 @@ website for the Scala Center
 
 ## Infrastructure
 
-The site is built with a jenkins script.
+The site is built with a jenkins script triggered by any new commit in the main branch. The infrastructure is managed by the Scala Center.
 
 ## Building locally
 
