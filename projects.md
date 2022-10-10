@@ -106,6 +106,18 @@ ecosystem](https://contributors.scala-lang.org/t/the-scala-centers-roadmap-for-a
 With the help of the community, we plan to document the best practices to 
 have a productive development environment in Scala.js.
 
+#### Language Specification
+
+Currently, there is no proper language specification for Scala 3. A specification would be useful for
+developers, when they want to quickly check something about a feature they are using. It would also
+be useful to the [Scala Improvement Process](https://docs.scala-lang.org/sips), to provide a basis
+for discussions and proposals.
+
+Some pieces of specification
+are available in the [Scala 3 Reference](https://docs.scala-lang.org/scala3/reference), but these
+pieces are mostly about the differences compared to Scala 2. We will complete them, and publish a
+proper language specification for Scala 3.
+
 ### Communication
 
 We will conduct many actions aiming at communicating a positive image of Scala,

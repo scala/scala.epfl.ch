@@ -228,6 +228,12 @@ We organized two SIP meetings:
 
 We also published an [article](https://www.linkedin.com/pulse/scala-improving-scala-center) summarizing the goals of the process, the way it works, and the results of the first meeting.
 
+### Scala Developer Survey
+
+In partnership with VirtusLab, we have created and published a survey to know the community better and learn about the libraries and tools they use.
+You can read the announcement [here](https://www.scala-lang.org/blog/2022/09/29/scala-survey-2022-announcement.html), and fill the
+survey [here](https://scala-survey-2022.virtuslab.com/) (until 21st of October 2022).
+
 ## Maintenance Work
 
 ### TASTy Reader
