@@ -3,8 +3,11 @@ layout: contact
 ---
 
 This page lists the projects that the Scala Center will work on during
-the current quarter. You can find more information about our completed
-projects in the [quarterly activity reports](./records.html).
+the current quarter. We also post regular updates about our projects on the
+[Scala Contributors forum](https://contributors.scala-lang.org/c/scala-center/25).
+
+To have more information about our _completed_ projects, please see the
+[quarterly activity reports](./records.html).
 
 ## Roadmap for 2022 Q4
 {: .no_toc}
