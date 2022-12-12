@@ -226,3 +226,11 @@ members:
     photo: /resources/img/guillaume-martres.jpg
     contact_for: [dotty]
     active: true
+  - member: chris
+    name: Chris Kipp
+    title: Software Development
+    email: chris.kipp@lunatech.nl
+    github: ckipp01
+    photo: /resources/img/chris-kipp.webp
+    contact_for: [bloop,metals]
+    active: true
