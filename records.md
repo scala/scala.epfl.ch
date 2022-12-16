@@ -31,6 +31,7 @@ in the [Projects page]({% link projects.md %}).
 
 ### Board meeting minutes
 
+- [October 12, 2022 - Twenty-Sixth SC Advisory Board Meeting](/minutes/2022/10/12/october-12-2022.html)
 - [June 28, 2022 - Twenty-Fifth SC Advisory Board Meeting](/minutes/2022/06/28/june-28-2022.html)
 - [April 8, 2022 - Twenty-Fourth SC Advisory Board Meeting](/minutes/2022/04/08/april-8-2022.html)
 - [January 28, 2022 - Twenty-Third SC Advisory Board Meeting](/minutes/2022/01/28/january-28-2022.html)
