@@ -61,10 +61,10 @@ As described in the Q3 report, it provides a way to have type parameter bounds b
 
 During this quarter, work has continued on bringing this SIP into the compiler as an experimental feature.
 
-Particular attention has been ported to the [pull request](https://github.com/lampepfl/dotty/pull/14019) and commit messages, to make them as easy to read and understand as possible.
+Particular attention has been given to the [pull request](https://github.com/lampepfl/dotty/pull/14019) and commit messages, to make them as easy to read and understand as possible.
 This way it will be usable as a guide when writing future SIP implementations.
 
-The code itself also follows this principle, bringing well documented precise changes that make the project more simple, not less.
+The code itself also follows this principle, bringing well documented precise changes that make the project simpler.
 
 #### Case Classes that Can Evolve in a Binary-Compatible Way
 
@@ -85,7 +85,7 @@ that supports our use case without changing the language.
 For Scala 3.
 
 tasty-query is a library to read semantic information from Scala 3 classpaths.
-It reads Scala .tasty files, Scala 2 pickles and Java .class files, and presents the semantic information they contain in a unified API.
+It reads Scala `.tasty` files, Scala 2 pickles and Java `.class` files, and presents the semantic information they contain in a unified API.
 
 tasty-query will be an essential tool for any static analysis involving Scala code.
 In particular, it is the basis for TASTy-MiMa.
@@ -122,7 +122,7 @@ After that, we will move on to implementing an sbt and/or Mill plugin to make it
 
 For Scala 2 and Scala 3.
 
-The [scala-lang.org](https://scala-lang.org) homepage is an important destination for both Scala users and non-Scala users, it is the most visited page at 44K visitors per month (the overall site receives 240K per month). Our long term goal is to make the homepage the best destination for both newcomers and returning users to identify the current state of Scala: what it is, what you can do with it, and who is using it.
+The [scala-lang.org](https://scala-lang.org) homepage is an important destination for both Scala users and non-Scala users, it is the most visited page at 44K visitors per month (the overall site receives 240K views per month). Our long term goal is to make the homepage the best destination for both newcomers and returning users to identify the current state of Scala: what it is, what you can do with it, and who is using it.
 
 While we are working on a refreshed front page, we made a usability improvement which was to restore the "Scala versions" to the front page (PR [scala-lang#1435][scala-lang#1435]). This puts at the top of the page the current 3.x and 2.13.x versions and a link to all releases. Previously users would have to go to the "Install" quick link to see this information.
 
@@ -132,7 +132,7 @@ For Scala 2 and Scala 3.
 
 The goal of this project is to improve the experience developers have reading the [docs.scala-lang.org website][scala-docs]. We will provide a seamless experience where content users can choose to see content specialised for Scala 2 or Scala 3, or unified when applicable to both. We also want to reduce the number of steps it takes to see content, and offer clear paths to newcomers.
 
-During this quarter, we have continued to migrate to using language version tabs across the site. These tabs show content specialised to either version of the language, typically code, and possibly explanations also. The user's preference is remembered so that all tabs are sychronized across the site to show either Scala 2 or Scala 3 by default.
+During this quarter, we have continued the migration to using language version tabs across the site. These tabs show content specialised to either version of the language, typically code, and possibly explanations also. The user's preference is remembered so that all tabs are sychronized across the site to show either Scala 2 or Scala 3 by default.
 
 We also made a few requests to the community to aid us in adding version tabs across the website, [e.g. on LinkedIn][LinkedIn-docs-need-you], and creating the issue [docs.scala-lang#2481][docs.scala-lang#2481] to track the progress and ask for contributions. The community reached out with many PRs to assist: to date the entire "Tour of Scala" (english) has been adapted, with many chapters of the Scala 3 Book also adapted (eventually it will become the "Scala Book" that covers all versions).
 
@@ -151,7 +151,7 @@ In addition, we have also made some improvements to usability of the site:
 
 For Scala 2 and Scala 3.
 
-The goal of this project is to help the beginner-to-intermediate-level programmers to learn and use Scala in small projects, such as a script.
+The goal of this project is to help beginner-to-intermediate-level programmers to learn and use Scala in small projects, such as scripts.
 To this end, we will publish a series of written tutorials that focus on common programming tasks, such as testing, reading and writing files, sending HTTP requests, etc.
 
 We started writing a few tutorials for unit-testing using the MUnit library, in [scalacenter/docs.scala-lang#7096](https://github.com/sbt/sbt/pull/7096). The Scala Toolkit series will be published later this year.
@@ -171,7 +171,7 @@ We prepared a written tutorial version of the above, which is currently an open 
 
 For Scala 3.
 
-Our partnership with the [Extension School](https://extensionschool.ch/learn/effective-programming-in-scala) allows us to provide more support to people learning Scala online. We have been answering the questions of the learners, and providing feedback to their homeworks. In addition, we have added subtitles to all our video lectures.
+Our partnership with the [Extension School](https://extensionschool.ch/learn/effective-programming-in-scala) allows us to provide more support to people learning Scala online. We have been answering the questions of the learners, and providing feedback on their homework. In addition, we have added subtitles to all our video lectures.
 
 ## Communication
 
@@ -205,7 +205,7 @@ In Q4, we're finally opening it to the wider public. We've integrated the projec
 
 The significance of the project is to ensure the long-term sustainability of Scala 3. Scala 3's team is smaller than corresponding teams of many other programming languages. We need to ensure that the project is not dependent on a small number of people, but rather on a large number of people who are interested in contributing to the compiler. Compiler Academy is one of the avenues that ensure a stream of new compiler enthusiasts.
 
-You can learn more about the Academy [here](https://compileracademy.carrd.co/). And [here](https://www.scala-lang.org/blog/2022/11/02/compiler-academy.html) is the blog post announcing opening it up.
+You can learn more about the Academy [here](https://compileracademy.carrd.co/). [Here](https://www.scala-lang.org/blog/2022/11/02/compiler-academy.html) is the blog post announcing opening it up.
 
 ### Community Expansion
 
@@ -279,7 +279,7 @@ Scala Center is a non-profit organisation. A large chunk of its budget comes fro
 
 It is not possible to effectively engage the potential partners if we don't have a clear and concise presentation of who we are, what we do and how the partnership with us is a win-win situation for everyone involved. In Q4, we developed a 5-pager PDF that achieves exactly that purpose. Aimed at developers, development team leaders and top-level managers alike, we expect it to give all those target audiences a clear understanding of Scala Center's mission without taking much of their time.
 
-At the time of writing this document, the PDF is still in production, but we hope to have it early January 2023.
+At the time of writing this document, the PDF is still being worked on, but we hope to have it early January 2023.
 
 ## Maintenance Work
 
@@ -347,7 +347,7 @@ Those will be part of the next release.
 
 For Scala 2 and 3.
 
-The [Scastie](https://scastie.scala-lang.org) code editor is a popular playground used daily by around 1000 people, despite providing basic editor setup. Its simplicity allows users to quickly try libraries or code snippets, and then share them with other people, or just quickly jump into starting coding with Scala for a newcomer. Our goal is to improve the experience by adding "IDE" features straight to the Scastie application.
+The [Scastie](https://scastie.scala-lang.org) code editor is a popular playground used daily by around 1000 people, despite providing basic editor setup. Its simplicity allows users to quickly try libraries or code snippets, and then share them with other people, or just quickly jump into starting coding with Scala for a newcomer. Our goal is to improve the experience by adding "IDE" features straight into the Scastie application.
 
 We are working on providing more advanced editor capabilities ([scastie#655](https://github.com/scalacenter/scastie/pull/655)). For now, Scastie supports completions and hovers, but in the future we will add more features such as go-to definition, signature-help or show references.
 
