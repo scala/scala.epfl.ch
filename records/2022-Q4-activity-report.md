@@ -163,7 +163,7 @@ For Scala 2 and Scala 3.
 The Scala.js ecosystem contains individual pieces of great quality, from the compiler to the UI libraries. However, it is a challenge for every newcomer to find the pieces that are relevant, to connect them, and to build a good development experience. To address this issue, we want to provide a clear “integrated Scala.js ecosystem”. You can find the complete roadmap [here](https://contributors.scala-lang.org/t/the-scala-centers-roadmap-for-a-unified-scala-js-ecosystem/5568).
 
 The second video in the series, [Getting Started with Scala.js, Laminar and ScalablyTyped](https://www.youtube.com/watch?v=hWUAVrNj65c) was published in December 2022.
-We gave talks on the same topic at Scala IO and ScalaCon.
+We gave talks on the same topic at ScalaIO and ScalaCon (watch it [here](https://www.youtube.com/watch?v=hWUAVrNj65c)).
 
 We prepared a written tutorial version of the above, which is currently an open pull request ([scala-js-website#590](https://github.com/scala-js/scala-js-website/pull/590)).
 
@@ -246,6 +246,14 @@ For Scala 2 and Scala 3.
 In partnership with VirtusLab, we have created and published a survey to know the community better and learn about the libraries and tools they use.
 We published the results of the survey in [blog article](https://www.scala-lang.org/blog/2022/12/14/scala-developer-survey-results-2022.html).
 
+### ScalaCon, October 4-7 2022
+
+Besides being managing and producing the ScalaCon, we participated in ScalaCon 2022 by giving talks:
+
+- Darja Jovanovic and Adam Goodman, [Towards a Healthy and Resilient Scala Community](https://www.youtube.com/watch?v=svWnwU5PXxE)
+- Sébastien Doeraene, [Getting started with Scala js, Laminar and Vite](https://www.youtube.com/watch?v=hWUAVrNj65c)
+- Adrien Piquerez, [Building a Debugger for Scala 3](https://www.youtube.com/watch?v=IKj2fsbF6b4)
+
 ### Scala Sprees and Meetups
 
 For Scala 2 and Scala 3.
@@ -257,6 +265,11 @@ In Q4 of 2022, we conducted two visits abroad to present before local Scala comm
 During both visits, we co-located the [Scala Spree](https://github.com/scalacenter/sprees) event ([Paris](https://scala.io/workshops), [Warsaw](https://www.meetup.com/scalawaw/events/289954415/)). Scala Spree is an opportunity for Scala users to contribute to their favorite open-source projects. For the OSS maintainers, it is an opportunity to gain new contributors. Scala Spree is an on-site hackathon event where Scala users are coding on their Scala OSS of choice for 4 hours, and the maintainers of those OSS help them by answering questions and showing the ropes. Ultimately, this is a good way for the community to get to know each other and build fruitful collaborations.
 
 We had around 20 people on both events.
+
+We also participated by giving a talk at the local Lausanne Meetup on 22nd December.
+
+Last, we were happy to have another opportunity to collaborate in person with our close partners, Lightbend Scala team, in October.
+These in-person sessions help us even better to sync up and progress with our projects.
 
 ### Scala Center's Marketing Materials
 
