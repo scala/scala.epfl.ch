@@ -9,7 +9,7 @@ the current quarter. We also post regular updates about our projects on the
 To have more information about our _completed_ projects, please see the
 [quarterly activity reports](./records.html).
 
-## Roadmap for 2022 Q4
+## Roadmap for 2023 Q1
 {: .no_toc}
 
 The following sections present our plan for the current quarter. Every 
@@ -26,23 +26,9 @@ their expected outcome on the Scala community.
 Most of the Scala projects are built with sbt, which uses Coursier under the hood.
 The Coursier CLI is also the recommended way to get started in Scala. We want to make sure these tools
 work well for everyone. In collaboration with the current maintainers Eugene Yokota and Alexandre Archambault, we will
-address the most important issues that are currently opened.
+address the most important issues that are currently opened. Read our roadmap for Coursier [here](https://contributors.scala-lang.org/t/bugfixes-and-seamless-installation-process-for-coursier/6052).
 
-#### Smarter “Step Into” when debugging
-
-The “step-into” feature in Metals is hard to use because it often goes to
-synthetic methods (getter, setter, bridge, mixin-forwarder), that do
-not exist in the source code. We will improve the implementation of the
-[scala-debug-adapter](https://github.com/scalacenter/scala-debug-adapter) to
-address this issue.
-
-#### Implement JSR-45 in the Scala 3 compiler
-
-We want to improve the debugging experience by implementing JSR-45 in Scala 3. This was requested by an
-[Advisory Board Proposal](https://github.com/scalacenter/advisoryboard/blob/main/proposals/022-jsr-45.md).
-You can follow our progress in [#15684](https://github.com/lampepfl/dotty/pull/15684).
-
-#### TASTy-query and TASTy-MiMa
+#### TASTy-MiMa
 
 [TASTy-query](https://github.com/scalacenter/tasty-query) is a work-in-progress
 library to read TASTy files, explore them, and ask semantic questions about
@@ -58,30 +44,25 @@ prototype of TASTy-MiMa.
 You can read the full roadmap
 [here](https://contributors.scala-lang.org/t/the-scala-centers-roadmap-for-tasty-query/5564).
 
-#### Add IDE features to Scastie
+#### Create a Stable API for the Scala 3 Presentation Compiler
 
-We want to improve the developer experience for 1000 daily programmers writing code snippets
-via [Scastie](https://scastie.scala-lang.org).
+Currently, Metals works only for a limited subset of Scala 3 versions. Furthermore, we need to publish
+a new release of Metals after every new release of the compiler to support it.
 
-We would like to bring IDE features to Scastie, such as reporting diagnostics,
-“go to definition”, “type on hover”, and “find references” actions. This requires
-running Metals on the server-side, and communicating with it from the client-side.
+We would like to create a stable API for the Scala 3 presentation compiler to untie Metals to the compiler
+release cycle and support a wider range of Scala 3 versions (including experimental versions of Scala 3).
 
-#### Add Support for Binary Compatible Evolutions to Case Classes
+#### Reduce the Number of Ways to Import Scala Projects in IDEs
 
-Case classes are popular to achieve domain modeling. However, they 
-come with an important drawback: it is impossible to apply any evolution 
-(adding/removing fields on a case class) in a backward binary compatible way.
-This forces library authors to manually re-implement the features of 
-case classes that they need (typically, structural equality) at the price of 
-more verbosity. Other solutions include tools generating code (e.g. 
-contraband), or experimental macro annotations (e.g. data-class, scalameta).
+Currently, when starting new projects in Metals the build server that is used by default is Bloop. Part of this is for historical reasons, but part of it is also due to the speed of Bloop and the integrations that exist for it. Bloop has been incredibly important in the Build Server arena. However, there is also BSP implementation in sbt and in Mill and even when a `.bsp/<build-tool>.json` entry exists, Metals will still force Bloop on the user unless they manually switch. This can cause confusion and also may add extra steps into choosing a build server that shouldn't be needed.
 
-We started a [“pre-SIP” discussion](https://contributors.scala-lang.org/t/pre-sip-structural-data-structures-that-can-evolve-in-a-binary-compatible-way/5684),
-which received some support and comments from the community. Based on the collected
-feedback, we will submit a concrete Scala Improvement Proposal to support, at
-the language-level, data types with structural equality that can evolve in a
-binary compatible way.
+This problem also exists in a different way in IntelliJ when you open for example an sbt project that has an existing `.bsp/sbt.json` file you'll be prompted to import the project either as a BSP project or an sbt project. Arguably, newcomers have no idea what BSP is, and they shouldn't have to.
+
+We'd like to minimize the number of ways to import projects and revisit the default choices
+that Metals makes of using Bloop no matter the build tool. The aim is to make
+the experience a newcomer has smoother, abstracting away things like Bloop and
+BSP, while still allowing for a powerful user experience for advanced users. Read the full roadmap and progress
+reports [here](https://contributors.scala-lang.org/t/revisiting-the-default-build-server-for-metals-roadmap/6054).
 
 ### Education and Documentation
 
@@ -90,7 +71,7 @@ binary compatible way.
 We plan to modernize the Scala website, and to integrate better the Scala 2
 and Scala 3 documentation.
 
-Following up on [the work]({% link records/2022-Q3-activity-report.md %})
+Following up on [the work]({% link records/2022-Q4-activity-report.md %})
 we did in the previous quarter, we plan to polish further the content of the
 website.
 
@@ -135,12 +116,6 @@ and making people excited about it.
   donations to the Scala Center in exchange for goodies,
 - We will speak at tech conferences and local meetups to encourage people to contribute to the 
   Scala ecosystem, and to let non-Scala programmers know about Scala,
-- Currently, Scala doesn't have much presence in fields other than backend
-  development and data engineering. Given our positioning at EPFL, there are
-  opportunities for collaborations with scientists and industries to expand in
-  other domains. We plan to organize a workshop to introduce Scala to a team
-  of scientists in the field of space. We expect to learn more about the
-  possible barriers to the adoption of Scala to conduct scientific experiments,
 - We will publish two new videos in the series [Let’s talk about Scala
   3](https://www.youtube.com/playlist?list=PLTx-VKTe8yLxYQfX_eGHCxaTuWvvG28Ml)
   to highlight the strengths of Scala 3.
