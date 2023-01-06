@@ -34,7 +34,8 @@ the experience a newcomer has smoother, abstracting away things like Bloop and
 BSP, while still allowing for a powerful user experience for advanced users.
 We're still in the experiment and research stage for this which is leading to
 creating various issues around the ecosystem. However, the discussion and main
-work can be tracked in [metals#4505](https://github.com/scalameta/metals/discussions/4505#discussioncomment-4571546).
+work can be tracked in [metals#4505](https://github.com/scalameta/metals/discussions/4505#discussioncomment-4571546)
+and [on the Contributors forum](https://contributors.scala-lang.org/t/revisiting-the-default-build-server-for-metals-roadmap/6054).
 
 ### sbt
 
@@ -88,20 +89,21 @@ tasty-query is a library to read semantic information from Scala 3 classpaths.
 It reads Scala `.tasty` files, Scala 2 pickles and Java `.class` files, and presents the semantic information they contain in a unified API.
 
 tasty-query will be an essential tool for any static analysis involving Scala code.
-In particular, it is the basis for TASTy-MiMa.
+In particular, it is the basis for [TASTy-MiMa](https://github.com/scalacenter/tasty-mima).
 More information can be found [in the readme of tasty-query](https://github.com/scalacenter/tasty-query#readme).
 
 In this quarter, we made significant progress on tasty-query, and released several in-progress versions, the latest being 0.5.5.
-tasty-query is already used in the Scala Debug Adapter to provide smart step-into filters for Scala 3 code, as well as in the in-progress TASTy-MiMa.
+tasty-query is already used in the [Scala Debug Adapter](https://github.com/scalacenter/scala-debug-adapter) to provide smart
+step-into filters for Scala 3 code, as well as in the in-progress TASTy-MiMa.
 
 ### TASTy-MiMa
 
 For Scala 3.
 
 TASTy-MiMa is a new, in-progress tool that checks TASTy-compatibility across library versions.
-It is similar to MiMa, which works at the binary compatibility level.
+It is similar to [MiMa](https://github.com/lightbend/mima), which works at the binary compatibility level.
 
-The project can be found at https://github.com/scalacenter/tasty-mima.
+The project can be found at [https://github.com/scalacenter/tasty-mima](https://github.com/scalacenter/tasty-mima).
 It is based on tasty-query.
 
 We implemented most of the core analysis, including:
@@ -179,7 +181,7 @@ Our partnership with the [Extension School](https://extensionschool.ch/learn/eff
 
 For Scala 3.
 
-We produced a video about debugging Scala 3 in Metals. This video demonstrates the power of the debugger in a multi-threaded Scala 3 application. We show how to use the debugging steps, the debug console, the watches, and the different types of breakpoints. The video will soon be released on the Youtube platform.
+We produced a video about debugging Scala 3 in Metals. This video demonstrates the power of the debugger in a multi-threaded Scala 3 application. We show how to use the debugging steps, the debug console, the watches, and the different types of breakpoints. The video will soon be released on YouTube.
 
 ### Advent of Code Website
 
@@ -224,7 +226,9 @@ In Q4, we finalized this project by conducting the first workshop for the EPFL c
 
 For Scala 2 and 3.
 
-Google Summer of Code is another initiative by the Scala Center to give Scala users a way to contribute to OSS. Most of the work on the project was done in Q2-Q3 2022, but there was still some work left to be done. in Q4, all the work was finalized, all of the students graduated successfully, and the project is officially over – for this year. You can read more about how it was and the projects we welcomed in the [blog article](https://www.scala-lang.org/blog/2022/11/15/gsoc-report.html) we published.
+Google Summer of Code is another initiative by the Scala Center to give Scala users a way to contribute to OSS. Most of the work on the project was done in Q2-Q3 2022, but there was still some work left to be done.
+
+In Q4, all the work was finalized, all of the students graduated successfully, and the project is officially over – for this year. You can read more about how it was and the projects we welcomed in the [blog article](https://www.scala-lang.org/blog/2022/11/15/gsoc-report.html) we published.
 
 ### Scala Improvement Process
 
