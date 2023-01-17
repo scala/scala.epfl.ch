@@ -1,17 +1,16 @@
-FROM ruby:2.7
+FROM ruby:2.7.6
 
 RUN apt-get install -y curl \
   && curl -sL https://deb.nodesource.com/setup_18.x | bash - \
   && apt-get install -y nodejs \
   && curl -L https://www.npmjs.com/install.sh | sh
 
-RUN gem install  bundler:1.17.2 jekyll 
+RUN gem install bundler:1.17.2 jekyll:3.9.2
 
 WORKDIR /srv/jekyll
 
 COPY Gemfile .
 COPY Gemfile.lock .
-
 
 RUN echo -n "bundle version: " && bundle --version
 RUN bundle install
