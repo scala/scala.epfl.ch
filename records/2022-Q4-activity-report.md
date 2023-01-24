@@ -156,7 +156,7 @@ For Scala 2 and Scala 3.
 The goal of this project is to help beginner-to-intermediate-level programmers to learn and use Scala in small projects, such as scripts.
 To this end, we will publish a series of written tutorials that focus on common programming tasks, such as testing, reading and writing files, sending HTTP requests, etc.
 
-We started writing a few tutorials for unit-testing using the MUnit library, in [scalacenter/docs.scala-lang#7096](https://github.com/sbt/sbt/pull/7096). The Scala Toolkit series will be published later this year.
+We started writing a few tutorials for unit-testing using the MUnit library, in [scalacenter/docs.scala-lang#7][scalacenter/docs.scala-lang#7]. The Scala Toolkit series will be published later this year.
 
 ### An integrated Scala.js ecosystem
 
@@ -420,6 +420,8 @@ In Q4, we researched and implemented the current industry standards for the digi
 
 [docs.scala-lang#2639]: https://github.com/scala/docs.scala-lang/pull/2639
 [docs.scala-lang#2637]: https://github.com/scala/docs.scala-lang/pull/2637
+
+[scalacenter/docs.scala-lang#7]: https://github.com/scalacenter/docs.scala-lang/pull/7
 
 [scala-advent-of-code#109]: https://github.com/scalacenter/scala-advent-of-code/pull/109
 [scala-advent-of-code#110]: https://github.com/scalacenter/scala-advent-of-code/pull/110
