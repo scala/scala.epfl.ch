@@ -217,7 +217,7 @@ members:
     github: Sporarum
     photo: /resources/img/quentin.jpeg
     contact_for: [dotty, documentationImprovements]
-    active: true
+    active: false
   - member: smarter
     name: Guillaume Martres
     title: Software Development
