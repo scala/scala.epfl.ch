@@ -290,7 +290,7 @@ At the time of writing this document, the PDF is still being worked on, but we h
 ### Scala 3 Compiler
 
 Every month, about 100 new issues are opened on [the Scala 3
-repository](github.com/lampepfl/dotty/), so the project can use all the help it
+repository](https://github.com/lampepfl/dotty/), so the project can use all the help it
 can get in triaging, bug-fixing, PR reviewing, etc.
 
 Our goal is to solve long-standing issues while keeping up with new ones. We also aim to get
