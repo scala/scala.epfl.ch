@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/records/first-five-years/static/css/main.79e2da05.css",
+    "main.js": "/records/first-five-years/static/js/main.28071da3.js",
+    "static/media/ZillaSlab-Regular.ttf": "/records/first-five-years/static/media/ZillaSlab-Regular.6811eaab24ca95146dc8.ttf",
+    "static/media/OpenSans-Bold.ttf": "/records/first-five-years/static/media/OpenSans-Bold.dbb97fd982ce1b96b6de.ttf",
+    "static/media/OpenSans-Regular.ttf": "/records/first-five-years/static/media/OpenSans-Regular.1b0809d519837cb7aad3.ttf",
+    "static/media/EnzoWeb-W03-Light.ttf": "/records/first-five-years/static/media/EnzoWeb-W03-Light.6038f11e00f5d5a18ef8.ttf",
+    "static/media/EnzoWeb-W03-Medium.ttf": "/records/first-five-years/static/media/EnzoWeb-W03-Medium.1915e28582afd76d3a42.ttf",
+    "static/media/EnzoWeb-W03-Bold.ttf": "/records/first-five-years/static/media/EnzoWeb-W03-Bold.d98331891d9c7ab6ecda.ttf",
+    "static/media/jumbotron-bg.svg": "/records/first-five-years/static/media/jumbotron-bg.fe755b7d696d4fa2fc48.svg",
+    "static/media/illustration29.svg": "/records/first-five-years/static/media/illustration29.dd09f29e819ce3f44dd8.svg",
+    "static/media/Fichier 14.svg": "/records/first-five-years/static/media/Fichier 14.45d590482dd1c27d56c9.svg",
+    "static/media/body-bg.svg": "/records/first-five-years/static/media/body-bg.ac0b5321207b3c01b9a6.svg",
+    "static/media/body-bg6.svg": "/records/first-five-years/static/media/body-bg6.e334d94220792451d60e.svg",
+    "index.html": "/records/first-five-years/index.html",
+    "main.79e2da05.css.map": "/records/first-five-years/static/css/main.79e2da05.css.map",
+    "main.28071da3.js.map": "/records/first-five-years/static/js/main.28071da3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.79e2da05.css",
+    "static/js/main.28071da3.js"
+  ]
+}
