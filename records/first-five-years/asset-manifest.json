@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/records/first-five-years/static/css/main.79e2da05.css",
-    "main.js": "/records/first-five-years/static/js/main.f20d51cb.js",
+    "main.js": "/records/first-five-years/static/js/main.a12edd3c.js",
     "static/media/ZillaSlab-Regular.ttf": "/records/first-five-years/static/media/ZillaSlab-Regular.6811eaab24ca95146dc8.ttf",
     "static/media/OpenSans-Bold.ttf": "/records/first-five-years/static/media/OpenSans-Bold.dbb97fd982ce1b96b6de.ttf",
     "static/media/OpenSans-Regular.ttf": "/records/first-five-years/static/media/OpenSans-Regular.1b0809d519837cb7aad3.ttf",
@@ -15,10 +15,10 @@
     "static/media/body-bg6.svg": "/records/first-five-years/static/media/body-bg6.e334d94220792451d60e.svg",
     "index.html": "/records/first-five-years/index.html",
     "main.79e2da05.css.map": "/records/first-five-years/static/css/main.79e2da05.css.map",
-    "main.f20d51cb.js.map": "/records/first-five-years/static/js/main.f20d51cb.js.map"
+    "main.a12edd3c.js.map": "/records/first-five-years/static/js/main.a12edd3c.js.map"
   },
   "entrypoints": [
     "static/css/main.79e2da05.css",
-    "static/js/main.f20d51cb.js"
+    "static/js/main.a12edd3c.js"
   ]
 }
