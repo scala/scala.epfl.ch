@@ -31,7 +31,7 @@ then
   git push -u origin HEAD:$INPUT_DESTINATION_HEAD_BRANCH
   echo "Creating a pull request"
   gh pr create -t $INPUT_DESTINATION_HEAD_BRANCH \
-               -b $PULL_REQUEST_MESSAGE \
+               -b "$PULL_REQUEST_MESSAGE" \
                -B $INPUT_DESTINATION_BASE_BRANCH \
                -H $INPUT_DESTINATION_HEAD_BRANCH \
                   $PULL_REQUEST_REVIEWERS
