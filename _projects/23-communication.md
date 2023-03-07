@@ -1,6 +1,7 @@
 ---
 label: communication
 name: Communication and outreach
+web: https://scala.epfl.ch
 contributors: [darja, vincent, valerie]
 status: Active
 type: project

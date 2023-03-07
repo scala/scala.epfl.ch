@@ -1,7 +1,7 @@
 ---
 label: bspForSbt
 name: Build Server Protocol in sbt
-web:
+web: https://build-server-protocol.github.io/
 github:
 origin: https://github.com/scalacenter/advisoryboard/blob/master/proposals/023-bsp.md
 contributors: [adrien]
