@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  jekyll:
+    user: "${UID}:${GID}"
+    build: .
+    command: sh -c "chown $UID / && /opt/npm-global/bin/bower --allow-root install &&  bundle exec jekyll build"
+    ports:
+      - '4000:4000'
+    volumes:
+      - .:/srv/jekyll
