@@ -1,11 +1,11 @@
-FROM ruby:2.7.6
+FROM ruby:3.0.5
 
 RUN apt-get install -y curl \
   && curl -sL https://deb.nodesource.com/setup_18.x | bash - \
   && apt-get install -y nodejs \
   && curl -L https://www.npmjs.com/install.sh | sh
 
-RUN gem install bundler:1.17.2
+RUN gem install bundler:2.4.7
 
 WORKDIR /srv/jekyll
 
