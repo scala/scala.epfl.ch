@@ -42,7 +42,7 @@ You need to have Ruby and npm installed on your machine.
 You can build and view the site locally with:
 
 ```
-gem install  bundler:1.17.2
+gem install bundler:2.4.7
 bundle install
 npm install
 npm run bower-install
