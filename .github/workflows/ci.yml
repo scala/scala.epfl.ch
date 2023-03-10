@@ -26,3 +26,12 @@ jobs:
           bundle exec jekyll build 2> error.log
           cat >&2 error.log
           ( ! grep -qie Error -e Warn error.log )
+      - name: HTMLProofer
+        run: |
+          # Check all links
+          bundle exec htmlproofer ./_site/\
+             --only-4xx\
+             --ignore-empty-alt=true\
+             --allow-hash-href=true\
+             --enforce-https=false\
+             --ignore-missing-alt=true
