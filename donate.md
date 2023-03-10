@@ -16,7 +16,7 @@ one-time donation into a monthly or yearly recurring donation.
 Our main focus is to improve the experience of developing in Scala. This means
 that your contribution goes towards:
 
-- Funding developers to develop and mantain libraries and tools of interest to the broader Scala community.
+- Funding developers to develop and maintain libraries and tools of interest to the broader Scala community.
 - Covering the costs of community infrastructure and equipment.
 - Providing financial assistance to underrepresented groups or students so as to be able to attend major Scala conferences and events.
 

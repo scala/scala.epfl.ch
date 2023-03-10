@@ -34,7 +34,7 @@ We're happy to set up a call to work through the specifics!
 
 ### Dues
 
-Membership dues are paid anually. The Scala Center has two levels of corporate
+Membership dues are paid annually. The Scala Center has two levels of corporate
 membership: Advisory Board, and Affiliate.
 
 - Advisory Board: organizations that are significantly invested in Scala, invited to join at the 50,000CHF level.
@@ -50,7 +50,7 @@ members on the Scala Center homepage.
 Corporate members receive:
 
 - the opportunity to participate on the Scala Center's Advisory Board
-- the potential to propose and vote on recommendations for Scala Center initiatives which benefit the overall Scala open soure ecosystem or the Scala educational landscape
+- the potential to propose and vote on recommendations for Scala Center initiatives which benefit the overall Scala open source ecosystem or the Scala educational landscape
 - Scala recruitment opportunities at EPFL
 - Quarterly reports on the activities of the Scala Center
 - Your logo and link on the Scala Center homepage
