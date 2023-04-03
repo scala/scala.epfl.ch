@@ -3,7 +3,7 @@ label: scalacDebugging
 name: Better Debugging Experience
 github: https://github.com/scala/scala
 origin: https://github.com/scalacenter/advisoryboard/blob/master/proposals/022-jsr-45.md
-contributors: [ergys]
+contributors: [ergys, lucas]
 status: Active
 type: project
 active: true

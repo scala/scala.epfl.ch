@@ -234,7 +234,7 @@ members:
     photo: /resources/img/chris-kipp.webp
     contact_for: [bloop,metals]
     active: true
-  - member: Johanna
+  - member: johanna
     name: Johanna Reichen
     title: Operations Officer & Strategy Advisor
     email: johanna.reichen@epfl.ch
@@ -242,4 +242,13 @@ members:
     twitter: 
     photo: /resources/img/johanna.jpeg
     contact_for: [communication]
+    active: true
+  - member: lucas
+    name: Lucas Nouguier
+    title: Intern
+    email: lucas.nouguier@epfl.ch
+    github: iusildra
+    twitter: LucasNouguier
+    photo: /resources/img/nouguier.jpg
+    contact_for: [scalacDebugging]
     active: true
