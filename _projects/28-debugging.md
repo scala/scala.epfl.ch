@@ -1,9 +1,9 @@
 ---
 label: scalacDebugging
 name: Better Debugging Experience
-github: https://github.com/scala/scala
+github: https://github.com/scalacenter/scala-debug-adapter
 origin: https://github.com/scalacenter/advisoryboard/blob/master/proposals/022-jsr-45.md
-contributors: [ergys, lucas]
+contributors: [ergys, lucas, adpi2]
 status: Active
 type: project
 active: true
