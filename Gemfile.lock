@@ -268,6 +268,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   html-proofer
+  jekyll-redirect-from
   webrick
 
 BUNDLED WITH

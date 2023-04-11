@@ -24,3 +24,6 @@ markdown: kramdown
 exclude: ["node_modules", "gulpfile.js", "package.json", "vendor"]
 sass:
   sass_dir: resources/css/sass
+
+plugins:
+  - jekyll-redirect-from
