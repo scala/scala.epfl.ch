@@ -2,7 +2,7 @@
 layout: contact
 ---
 
-This page lists the projects that the Scala Center will work on during
+This page lists the projects that the Scala Center are working on during
 the current quarter. We also post regular updates about our projects on the
 [Scala Contributors forum](https://contributors.scala-lang.org/c/scala-center/25).
 
@@ -13,7 +13,7 @@ To have more information about our _completed_ projects, please see the
 {: .no_toc}
 
 The following sections present our plan for the current quarter. Every
-project description is followed by the concrete results we will deliver, and
+project description is followed by the concrete results we will deliver and
 their expected outcome on the Scala community.
 
 * Table of Contents

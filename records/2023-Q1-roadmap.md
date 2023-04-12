@@ -2,7 +2,7 @@
 layout: contact
 ---
 
-This page lists the projects that the Scala Center will work on during
+This page lists the projects that the Scala Center are working on during
 the current quarter. We also post regular updates about our projects on the
 [Scala Contributors forum](https://contributors.scala-lang.org/c/scala-center/25).
 
@@ -13,17 +13,17 @@ To have more information about our _completed_ projects, please see the
 {: .no_toc}
 
 The following sections present our plan for the current quarter. Every
-project description is followed by the concrete results we will deliver, and
+project description is followed by the concrete results we will deliver and
 their expected outcome on the Scala community.
 
 * Table of Contents
-  {:toc}
+{:toc}
 
 ### Make Scala tooling seamless for newcomers, and provide robust foundations for the Scala ecosystem
 
 #### Polish sbt and Coursier
 
-Most of the Scala projects are built with sbt, which uses Coursier under the hood.
+Most Scala projects are built with sbt, which uses Coursier under the hood.
 The Coursier CLI is also the recommended way to get started in Scala. We want to make sure these tools
 work well for everyone. In collaboration with the current maintainers Eugene Yokota and Alexandre Archambault, we will
 address the most important issues that are currently opened. Read our roadmap for Coursier [here](https://contributors.scala-lang.org/t/bugfixes-and-seamless-installation-process-for-coursier/6052).
@@ -54,7 +54,7 @@ release cycle and support a wider range of Scala 3 versions (including experimen
 
 #### Reduce the Number of Ways to Import Scala Projects in IDEs
 
-Currently, when starting new projects in Metals the build server that is used by default is Bloop. Part of this is for historical reasons, but part of it is also due to the speed of Bloop and the integrations that exist for it. Bloop has been incredibly important in the Build Server arena. However, there is also BSP implementation in sbt and in Mill and even when a `.bsp/<build-tool>.json` entry exists, Metals will still force Bloop on the user unless they manually switch. This can cause confusion and also may add extra steps into choosing a build server that shouldn't be needed.
+Currently, when starting new projects in Metals the build server that is used by default is Bloop. Part of this is for historical reasons, but part of it is also due to the speed of Bloop and the integrations that exist for it. Bloop has been incredibly important in the Build Server arena. However, there are also BSP implementations in sbt and in Mill and even when a `.bsp/<build-tool>.json` entry exists, Metals will still force Bloop on the user unless they manually switch. This can cause confusion and also may add extra steps into choosing a build server that shouldn't be needed.
 
 This problem also exists in a different way in IntelliJ when you open for example an sbt project that has an existing `.bsp/sbt.json` file you'll be prompted to import the project either as a BSP project or an sbt project. Arguably, newcomers have no idea what BSP is, and they shouldn't have to.
 
@@ -77,10 +77,10 @@ website.
 
 The next main tasks are:
 
-- make the content more use-case-oriented rather than features-oriented,
-- reorganize the structure to make it more intuitive according to the reader’s background,
+- make the content more use-case-oriented rather than features-oriented
+- reorganize the structure to make it more intuitive according to the reader’s background
 - create new tutorials to document better how to contribute to the Scala open-source
-  ecosystem.
+  ecosystem
 
 #### Scala.js
 
