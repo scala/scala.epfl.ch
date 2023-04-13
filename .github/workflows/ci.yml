@@ -34,4 +34,5 @@ jobs:
              --ignore-empty-alt=true\
              --allow-hash-href=true\
              --enforce-https=false\
-             --ignore-missing-alt=true
+             --ignore-missing-alt=true\
+             --swap-urls "https\:\/\/scala\.epfl\.ch:"
