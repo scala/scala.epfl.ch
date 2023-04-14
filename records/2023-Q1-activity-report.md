@@ -4,7 +4,7 @@ title: Scala Center Activity Report for 2023 Q1
 ---
 
 Scala Center team: Quentin Bernet, 33%; Sébastien Doeraene, 100%; Darja Jovanovic, 100%; Anatolii Kmetiuk, 100%;
-Guillaume Martres, 100%; Adrien Piquerez, 100%; Julien Richard-Foy, 80%; Jamie Thompson, 100%; Johanna Reichen: 60%.
+Guillaume Martres, 100%; Adrien Piquerez, 100%; Julien Richard-Foy, 80%; Jamie Thompson, 100%; Johanna Reichen: 80%.
 VirtusLab team: Jędrzej Rochala, 100%. Lunatech team: Chris Kipp, 100%.
 
 ## At a Glance
