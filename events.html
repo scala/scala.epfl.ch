@@ -14,11 +14,19 @@ layout: page
   <div class="cards">
     {% assign events = site.data.events.scala_lunches.events %}
     <div class="col-md-12 title scala-lunches">
-      <h2>Scala Lunches at EPFL</h2>
-      <p>{{site.data.events.scala_lunches.description}}</p>
+      <h2 style="margin-bottom: 10px;">Scala Lunches at EPFL</h2>
+      <p><a href="mailto:scala-community-subscribe@listes.epfl.ch?subject=Subscribe%20me%20to%20the%20Scala%20Center%20mailing%20list&body=Once%20you%20send%20this%20email%2C%20you%20will%20be%20subscribed%20to%20the%20Scala%20Center%20mailing%20list.%20This%20email%20will%20be%20handled%20automatically%20-%20you%20do%20not%20need%20to%20modify%20it%2C%20just%20click%20%22Send%22%20to%20get%20subscribed.">
+        Subscribe
+      </a> to the Scala Center mailing list to receive updates about the Scala Lunches and other Scala Center events.
+      Or follow us on <a href="https://t.me/scala_center_epfl">Telegram</a>.
+      </p>
+      <p>{{site.data.events.scala_lunches.header}}</p>
     </div>
     <div class="card-list scala-lunches">
       {% include event-block.html %}
+    </div>
+    <div class="col-md-12 title scala-lunches">
+      <p style="font-size: 80%">{{site.data.events.scala_lunches.footer}}</p>
     </div>
     <!-- <div class="col-md-12 no-results">
       <h3>No results found</h3>
