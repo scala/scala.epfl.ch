@@ -563,10 +563,11 @@ body.home {
   }
 
   /* HOME OUR PROJECTS */
-  .projects {
+  .cards {
     padding-left: 1%;
     padding-top: 10px;
-    .project {
+
+    .card, .project {
       position: relative;
       width: 18%;
       float: left;
@@ -727,8 +728,8 @@ body.home {
 
   /* Projects Mobile */
   @media (max-width: $screen-md) {
-    .projects {
-      .project {
+    .cards {
+      .card, .project {
         width: 48% !important;
       }
     }
@@ -920,7 +921,19 @@ div.search {
   }
 }
 
-.projects, .description-dialog {
+/* UTILITIES */
+
+.fl-right {
+  float: right;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+/* CARDS */
+
+.cards, .description-dialog {
   margin-top: 10px;
   @media(max-width: 991px) {
     margin-top: 25px;
@@ -954,15 +967,25 @@ div.search {
   }
 
   .project {
-    background-color: #fafafa;
-    border-radius: 3px;
-    padding: 40px 30px 0px 30px;
-    margin-bottom: 30px;
-    word-wrap: break-word;
-
     .project-logo {
       max-height: 40px;
     }
+  }
+
+  tr.card {
+    border-bottom: 1px solid #e6e6e6;
+
+    td {
+      padding: 0 5px;
+    }
+  }
+
+  .card, .project {
+    background-color: #fafafa;
+    border-radius: 3px;
+    padding: 0px 30px 0px 30px;
+    margin-bottom: 5px;
+    word-wrap: break-word;
 
     .status {
       font-size: 12px;
