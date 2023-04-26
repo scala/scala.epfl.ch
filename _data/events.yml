@@ -8,8 +8,13 @@ scala_lunches:
     - date: 8 May 2023
       time: "12:00pm"
       place: BC 410, EPFL
-      speaker: # to be announced
-      title: # to be announced
+      speaker: Solal Pirelli
+      title: "Safe Low-Level Code Without Overhead is Practical"
+    - date: 8 May 2023
+      time: "12:30pm"
+      place: BC 410, EPFL
+      speaker: Zilu Tian
+      title: "Generalising Bulk-Synchronous Parallel Processing for Data Science: From Data to Threads and Agent-Based Simulations"
     - date: 12 June 2023
       time: "12:00pm"
       place: BC 410, EPFL
