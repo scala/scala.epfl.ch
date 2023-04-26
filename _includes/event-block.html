@@ -1,0 +1,42 @@
+<table class="col-md-12">
+    <thead>
+        <tr>
+            <th class="col-xs-2">Date</th>
+            <th class="col-xs-3">Speaker</th>
+            <th class="col-xs-4">Title</th>
+            <th class="col-xs-2">Place</th>
+            <th class="col-xs-1">Time</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for event in events %}
+    <tr class="card">
+        <td>
+            <span class="status ongoing fl-right">
+                {{event.date}}
+            </span>
+        </td>
+        <td>
+            {% if event.speaker.size > 0 %}
+            <span class="speaker">{{event.speaker}}</span>
+            {% else %}
+            <span class="speaker">Speaker TBA...</span>
+            {% endif %}
+        </td>
+        <td>
+            {% if event.title.size > 0 %}
+            <span class="title">{{event.title}}</span>
+            {% else %}
+            <span class="title">Talk title TBA...</span>
+            {% endif %}
+        </td>
+        <td>
+            <span class="place">{{event.place}}</span>
+        </td>
+        <td>
+            <span class="place">{{event.time}}</span>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
