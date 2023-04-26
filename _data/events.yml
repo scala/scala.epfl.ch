@@ -1,9 +1,8 @@
 scala_lunches:
-  description: |
-    The Scala Lunches are a series of talks on Scala and related topics.
-    They are held once per month at EPFL in Lausanne, Switzerland.
-    The talks are open to everyone and are free of charge.
-    The talks are in English.
+  header: |
+    The Scala Center is inviting anyone interested in programming languages and open source to join us once a month for a lunch break, hear from colleagues what they are working on or share their own stories. It’s a great opportunity to network amongst PL enthusiasts, share your passion and get some valuable input. And yes, we will speak about Scala too :) you can expect the <a href="https://scala.epfl.ch/team.html">Scala Center</a> and <a href="https://www.epfl.ch/labs/lamp/staff">LAMP</a> teams to be present and happy to answer any and all questions you might have regarding their work. This is free and open event, no registration needed and everyone is welcome (including people outside of EPFL). We only ask you to bring your own lunch because we never know how many people would show up nor what they like to eat :)
+  footer: |
+    Please note that Scala Center ensures welcoming and safe spaces on all our events. Both <a href="https://www.epfl.ch/about/overview/wp-content/uploads/2019/12/ComplianceGuideEPFL_EN.pdf">EPFL</a> and <a href="https://www.scala-lang.org/conduct/">Scala Code of Conduct</a> apply. We encourage you to report inappropriate behaviour either through EPFL channels or addressing the issue to us directly, in one of these ways, depending on what seems most comfortable for you: a) send an email to scala.center@epfl.ch (Scala Center staff receives it) b) one member of our staff c) anonymously by filling in <a href="https://docs.google.com/forms/d/e/1FAIpQLSccVqGPhCd-a3a-AvCPFAqzg0mSPPTE-vNU3yXCNb-5qFunvA/viewform">this form</a>. We take reports seriously and react as quickly to find appropriate solutions. Our entire staff is receiving continues training in how to handle basic reported cases. For more complex ones we either may reach out to appropriate EPFL channels or mediation company that helps support us. All cases are treated with full confidentiality and respectfully.
   events:
     - date: 8 May 2023
       time: "12:00pm"
