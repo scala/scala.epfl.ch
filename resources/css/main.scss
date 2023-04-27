@@ -31,6 +31,7 @@ $link-color:      $orange;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
+$grey-color-medium: lighten($grey-color, 7%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
@@ -932,6 +933,14 @@ div.search {
 }
 
 /* CARDS */
+
+.card-list {
+  margin: 20px 0 50px 0;
+
+  .muted {
+    color: $grey-color-medium;
+  }
+}
 
 .cards, .description-dialog {
   margin-top: 10px;
