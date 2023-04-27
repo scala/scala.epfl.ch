@@ -6,6 +6,7 @@ layout: contact
 
 - [Membership regulations]({{ site.baseurl }}/docs/ScalaCenterMembershipRegulations.pdf)
 - [Membership agreement]({{ site.baseurl }}/docs/ScalaCenterMembershipAgreement.pdf)
+- [5 Year Impact Report]({{ site.baseurl }}/records/first-five-years)
 
 ### Quarterly Activity Reports
 
