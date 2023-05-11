@@ -17,8 +17,8 @@ scala_lunches:
     - date: 12 June 2023
       time: "12:00pm"
       place: BC 410, EPFL
-      speaker: # to be announced
-      title: # to be announced
+      speaker: Nguyen Pham
+      title: Copying stacks for fun and profit: Experimental delimited continuations for Scala Native
     - date: 10 July 2023
       time: "12:00pm"
       place: BC 410, EPFL
