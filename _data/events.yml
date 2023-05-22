@@ -19,6 +19,11 @@ scala_lunches:
       place: BC 410, EPFL
       speaker: Nguyen Pham
       title: "Copying stacks for fun and profit: Experimental delimited continuations for Scala Native"
+    - date: 12 June 2023
+      time: "12:30pm"
+      place: BC 410, EPFL
+      speaker: Bastien Jolidon & Kelvin Kappeler
+      title: "Game verified with Stainless"
     - date: 10 July 2023
       time: "12:00pm"
       place: BC 410, EPFL
