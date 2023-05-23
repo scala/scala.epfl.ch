@@ -23,10 +23,10 @@ governance expert.
 
 For Scala 2 and Scala 3.
 
-We are collaborating with the Dependabot team at Github to build support for their security alerts in sbt projects.
-The main goal of this project is to harden the security of sbt projects hosted on Github by scanning their dependencies.
+We are collaborating with the Dependabot team at GitHub to build support for their security alerts in sbt projects.
+The main goal of this project is to harden the security of sbt projects hosted on GitHub by scanning their dependencies.
 
-We built [scalacenter/sbt-github-dependency-graph](https://github.com/scalacenter/sbt-github-dependency-graph), an sbt plugin that can submit all the dependencies to Github, and [scalacenter/sbt-dependency-graph-action](https://github.com/scalacenter/sbt-dependency-graph-action), a Github action that can configure and run the sbt plugin in a Github workflow. Those projects are being validated and are therefore not ready to be used.
+We built [scalacenter/sbt-github-dependency-graph](https://github.com/scalacenter/sbt-github-dependency-graph), an sbt plugin that can submit all the dependencies to GitHub, and [scalacenter/sbt-dependency-graph-action](https://github.com/scalacenter/sbt-dependency-graph-action), a GitHub action that can configure and run the sbt plugin in a GitHub workflow. Those projects are being validated and are therefore not ready to be used.
 
 ### Scala 3 Expression Evaluation in Metals' Debugger
 
