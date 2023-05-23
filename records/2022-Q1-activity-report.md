@@ -49,18 +49,18 @@ the following:
 - We have reworked the structure of the Scaladex project by reorganizing the modules folder and simplifying the startup process. We have updated the local projects being indexed to get recent projects and releases. The goal was to simplify the process to develop locally new features and attract new contributors. Finally we have updated the contributing guide of Scaladex. ([link](https://github.com/scalacenter/scaladex/pull/878))
 - We have implemented a first admin task: the goal is to automate operations that would improve the maintenance of Scaladex like deleting old releases, or update github information for a particular project. The first one implemented will check for a particular project if any release is missing and then will index it ([link](https://github.com/scalacenter/scaladex/pull/948))
 
-### Github security alerts in sbt projects
+### GitHub security alerts in sbt projects
 
 for Scala 2 and Scala 3.
 
 *Keeping the software secure is critically important.
 Some major threats like [Log4Shell](https://en.wikipedia.org/wiki/Log4Shell) can happen at any time and impact a large number of organizations and companies.
-In June 2020 Github released Dependendabot to help developers keep their dependencies updated and secure.
+In June 2020 GitHub released Dependendabot to help developers keep their dependencies updated and secure.
 It does not yet support scanning sbt dependencies.*
 
-We collaborated with the Dependabot team at Github to create [sbt-github-dependency-graph](https://github.com/scalacenter/sbt-github-dependency-graph): an sbt plugin that can submit a report of all the dependencies to Github through the experimental Graph Dependency API.
-This plugin will be released along with its associated Github action as soon as Github makes the API public.
-Thanks to this tool, you will be able to view the [dependency graph](https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-the-dependency-graph) of your sbt projects in the Github UI and you will receive Dependabot alerts on vulnerable dependencies.
+We collaborated with the Dependabot team at GitHub to create [sbt-github-dependency-graph](https://github.com/scalacenter/sbt-github-dependency-graph): an sbt plugin that can submit a report of all the dependencies to GitHub through the experimental Graph Dependency API.
+This plugin will be released along with its associated GitHub action as soon as GitHub makes the API public.
+Thanks to this tool, you will be able to view the [dependency graph](https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-the-dependency-graph) of your sbt projects in the GitHub UI and you will receive Dependabot alerts on vulnerable dependencies.
 
 ### Getting started with coursier ([SCP-026](https://github.com/scalacenter/advisoryboard/blob/main/proposals/026-solidify-getting-started-with-coursier.md))
 

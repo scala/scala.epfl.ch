@@ -222,7 +222,7 @@ the detailed outcomes of the summit in this [blog article](https://scala-lang.or
 
 For Scala 2 and Scala 3.
 
-[scalacenter/sbt-dependency-submission](https://github.com/scalacenter/sbt-dependency-submission) is a Github action that submits all the dependencies of an sbt project to Github for scanning security vulnerabilities.
+[scalacenter/sbt-dependency-submission](https://github.com/scalacenter/sbt-dependency-submission) is a GitHub action that submits all the dependencies of an sbt project to GitHub for scanning security vulnerabilities.
 
 We made it possible to submit the dependencies of several sbt builds in the same workflow, in [#93](https://github.com/scalacenter/sbt-dependency-submission/pull/93) and [#96](https://github.com/scalacenter/sbt-dependency-submission/pull/96).
 

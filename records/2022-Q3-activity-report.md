@@ -71,7 +71,7 @@ Ideally we would like to be able to also run the tests in the background but thi
 
 For Scala 3 and Scala 2.
 
-We released [`scalacenter/sbt-dependency-submission`](https://github.com/scalacenter/sbt-dependency-submission) a Github action that submits the full graph of dependencies of an sbt project to Github for security scanning.
+We released [`scalacenter/sbt-dependency-submission`](https://github.com/scalacenter/sbt-dependency-submission) a GitHub action that submits the full graph of dependencies of an sbt project to GitHub for security scanning.
 It is used in more than [50 open repositories](https://github.com/scalacenter/sbt-dependency-submission/network/dependents?package_id=UGFja2FnZS0zMjE3ODc0ODM1).
 It can also be used in private repositories.
 
