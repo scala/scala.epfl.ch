@@ -252,3 +252,12 @@ members:
     photo: /resources/img/nouguier.jpg
     contact_for: [scalacDebugging]
     active: true
+  - member: aymane
+    name: Aymane Lamyaghri
+    title: Intern
+    email: aymane.lamyaghri@epfl.ch
+    github: aymanelamyaghri
+    twitter: 
+    photo: /resources/img/aymane.jpeg
+    contact_for: 
+    active: true
