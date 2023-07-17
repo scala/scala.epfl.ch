@@ -1,5 +1,6 @@
 ---
 layout: contact
+title: Scala Center Roadmap for 2023 Q2
 ---
 
 This page lists the projects that the Scala Center are working on during
@@ -72,7 +73,7 @@ and to help the community to contribute to the website.
 We plan to modernize the Scala website, and to integrate better the Scala 2
 and Scala 3 documentation.
 
-Following up on [the work]({% link records/2022-Q1-activity-report.md %})
+Following up on [the work]({% link records/2023-Q1-activity-report.md %})
 we did in the previous quarter, we plan to polish further the content of the
 website.
 
