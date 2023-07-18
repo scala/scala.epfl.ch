@@ -270,21 +270,33 @@
                 <a href="" class="col-md-6 col-xs-12" target="_blank">new rep</a>
               </div>
               <p>For information on the community representatives, see <a href="https://www.scala-lang.org/blog/2019/03/18/announcing-new-community-representative.html">this blog post</a>.-->
-              <span class="subtitle col-sm-12">Former contributions:</span>
+              <input type="checkbox" id="toggle-list" style="display: none;">
+              <label for="toggle-list" class="subtitle col-sm-12">Former contributions</label>
               <div class="text-center back-level clearfix">
-                <ul style="list-style-type: none; margin: 0; padding: 0;">
-                  <li>Goldman Sachs</li>
-                  <li>Twitter</li>
-                  <li>Databricks</li>
-                  <li>Swissborg</li>
-                  <li>Knoldus</li>
-                  <li>Ionut Neagu</li>
-                  <li>Andy Hicks</li>
-                  <li>Trond Bjerkstand</li>
-                  <li>Heiko Seeberger</li>
+                <ul id="contributions-list" style="list-style-type: none; margin: 0; padding: 0;">
+                  <li class="transparent-text">Goldman Sachs</li>
+                  <li class="transparent-text">Twitter</li>
+                  <li class="transparent-text">Databricks</li>
+                  <li class="transparent-text">Swissborg</li>
+                  <li class="transparent-text">Knoldus</li>
+                  <li class="transparent-text">Ionut Neagu</li>
+                  <li class="transparent-text">Andy Hicks</li>
+                  <li class="transparent-text">Trond Bjerkstand</li>
+                  <li class="transparent-text">Heiko Seeberger</li>
                 </ul>
               </div>
-              <div class="col-md-12 founding-blurb">
+              <style>
+                #toggle-list:checked ~ .text-center.back-level.clearfix #contributions-list {
+                  display: block;
+                }
+                .text-center.back-level.clearfix #contributions-list {
+                  display: none;
+                }
+                .transparent-text {
+                  opacity: 0.3;
+                }
+              </style>
+            <div class="col-md-12 founding-blurb">
                 <p>
                   The Scala Center is backed by <a href="http://epfl.ch" target="_blank">EPFL</a>, a world-class research
                   university in Lausanne, Switzerland, several industries that depend
