@@ -1,6 +1,6 @@
 ---
 layout: contact
-title: Scala Center Roadmap for 2023 Q2
+title: Scala Center Roadmap for 2023 Q3
 ---
 
 This page lists the projects that the Scala Center are working on during
@@ -10,7 +10,7 @@ the current quarter. We also post regular updates about our projects on the
 To have more information about our _completed_ projects, please see the
 [quarterly activity reports]({% link records.md %}).
 
-## Roadmap for 2023 Q2
+## Roadmap for 2023 Q3
 {: .no_toc}
 
 The following sections present our plan for the current quarter. Every
@@ -25,6 +25,26 @@ their expected outcome on the Scala community.
 Our mission is to reduce the number of bugs in the compiler implementation,
 to help the community to contribute to these tools, and to make sure they
 evolve in a way that takes into account the needs of the community.
+
+#### Improve the Support of Polymorphic Functions
+
+Scala has been supporting polymorphic methods for a long time. Scala 3 introduced support for [polymorphic functions](https://docs.scala-lang.org/scala3/reference/new-types/polymorphic-function-types.html), but they are still inconvenient to use today due to their verbosity.
+
+In the previous quarter, we contributed several improvements to the ergonomics of polymorphic functions ([dotty#17548](https://github.com/lampepfl/dotty/pull/17548), [dotty#18041](https://github.com/lampepfl/dotty/pull/18041)). Earlier this year, we proposed [SIP-49: Polymorphic Eta-Expansion](https://github.com/scala/improvement-proposals/pull/49) to automatically convert partially applied polymorphic methods into polymorphic functions. Since then, we have developed the more general approach of [type parameter clause inference](https://github.com/lampepfl/dotty/pull/18169) which we intend to submit to the SIP committee this quarter.
+
+#### Stronger Foundations for Match Types
+
+Currently, the behavior of match types is neither well specified nor implemented in a resilient way. Known issues include:
+
+* incoherent behavior in the presence of contravariant type constructors
+* non-determinism in the presence of union and intersection types
+* unpredictable interactions with type inference and type variables
+
+Above all, the underlying issue is that they do not have a specifiable way to reduce without relying on the compiler's `TypeComparer` blackbox. The actual behavior is inherently implementation-specific. This would not be a problem if it all happened before elaboration. Unfortunately, the implementation-specific behavior leaks across TASTy and hence across separate compilation. This is at odds with the requirement for TASTy to have a stable elaboration, and undermines the compatibility guarantees provided by TASTy.
+
+The lack of a good specification also has immediate practical concerns. Questions about the expected or appropriate behavior of match types are a recurring theme, and it is sometimes hard to answer them. Developers have a hard time knowing what they can or cannot rely on in terms of match types.
+
+We have already analyzed the entire open source Scala 3 ecosystem to find how match types. We have identified a small number of reliable ways that they are used. Based on that, we have an informal proposal for a spec, as well as implementation changes to the compiler that would uphold that spec while preserving--to the extent possible--compatibility with already compiled match types.
 
 #### Evolve the Standard Library
 
@@ -73,32 +93,15 @@ and to help the community to contribute to the website.
 We plan to modernize the Scala website, and to integrate better the Scala 2
 and Scala 3 documentation.
 
-Following up on [the work]({% link records/2023-Q1-activity-report.md %})
+Following up on [the work]({% link records/2023-Q2-activity-report.md %})
 we did in the previous quarter, we plan to polish further the content of the
 website.
 
 The next main tasks are:
 
-- Make the [landing page](https://scala-lang.org) more use-case oriented than
-  language-feature oriented,
 - Include testimonials from adopters of Scala,
 - Polish and complete the integration of both Scala 2 and Scala 3 content
   (track our progress in [docs.scala-lang#2481](https://github.com/scala/docs.scala-lang/issues/2481)).
-
-#### Tutorials Documenting the Toolkit
-
-The Scala Toolkit is a collection of libraries that focus on simplicity over flexibility
-or power. Our goal is to make it simpler to use Scala for scripting, to perform some very
-common programming tasks such as reading and writing files, sending HTTP requests,
-parsing JSON etc. We selected MUnit for testing, OS-Lib for working with files and
-processes, UPickle for handling JSON and sttp for sending HTTP requests. We packaged and
-published the Toolkit in the new [scala/toolkit](https://github.com/scala/toolkit)
-repository.
-
-In partnership with VirtusLab and Lightbend, we will contribute to the creation of
-tutorials demonstrating how to solve typical programming tasks such as 'How to write
-a file?', 'How to serialize an object to JSON?', 'How to send an HTTP request?'. You
-can track our progress at [scalacenter/docs.scala-lang#7](https://github.com/scalacenter/docs.scala-lang/pull/7).
 
 #### Language Specification
 
@@ -118,28 +121,9 @@ Our mission is to make sure the tools Scala developers use to edit, analyze, nav
 through, transform, compile, run, and debug Scala programs are as easy to use as
 possible, that they work reliably for everyone, and deliver a great developer experience.
 
-#### Streamline the Scala Installation Procedure
+#### Reduce Compilation Times
 
-[Coursier](https://get-coursier.io) is the recommended tool to [set up and manage a Scala
-development environment](https://docs.scala-lang.org/getting-started/).
-
-However, currently the installation procedure is a bit complicated to follow: there
-are many branches depending on your underlying operating system and computer architectures.
-
-Instead, macOS and Linux users should be able to run a command like:
-
-~~~
-curl https://scala-lang.org/setup.sh | sh
-~~~
-
-That would automatically download the right binaries and invoke `cs setup`.
-
-For Windows users, we would like to fix the following issues:
-[dotty#12550](https://github.com/lampepfl/dotty/issues/12550),
-[coursier#1855](https://github.com/coursier/coursier/issues/1855),
-[coursier#1858](https://github.com/coursier/coursier/issues/1858).
-
-You can track our progress [here](https://contributors.scala-lang.org/t/bugfixes-and-seamless-installation-process-for-coursier/6052).
+We implemented two prototype improvements to Scala 3 project compilation speed - pipelined builds, by adapting the Scala 2.13 implementation, and parallel 2-phase compilation: adapting prior work from [Guillaume Martres](https://github.com/lampepfl/dotty/pull/4767). By adopting sbt pipelining, projects such as [lichess-org/lila](https://github.com/lichess-org/lila) could achieve 31% improvement in time to complete the build. And with two-pass compilation, the Scala 3 compiler could compile 34% faster as well. We hope to continue to develop and ship these improvements over the coming months.
 
 #### Reduce the Number of Ways to Import Scala Projects in IDEs
 
@@ -161,10 +145,9 @@ implemented relies on parsing and analyzing the text output of the compiler.
 This is not efficient because any new “Quick fix” requires additional work in both
 IntelliJ and Metals.
 
-Instead, we would like the compiler itself to produce structured information
-that could be automatically processed by the IDEs. Thus, providing a “Quick
-fix” would only require some little work in the compiler, and the result
-would be available in both IntelliJ and Metals.
+In the past months, we started applying the necessary changes to the tool chain to provide structured information that can directly be consumed by IDEs to provide such “Quick fixes”.
+
+In Q3, we will continue this effort. You can follow our progress [here](https://github.com/lampepfl/dotty/issues/14904).
 
 #### Scala Debugger
 
@@ -173,51 +156,24 @@ is an implementation of the Debug Adapter Protocol for Scala. It allows users
 of VSCode to debug their Scala programs, using features such as breakpoints,
 conditional breakpoints, debug console, log-points and more.
 
-We would like to improve the following points:
+We will improve the expression evaluator and the rendering of the call-stack. You can follow our progress [here](https://github.com/scalacenter/scala-debug-adapter/milestone/4)
 
-- Implement a faster expression evaluator for simple expressions (read a more
-  detailed description [here](https://github.com/scalacenter/student-projects/issues/9)),
-- Filter out synthetic method from the call-stack (read a more detailed description
-  [here](https://github.com/scalacenter/student-projects/issues/11)),
-- Add support for step-by-step execution of programs that contain inlined
-  method calls (read a more detailed description
-  [here](https://github.com/scalacenter/student-projects/issues/8)).
-
-#### Create a Stable API for the Scala 3 Presentation Compiler
+#### Adoption of the Stable API for the Scala 3 Presentation Compiler
 
 Currently, Metals works only for a limited subset of Scala 3 versions. Furthermore, we need to publish
 a new release of Metals after every new release of the compiler to support it.
 
-We would like to create a stable API for the Scala 3 presentation compiler to untie Metals to the compiler
-release cycle and support a wider range of Scala 3 versions (including experimental versions of Scala 3).
+During the previous quarter, we implemented a new, stable, API for the presentation compiler that will allow Metals to work with new releases of Scala without having to change anything in Metals itself.
 
-You can track our progress [here](https://contributors.scala-lang.org/t/stable-presentation-compiler-api/6139).
+The next milestone is to start using this API in Metals, which we will work on during this quarter.
 
-#### Fix the “Maven Coordinates” of sbt Plugins
+#### Strengthen the Infrastructure that Supports the sbt Community Repository
 
-The Maven coordinates of sbt plugins do not conform to the Maven specification,
-as described in [sbt#3410](https://github.com/sbt/sbt/issues/3410). This is
-causing a number of issues:
-- Maven cannot resolve sbt plugin artifacts.
-- Other resolution tools, like Coursier, must implement some sbt-specific hack to resolve them.
-- Some Maven proxies cannot check the validity of sbt plugins and they reject them.
-- The number of downloads of sbt plugins are unavailable on [oss.sonatype.org](https://oss.sonatype.org/).
-- [javadoc.io](https://javadoc.io/) cannot find the scaladoc of sbt plugins.
-- And more
+Every day, thousands of developers (and CI platforms) download artifacts from `https://repo.scala-sbt.org`. In April, we [reported](https://www.scala-lang.org/blog/2023/04/20/sbt-plugins-community-repository.html) on an outage that impacted many developers. Shortly after, Eugene Yokota submitted a [proposal](https://github.com/scalacenter/advisoryboard/blob/main/proposals/029-sbt-community-repository.md) to formalize the management of the artifacts hosted in the repository.
 
-We implemented a solution that enables a smooth transition to valid Maven pattern of sbt plugins in [sbt#7096](https://github.com/sbt/sbt/pull/7096). This solution will be available in sbt 1.9.x, with bidirectional compatibility: sbt 1.9.x will publish the valid and legacy artifacts of sbt plugins, and will be able to resolve the valid or legacy artifacts of sbt plugins.
+We published a [plan](https://contributors.scala-lang.org/t/roadmap-for-the-sbt-community-repository/6195) to reduce the dependency of the Scala ecosystem on the sbt community repository (by migrating the sbt plugins to Maven Central) and to set up a fallback solution in case of outage.
 
-The next steps are to adapt sbt 2.x to publish sbt plugins with valid coordinates,
-and to update Scaladex to correctly index sbt plugins published with the new format.
-
-#### Twirl Support in Metals
-
-[Twirl](https://www.playframework.com/documentation/2.8.x/ScalaTemplates) is a
-template language and engine for Scala. The Twirl templates contain blocks of
-Scala code, and they compile to Scala functions.
-
-We will add support for Twirl files in Metals by using the Twirl engine.
-Corresponding feature request: [metals-feature-requests#50](https://github.com/scalameta/metals-feature-requests/issues/50).
+The next step consists of publishing the Linux packages of sbt releases in a different place than the community repository.
 
 ### Community and Contributor Experience
 
@@ -248,6 +204,14 @@ compilation, or when working on a large program.
 We would like to add support for multiple files to fix those issues. This has
 impacts on many levels, including the UI design. You can track the progress of
 this project [here](https://github.com/scalacenter/student-projects/issues/12).
+
+#### sbt
+
+In June 2023, the Scala Center took over the stewardship of sbt. According to many developer surveys, sbt is the most used build tool for Scala projects. Until 2020, the project was managed by Lightbend. Since then, sbt was led by Eugene Yokota on his free time. Given the importance of the project in the ecosystem, we decided to take over its stewardship.
+
+Our goal is to ensure the stability of the project. We want to make sure the thousands of projects that use sbt will continue to work in the future. At the same time, we want to bring as many improvements as possible (see the ideas suggested by Eugene Yokota [here](https://eed3si9n.com/sbt-2.0-ideas)).
+
+Last, we will investigate ways to secure the resources needed to work on the maintenance and evolution of sbt.
 
 #### Scala Contributors Academy
 
