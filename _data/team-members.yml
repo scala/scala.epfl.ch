@@ -16,7 +16,7 @@ members:
     twitter: julienrf
     photo: /resources/img/julien.png
     contact_for: [education, scalajsBundler, documentationImprovements, collectionsRedesign]
-    active: true
+    active: false
   - member: martin
     name: Martin Odersky
     title: Academic Director
