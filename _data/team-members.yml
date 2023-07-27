@@ -93,7 +93,7 @@ members:
     github:
     twitter:
     photo: /resources/img/fabien.png
-    contact_for: [jenkinsInfrastructure, serverIssues]
+    contact_for: [serverIssues]
     active: true
   - member: sylvie
     name: Sylvie Buchard
