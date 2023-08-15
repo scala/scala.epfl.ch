@@ -26,6 +26,12 @@ jobs:
           bundle exec jekyll build 2> error.log
           cat >&2 error.log
           ( ! grep -qie Error -e Warn error.log )
+      - name: Cache HTMLProofer
+        id: cache-htmlproofer
+        uses: actions/cache@v2
+        with:
+          path: tmp/.htmlproofer
+          key: ${{ runner.os }}-htmlproofer
       - name: HTMLProofer
         run: |
           # Check all links
@@ -35,4 +41,5 @@ jobs:
              --allow-hash-href=true\
              --enforce-https=false\
              --ignore-missing-alt=true\
-             --swap-urls "https\:\/\/scala\.epfl\.ch:"
+             --swap-urls "https\:\/\/scala\.epfl\.ch:"\
+             --cache '{ "timeframe": { "external": "30d" } }'
