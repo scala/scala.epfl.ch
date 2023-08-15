@@ -233,7 +233,7 @@ members:
     github: ckipp01
     photo: /resources/img/chris-kipp.webp
     contact_for: [bloop,metals]
-    active: true
+    active: false
   - member: johanna
     name: Johanna Reichen
     title: Operations Officer & Strategy Advisor
