@@ -28,9 +28,7 @@ this vision, including:
 
 ### How do I become a member?
 
-Reach out to us at [scala.center@epfl.ch](mailto:scala.center@epfl.ch) to let us know what level of
-membership your organization is interested in, and any questions you may have.
-We're happy to set up a call to work through the specifics!
+To apply for the corporate membership, please fill in the [application form](https://airtable.com/appu0c7lWteTaOonJ/shrMKPncLDdVK5cyW). We will get back to you as soon as possible.
 
 ### Dues
 
