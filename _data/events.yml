@@ -32,8 +32,8 @@ scala_lunches:
     - date: 4 September 2023
       time: "12:00pm"
       place: BC 410, EPFL
-      speaker: # to be announced
-      title: # to be announced
+      speaker: Martin Odersky
+      title: Scala's Role in the Programming Languages Ecosystem
     - date: 2 October 2023
       time: "12:00pm"
       place: BC 410, EPFL
