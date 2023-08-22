@@ -57,6 +57,18 @@ $fa-font-path: "./../../bower_components/font-awesome/fonts";
   overflow-x: hidden;
 }
 
+.main-logo-wrap {
+  margin-top: 135px;
+
+  @media (max-width: 991px) {
+    margin-top: 42px;
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 154px;
+  }
+}
+
 /* HEADER */
 .header-logo {
   .swirl {
@@ -121,9 +133,6 @@ $fa-font-path: "./../../bower_components/font-awesome/fonts";
   .popover .arrow {
     left: 50% !important;
   }
-  body.home .splash {
-    height: 815px !important;
-  }
 }
 
 /* HOME */
@@ -180,7 +189,13 @@ body.home {
   }
 
   .splash {
-    height: 650px;
+    height: 720px;
+    @media (max-width: 768px) {
+      height: 770px;
+    }
+    @media (max-width: 520px) {
+      height: 900px;
+    }
     background-color: #15414c;
     position: relative;
     font-family: "Lato", sans-serif;
@@ -255,6 +270,9 @@ body.home {
       line-height: 1.42;
       margin-bottom: 40px;
       font-weight: 400;
+      &.short {
+        height: 14px;
+      }
       b {
         margin-top: 15px;
         display: block;
