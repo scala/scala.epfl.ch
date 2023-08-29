@@ -137,6 +137,10 @@ a.btn {
   // line-height: ensure even-numbered height of button next to large input
   @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $btn-border-radius-large);
 }
+.btn-md {
+  // line-height: ensure even-numbered height of button next to base input
+  @include button-size($padding-large-vertical, $padding-medium-horizontal, $font-size-medium, $line-height-medium, $btn-border-radius-base);
+}
 .btn-sm {
   // line-height: ensure proper height of button next to small input
   @include button-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $btn-border-radius-small);
