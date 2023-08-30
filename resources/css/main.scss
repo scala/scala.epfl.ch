@@ -1381,7 +1381,7 @@ div.search {
     margin-bottom: 20px;
   }
 
-  a {
+  a:not(.btn) {
     text-decoration: underline;
   }
 

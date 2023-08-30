@@ -4,12 +4,10 @@ layout: contact
 
 ## Support the Scala Center!
 
-<a target="_blank" href="https://donate.stripe.com/fZefZYfMC5Y0cXS9AD">Make a one-time donation to the Scala Center</a>.
+<a target="_blank" class="btn btn-default btn-md btn-block" href="https://donate.stripe.com/fZefZYfMC5Y0cXS9AD">Make a one-time donation to the Scala Center</a>
 
 Email us at [scala.center@epfl.ch](mailto:scala.center@epfl.ch) if you'd like to turn your
-one-time donation into a monthly or yearly recurring donation.
-
-(For companies, please consider [the corporate membership options](./corporate-membership.html).)
+one-time donation into a monthly or yearly recurring donation. (For companies, please consider [the corporate membership options](./corporate-membership.html).)
 
 ### Why contribute?
 
