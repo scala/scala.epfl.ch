@@ -45,6 +45,14 @@
           {% else %}
             <img src="/resources/img/project_status_done.png" >
           {% endif %}
+          <div class="project-meta">
+            {% if project.impact %}
+              <p>Impact: {{ project.impact }}</p>
+            {% endif %}
+            {% if project.start_year && project.end_year %}
+              <p>{{ project.start_year }} - {{ project.end_year }}</p>
+            {% endif %}
+          </div>
         </div>
     </div>
 </div>
