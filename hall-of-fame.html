@@ -8,59 +8,17 @@ layout: page
     <div class="clearfix"></div>
 
     <div class="projects">
-        {% assign projects = site.projects | where: "category", "tooling" %}
-        <div class="col-md-12 title tooling">
-            <h2>Tooling</h2>
-        </div>
-        <div class=" project-list tooling">
+        {% for category in site.data.projects %}
+          <div class="col-md-12 title">
+              <h2>{{ category.name }}</h2>
+          </div>
+          <div class=" project-list tooling">
+            {% assign projects = category.projects %}
             {% include project-block.html %}
-        </div>
-        {% assign projects = site.projects | where: "category", "scala3migration" %}
-        <div class="col-md-12 title scala3migration">
-            <h2>Scala 3 Migration</h2>
-        </div>
-        <div class=" project-list scala3migration">
-            {% include project-block.html %}
-        </div>
-        {% assign projects = site.projects | where: "category", "enhancement" %}
-        <div class="col-md-12 title enhancement">
-            <h2>Scala Language Enhancements</h2>
-        </div>
-        <div class=" project-list enhancement">
-            {% include project-block.html %}
-        </div>
-        {% assign projects = site.projects | where: "category", "community" %}
-        <div class="col-md-12 title community">
-            <h2>Community</h2>
-        </div>
-        <div class=" project-list community">
-            {% include project-block.html %}
-        </div>
-        {% assign projects = site.projects | where: "category", "education" %}
-        <div class="col-md-12 title education">
-            <h2>Education</h2>
-        </div>
-        <div class=" project-list education">
-            {% include project-block.html %}
-        </div>
-        {% assign projects = site.projects | where: "category", "process" %}
-        <div class="col-md-12 title process">
-            <h2>Processes Managed by the Scala Center</h2>
-        </div>
-        <div class=" project-list process">
-            {% include project-block.html %}
-        </div>
-        <div class="col-md-12 no-results">
-            <h3>No results found</h3>
-        </div>
+          </div>
+        {% endfor %}
     </div>
 </div>
-
-<div class="modal fade description-dialog" tabindex="-1" role="dialog" id="modal-description">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-body project">
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
+<div class="row icon-attribution">
+    Icons courtesy of <a href="https://blendicons.com/">Blend Icons</a>
 </div>

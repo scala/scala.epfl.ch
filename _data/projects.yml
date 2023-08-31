@@ -1,0 +1,27 @@
+- name: Processes managed by the Scala Center
+  projects:
+    - name: Advisory Board Meeting
+      web: https://scala.epfl.ch/records.html#board-meeting-minutes
+      github: https://github.com/scalacenter/advisoryboard
+      origin:
+      contributors: [sjrd]
+      process: true
+      description: Each quarter the advisory board meets to make recommendations on the activities of the Scala Center.
+
+    - name: Scala Improvement Process
+      web: https://docs.scala-lang.org/sips/index.html
+      github: https://github.com/scala/docs.scala-lang/tree/master/_sips
+      origin: https://github.com/scalacenter/advisoryboard/blob/master/proposals/004-sip-and-slip-coordination.md
+      contributors: [jorge, darja, sjrd]
+      process: true
+      description: "Set of processes involving the community and aiming at improving the Scala language."
+
+
+- name: Education
+  projects:
+    - name: Documentation Improvements
+      web: https://www.scala-lang.org
+      github:
+      origin: https://github.com/scalacenter/advisoryboard/blob/master/proposals/008-websites.md
+      contributors: [julien, jorge]
+      description: "Simplify and upgrade code examples, improve the structure and the design of the scala-lang.org website."

@@ -1,8 +1,6 @@
-
-{% assign projects_by_status = projects | sort: "priority" | reverse %}
-{% for project in projects_by_status %}
+{% for project in projects %}
 <div class="col-md-6">
-    <div class="project" id="{{ project.label }}">
+    <div class="project">
         <div class="header" data-title="{{ project.name }}">
             {% if project.logo %}
             <img class="project-logo" src="{{ project.logo }}" alt="{{ project.name }}"/>
@@ -11,24 +9,19 @@
             {% endif %}
             <div class="references">
                 {% if project.web %}
-                <a href="{{ project.web }}" target="_blank"><i class="fa fa-globe"></i></a>
+                    <a href="{{ project.web }}" target="_blank"><i class="fa fa-globe"></i></a>
                 {% endif %}
                 {% if project.github %}
-                <a href="{{ project.github }}" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="{{ project.github }}" target="_blank"><i class="fa fa-github"></i></a>
+                {% endif %}
+                {% if project.origin %}
+                    <a href="{{ project.origin }}" target="_blank"><i class="fa fa-eye"></i></a>
                 {% endif %}
             </div>
         </div>
         <div class="clearfix"></div>
         <div class="content">
             {{ project.description }}
-            {% if project.content.size > 1 %}
-                <a href="#" class="read-more clearfix">
-                    <i class="fa fa-plus"></i> Read more
-                </a>
-            {% endif %}
-            {% if project.origin %}
-                <a class="origin" href="{{ project.origin }}"><i class="fa fa-eye"></i> <span class="hidden-xs hidden-sm">Origin of the project</span></a>
-            {% endif %}
         </div>
         <div class="hidden modal-content-text">
             {{ project }}
@@ -45,6 +38,13 @@
                 {% endfor %}
             </ul>
             {% endif %}
+        </div>
+        <div class="project_status">
+          {% if project.process %}
+            <img src="/resources/img/project_status_ongoing.png" >
+          {% else %}
+            <img src="/resources/img/project_status_done.png" >
+          {% endif %}
         </div>
     </div>
 </div>
