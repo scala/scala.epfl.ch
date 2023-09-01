@@ -45,7 +45,7 @@
     origin: null
     contributors: [sjrd]
     process: false
-    description: ''
+    description: 'This contribution to Dotty defines how traits are encoded in TASTy.'
     impact: All Scala 3 users
     start_year: 2020
     end_year: 2020
@@ -55,7 +55,7 @@
     origin: https://github.com/scalacenter/advisoryboard/blob/main/proposals/007-collections.md
     contributors: [julien]
     process: false
-    description: ''
+    description: 'Major redesign of the Scala Collections library for Scala 2.13.'
     impact: All Scala users
     start_year: 2016
     end_year: 2018
@@ -65,7 +65,7 @@
     origin: null
     contributors: [jamie]
     process: false
-    description: ''
+    description: 'One of the new features of Scala 3, out-of-the-box support for enums.'
     impact: All Scala 3 users
     start_year: 2020
     end_year: 2020
@@ -78,7 +78,7 @@
     - heather
     - Philipp Haller
     process: false
-    description: ''
+    description: 'Scala Spores, safe mobile closures for legacy versions of Scala.'
     impact: null
     start_year: 2016
     end_year: 2016
