@@ -1585,3 +1585,7 @@ ul.nav {
   // Align right
   text-align: right;
 }
+
+.project-logo-inverted {
+  filter: invert(100%);
+}

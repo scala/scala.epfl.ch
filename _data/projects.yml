@@ -1,6 +1,7 @@
 - name: Language
   projects:
   - name: Scala.js
+    logo: /resources/img/scala-js-dark.png
     web: https://github.com/scala-js/scala-js
     github: https://github.com/scala-js/scala-js
     origin: null
@@ -14,6 +15,8 @@
     start_year: 2018
     end_year: null
   - name: Scala Native
+    logo: /resources/img/scala-native.webp
+    force_name_display: true
     web: https://github.com/scala-native/scala-native
     github: https://github.com/scala-native/scala-native
     origin: null
@@ -97,6 +100,7 @@
 - name: Tooling
   projects:
   - name: Scaladex
+    logo: /resources/img/scaladex-dark.png
     web: https://github.com/scalacenter/scaladex
     github: https://github.com/scalacenter/scaladex
     origin: null
@@ -122,6 +126,8 @@
     start_year: 2017
     end_year: 2017
   - name: Metals
+    logo: /resources/img/metals@2x.png
+    invert_logo_colors: true
     web: https://github.com/scalameta/metals
     github: https://github.com/scalameta/metals
     origin: null
@@ -151,6 +157,8 @@
     start_year: 2017
     end_year: 2018
   - name: Scalafix
+    logo: /resources/img/scalafix@2x.png
+    invert_logo_colors: true
     web: https://github.com/scalacenter/scalafix
     github: https://github.com/scalacenter/scalafix
     origin: null
@@ -165,6 +173,8 @@
     start_year: 2016
     end_year: 2018
   - name: Scastie
+    logo: /resources/img/scastie.png
+    invert_logo_colors: true
     web: https://github.com/ScalaCenter/scastie
     github: https://github.com/ScalaCenter/scastie
     origin: null
@@ -202,6 +212,8 @@
     start_year: 2017
     end_year: 2017
   - name: bloop
+    logo: /records/first-five-years/img/logos/logo-bloop.png
+    force_name_display: true
     web: https://github.com/scalacenter/bloop
     github: https://github.com/scalacenter/bloop
     origin: null

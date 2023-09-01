@@ -3,8 +3,9 @@
     <div class="project">
         <div class="header" data-title="{{ project.name }}">
             {% if project.logo %}
-            <img class="project-logo" src="{{ project.logo }}" alt="{{ project.name }}"/>
-            {% else %}
+            <img class="project-logo {% if project.invert_logo_colors %}project-logo-inverted{% endif %}" src="{{ project.logo }}" alt="{{ project.name }}"/>
+            {% endif %}
+            {% if project.logo == null or project.force_name_display %}
             <h3>{{ project.name }}</h3>
             {% endif %}
             <div class="references">
