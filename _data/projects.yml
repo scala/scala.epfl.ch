@@ -4,6 +4,7 @@
     logo: /resources/img/scala-js-dark.png
     web: https://github.com/scala-js/scala-js
     github: https://github.com/scala-js/scala-js
+    stars: 4.5k
     origin: null
     contributors:
     - sjrd
@@ -19,6 +20,7 @@
     force_name_display: true
     web: https://github.com/scala-native/scala-native
     github: https://github.com/scala-native/scala-native
+    stars: 4.3k
     origin: null
     contributors:
     - ergys
@@ -101,8 +103,9 @@
   projects:
   - name: Scaladex
     logo: /resources/img/scaladex-dark.png
-    web: https://github.com/scalacenter/scaladex
+    web: https://index.scala-lang.org/
     github: https://github.com/scalacenter/scaladex
+    stars: 150+
     origin: null
     contributors:
     - guillaume
@@ -128,8 +131,9 @@
   - name: Metals
     logo: /resources/img/metals@2x.png
     invert_logo_colors: true
-    web: https://github.com/scalameta/metals
+    web: https://scalameta.org/metals/
     github: https://github.com/scalameta/metals
+    stars: 1.9k
     origin: null
     contributors:
     - Olafur Geirsson
@@ -145,8 +149,9 @@
     start_year: 2017
     end_year: null
   - name: scalameta
-    web: https://github.com/scalameta/scalameta
+    web: http://scalameta.org/
     github: https://github.com/scalameta/scalameta
+    stars: 1.1k
     origin: null
     contributors:
     - Eugene Burmako
@@ -159,8 +164,9 @@
   - name: Scalafix
     logo: /resources/img/scalafix@2x.png
     invert_logo_colors: true
-    web: https://github.com/scalacenter/scalafix
+    web: https://scalacenter.github.io/scalafix/
     github: https://github.com/scalacenter/scalafix
+    stars: 700+
     origin: null
     contributors:
     - Olafur Geirsson
@@ -175,8 +181,9 @@
   - name: Scastie
     logo: /resources/img/scastie.png
     invert_logo_colors: true
-    web: https://github.com/ScalaCenter/scastie
+    web: https://scastie.scala-lang.org/
     github: https://github.com/ScalaCenter/scastie
+    stars: 400+
     origin: null
     contributors:
     - OlegYch
@@ -190,8 +197,9 @@
     start_year: 2016
     end_year: 2017
   - name: scalajs-bundler
-    web: https://github.com/scalacenter/scalajs-bundler
+    web: https://scalacenter.github.io/scalajs-bundler
     github: https://github.com/scalacenter/scalajs-bundler
+    stars: 200+
     origin: null
     contributors: [sjrd, julien]
     process: false
@@ -214,8 +222,9 @@
   - name: bloop
     logo: /records/first-five-years/img/logos/logo-bloop.png
     force_name_display: true
-    web: https://github.com/scalacenter/bloop
+    web: https://scalacenter.github.io/bloop/
     github: https://github.com/scalacenter/bloop
+    stars: 800+
     origin: null
     contributors:
     - jorge
@@ -252,6 +261,7 @@
   - name: sbt-missinglink
     web: https://github.com/scalacenter/sbt-missinglink
     github: https://github.com/scalacenter/sbt-missinglink
+    stars: 100+
     origin: null
     contributors:
     - alexandre

@@ -18,6 +18,9 @@
                 {% if project.origin %}
                     <a href="{{ project.origin }}" target="_blank"><i class="fa fa-eye"></i></a>
                 {% endif %}
+                {% if project.stars %}
+                    <a href="{{ project.github }}" target="_blank"><i class="fa fa-star"></i> {{ project.stars }}</a>
+                {% endif %}
             </div>
         </div>
         <div class="clearfix"></div>
