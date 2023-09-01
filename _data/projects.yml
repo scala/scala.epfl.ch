@@ -114,10 +114,10 @@
   - name: Ecosystem sbt upgrade to 1.x
     web: null
     github: null
-    origin: null
-    contributors: []
-    process: false
-    description: ''
+    origin: https://github.com/scalacenter/advisoryboard/blob/main/proposals/013-sbt-migration.md
+    contributors: [guillaume, martinduhem]
+    process: true
+    description: 'Campaign to help ecosystem upgrade to sbt 1.x'
     impact: All the users of the target sbt plugins
     start_year: 2017
     end_year: 2017
@@ -146,20 +146,10 @@
     - Eugene Burmako
     - Denys Shabalin
     process: false
-    description: ''
+    description: 'Library to read, analyze, transform and generate Scala programs'
     impact: All Metals users
     start_year: 2017
     end_year: 2018
-  - name: coursier
-    web: https://github.com/coursier/coursier
-    github: https://github.com/coursier/coursier
-    origin: null
-    contributors: []
-    process: false
-    description: ''
-    impact: All sbt users
-    start_year: 2018
-    end_year: 2019
   - name: Scalafix
     web: https://github.com/scalacenter/scalafix
     github: https://github.com/scalacenter/scalafix
@@ -193,9 +183,9 @@
     web: https://github.com/scalacenter/scalajs-bundler
     github: https://github.com/scalacenter/scalajs-bundler
     origin: null
-    contributors: []
+    contributors: [sjrd, julien]
     process: false
-    description: ''
+    description: 'Module bundler for Scala.js projects that use NPM packages.'
     impact: null
     start_year: 2016
     end_year: 2017
@@ -221,7 +211,7 @@
     - tgodzik
     - Marek Zarnowski
     process: false
-    description: Success through Metals
+    description: 'Bloop is a build server and CLI tool to compile, test and run Scala fast from any editor or build tool.'
     impact: All Metals users
     start_year: 2017
     end_year: 2019
@@ -229,21 +219,21 @@
     web: null
     github: null
     origin: null
-    contributors: []
+    contributors: [sjrd]
     process: false
-    description: Scala.js for Scala 3
+    description: Add Scala.js support for Scala 3
     impact: All Scala.js users + library maintainers
     start_year: 2020
     end_year: 2020
   - name: BSP in sbt
     web: null
     github: null
-    origin: null
+    origin: https://github.com/scalacenter/advisoryboard/blob/main/proposals/023-bsp.md
     contributors:
     - adrien
     - Eugene Yokota
     process: false
-    description: Support for Build Server Protocol in sbt
+    description: Support for Build Server Protocol in sbt to ease integration of sbt with IDEs and language servers.
     impact: null
     start_year: 2020
     end_year: 2020
@@ -262,10 +252,10 @@
   - name: sbt-eviction-rules
     web: https://github.com/scalacenter/sbt-eviction-rules
     github: https://github.com/scalacenter/sbt-eviction-rules
-    origin: null
-    contributors: []
+    origin: https://github.com/scalacenter/advisoryboard/blob/main/proposals/020-sbt-transitive-dependencies-conflicts.md
+    contributors: [alexandre, julien]
     process: false
-    description: ''
+    description: 'Eviction warnings plugin for SBT.'
     impact: null
     start_year: 2020
     end_year: 2020
