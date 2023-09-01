@@ -34,8 +34,9 @@ To apply for the corporate membership, please fill in the [application form](htt
 
 Advisory Board Membership dues are paid annually.
 
-- Monetary Contribution: organizations that are significantly invested in Scala, invited to join at the 50,000CHF level.
-- Engineering Time Contribution: there is an option to contribute engineering time in 50,000CHF equivalent to become a member. Please get in touch with us to discuss this option.
+- Advisory Board: organizations that are significantly invested in Scala, invited to join at the 50,000CHF level.
+- Affiliate: organizations that are moderately invested in Scala, invited to join at the 15,000CHF level.
+- Engineering Time Contribution: there is an option to contribute engineering time in 50,000CHF or 15,000 equivalent to become a member or affiliate. Please get in touch with us to discuss this option.
 
 Organizations that are unable to join at the above levels may consider making a
 contribution totalling 1,500CHF or more. With this contribution, you will be
