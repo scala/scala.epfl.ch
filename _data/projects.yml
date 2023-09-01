@@ -259,3 +259,33 @@
     impact: null
     start_year: 2020
     end_year: 2020
+
+- name: Governance
+  projects:
+  - name: Scala Improvement Process for Scala 3
+    web: https://docs.scala-lang.org/sips/
+    github: null
+    origin: null
+    contributors: [julien, darja]
+    process: true
+    description: The Scala Improvement Process (SIP) is the process by which new features
+      are added to the Scala language.
+    impact: All Scala users
+  - name: Tooling Summit
+    web: https://www.scala-lang.org/blog/2023/04/11/march-2023-scala-tooling-summit.html
+    github: null
+    origin: null
+    contributors: [darja, chris, johanna]
+    process: true
+    description: The Scala Tooling Summit is a bi-yearly event where tooling developers
+      meet to make decisions on the future of Scala tooling.
+    impact: All Scala users
+  - name: Scala Center Advisory Board
+    web: https://scala.epfl.ch/records.html
+    github: null
+    origin: null
+    contributors: [darja]
+    process: true
+    description: The Scala Center Advisory Board is a group of representatives from
+      the Scala community and industry that meets regularly to discuss the current state and future of Scala.
+    impact: null
