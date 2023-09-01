@@ -5,7 +5,7 @@ layout: contact
 ## Corporate Membership
 
 Corporate members make contributions that are used to fund for-the-good-of-all
-initiatives for the Scala community, which includes but is not limited to:
+initiatives for the Scala community, which include but are not limited to:
 providing scaffolding to help the Scala community develop, publish, find, and
 evaluate Scala libraries, improving the landscape of Scala's libraries, and
 coordinating and directing the development of libraries/tools of broad benefit
@@ -32,27 +32,26 @@ To apply for the corporate membership, please fill in the [application form](htt
 
 ### Dues
 
-Membership dues are paid annually. The Scala Center has two levels of corporate
-membership: Advisory Board, and Affiliate.
+Advisory Board Membership dues are paid annually.
 
-- Advisory Board: organizations that are significantly invested in Scala, invited to join at the 50,000CHF level.
-- Affiliate: organizations that are moderately invested in Scala, invited to join at the 15,000CHF level.
+- Monetary Contribution: organizations that are significantly invested in Scala, invited to join at the 50,000CHF level.
+- Engineering Time Contribution: there is an option to contribute engineering time in 50,000CHF equivalent to become a member. Please get in touch with us to discuss this option.
 
 Organizations that are unable to join at the above levels may consider making a
 contribution totalling 1,500CHF or more. With this contribution, you will be
-recognized as a Backer-level donor alongside of Advisory Board and Affiliate
-members on the Scala Center homepage.
+recognized as a Backer-level donor alongside other Advisory Board membrers on the Scala Center homepage.
 
 ### Benefits
 
 Corporate members receive:
 
-- the opportunity to participate on the Scala Center's Advisory Board
-- the potential to propose and vote on recommendations for Scala Center initiatives which benefit the overall Scala open source ecosystem or the Scala educational landscape
+- The opportunity to participate on the Scala Center's Advisory Board
+- The potential to propose and vote on recommendations for Scala Center initiatives which benefit the overall Scala open source ecosystem or the Scala educational landscape
 - Scala recruitment opportunities at EPFL
 - Quarterly reports on the activities of the Scala Center
 - Your logo and link on the Scala Center homepage
-- the opportunity to participate in a yearly get-together at the EPFL campus to meet core contributors and other Advisory Board and Affiliate members
+- The opportunity to participate in a yearly get-together at the EPFL campus to meet core contributors and other Advisory Board and Affiliate members
+- And more - contact us for full details
 
 ### Questions?
 
