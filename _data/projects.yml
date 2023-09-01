@@ -1,4 +1,100 @@
-- name: Library
+- name: Language
+  projects:
+  - name: Scala.js
+    web: https://github.com/scala-js/scala-js
+    github: https://github.com/scala-js/scala-js
+    origin: null
+    contributors:
+    - sjrd
+    - Tobias Schlatter
+    process: false
+    description: Scala.js is a compiler that allows you to write Scala code that runs
+      on JavaScript platforms.
+    impact: 200,000 dl / month
+    start_year: 2018
+    end_year: null
+  - name: Scala Native
+    web: https://github.com/scala-native/scala-native
+    github: https://github.com/scala-native/scala-native
+    origin: null
+    contributors:
+    - ergys
+    - wmazur
+    - Lee Tibbert
+    - Eric Richardson
+    - sjrd
+    process: false
+    description: 'Scala Native is a compiler that allows you to write Scala code that
+      runs on native platforms (such as Linux, macOS, and Windows) without the JVM.'
+    impact: 32,000 dl / month
+    start_year: 2020
+    end_year: null
+  - name: TASTy Reader in scalac
+    web: null
+    github: null
+    origin: https://github.com/scalacenter/advisoryboard/blob/main/proposals/018-converging-214-30.md
+    contributors: [jamie]
+    process: false
+    description: 'A collaborative effort to evolve TASTY into a shared format for Scala 2 and 3'
+    impact: null
+    start_year: 2019
+    end_year: 2020
+  - name: Scala 3 trait encoding
+    web: https://github.com/lampepfl/dotty/pull/8652
+    github: https://github.com/lampepfl/dotty/pull/8652
+    origin: null
+    contributors: [sjrd]
+    process: false
+    description: ''
+    impact: All Scala 3 users
+    start_year: 2020
+    end_year: 2020
+  - name: Scala 2.13 Collections
+    web: null
+    github: null
+    origin: https://github.com/scalacenter/advisoryboard/blob/main/proposals/007-collections.md
+    contributors: [julien]
+    process: false
+    description: ''
+    impact: All Scala users
+    start_year: 2016
+    end_year: 2018
+  - name: Scala 3 enums
+    web: null
+    github: null
+    origin: null
+    contributors: [jamie]
+    process: false
+    description: ''
+    impact: All Scala 3 users
+    start_year: 2020
+    end_year: 2020
+  - name: Spores
+    web: https://github.com/scalacenter/spores
+    github: https://github.com/scalacenter/spores
+    origin: null
+    contributors:
+    - jorge
+    - heather
+    - Philipp Haller
+    process: false
+    description: ''
+    impact: null
+    start_year: 2016
+    end_year: 2016
+  - name: Compiler profiling
+    web: https://github.com/scalacenter/scalac-profiling
+    github: https://github.com/scalacenter/scalac-profiling
+    origin: null
+    contributors: []
+    process: false
+    description: Compiler profiling is a project focused on providing better compilation
+      performance information.
+    impact: ~1000 dl / month
+    start_year: 2017
+    end_year: 2018
+
+- name: Tooling
   projects:
   - name: Scaladex
     web: https://github.com/scalacenter/scaladex
@@ -9,23 +105,39 @@
     - vincenzobaz
     - julien
     - meriam
-    process: true
     description: Scaladex is a project that serves as a central repository for Scala
       libraries. It provides a platform for developers to discover and share Scala
       libraries.
     impact: null
     start_year: 2016
     end_year: 2017
-  - name: Scala 2.13 Collections
+  - name: Ecosystem sbt upgrade to 1.x
     web: null
     github: null
     origin: null
     contributors: []
     process: false
     description: ''
-    impact: All Scala users
-    start_year: 2016
-    end_year: 2018
+    impact: All the users of the target sbt plugins
+    start_year: 2017
+    end_year: 2017
+  - name: Metals
+    web: https://github.com/scalameta/metals
+    github: https://github.com/scalameta/metals
+    origin: null
+    contributors:
+    - Olafur Geirsson
+    - tgodzik
+    - Gabriele Petronela
+    - chris
+    - meriam
+    process: false
+    description: Metals is a language server for Scala that works with VS Code, Vim,
+      Sublime, Atom, and Emacs. It provides features like code completion, go to definition,
+      hover documentation, and more.
+    impact: 100,000 installs of the VS Code plugin
+    start_year: 2017
+    end_year: null
   - name: scalameta
     web: https://github.com/scalameta/scalameta
     github: https://github.com/scalameta/scalameta
@@ -48,104 +160,20 @@
     impact: All sbt users
     start_year: 2018
     end_year: 2019
-  - name: Scala.js
-    web: https://github.com/scala-js/scala-js
-    github: https://github.com/scala-js/scala-js
+  - name: Scalafix
+    web: https://github.com/scalacenter/scalafix
+    github: https://github.com/scalacenter/scalafix
     origin: null
     contributors:
-    - sjrd
-    - Tobias Schlatter
+    - Olafur Geirsson
+    - meriam
+    - guillaume
     process: false
-    description: Scala.js is a compiler that allows you to write Scala code that runs
-      on JavaScript platforms.
-    impact: 200,000 dl / month
-    start_year: 2018
-    end_year: null
-  - name: sbt-missinglink
-    web: https://github.com/scalacenter/sbt-missinglink
-    github: https://github.com/scalacenter/sbt-missinglink
-    origin: null
-    contributors:
-    - alexandre
-    - sjrd
-    process: false
-    description: SBT transitive dependency conflicts management improvements
-    impact: null
-    start_year: 2019
-    end_year: 2019
-  - name: Scala Native
-    web: https://github.com/scala-native/scala-native
-    github: https://github.com/scala-native/scala-native
-    origin: null
-    contributors:
-    - ergys
-    - wmazur
-    - Lee Tibbert
-    - Eric Richardson
-    - sjrd
-    process: false
-    description: Just released 0.4.0, looking good
-    impact: 32,000 dl / month
-    start_year: 2020
-    end_year: null
-  - name: sbt-eviction-rules
-    web: https://github.com/scalacenter/sbt-eviction-rules
-    github: https://github.com/scalacenter/sbt-eviction-rules
-    origin: null
-    contributors: []
-    process: false
-    description: ''
-    impact: null
-    start_year: 2020
-    end_year: 2020
-- name: Compiler
-  projects:
-  - name: Spores
-    web: https://github.com/scalacenter/spores
-    github: https://github.com/scalacenter/spores
-    origin: null
-    contributors:
-    - jorge
-    - heather
-    - Philipp Haller
-    process: false
-    description: Completed
-    impact: null
+    description: Scalafix is a tool to automatically rewrite Scala code. It provides
+      a convenient way to define and apply code transformations to large codebases.
+    impact: 50,000 dl / month
     start_year: 2016
-    end_year: 2016
-  - name: Compiler profiling
-    web: https://github.com/scalacenter/scalac-profiling
-    github: https://github.com/scalacenter/scalac-profiling
-    origin: null
-    contributors: []
-    process: false
-    description: Compiler profiling is a project focused on providing better compilation
-      performance information.
-    impact: ~1000 dl / month
-    start_year: 2017
     end_year: 2018
-  - name: TASTy Reader in scalac
-    web: null
-    github: null
-    origin: null
-    contributors: []
-    process: false
-    description: ''
-    impact: null
-    start_year: 2019
-    end_year: 2020
-  - name: Scala 3 trait encoding
-    web: https://github.com/lampepfl/dotty/pull/8652
-    github: https://github.com/lampepfl/dotty/pull/8652
-    origin: null
-    contributors: []
-    process: false
-    description: Scala 3 trait encoding
-    impact: All Scala 3 users
-    start_year: 2020
-    end_year: 2020
-- name: Tooling
-  projects:
   - name: Scastie
     web: https://github.com/ScalaCenter/scastie
     github: https://github.com/ScalaCenter/scastie
@@ -171,20 +199,6 @@
     impact: null
     start_year: 2016
     end_year: 2017
-  - name: Scalafix
-    web: https://github.com/scalacenter/scalafix
-    github: https://github.com/scalacenter/scalafix
-    origin: null
-    contributors:
-    - Olafur Geirsson
-    - meriam
-    - guillaume
-    process: false
-    description: Scalafix is a tool to automatically rewrite Scala code. It provides
-      a convenient way to define and apply code transformations to large codebases.
-    impact: 50,000 dl / month
-    start_year: 2016
-    end_year: 2018
   - name: Classpath shrinker
     web: https://github.com/scalacenter/classpath-shrinker
     github: https://github.com/scalacenter/classpath-shrinker
@@ -197,23 +211,6 @@
     impact: ~1000 dl / month
     start_year: 2017
     end_year: 2017
-  - name: Metals
-    web: https://github.com/scalameta/metals
-    github: https://github.com/scalameta/metals
-    origin: null
-    contributors:
-    - Olafur Geirsson
-    - tgodzik
-    - Gabriele Petronela
-    - chris
-    - meriam
-    process: false
-    description: Metals is a language server for Scala that works with VS Code, Vim,
-      Sublime, Atom, and Emacs. It provides features like code completion, go to definition,
-      hover documentation, and more.
-    impact: 100,000 installs of the VS Code plugin
-    start_year: 2017
-    end_year: null
   - name: bloop
     web: https://github.com/scalacenter/bloop
     github: https://github.com/scalacenter/bloop
@@ -250,27 +247,25 @@
     impact: null
     start_year: 2020
     end_year: 2020
-- name: Process
-  projects:
-  - name: Ecosystem sbt upgrade to 1.x
-    web: null
-    github: null
+  - name: sbt-missinglink
+    web: https://github.com/scalacenter/sbt-missinglink
+    github: https://github.com/scalacenter/sbt-missinglink
+    origin: null
+    contributors:
+    - alexandre
+    - sjrd
+    process: false
+    description: SBT transitive dependency conflicts management improvements
+    impact: null
+    start_year: 2019
+    end_year: 2019
+  - name: sbt-eviction-rules
+    web: https://github.com/scalacenter/sbt-eviction-rules
+    github: https://github.com/scalacenter/sbt-eviction-rules
     origin: null
     contributors: []
     process: false
     description: ''
-    impact: All the users of the target sbt plugins
-    start_year: 2017
-    end_year: 2017
-- name: Language
-  projects:
-  - name: Scala 3 enums
-    web: null
-    github: null
-    origin: null
-    contributors: []
-    process: false
-    description: Scala 3 enums
-    impact: All Scala 3 users
+    impact: null
     start_year: 2020
     end_year: 2020
