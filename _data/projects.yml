@@ -1,7 +1,8 @@
 - name: Language
   projects:
   - name: Scala.js
-    logo: /resources/img/scala-js-dark.png
+    logo: /resources/img/scala-js-logo-2.svg
+    force_name_display: true
     web: https://github.com/scala-js/scala-js
     github: https://github.com/scala-js/scala-js
     stars: 4.5k
@@ -29,19 +30,18 @@
     - Eric Richardson
     - sjrd
     process: false
-    description: 'Scala Native is a compiler that allows you to write Scala code that
-      runs on native platforms (such as Linux, macOS, and Windows) without the JVM.'
+    description: 'We completed critical work including support for Scala 2.12, 2.13 and 3.x versions.'
     impact: 32,000 dl / month
     start_year: 2020
-    end_year: null
-  - name: TASTy Reader in scalac
+    end_year: 2022
+  - name: TASTy Reader for Scala 2.13
     web: null
     github: null
     origin: https://github.com/scalacenter/advisoryboard/blob/main/proposals/018-converging-214-30.md
     contributors: [jamie]
     process: false
-    description: 'A collaborative effort to evolve TASTY into a shared format for Scala 2 and 3'
-    impact: null
+    description: 'Adding forwards compatibility to use Scala 3 compiled artefacts from Scala 2.13.'
+    impact: Eases migration to Scala 3
     start_year: 2019
     end_year: 2020
   - name: Scala 3 trait encoding
@@ -50,7 +50,7 @@
     origin: null
     contributors: [sjrd]
     process: false
-    description: 'This contribution to Dotty defines how traits are encoded in TASTy.'
+    description: 'This contribution to Scala 3 ensures bytecode compatibility with Scala 2.13.'
     impact: All Scala 3 users
     start_year: 2020
     end_year: 2020
@@ -112,21 +112,9 @@
     - vincenzobaz
     - julien
     - meriam
-    description: Scaladex is a project that serves as a central repository for Scala
-      libraries. It provides a platform for developers to discover and share Scala
-      libraries.
-    impact: null
+    description: Scaladex indexes Scala libraries, providing search functionality and categorisation.
+    impact: discover libraries to use in your projects
     start_year: 2016
-    end_year: 2017
-  - name: Ecosystem sbt upgrade to 1.x
-    web: null
-    github: null
-    origin: https://github.com/scalacenter/advisoryboard/blob/main/proposals/013-sbt-migration.md
-    contributors: [guillaume, martinduhem]
-    process: true
-    description: 'Campaign to help ecosystem upgrade to sbt 1.x'
-    impact: All the users of the target sbt plugins
-    start_year: 2017
     end_year: 2017
   - name: Metals
     logo: /resources/img/metals@2x.png
@@ -142,25 +130,10 @@
     - chris
     - meriam
     process: false
-    description: Metals is a language server for Scala that works with VS Code, Vim,
-      Sublime, Atom, and Emacs. It provides features like code completion, go to definition,
-      hover documentation, and more.
-    impact: 100,000 installs of the VS Code plugin
+    description: Metals is a Scala language server that supports many text editors, providing rich IDE features, improving productivity.
+    impact: 400,000 installs of the VS Code plugin
     start_year: 2017
     end_year: null
-  - name: scalameta
-    web: http://scalameta.org/
-    github: https://github.com/scalameta/scalameta
-    stars: 1.1k
-    origin: null
-    contributors:
-    - Eugene Burmako
-    - Denys Shabalin
-    process: false
-    description: 'Library to read, analyze, transform and generate Scala programs'
-    impact: All Metals users
-    start_year: 2017
-    end_year: 2018
   - name: Scalafix
     logo: /resources/img/scalafix@2x.png
     invert_logo_colors: true
@@ -173,8 +146,7 @@
     - meriam
     - guillaume
     process: false
-    description: Scalafix is a tool to automatically rewrite Scala code. It provides
-      a convenient way to define and apply code transformations to large codebases.
+    description: Scalafix can automatically rewrite Scala code at scale. Ship your custom code migrations, lint rules and refactorings.
     impact: 50,000 dl / month
     start_year: 2016
     end_year: 2018
@@ -190,12 +162,33 @@
     - guillaume
     - vincenzobaz
     process: false
-    description: Scastie is a tool for experimenting with Scala code in the browser.
-      It allows users to write, compile, and run Scala code snippets in an interactive
-      editor.
-    impact: null
+    description: Scastie is an online environment for running Scala snippets, supporting sharing, IDE features and library dependencies.
+    impact: 27,000 users / month
     start_year: 2016
     end_year: 2017
+  - name: Ecosystem sbt upgrade to 1.x
+    web: null
+    github: null
+    origin: https://github.com/scalacenter/advisoryboard/blob/main/proposals/013-sbt-migration.md
+    contributors: [guillaume, martinduhem]
+    process: true
+    description: 'Campaign to help ecosystem upgrade to sbt 1.x'
+    impact: All the users of the target sbt plugins
+    start_year: 2017
+    end_year: 2017
+  - name: scalameta
+    web: http://scalameta.org/
+    github: https://github.com/scalameta/scalameta
+    stars: 1.1k
+    origin: null
+    contributors:
+    - Eugene Burmako
+    - Denys Shabalin
+    process: false
+    description: 'Library to read, analyze, transform and generate Scala programs'
+    impact: All Metals users
+    start_year: 2017
+    end_year: 2018
   - name: scalajs-bundler
     web: https://scalacenter.github.io/scalajs-bundler
     github: https://github.com/scalacenter/scalajs-bundler
