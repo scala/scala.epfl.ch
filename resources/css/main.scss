@@ -1457,7 +1457,7 @@ div.search {
 
 ul.nav {
   li.social {
-    width: 52px;
+    width: 35px;
     &.first {
       margin-left: 10px;
       @media(max-width: $screen-sm) {
@@ -1469,4 +1469,123 @@ ul.nav {
       margin-top: -3px;
     }
   }
+}
+
+/* HALL OF FAME */
+.project {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  height: 225px;
+  overflow: hidden;
+}
+
+.project .header {
+  display: flex;
+  align-items: center;
+}
+
+.project .header h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.projects .title {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.project .header .project-logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.project .references {
+  margin-left: auto;
+  font-size: 14px;
+}
+
+.project .references a {
+  color: #999;
+  margin-left: 10px;
+}
+
+.project .content {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.project .project_status img {
+  width: 50px;
+  height: 50px;
+
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.project .status.active {
+  background: green;
+  color: white;
+}
+
+.project .status.incubating {
+  background: orange;
+  color: white;
+}
+
+.project .status.contributed {
+  background: blue;
+  color: white;
+}
+
+.contributors ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  // Align to the bottom-right
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+}
+
+.contributors li {
+  display: inline-block;
+  margin-right: -25px;
+}
+
+.contributors img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.icon-attribution {
+  font-size: 12px;
+  color: #999;
+  margin-top: 10px;
+  align-self: center;
+
+  a {
+    color: #999;
+  }
+}
+
+.project-meta {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #999;
+
+  // Align right
+  text-align: right;
+}
+
+.project-logo-inverted {
+  filter: invert(100%);
 }

@@ -1,0 +1,31 @@
+---
+layout: page
+---
+<div class="row">
+    <div class="col-md-12">
+        <h1>Hall of Fame</h1>
+        <p>
+          Below, you can find a showcase of the projects we successfully completed.
+          We are proud of our work and are grateful to all the people who contributed to it
+          and all the support we received from the community and our partners.
+        </p>
+    </div>
+    <div class="col-md-12 search">
+        <input class="col-xs-12 form-control" value="" placeholder="Search a Project..." type="text">
+    </div>
+    <div class="clearfix"></div>
+    <div class="projects">
+        {% for category in site.data.projects %}
+          <div class="col-md-12 title">
+              <h2>{{ category.name }}</h2>
+          </div>
+          <div class=" project-list tooling">
+            {% assign projects = category.projects %}
+            {% include project-block.html %}
+          </div>
+        {% endfor %}
+    </div>
+</div>
+<div class="row icon-attribution">
+    Icons courtesy of <a href="https://blendicons.com/">Blend Icons</a>
+</div>

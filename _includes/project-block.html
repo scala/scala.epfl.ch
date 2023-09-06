@@ -1,36 +1,31 @@
-
-{% assign projects_by_status = projects | sort: "priority" | reverse %}
-{% for project in projects_by_status %}
+{% for project in projects %}
 <div class="col-md-6">
-    <div class="project" id="{{ project.label }}">
+    <div class="project">
         <div class="header" data-title="{{ project.name }}">
             {% if project.logo %}
-            <img class="project-logo" src="{{ project.logo }}" alt="{{ project.name }}"/>
-            {% else %}
+            <img class="project-logo {% if project.invert_logo_colors %}project-logo-inverted{% endif %}" src="{{ project.logo }}" alt="{{ project.name }}"/>
+            {% endif %}
+            {% if project.logo == null or project.force_name_display %}
             <h3>{{ project.name }}</h3>
             {% endif %}
             <div class="references">
-                {% if project.status %}
-                    <span class="status {{ project.status | downcase | remove: ' ' | remove: '!'}}">
-                        {{ project.status }}
-                    </span>
-                {% endif %}
                 {% if project.web %}
-                <a href="{{ project.web }}" target="_blank"><i class="fa fa-globe"></i></a>
+                    <a href="{{ project.web }}" target="_blank"><i class="fa fa-globe"></i></a>
                 {% endif %}
                 {% if project.github %}
-                <a href="{{ project.github }}" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="{{ project.github }}" target="_blank"><i class="fa fa-github"></i></a>
+                {% endif %}
+                {% if project.origin %}
+                    <a href="{{ project.origin }}" target="_blank"><i class="fa fa-eye"></i></a>
+                {% endif %}
+                {% if project.stars %}
+                    <a href="{{ project.github }}" target="_blank"><i class="fa fa-star"></i> {{ project.stars }}</a>
                 {% endif %}
             </div>
         </div>
         <div class="clearfix"></div>
         <div class="content">
             {{ project.description }}
-            {% if project.content.size > 1 %}
-                <a href="#" class="read-more clearfix">
-                    <i class="fa fa-plus"></i> Read more
-                </a>
-            {% endif %}
         </div>
         <div class="hidden modal-content-text">
             {{ project }}
@@ -38,20 +33,30 @@
         <div class="contributors">
             {% assign contributors = project.contributors | size %}
             {% if contributors > 0 %}
-            <a class="contributors-modal" href="#" data-target="#modal-{{ project.label }}">
-                <i class="fa fa-user"></i> <span class="hidden-xs hidden-sm">{{ contributors }} Contributors</span>
-            </a>
             <ul>
                 {% for contributor in project.contributors %}
                 {% assign contr = site.data.team-members.members | where: "member", contributor| first %}
-                <li title="{{ contr.name }}"><img src="{{ contr.photo }}" alt="{{ contr.name}}" ></li>
+                {% if contr.photo %}
+                  <li title="{{ contr.name }}"><img src="{{ contr.photo }}" alt="{{ contr.name}}" ></li>
+                {% endif %}
                 {% endfor %}
             </ul>
             {% endif %}
-
-            {% if project.origin %}
-            <a class="origin" href="{{ project.origin }}"><i class="fa fa-eye"></i> <span class="hidden-xs hidden-sm">Origin of the project</span></a>
+        </div>
+        <div class="project_status">
+          {% if project.process %}
+            <img src="/resources/img/project_status_ongoing.png" >
+          {% else %}
+            <img src="/resources/img/project_status_done.png" >
+          {% endif %}
+          <div class="project-meta">
+            {% if project.impact %}
+              <p>Impact: {{ project.impact }}</p>
             {% endif %}
+            {% if project.start_year && project.end_year %}
+              <p>{{ project.start_year }} - {{ project.end_year }}</p>
+            {% endif %}
+          </div>
         </div>
     </div>
 </div>
