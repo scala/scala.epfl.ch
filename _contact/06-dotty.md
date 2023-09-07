@@ -1,5 +1,5 @@
 ---
 label: dotty
-name: Dotty
+name: Scala 3 Compiler
 link: http://dotty.epfl.ch/
 ---

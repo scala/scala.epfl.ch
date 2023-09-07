@@ -33,7 +33,7 @@ members:
     github: sjrd
     twitter: sjrdoeraene
     photo: /resources/img/sjrd.png
-    contact_for: [scalajs, scalaNative]
+    contact_for: [scalajs]
     active: true
   - member: vincent
     name: Vincent Derouand
@@ -103,7 +103,7 @@ members:
     twitter:
     photo: /resources/img/sylvie.png
     contact_for: [scalaCenterActivities]
-    active: true
+    active: false
   - member: heather
     name: Heather Miller
     title: Executive Director
@@ -129,7 +129,7 @@ members:
     github: bishabosha
     twitter: bishabosha
     photo: /resources/img/jamiethompson.png
-    contact_for: [tastyScala2, enumFinalisation]
+    contact_for: [tastyScala2, dotty]
     active: true
   - member: ergys
     name: Ergys Dona
@@ -174,7 +174,7 @@ members:
     github: anatoliykmetyuk
     twitter: akmetiuk
     photo: /resources/img/toli.png
-    contact_for: []
+    contact_for: [communication]
     active: true
   - member: wmazur
     name: Wojciech Mazur
@@ -233,16 +233,34 @@ members:
     github: ckipp01
     photo: /resources/img/chris-kipp.webp
     contact_for: [bloop,metals]
-    active: true
+    active: false
   - member: johanna
     name: Johanna Reichen
     title: Operations Officer & Strategy Advisor
     email: johanna.reichen@epfl.ch
     github: reichenjohanna
-    twitter: 
+    twitter:
     photo: /resources/img/johanna.jpeg
     contact_for: [communication]
     active: false
+  - member: shiv
+    name: Shiv Verkaran
+    title: Fundraising Officer
+    email: shiv.verkaran@epfl.ch
+    github: null
+    twitter:
+    photo: /resources/img/shiv.png
+    contact_for: [fundraising]
+    active: true
+  - member: valerie-m
+    name: Valerie Meillaud
+    title: Administrative Specialist
+    email: valerie.meillaud@epfl.ch
+    github:
+    twitter:
+    photo: /resources/img/valerie-m.png
+    contact_for: [scalaCenterActivities]
+    active: true
   - member: lucas
     name: Lucas Nouguier
     title: Intern
@@ -251,13 +269,13 @@ members:
     twitter: LucasNouguier
     photo: /resources/img/nouguier.jpg
     contact_for: [scalacDebugging]
-    active: true
+    active: false
   - member: aymane
     name: Aymane Lamyaghri
     title: Intern
     email: aymane.lamyaghri@epfl.ch
     github: aymanelamyaghri
-    twitter: 
+    twitter:
     photo: /resources/img/aymane.jpeg
-    contact_for: 
-    active: true
+    contact_for:
+    active: false

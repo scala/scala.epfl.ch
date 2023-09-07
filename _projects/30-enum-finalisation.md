@@ -5,7 +5,7 @@ web: http://dotty.epfl.ch/docs/reference/enums/enums.html
 github:
 origin:
 contributors: [jamie]
-status: Active
+status: Completed
 type: project
 active: true
 priority: 2
