@@ -5,7 +5,7 @@ web:
 github: https://github.com/scalacenter/scala/tree/tasty_reader
 origin:
 contributors: [jamie]
-status: Active
+status: Maintenance
 type: project
 active: true
 priority: 1
