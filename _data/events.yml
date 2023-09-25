@@ -37,13 +37,13 @@ scala_lunches:
     - date: 2 October 2023
       time: "12:00pm"
       place: BC 410, EPFL
-      speaker: Dimitri Racordon
-      title: What does Scala look like for a Swift enthusiast?
+      speaker: Quentin Bernet
+      title: Syntax and Runtime Checks for Qualified Types in Scala 3
     - date: 13 November 2023
       time: "12:00pm"
       place: BC 410, EPFL
-      speaker: # to be announced
-      title: # to be announced
+      speaker: Dimitri Racordon
+      title: What does Scala look like for a Swift enthusiast?
     - date: 11 December 2023
       time: "12:00pm"
       place: BC 410, EPFL
