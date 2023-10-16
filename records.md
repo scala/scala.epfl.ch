@@ -14,6 +14,7 @@ Every quarter, the Scala Center publishes an activity report detailing the
 work that has been achieved. You can find the roadmap for the current quarter
 in the [Projects page]({% link projects.md %}).
 
+- [2023, Q3]({% link records/2023-Q3-activity-report.md %})
 - [2023, Q2]({% link records/2023-Q2-activity-report.md %})
 - [2023, Q1]({% link records/2023-Q1-activity-report.md %})
 - [2022, Q4]({% link records/2022-Q4-activity-report.md %})
@@ -35,6 +36,7 @@ in the [Projects page]({% link projects.md %}).
 
 ### Board meeting minutes
 
+- [July 26, 2023 - Twenty-Ninth SC Advisory Board Meeting](/minutes/2023/07/26/july-26-2023.html)
 - [April 27, 2023 - Twenty-Eighth SC Advisory Board Meeting](/minutes/2023/04/27/april-27-2023.html)
 - [January 16, 2023 - Twenty-Seventh SC Advisory Board Meeting](/minutes/2023/01/16/january-16-2023.html)
 - [October 12, 2022 - Twenty-Sixth SC Advisory Board Meeting](/minutes/2022/10/12/october-12-2022.html)
