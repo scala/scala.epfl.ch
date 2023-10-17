@@ -19,7 +19,6 @@ Valérie Meillaud: 30% since September 1;
 Shiv Verkaran: 80% September 1 - October 12;
 
 
-
 ## At a Glance
 {: .no_toc}
 
