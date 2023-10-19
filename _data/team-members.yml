@@ -251,7 +251,7 @@ members:
     twitter:
     photo: /resources/img/shiv.png
     contact_for: [fundraising]
-    active: true
+    active: false
   - member: valerie-m
     name: Valerie Meillaud
     title: Administrative Specialist
