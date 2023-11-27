@@ -47,5 +47,60 @@ scala_lunches:
     - date: 11 December 2023
       time: "12:00pm"
       place: BC 410, EPFL
-      speaker: # to be announced
+      speaker: Sébastien Doeraene
+      title: # to be announced
+
+# 2024
+    - date: 11 January 2024
+      time: "12:00pm"
+      place: BC 410, EPFL
+      speaker: # To be announced
+      title: # to be announced
+
+    - date: 1 February 2024
+      time: "12:00pm"
+      place: BC 410, EPFL
+      speaker: # To be announced
+      title: # to be announced
+
+    - date: 14 March 2024
+      time: "12:00pm"
+      place: BC 410, EPFL
+      speaker: # To be announced
+      title: # to be announced
+
+    - date: 4 April 2024
+      time: "12:00pm"
+      place: BC 410, EPFL
+      speaker: # To be announced
+      title: # to be announced
+
+    - date: 9 May 2024
+      time: "12:00pm"
+      place: BC 410, EPFL
+      speaker: # To be announced
+      title: # to be announced
+
+    - date: 6 June 2024
+      time: "12:00pm"
+      place: BC 410, EPFL
+      speaker: # To be announced
+      title: # to be announced
+
+    - date: 5 September 2024
+      time: "12:00pm"
+      place: BC 410, EPFL
+      speaker: # To be announced
+      title: # to be announced
+
+    - date: 3 October 2024
+      time: "12:00pm"
+      place: BC 410, EPFL
+      speaker: # To be announced
+      title: # to be announced
+
+    - date: 7 November 2024
+      time: "12:00pm"
+      place: BC 410, EPFL
+      speaker: # To be announced
       title: # to be announced
