@@ -48,7 +48,7 @@ scala_lunches:
       time: "12:00pm"
       place: BC 410, EPFL
       speaker: Sébastien Doeraene
-      title: # to be announced
+      title: Specifying Match Types in Scala 3
 
 # 2024
     - date: 11 January 2024
