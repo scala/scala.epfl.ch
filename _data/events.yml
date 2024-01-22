@@ -47,10 +47,10 @@ scala_lunches:
 
 # 2024
 
-    - date: 8 February 2024
+    - date: "8 February 2024"
       time: "12:00pm"
       place: BC 410, EPFL
-      speaker: Andy Wingo
+      speaker: "Andy Wingo"
       title: # to be announced
 
     - date: 14 March 2024
