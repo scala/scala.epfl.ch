@@ -24,11 +24,6 @@ scala_lunches:
       place: BC 410, EPFL
       speaker: Bastien Jolidon & Kelvin Kappeler
       title: "Game verified with Stainless"
-    - date: 10 July 2023
-      time: "12:00pm"
-      place: BC 410, EPFL
-      speaker: # to be announced
-      title: # to be announced
     - date: 4 September 2023
       time: "12:00pm"
       place: BC 410, EPFL
@@ -51,16 +46,11 @@ scala_lunches:
       title: Specifying Match Types in Scala 3
 
 # 2024
-    - date: 11 January 2024
-      time: "12:00pm"
-      place: BC 410, EPFL
-      speaker: # To be announced
-      title: # to be announced
 
-    - date: 1 February 2024
+    - date: 8 February 2024
       time: "12:00pm"
       place: BC 410, EPFL
-      speaker: # To be announced
+      speaker: Andy Wingo
       title: # to be announced
 
     - date: 14 March 2024
