@@ -51,7 +51,7 @@ scala_lunches:
       time: "12:00pm"
       place: BC 410, EPFL
       speaker: "Andy Wingo"
-      title: # to be announced
+      title: "A New Hope: Compiling Managed Languages to WebAssembly"
 
     - date: 14 March 2024
       time: "12:00pm"
