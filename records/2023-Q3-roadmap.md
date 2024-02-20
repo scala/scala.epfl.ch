@@ -193,7 +193,7 @@ users have to download a zip file containing an sbt project definition and then
 use `sbt`, and, last, the loading time of sbt creates a significant overhead.
 
 As an alternative, we would like to allow the users to configure their programs
-via [configuration directives embedded in comments](https://scala-cli.virtuslab.org/docs/guides/configuration#using-directives).
+via [configuration directives embedded in comments](https://scala-cli.virtuslab.org/docs/guides/introduction/using-directives).
 
 You can track the progress of this project [here](https://github.com/scalacenter/student-projects/issues/10).
 
