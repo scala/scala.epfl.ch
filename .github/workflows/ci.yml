@@ -35,6 +35,7 @@ jobs:
       - name: HTMLProofer
         run: |
           # Check all links
+          # Don't check links to twitter.com because they return 400 all the time
           bundle exec htmlproofer ./_site/\
              --only-4xx\
              --ignore-empty-alt=true\
@@ -42,4 +43,5 @@ jobs:
              --enforce-https=false\
              --ignore-missing-alt=true\
              --swap-urls "https\:\/\/scala\.epfl\.ch:"\
+             --ignore-urls "/twitter.com/,/x.com/"\
              --cache '{ "timeframe": { "external": "30d" } }'
