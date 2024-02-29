@@ -59,10 +59,10 @@ scala_lunches:
       speaker: "Seth Tisue"
       title: "Fortify for Scala: A Commercial Back-end Compiler Plugin for Static Security Analysis"
 
-    - date: 4 April 2024
+    - date: 11 April 2024
       time: "12:00pm"
       place: BC 410, EPFL
-      speaker: # To be announced
+      speaker: "Dimi Racordon"
       title: # to be announced
 
     - date: 9 May 2024
