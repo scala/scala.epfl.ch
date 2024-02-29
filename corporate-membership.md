@@ -39,7 +39,7 @@ Advisory Board Membership dues are paid annually.
 - Engineering Time Contribution: there is an option to contribute engineering time in 50,000CHF or 15,000 equivalent to become a member or affiliate. Please get in touch with us to discuss this option.
 
 Organizations that are unable to join at the above levels may consider making a
-contribution totalling 1,500CHF or more. With this contribution, you will be
+contribution totalling 3000CHF or more. With this contribution, you will be
 recognized as a Backer-level donor alongside other Advisory Board members on the Scala Center homepage.
 
 ### Benefits
