@@ -54,7 +54,7 @@ scala_lunches:
       title: "A New Hope: Compiling Managed Languages to WebAssembly"
 
     - date: 14 March 2024
-      time: "12:00pm"
+      time: "**12:15pm**"
       place: "**BC 229**, EPFL"
       speaker: "Seth Tisue"
       title: "Fortify for Scala: A Commercial Back-end Compiler Plugin for Static Security Analysis"
