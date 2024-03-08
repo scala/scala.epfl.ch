@@ -12,10 +12,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.0.5'
+          ruby-version: '3.1.4'
           bundler-cache: true
       - name: Bower
         run: |
@@ -28,7 +28,7 @@ jobs:
           ( ! grep -qie Error -e Warn error.log )
       - name: Cache HTMLProofer
         id: cache-htmlproofer
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: tmp/.htmlproofer
           key: ${{ runner.os }}-htmlproofer
@@ -39,10 +39,10 @@ jobs:
           # Also ignore github.com because we have too many and they eventually return 429
           bundle exec htmlproofer ./_site/\
              --only-4xx\
-             --ignore-empty-alt=true\
-             --allow-hash-href=true\
-             --enforce-https=false\
-             --ignore-missing-alt=true\
+             --ignore-empty-alt\
+             --allow-hash-href\
+             --no-enforce-https\
+             --ignore-missing-alt\
              --swap-urls "https\:\/\/scala\.epfl\.ch:"\
              --ignore-urls "/twitter.com/,/x.com/,/github.com/"\
              --cache '{ "timeframe": { "external": "30d" } }'
