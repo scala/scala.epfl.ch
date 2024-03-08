@@ -39,10 +39,10 @@ jobs:
           # Also ignore github.com because we have too many and they eventually return 429
           bundle exec htmlproofer ./_site/\
              --only-4xx\
-             --ignore-empty-alt=true\
-             --allow-hash-href=true\
-             --enforce-https=false\
-             --ignore-missing-alt=true\
+             --ignore-empty-alt\
+             --allow-hash-href\
+             --no-enforce-https\
+             --ignore-missing-alt\
              --swap-urls "https\:\/\/scala\.epfl\.ch:"\
              --ignore-urls "/twitter.com/,/x.com/,/github.com/"\
              --cache '{ "timeframe": { "external": "30d" } }'
