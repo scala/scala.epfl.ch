@@ -1,4 +1,4 @@
-FROM ruby:3.0.5
+FROM ruby:3.2.3
 
 RUN apt-get install -y curl \
   && curl -sL https://deb.nodesource.com/setup_18.x | bash - \
