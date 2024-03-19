@@ -5,6 +5,20 @@
  * Document initialization
  **************************/
 
+// Browser Storage Support (https://stackoverflow.com/a/41462752/2538602)
+function storageAvailable(type) {
+  try {
+    var storage = window[type],
+      x = '__storage_test__';
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
+  }
+  catch (e) {
+    return false;
+  }
+}
+
 $(document).ready(function(){
     /* SEARCH FUNCTIONALITY */
     var search = $('.search input');
@@ -83,4 +97,53 @@ $(document).ready(function(){
         }
         $('#modal-description').modal('hide');
     });
+
+    // --- Preferences stored in localStorage ---
+
+    const Storage = (namespace) => {
+      return ({
+        getPreference(key, defaultValue) {
+          const res = localStorage.getItem(`${namespace}.${key}`);
+          return res === null ? defaultValue : res;
+        },
+        setPreference(key, value, onChange) {
+          const old = this.getPreference(key, null);
+          if (old !== value) { // activate effect only if value changed.
+            localStorage.setItem(`${namespace}.${key}`, value);
+            onChange(old);
+          }
+        }
+      });
+    };
+
+    function setupAlertCancel(alert, storage) {
+      const messageId = alert.data('message_id');
+      let onHide = () => {};
+      if (messageId) {
+        const key = `alert.${messageId}`;
+        const isHidden = storage.getPreference(key, 'show') === 'hidden';
+        if (isHidden) {
+          alert.hide();
+        }
+        onHide = () => storage.setPreference(key, 'hidden', _ => {});
+      }
+
+
+      alert.find('.hide-with-preference').click(function() {
+        alert.hide(), onHide();
+      });
+    }
+
+    function setupAllAlertCancels(storage) {
+      var alertBanners = $(".alert-warning");
+      if (alertBanners.length) {
+        setupAlertCancel(alertBanners, storage);
+      }
+    }
+
+    if (storageAvailable('localStorage')) {
+      const PreferenceStorage = Storage('ch.epfl.scala.preferences');
+      setupAllAlertCancels(PreferenceStorage);
+    }
+
 });
