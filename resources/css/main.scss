@@ -34,6 +34,10 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-medium: lighten($grey-color, 7%);
 $grey-color-dark:  darken($grey-color, 25%);
 
+$warning-bg: #ffa500;
+$warning-link: #185eb3;
+$warning-text: #000;
+
 // Width of the content area
 $content-width:    800px;
 
@@ -52,6 +56,53 @@ $fa-font-path: "./../../bower_components/font-awesome/fonts";
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "base";
+
+#site-header {
+  background: $gray-darker;
+  .alert-warning {
+    text-align: center;
+    padding: 8px 0;
+    /*transition: $base-transition;*/
+    position: relative;
+    font-size: 16px;
+      /*@include bp(medium) {
+        padding: 10px 40px;
+      }*/
+
+    background: $warning-bg;
+    color: $warning-text;
+
+    a {
+      color: $warning-link;
+      font-weight: bold;
+      text-decoration: underline;
+
+      &:active,
+      &:focus,
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    p {
+      margin: 0;
+    }
+
+    span {
+      position: absolute;
+      right: 20px;
+      top: 3px;
+      z-index: 1;
+      cursor: pointer;
+      font-size: 22px;
+      opacity: 0.6;
+      /*transition: $base-transition;*/
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
 
 .home #main {
   overflow-x: hidden;
