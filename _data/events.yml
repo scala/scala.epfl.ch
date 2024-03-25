@@ -63,7 +63,7 @@ scala_lunches:
       time: "12:00pm"
       place: BC 410, EPFL
       speaker: "Dimi Racordon"
-      title: # "Demystifying type inference: a quick look dive into the implementation of a typer"
+      title: "Demystifying type inference: a quick look dive into the implementation of a typer"
 
     - date: 9 May 2024
       time: "12:00pm"
