@@ -1640,3 +1640,14 @@ ul.nav {
 .project-logo-inverted {
   filter: invert(100%);
 }
+
+.generic-block table {
+  border-collapse: separate;
+  /*border-spacing: 10px;*/
+}
+
+.generic-block th, .generic-block td {
+  border-width: 1px;
+  border-style: solid;
+  padding: 10px;
+}
