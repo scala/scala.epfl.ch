@@ -175,7 +175,7 @@ members:
     twitter: akmetiuk
     photo: /resources/img/toli.png
     contact_for: [communication]
-    active: true
+    active: false
   - member: wmazur
     name: Wojciech Mazur
     title: Software Development
@@ -209,7 +209,7 @@ members:
     github: rochala
     photo: /resources/img/jedrzej.jpg
     contact_for: [scastie]
-    active: true
+    active: false
   - member: quentin
     name: Quentin Bernet
     title: Software Development - Intern
