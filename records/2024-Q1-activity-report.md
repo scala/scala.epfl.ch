@@ -175,17 +175,17 @@ We expect that these additional data will help us make Metals more robust in the
 
 For Scala 2 and Scala 3 throughout.
 
-### Ambassador Program
+### Ambassador Initiative
 
-We incubated the [Scala Ambassador program](https://github.com/scalacenter/ambassadors).
-This is a program to foster a new generation of Scala community leaders, able to competently answer community questions.
+We incubated the [Scala Ambassador initiative](https://github.com/scalacenter/ambassadors).
+This initiative aims to foster a new generation of Scala community leaders, able to competently answer community questions.
 Those people will also be empowered to organize local community events and otherwise help their local communities thrive.
 
-Currently, the program is in its early stages, as we welcome our first Ambassadors on an invitation basis.
-The program is meant to recognize and support the independent work of active community leaders.
+Currently, the initiative is in its early stages, as we welcome our first Ambassadors on an invitation basis.
+It is meant to recognize and support the independent work of active community leaders.
 We publicly announced it at Scalar 2024 and [on our website](https://www.scala-lang.org/blog/2024/03/28/ambassadors-initiative.html).
 
-The ambassador program will strengthen the community, amplify the official story around Scala and increase activity in the local Scala communities.
+The ambassador initiative will strengthen the community, amplify the official story around Scala and increase activity in the local Scala communities.
 
 ### Google Summer of Code
 
