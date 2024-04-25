@@ -547,6 +547,14 @@ body.home {
     font-size: 26px;
     color: #fff;
     text-align: center;
+
+    span.smaller {
+      font-size: 15px;
+    }
+  }
+
+  label.toggle-list-active {
+    cursor: pointer;
   }
 
   .circular {
