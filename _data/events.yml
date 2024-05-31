@@ -4,80 +4,9 @@ scala_lunches:
   footer: |
     Please note that the Scala Center ensures welcoming and safe spaces on all our events. Both the <a href="https://www.epfl.ch/about/overview/wp-content/uploads/2019/12/ComplianceGuideEPFL_EN.pdf">EPFL</a> and <a href="https://www.scala-lang.org/conduct/">Scala Code of Conducts</a> apply. We encourage you to report inappropriate behavior either through EPFL channels or directly to us. Depending on what seems most comfortable to you, use one of the following channels: a) send an email to scala.center@epfl.ch (the Scala Center staff receives it), b) send an email to one member of our staff, or c) anonymously fill in <a href="https://docs.google.com/forms/d/e/1FAIpQLSccVqGPhCd-a3a-AvCPFAqzg0mSPPTE-vNU3yXCNb-5qFunvA/viewform">this form</a>. We take reports seriously and react as quickly as possible to find appropriate solutions. Our entire staff is receiving continuous training in how to handle basic reported cases. For more complex ones, we may either reach out to appropriate EPFL channels or a mediation company that supports us. All cases are treated respectfully and with full confidentiality.
   events:
-    - date: 8 May 2023
-      time: "12:00pm"
-      place: BC 410, EPFL
-      speaker: Solal Pirelli
-      title: "Safe Low-Level Code Without Overhead is Practical"
-    - date: 8 May 2023
-      time: "12:30pm"
-      place: BC 410, EPFL
-      speaker: Zilu Tian
-      title: "Generalising Bulk-Synchronous Parallel Processing for Data Science: From Data to Threads and Agent-Based Simulations"
-    - date: 12 June 2023
-      time: "12:00pm"
-      place: BC 410, EPFL
-      speaker: Nguyen Pham
-      title: "Copying stacks for fun and profit: Experimental delimited continuations for Scala Native"
-    - date: 12 June 2023
-      time: "12:30pm"
-      place: BC 410, EPFL
-      speaker: Bastien Jolidon & Kelvin Kappeler
-      title: "Game verified with Stainless"
-    - date: 4 September 2023
-      time: "12:00pm"
-      place: BC 410, EPFL
-      speaker: Martin Odersky
-      title: Scala's Role in the Programming Languages Ecosystem
-    - date: 2 October 2023
-      time: "12:00pm"
-      place: BC 410, EPFL
-      speaker: Quentin Bernet
-      title: Syntax and Runtime Checks for Qualified Types in Scala 3
-    - date: 13 November 2023
-      time: "12:00pm"
-      place: BC 410, EPFL
-      speaker: Dimi Racordon
-      title: What does Scala look like for a Swift enthusiast?
-    - date: 11 December 2023
-      time: "12:00pm"
-      place: BC 410, EPFL
-      speaker: Sébastien Doeraene
-      title: Specifying Match Types in Scala 3
+  # 2024
 
-# 2024
-
-    - date: "8 February 2024"
-      time: "12:00pm"
-      place: BC 410, EPFL
-      speaker: "Andy Wingo"
-      title: "A New Hope: Compiling Managed Languages to WebAssembly"
-
-    - date: 14 March 2024
-      time: "**12:15pm**"
-      place: "**BC 229**, EPFL"
-      speaker: "Seth Tisue"
-      title: "Fortify for Scala: A Commercial Back-end Compiler Plugin for Static Security Analysis"
-
-    - date: 11 April 2024
-      time: "12:00pm"
-      place: BC 410, EPFL
-      speaker: "Dimi Racordon"
-      title: "Demystifying type inference: a quick look dive into the implementation of a typer"
-
-    - date: 16 May 2024
-      time: "12:00pm"
-      place: BC 410, EPFL
-      speaker: "Sébastien Doeraene"
-      title: "Compiling Scala.js to WebAssembly"
-
-    - date: 6 June 2024
-      time: "12:00pm"
-      place: BC 410, EPFL
-      speaker: # To be announced
-      title: # to be announced
-
-    - date: 5 September 2024
+    - date: 7 November 2024
       time: "12:00pm"
       place: BC 410, EPFL
       speaker: # To be announced
@@ -89,8 +18,80 @@ scala_lunches:
       speaker: # To be announced
       title: # to be announced
 
-    - date: 7 November 2024
+    - date: 5 September 2024
       time: "12:00pm"
       place: BC 410, EPFL
       speaker: # To be announced
       title: # to be announced
+
+    - date: "13 June 2024"
+      time: "12:00pm"
+      place: "**BC 333**, EPFL"
+      speaker: # To be announced
+      title: # to be announced
+
+    - date: 16 May 2024
+      time: "12:00pm"
+      place: BC 410, EPFL
+      speaker: "Sébastien Doeraene"
+      title: "Compiling Scala.js to WebAssembly"
+
+    - date: 11 April 2024
+      time: "12:00pm"
+      place: BC 410, EPFL
+      speaker: "Dimi Racordon"
+      title: "Demystifying type inference: a quick look dive into the implementation of a typer"
+
+    - date: 14 March 2024
+      time: "**12:15pm**"
+      place: "**BC 229**, EPFL"
+      speaker: "Seth Tisue"
+      title: "Fortify for Scala: A Commercial Back-end Compiler Plugin for Static Security Analysis"
+      
+    - date: "8 February 2024"
+      time: "12:00pm"
+      place: BC 410, EPFL
+      speaker: "Andy Wingo"
+      title: "A New Hope: Compiling Managed Languages to WebAssembly"
+
+    - date: 11 December 2023
+      time: "12:00pm"
+      place: BC 410, EPFL
+      speaker: Sébastien Doeraene
+      title: Specifying Match Types in Scala 3
+
+    - date: 13 November 2023
+      time: "12:00pm"
+      place: BC 410, EPFL
+      speaker: Dimi Racordon
+      title: What does Scala look like for a Swift enthusiast?
+
+    - date: 2 October 2023
+      time: "12:00pm"
+      place: BC 410, EPFL
+      speaker: Quentin Bernet
+      title: Syntax and Runtime Checks for Qualified Types in Scala 3
+
+    - date: 4 September 2023
+      time: "12:00pm"
+      place: BC 410, EPFL
+      speaker: Martin Odersky
+      title: Scala's Role in the Programming Languages Ecosystem
+
+    - date: 12 June 2023
+      time: "12:00pm"
+      place: BC 410, EPFL
+      speaker: Nguyen Pham
+      title: "Copying stacks for fun and profit: Experimental delimited continuations for Scala Native"
+      
+    - date: 8 May 2023
+      time: "12:00pm"
+      place: BC 410, EPFL
+      speaker: Solal Pirelli
+      title: "Safe Low-Level Code Without Overhead is Practical"
+      
+    - date: 8 May 2023
+      time: "12:30pm"
+      place: BC 410, EPFL
+      speaker: Zilu Tian
+      title: "Generalising Bulk-Synchronous Parallel Processing for Data Science: From Data to Threads and Agent-Based Simulations"
