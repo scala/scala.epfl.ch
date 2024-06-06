@@ -27,8 +27,8 @@ scala_lunches:
     - date: "13 June 2024"
       time: "12:00pm"
       place: "**BC 333**, EPFL"
-      speaker: # To be announced
-      title: # to be announced
+      speaker: "Adrien Piquerez"
+      title: "Scala Evaluation in the Debug Console"
 
     - date: 16 May 2024
       time: "12:00pm"
