@@ -279,3 +279,13 @@ members:
     photo: /resources/img/aymane.jpeg
     contact_for:
     active: false
+  - member: aissaoui
+    name: Saad Aissaoui
+    title: Intern
+    email: saad.aissaoui@epfl.ch
+    github: saadAissa
+    twitter:
+    photo: /resources/img/aissaoui.jpeg
+    contact_for:
+    active: true
+
