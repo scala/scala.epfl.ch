@@ -6,7 +6,7 @@ members:
     github: darjutak
     twitter: darjutak
     photo: /resources/img/darja.png
-    contact_for: [corporateMembership, donations, advisoryBoardMeeting, sip, communication]
+    contact_for: [advisoryBoardMeeting, corporateMembership, communication]
     active: true
   - member: julien
     name: Julien Richard-Foy
