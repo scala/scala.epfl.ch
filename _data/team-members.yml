@@ -130,7 +130,7 @@ members:
     twitter: bishabosha
     photo: /resources/img/jamiethompson.png
     contact_for: [tastyScala2, dotty]
-    active: true
+    active: false
   - member: ergys
     name: Ergys Dona
     title: Software Development
@@ -288,4 +288,3 @@ members:
     photo: /resources/img/aissaoui.jpeg
     contact_for:
     active: true
-
