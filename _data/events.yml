@@ -6,6 +6,36 @@ scala_lunches:
   events:
   # 2024
 
+    - date: "8 May 2024"
+      time: "12:00pm"
+      place: BC 410, EPFL
+      speaker: # To be announced
+      title: # to be announced
+      
+    - date: "10 April 2024"
+      time: "12:00pm"
+      place: BC 410, EPFL
+      speaker: # To be announced
+      title: # to be announced
+      
+    - date: "13 March 2024"
+      time: "12:00pm"
+      place: BC 410, EPFL
+      speaker: # To be announced
+      title: # to be announced
+      
+    - date: "20 February 2024"
+      time: "12:00pm"
+      place: BC 410, EPFL
+      speaker: # To be announced
+      title: # to be announced
+      
+    - date: "5 December 2024"
+      time: "12:00pm"
+      place: BC 410, EPFL
+      speaker: # To be announced
+      title: # to be announced
+
     - date: 7 November 2024
       time: "12:00pm"
       place: BC 410, EPFL
@@ -18,7 +48,7 @@ scala_lunches:
       speaker: # To be announced
       title: # to be announced
 
-    - date: 5 September 2024
+    - date: "12 September 2024"
       time: "12:00pm"
       place: BC 410, EPFL
       speaker: # To be announced
