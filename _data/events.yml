@@ -8,9 +8,9 @@ scala_lunches:
 
     - date: "5 November 2024"
       time: "12:00pm"
-      place: "BC 329, EPFL"
+      place: "BC 420, EPFL"
       speaker: "Haoyi Li"
-      title: # to be announced
+      title: "What the com-lihaoyi ecosystem needs from Scala"
 
   past-events:
 
