@@ -40,15 +40,13 @@ You may also be interested in
 
 ### Does the Scala Center control the development of Scala?
 
-No. Scala is developed by organizations and individual contributors all over the
-world. Lightbend (formerly Typesafe) will continue to maintain and evolve the
-stable Scala distribution.
+Not by itself. See our [Governance](https://www.scala-lang.org/governance/) page.
 
 ### Who owns Scala's code?
 
 Scala is owned by EPFL. Contributors to Scala own their own contributions and
 allow us to distribute that code under [Scala's Apache 2.0 License](http://scala-lang.org/license.html) by
-signing our [Contributors License Agreement (CLA)](https://www.lightbend.com/contribute/cla/scala).
+signing our [Contributors License Agreement (CLA)](https://contribute.akka.io/cla/scala).
 
 ### Have more questions?
 
