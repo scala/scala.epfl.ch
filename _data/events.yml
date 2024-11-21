@@ -6,14 +6,20 @@ scala_lunches:
   events:
   # 2024
 
+    - date: "5 December 2024"
+      time: "12:00pm"
+      place: "BC 410, EPFL"
+      speaker: "Michel Davit, Senior Engineer @Spotify"
+      title: "The Scala journey at Spotify"
+
+  past-events:
+
     - date: "5 November 2024"
       time: "12:00pm"
       place: "BC 420, EPFL"
       speaker: "Haoyi Li"
       title: "What the com-lihaoyi ecosystem needs from Scala"
-
-  past-events:
-
+      
     - date: "13 June 2024"
       time: "12:00pm"
       place: "**BC 333**, EPFL"
