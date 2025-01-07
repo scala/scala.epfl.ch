@@ -5,13 +5,12 @@ scala_lunches:
     Please note that the Scala Center ensures welcoming and safe spaces on all our events. Both the <a href="https://www.epfl.ch/about/overview/wp-content/uploads/2019/12/ComplianceGuideEPFL_EN.pdf">EPFL</a> and <a href="https://www.scala-lang.org/conduct/">Scala Code of Conducts</a> apply. We encourage you to report inappropriate behavior either through EPFL channels or directly to us. Depending on what seems most comfortable to you, use one of the following channels: a) send an email to scala.center@epfl.ch (the Scala Center staff receives it), b) send an email to one member of our staff, or c) anonymously fill in <a href="https://docs.google.com/forms/d/e/1FAIpQLSccVqGPhCd-a3a-AvCPFAqzg0mSPPTE-vNU3yXCNb-5qFunvA/viewform">this form</a>. We take reports seriously and react as quickly as possible to find appropriate solutions. Our entire staff is receiving continuous training in how to handle basic reported cases. For more complex ones, we may either reach out to appropriate EPFL channels or a mediation company that supports us. All cases are treated respectfully and with full confidentiality.
   events:
   # 2024
- - date: "27 February 2025"
+  past-events:
+    - date: "27 February 2025"
       time: "12:00pm"
       place: "BC 410, EPFL"
       speaker: "James Thompson"
       title: "Mill Builds in Scala 3, a migration story"
-      
-  past-events:
 
     - date: "5 December 2024"
       time: "12:00pm"
