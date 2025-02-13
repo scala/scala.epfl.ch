@@ -207,7 +207,7 @@ In Q4, we're finally opening it to the wider public. We've integrated the projec
 
 The significance of the project is to ensure the long-term sustainability of Scala 3. Scala 3's team is smaller than corresponding teams of many other programming languages. We need to ensure that the project is not dependent on a small number of people, but rather on a large number of people who are interested in contributing to the compiler. Compiler Academy is one of the avenues that ensure a stream of new compiler enthusiasts.
 
-You can learn more about the Academy [here](https://compileracademy.carrd.co/). [Here](https://www.scala-lang.org/blog/2022/11/02/compiler-academy.html) is the blog post announcing opening it up.
+You can learn more about the Academy here (dead link: httpx://compileracademy.carrd.co/). [Here](https://www.scala-lang.org/blog/2022/11/02/compiler-academy.html) is the blog post announcing opening it up.
 
 ### Community Expansion
 

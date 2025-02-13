@@ -42,8 +42,8 @@ We contributed PRs in the follow areas:
   [dotty#17088](https://github.com/lampepfl/dotty/pull/17088)
 
 Additionally, our collaborations with members of the community, either
-asynchronously or as part of the [Compiler
-Academy](https://compileracademy.carrd.co/), led to improvements
+asynchronously or as part of the Compiler
+Academy, led to improvements
 in the following areas:
 - Type inference
   [dotty#17092](https://github.com/lampepfl/dotty/pull/17092)
