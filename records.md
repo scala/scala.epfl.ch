@@ -40,6 +40,7 @@ in the [Projects page]({% link projects.md %}).
 
 ### Board meeting minutes
 
+- [September 5, 2024 - Thirty-Third SC Advisory Board Meeting](/minutes/2024/09/05/september-5-2024.html)
 - [April 25, 2024 - Thirty-Second SC Advisory Board Meeting](/minutes/2024/04/25/april-25-2024.html)
 - [February 7, 2024 - Thirty-First SC Advisory Board Meeting](/minutes/2024/02/07/february-7-2024.html)
 - [October 17, 2023 - Thirtieth SC Advisory Board Meeting](/minutes/2023/10/17/october-17-2023.html)
