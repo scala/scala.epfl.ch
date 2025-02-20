@@ -6,7 +6,7 @@ members:
     github: darjutak
     twitter: darjutak
     photo: /resources/img/darja.png
-    contact_for: [corporateMembership, donations, advisoryBoardMeeting, sip, communication]
+    contact_for: [advisoryBoardMeeting, corporateMembership, communication]
     active: true
   - member: julien
     name: Julien Richard-Foy
@@ -130,7 +130,7 @@ members:
     twitter: bishabosha
     photo: /resources/img/jamiethompson.png
     contact_for: [tastyScala2, dotty]
-    active: true
+    active: false
   - member: ergys
     name: Ergys Dona
     title: Software Development
@@ -175,7 +175,7 @@ members:
     twitter: akmetiuk
     photo: /resources/img/toli.png
     contact_for: [communication]
-    active: true
+    active: false
   - member: wmazur
     name: Wojciech Mazur
     title: Software Development
@@ -209,7 +209,7 @@ members:
     github: rochala
     photo: /resources/img/jedrzej.jpg
     contact_for: [scastie]
-    active: true
+    active: false
   - member: quentin
     name: Quentin Bernet
     title: Software Development - Intern
@@ -251,7 +251,7 @@ members:
     twitter:
     photo: /resources/img/shiv.png
     contact_for: [fundraising]
-    active: true
+    active: false
   - member: valerie-m
     name: Valerie Meillaud
     title: Administrative Specialist
@@ -277,5 +277,14 @@ members:
     github: aymanelamyaghri
     twitter:
     photo: /resources/img/aymane.jpeg
+    contact_for:
+    active: false
+  - member: aissaoui
+    name: Saad Aissaoui
+    title: Intern
+    email: saad.aissaoui@epfl.ch
+    github: saadAissa
+    twitter:
+    photo: /resources/img/aissaoui.jpeg
     contact_for:
     active: false

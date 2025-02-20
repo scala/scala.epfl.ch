@@ -4,6 +4,7 @@
   {% include head.html %}
 
   <body class="home">
+  {% include alert-banner.html message_id='disabled' message=site.data.messages.scam-banner %}
   <div id="wrap">
     <div id="main">
       <div class="splash">
@@ -67,7 +68,7 @@
         </div>
         <div class="row">
           <div class="col-md-12 text-center home-popovers">
-            <a class="btn btn-default btn" href="https://www.scala-lang.org/blog/2023/01/31/scala-center-2023-roadmap.html">2023 Roadmap</a>
+            <a class="btn btn-default btn" href="https://www.scala-lang.org/blog/2024/02/06/scala-center-2024-roadmap.html">2024 Roadmap</a>
             <a class="btn btn-default btn" href="/records/first-five-years/">5 year impact report</a>
           </div>
         </div>
@@ -262,19 +263,15 @@
               <br/><br/>
               <div class="subtitle col-sm-12" id="advisory-board-member-list">Advisory Board members:</div>
               <div class="col-sm-3 supporter-logo">
-                <a href="http://www.lightbend.com/" style="border: none;" target="_blank"><img src="{{ site.baseurl }}/resources/img/lightbend.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              </div>
-              <div class="col-sm-3 supporter-logo">
-                <a href="http://www.47deg.com/" style="border: none;" target="_blank"><img src="{{ site.baseurl }}/resources/img/47deg.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              </div>
-              <div class="col-sm-3 supporter-logo">
-                <a href="https://www.spotify.com/" style="border: none;" target="_blank"><img src="{{ site.baseurl }}/resources/img/spotify.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              </div>
-              <div class="col-sm-3 supporter-logo">
-                <a href="https://lunatech.com/" style="border: none;" target="_blank"><img src="{{ site.baseurl }}/resources/img/lunatech.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="http://akka.io" style="border: none;" target="_blank"><img src="{{ site.baseurl }}/resources/img/akka.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </div>
               <div class="col-sm-3 supporter-logo">
                 <a href="https://virtuslab.com/" style="border: none;" target="_blank"><img src="{{ site.baseurl }}/resources/img/virtuslab.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </div>
+              <br/><br/>
+              <div class="subtitle col-sm-12" id="advisory-board-member-list">Affiliate members:</div>
+              <div class="col-sm-3 supporter-logo">
+                <a href="https://www.jetbrains.com/" style="border: none;" target="_blank"><img src="{{ site.baseurl }}/resources/img/jetbrains.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </div>
             </div>
             <div class="col-md-12 text-center">
@@ -285,9 +282,12 @@
               </div>
               <p>For information on the community representatives, see <a href="https://www.scala-lang.org/blog/2019/03/18/announcing-new-community-representative.html">this blog post</a>.-->
               <input type="checkbox" id="toggle-list" style="display: none;">
-              <label for="toggle-list" class="subtitle col-sm-12">Former contributions</label>
+              <label for="toggle-list" class="subtitle col-sm-12 toggle-list-active">Former contributions <span class="smaller">(click to expand)</span></label>
               <div class="text-center back-level clearfix">
                 <ul id="contributions-list" style="list-style-type: none; margin: 0; padding: 0;">
+                  <li class="transparent-text">Spotify</li>
+                  <li class="transparent-text">Lunatech</li>
+                  <li class="transparent-text">47 Degrees</li>
                   <li class="transparent-text">Goldman Sachs</li>
                   <li class="transparent-text">Twitter</li>
                   <li class="transparent-text">Databricks</li>
