@@ -11,12 +11,12 @@ Jamie Thompson, 100%;
 Sébastien Doeraene, 100%;
 Guillaume Martres, 100% until August 31, 20% since;
 Julien Richard-Foy, 80% until August 31;
-Johanna Reichen: 80% until August 14;
 Lucas Nouguier: 100% until August 31;
+Ayman Lamyaghri, intern July 3 - August 25.
 Sylvie Buchard: 30% until August 31;
 Valérie Meillaud: 30% since September 1;
-Shiv Verkaran: 80% since September 15.
-VirtusLab team: Jędrzej Rochala, 100%.
+Shiv Verkaran: 80% September 1 - October 12;
+VirtusLab team: Jędrzej Rochala, 100%
 
 ## At a Glance
 {: .no_toc}
