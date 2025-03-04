@@ -206,7 +206,7 @@ Relevant PRs: [scala/docs.scala-lang#2894](https://github.com/scala/docs.scala-l
 
 In collaboration with Xebia Functional, we organized the Scala Days conference in Madrid and a number of co-located events around it:
 
-* [Scala Bridge](https://scaladays.org/madrid-2023/scala-bridge), lead by Zainab Ali and Noel Welsh - a Scala workshop for beginners to attract more newcomers without programming background to the Scala community.
+* [Scala Bridge](https://web.archive.org/web/20230922193146/https://scaladays.org/madrid-2023/scala-bridge), lead by Zainab Ali and Noel Welsh - a Scala workshop for beginners to attract more newcomers without programming background to the Scala community.
 * [Scala Spree](https://github.com/scalacenter/sprees), lead by Jamie Thompson - a hackathon for the Scala developers to hack on OSS projects together with the maintainers of those projects.
 * Tooling Summit, lead by Chris Kipp - a meeting of the Scala tooling stakeholders to get to the same page on the future of the Scala tooling ecosystem.
 * In-person [SIP](https://docs.scala-lang.org/sips/process-specification.html) meeting, lead by Anatolii Kmetiuk, where the SIP committee members got a chance to speak to each other in person and otherwise do an ordinary SIP meeting.
