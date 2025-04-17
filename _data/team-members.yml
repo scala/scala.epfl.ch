@@ -148,7 +148,7 @@ members:
     twitter: adrienpi2
     photo: /resources/img/adrien.png
     contact_for: [scala3MigrationGuide, scaladex, bspForSbt]
-    active: true
+    active: false
   - member: meriam
     name: Meriam Lachkar
     title: Software Development
