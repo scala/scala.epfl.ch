@@ -34,7 +34,7 @@ members:
     twitter: sjrdoeraene
     photo: /resources/img/sjrd.png
     contact_for: [scalajs]
-    active: true
+    active: false
   - member: vincent
     name: Vincent Derouand
     title: Communication Manager
