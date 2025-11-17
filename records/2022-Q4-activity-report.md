@@ -220,7 +220,7 @@ To spark the interest of EPFL scientists and students in Scala, throughout 2022,
 In Q4, we finalized this project by conducting the first workshop for the EPFL community. We had around 10 participants, and the workshop was a success. We're tentatively planning to conduct one such workshop per semester to spread awareness about Scala at EPFL and gain more userbase at our home university.
 
 - [EPFL Announcement](https://memento.epfl.ch/event/launching-rockets-with-scala/)
-- [Technical blog](https://akmetiuk.com/posts/2022-02-19-launching-rockets.html) to get an idea of what it is all about.
+- [Technical blog](https://anatoliikmt.me/posts/2022-02-19-launching-rockets/) to get an idea of what it is all about.
 
 ### Google Summer of Code
 

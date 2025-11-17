@@ -250,9 +250,9 @@ To this effect, we achieved the following work:
 - We have updated the quick-links in the title bar to read more clearly (using simpler words), and to link to Scastie
   (PR [lampepfl/dotty#14819](https://github.com/lampepfl/dotty/pull/14819), PR [scala/docs.scala-lang#2363](https://github.com/scala/docs.scala-lang/pull/2363), and PR [scala/scala-lang#1360](https://github.com/scala/scala-lang/pull/1360))
 - After listening to community feedback, we re-introduced explicit install instructions to the [install page](https://www.scala-lang.org/download/), with tabs that give specialised instructions for each operating system, also included is information to
-  test that your set-up works correctly. We also included the same tabs on the [getting-started guide](https://docs.scala-lang.org/getting-started/index.html) in the docs (PR [scala/scala-lang#1373](https://github.com/scala/scala-lang/pull/1373), and PR [scala/docs.scala-lang#2388](https://github.com/scala/docs.scala-lang/pull/2388))
+  test that your set-up works correctly. We also included the same tabs on the [getting-started guide](https://docs.scala-lang.org/getting-started/install-scala.html) in the docs (PR [scala/scala-lang#1373](https://github.com/scala/scala-lang/pull/1373), and PR [scala/docs.scala-lang#2388](https://github.com/scala/docs.scala-lang/pull/2388))
 - We realise that newcomers may have unique circumstances that mean following the getting-started guide does not always
-  work. To help, we added a sticky notice to [the guide](https://docs.scala-lang.org/getting-started/index.html) that
+  work. To help, we added a sticky notice to [the guide](https://docs.scala-lang.org/getting-started/install-scala.html) that
   suggests they ask for help in the `#scala-users` channel on Discord.
 - At present the index of [docs.scala-lang.org](https://docs.scala-lang.org) is split between Scala 2 and Scala 3, and
   Scala 3 pages have a unique theme and navigation layout, when compared to Scala 2 pages. This has lead to much
@@ -353,7 +353,7 @@ restart the SIP meetings, and assign proposals to reviewers.
 
 ### ScalaCon 2022
 
-[ScalaCon](http://www.scalacon.org/) is a series of online conferences designed
+[ScalaCon](https://web.archive.org/web/20250101143410/https://www.scalacon.org/) is a series of online conferences designed
 to bring the Scala community closer together.
 
 We are in charge of the program and the program committee of

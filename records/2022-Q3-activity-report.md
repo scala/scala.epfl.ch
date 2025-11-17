@@ -204,7 +204,7 @@ One of our goals at the Scala Center is to increase the adoption of Scala – an
 
 In Q3, we've set up everything at EPFL to make the workshop happen, and conducted the first dry run of the workshop for the teams of LAMP and Scala Center. In Q4, we'll start conducting the workshop for the wider EPFL community which will hopefully lead to a wider awareness about Scala.
 
-To get an idea of what the workshop is about, see the following [blog article](https://akmetiuk.com/posts/2022-02-19-launching-rockets.html).
+To get an idea of what the workshop is about, see the following [blog article](https://anatoliikmt.me/posts/2022-02-19-launching-rockets/).
 
 We have also organized a local event, a “Scala Lunch”, where people using Scala or curious about Scala could hang out and discuss together. 31 attendees were present.
 
