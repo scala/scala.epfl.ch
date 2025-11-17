@@ -71,7 +71,7 @@ In this quarter, we followed up on these changes by updating the defaults:
 
 - coursier now installs the official `sbt` distribution, rather than a custom one
 - it considers Scala 2 and Scala 3 to be the same application, with different versions (and installs Scala 3 by default)
-- we have updated [the Getting Started page](https://docs.scala-lang.org/getting-started/index.html) on the scala-lang.org website, along with related pages (notably, the front page)
+- we have updated [the Getting Started page](https://docs.scala-lang.org/getting-started/install-scala.html) on the scala-lang.org website, along with related pages (notably, the front page)
 
 ### TASTy-query
 

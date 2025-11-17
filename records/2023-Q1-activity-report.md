@@ -360,7 +360,7 @@ We have also prepared and conducted a discussion about the Compiler Academy duri
 
 For Scala 2 and 3.
 
-Scala Center has a long-standing tradition of participation in Google Summer of Code. This program presents a great opportunity to onboard beginner Scala programmers into the OSS world. In Q1 2023, we registered and were [accepted](https://www.scala-lang.org/blog-detail/2023/02/28/acceptd-to-gsoc-2023.html) for the 2023 iteration of the program. Currently, in collaboration with LAMP, we are working with 5 lead mentors from the Scala OSS world to welcome the new contributors in Summer.
+Scala Center has a long-standing tradition of participation in Google Summer of Code. This program presents a great opportunity to onboard beginner Scala programmers into the OSS world. In Q1 2023, we registered and were [accepted](https://www.scala-lang.org/blog-detail/2023/02/28/accepted-to-gsoc-2023.html) for the 2023 iteration of the program. Currently, in collaboration with LAMP, we are working with 5 lead mentors from the Scala OSS world to welcome the new contributors in Summer.
 
 ### Scala Lunches at EPFL
 
