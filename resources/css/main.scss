@@ -1316,13 +1316,25 @@ div.search {
       text-decoration: underline;
     }
 
-    .social a {
-      text-decoration: none;
+    .social {
+      margin-top: 10px;
+      margin-bottom: 15px;
+      
+      a {
+        text-decoration: none;
+      }
     }
 
     p {
       font-size: 18px;
       color: #15414c;
+    }
+
+    p.member-description {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      padding-right: 160px;
+      line-height: 1.5;
     }
 
     ul.contact-for {

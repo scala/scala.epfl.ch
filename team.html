@@ -9,10 +9,14 @@ layout: page
             {% for member in members %}{% if member.active %}
             <div class="col-md-6">
                 <div class="team-member">
+                    {% if member.photo %}
                     <div class="circular visible-xs" style="background-image: url({{ member.photo }});"></div>
+                    {% endif %}
                     <h2>{{ member.name }}</h2>
                     <h3>{{ member.title }}</h3>
+                    {% if member.email %}
                     <a href="mailto:{{ member.email }}">{{ member.email }}</a>
+                    {% endif %}
                     <div class="social">
                         {% assign github = member.github %}
                         {% unless github %}
@@ -22,15 +26,42 @@ layout: page
                         {% unless twitter %}
                         {% assign displayTwitter = "none" %}
                         {% endunless %}
-                        <a href="https://github.com/{{ github }}" style="display: {{ displayGithub }}" target="_blank">
+                        {% assign linkedin = member.linkedin %}
+                        {% assign mastodon = member.mastodon %}
+                        {% assign bluesky = member.bluesky %}
+                        {% if github %}
+                        <a href="https://github.com/{{ github }}" target="_blank">
                             <i class="fa fa-github"></i>
                         </a>
-                        <a href="https://twitter.com/{{ twitter }}" style="display: {{ displayTwitter }}" target="_blank">
+                        {% endif %}
+                        {% if twitter %}
+                        <a href="https://twitter.com/{{ twitter }}" target="_blank">
                             <i class="fa fa-twitter"></i>
                         </a>
+                        {% endif %}
+                        {% if linkedin %}
+                        <a href="https://www.linkedin.com/in/{{ linkedin }}/" target="_blank">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        {% endif %}
+                        {% if mastodon %}
+                        <a href="{{ mastodon }}" target="_blank">
+                            <i class="fa fa-mastodon"></i>
+                        </a>
+                        {% endif %}
+                        {% if bluesky %}
+                        <a href="{{ bluesky }}" target="_blank">
+                            <i class="fa fa-at"></i>
+                        </a>
+                        {% endif %}
                     </div>
+                    {% if member.description %}
+                    <p class="member-description">{{ member.description }}</p>
+                    {% endif %}
 
+                    {% if member.photo %}
                     <div class="circular hidden-xs" style="background-image: url({{ member.photo }});"></div>
+                    {% endif %}
                     <ul class="contact-for">
                         {% for c in member.contact_for %}
                             <li>

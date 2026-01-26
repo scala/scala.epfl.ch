@@ -124,13 +124,13 @@ members:
     active: false
   - member: jamie
     name: Jamie Thompson
-    title: Software Development
+    title: STA Contributor
     email: jamesrichard.thompson@epfl.ch
     github: bishabosha
-    twitter: bishabosha
+    linkedin: james-richard-thompson
     photo: /resources/img/jamiethompson.png
-    contact_for: [tastyScala2, dotty]
-    active: false
+    description: "Lead for WP C: Maintenance of the Standard Library/Core Library Modules and APIs, Lead for WP D: Modernization and extension of the Standard Library/Core Library Modules"
+    active: true
   - member: ergys
     name: Ergys Dona
     title: Software Development
@@ -169,13 +169,13 @@ members:
     active: false
   - member: toli
     name: Anatolii Kmetiuk
-    title: Software Development
-    email: anatolii.kmetiuk@epfl.ch
+    title: STA Contributor
+    email: anatoliikmt@proton.me
     github: anatoliykmetyuk
-    twitter: akmetiuk
+    linkedin: akmetiuk
     photo: /resources/img/toli.png
-    contact_for: [communication]
-    active: false
+    description: "Lead for WP B: Improvement of Scoverage, Lead for WP E: Build tool major update - sbt 2.0"
+    active: true
   - member: wmazur
     name: Wojciech Mazur
     title: Software Development
@@ -220,10 +220,12 @@ members:
     active: false
   - member: smarter
     name: Guillaume Martres
-    title: Software Development
+    title: STA Contributor
     email: guillaume.martres@epfl.ch
     github: smarter
+    linkedin: guillaume-martres
     photo: /resources/img/guillaume-martres.jpg
+    description: "Team member WP C, D, and other"
     contact_for: [dotty]
     active: true
   - member: chris
@@ -260,7 +262,7 @@ members:
     twitter:
     photo: /resources/img/valerie-m.png
     contact_for: [scalaCenterActivities]
-    active: true
+    active: false
   - member: lucas
     name: Lucas Nouguier
     title: Intern
@@ -288,3 +290,63 @@ members:
     photo: /resources/img/aissaoui.jpeg
     contact_for:
     active: false
+  - member: hamza-remmal
+    name: Hamza Remmal
+    title: STA Contributor
+    email:
+    photo:
+    description: "Team member WP C, D"
+    active: true
+  - member: nguyen-pham
+    name: Nguyen Pham
+    title: STA Contributor
+    email:
+    github: natsukagami
+    mastodon: https://gts.dtth.ch/@nki
+    photo: /resources/img/nguyen-pham.jpg
+    active: true
+  - member: bill-venners
+    name: Bill Venners
+    title: STA Contributor
+    email:
+    github: bvenners
+    photo: /resources/img/bill-venners.png
+    description: "Team member WP F"
+    active: true
+  - member: chuah-chee-seng
+    name: Chua Chee Seng
+    title: STA Contributor
+    email:
+    github: cheeseng
+    photo: /resources/img/chuah-chee-seng.png
+    description: "Team member WP F"
+    active: true
+  - member: rikito-taniguchi
+    name: Rikito Taniguchi
+    title: STA Contributor
+    email:
+    github: tanishiking
+    linkedin: rikitotaniguchi
+    photo: /resources/img/rikito-taniguchi.jpg
+    description: "Team member WP E"
+    active: true
+  - member: seth-tisue
+    name: Seth Tisue
+    title: STA Contributor
+    email:
+    github: sethtisue
+    linkedin: sethtisue
+    mastodon: https://fosstodon.org/@SethTisue
+    photo: /resources/img/seth-tisue.jpg
+    description: "Lead for WP F: API Documentation"
+    active: true
+  - member: solal-pirelli
+    name: Solal Pirelli
+    title: STA Contributor
+    email:
+    github: SolalPirelli
+    linkedin: solalpirelli
+    bluesky: https://bsky.app/profile/solalpirelli.bsky.social
+    photo: /resources/img/solal-pirelli.jpg
+    description: "Team member WP C"
+    active: true
