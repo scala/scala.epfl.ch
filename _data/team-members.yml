@@ -124,12 +124,11 @@ members:
     active: false
   - member: jamie
     name: Jamie Thompson
-    title: STA Contributor
-    email: jamesrichard.thompson@epfl.ch
+    title: Collaborator
     github: bishabosha
     linkedin: james-richard-thompson
     photo: /resources/img/jamiethompson.png
-    description: "Lead for WP C: Maintenance of the Standard Library/Core Library Modules and APIs, Lead for WP D: Modernization and extension of the Standard Library/Core Library Modules"
+    description: "<ul class=\"member-work-packages\"><li>Lead for Maintenance of the Standard Library/Core Library Modules and APIs</li><li>Lead for Modernization and Extension of the Standard Library/Core Library Modules</li></ul>"
     active: true
   - member: ergys
     name: Ergys Dona
@@ -169,12 +168,11 @@ members:
     active: false
   - member: toli
     name: Anatolii Kmetiuk
-    title: STA Contributor
-    email: anatoliikmt@proton.me
+    title: Collaborator
     github: anatoliykmetyuk
     linkedin: akmetiuk
     photo: /resources/img/toli.png
-    description: "Lead for WP B: Improvement of Scoverage, Lead for WP E: Build tool major update - sbt 2.0"
+    description: "<ul class=\"member-work-packages\"><li>Lead for Improvement of Scoverage</li><li>Lead for Build Tool Major Update - sbt 2.0</li></ul>"
     active: true
   - member: wmazur
     name: Wojciech Mazur
@@ -220,12 +218,12 @@ members:
     active: false
   - member: smarter
     name: Guillaume Martres
-    title: STA Contributor
+    title: Collaborator
     email: guillaume.martres@epfl.ch
     github: smarter
     linkedin: guillaume-martres
     photo: /resources/img/guillaume-martres.jpg
-    description: "Team member WP C, D, and other"
+    description: "<ul class=\"member-work-packages\"><li>Maintenance of the Standard Library/Core Library Modules and APIs</li><li>Modernization and Extension of the Standard Library/Core Library Modules</li><li>and other</li></ul>"
     contact_for: [dotty]
     active: true
   - member: chris
@@ -292,14 +290,14 @@ members:
     active: false
   - member: hamza-remmal
     name: Hamza Remmal
-    title: STA Contributor
+    title: Collaborator
     email:
     photo:
-    description: "Team member WP C, D"
+    description: "<ul class=\"member-work-packages\"><li>Maintenance of the Standard Library/Core Library Modules and APIs</li><li>Modernization and Extension of the Standard Library/Core Library Modules</li></ul>"
     active: true
   - member: nguyen-pham
     name: Nguyen Pham
-    title: STA Contributor
+    title: Collaborator
     email:
     github: natsukagami
     mastodon: https://gts.dtth.ch/@nki
@@ -307,46 +305,46 @@ members:
     active: true
   - member: bill-venners
     name: Bill Venners
-    title: STA Contributor
+    title: Collaborator
     email:
     github: bvenners
     photo: /resources/img/bill-venners.png
-    description: "Team member WP F"
+    description: "<ul class=\"member-work-packages\"><li>API Documentation</li></ul>"
     active: true
   - member: chuah-chee-seng
     name: Chua Chee Seng
-    title: STA Contributor
+    title: Collaborator
     email:
     github: cheeseng
     photo: /resources/img/chuah-chee-seng.png
-    description: "Team member WP F"
+    description: "<ul class=\"member-work-packages\"><li>API Documentation</li></ul>"
     active: true
   - member: rikito-taniguchi
     name: Rikito Taniguchi
-    title: STA Contributor
+    title: Collaborator
     email:
     github: tanishiking
     linkedin: rikitotaniguchi
     photo: /resources/img/rikito-taniguchi.jpg
-    description: "Team member WP E"
+    description: "<ul class=\"member-work-packages\"><li>Build Tool Major Update - sbt 2.0</li></ul>"
     active: true
   - member: seth-tisue
     name: Seth Tisue
-    title: STA Contributor
+    title: Collaborator
     email:
     github: sethtisue
     linkedin: sethtisue
     mastodon: https://fosstodon.org/@SethTisue
     photo: /resources/img/seth-tisue.jpg
-    description: "Lead for WP F: API Documentation"
+    description: "<ul class=\"member-work-packages\"><li>Lead for API Documentation</li></ul>"
     active: true
   - member: solal-pirelli
     name: Solal Pirelli
-    title: STA Contributor
+    title: Collaborator
     email:
     github: SolalPirelli
     linkedin: solalpirelli
     bluesky: https://bsky.app/profile/solalpirelli.bsky.social
     photo: /resources/img/solal-pirelli.jpg
-    description: "Team member WP C"
+    description: "<ul class=\"member-work-packages\"><li>Maintenance of the Standard Library/Core Library Modules and APIs</li></ul>"
     active: true

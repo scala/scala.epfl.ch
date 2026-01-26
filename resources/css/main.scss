@@ -1319,7 +1319,7 @@ div.search {
     .social {
       margin-top: 10px;
       margin-bottom: 15px;
-      
+
       a {
         text-decoration: none;
       }
@@ -1330,11 +1330,27 @@ div.search {
       color: #15414c;
     }
 
-    p.member-description {
+    .member-description {
       margin-top: 15px;
       margin-bottom: 15px;
-      padding-right: 160px;
-      line-height: 1.5;
+      
+      ul.member-work-packages {
+        padding-left: 1.5em;
+        padding-right: 160px;
+        margin: 0;
+        list-style-type: disc;
+        
+        li {
+          margin-bottom: 0.8em;
+          line-height: 1.6;
+          color: #15414c;
+          font-size: 18px;
+          
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
     }
 
     ul.contact-for {

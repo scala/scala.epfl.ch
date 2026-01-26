@@ -56,7 +56,7 @@ layout: page
                         {% endif %}
                     </div>
                     {% if member.description %}
-                    <p class="member-description">{{ member.description }}</p>
+                    <div class="member-description">{{ member.description | raw }}</div>
                     {% endif %}
 
                     {% if member.photo %}
