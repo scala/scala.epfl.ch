@@ -336,7 +336,7 @@ members:
     linkedin: sethtisue
     mastodon: https://fosstodon.org/@SethTisue
     photo: /resources/img/seth-tisue.jpg
-    description: "<ul class=\"member-work-packages\"><li>Lead for API Documentation</li></ul>"
+    description: "<ul class=\"member-work-packages\"><li>Lead for API Documentation</li><li>Community Advocate, Scala Core Team</li><li>Secretary, Scala Improvement Committee</li><li>Secretary, Scala Center Advisory Board</li><li>Scala 2 Maintenance</li></ul>"
     active: true
   - member: solal-pirelli
     name: Solal Pirelli
