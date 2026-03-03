@@ -294,7 +294,7 @@ members:
     email:
     photo:
     description: "<ul class=\"member-work-packages\"><li><a href=\"https://contributors.scala-lang.org/t/standard-library-now-open-for-improvements-and-suggestions/7337\" target=\"_blank\">Maintenance of the Standard Library/Core Library Modules and APIs</a></li><li><a href=\"https://contributors.scala-lang.org/t/extending-scala-with-modern-concurrency-primitives/7350\" target=\"_blank\">Modernization and Extension of the Standard Library/Core Library Modules</a></li></ul>"
-    active: true
+    active: false
   - member: nguyen-pham
     name: Nguyen Pham
     title: Collaborator
