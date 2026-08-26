@@ -44,5 +44,5 @@ jobs:
              --no-enforce-https\
              --ignore-missing-alt\
              --swap-urls "https\:\/\/scala\.epfl\.ch:"\
-             --ignore-urls "/twitter.com/,/x.com/,/github.com/"\
+             --ignore-urls "/twitter.com/,/x.com/,/github.com/,/contributors.scala-lang.org/"\
              --cache '{ "timeframe": { "external": "30d" } }'

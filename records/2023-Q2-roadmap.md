@@ -201,7 +201,7 @@ causing a number of issues:
 - Maven cannot resolve sbt plugin artifacts.
 - Other resolution tools, like Coursier, must implement some sbt-specific hack to resolve them.
 - Some Maven proxies cannot check the validity of sbt plugins and they reject them.
-- The number of downloads of sbt plugins are unavailable on [oss.sonatype.org](https://oss.sonatype.org/).
+- The number of downloads of sbt plugins are unavailable on oss.sonatype.org.
 - [javadoc.io](https://javadoc.io/) cannot find the scaladoc of sbt plugins.
 - And more
 
